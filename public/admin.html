@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>관리자 - 회원 목록</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    .deleteBtn {
+      color: white;
+      background-color: #d9534f;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .deleteBtn:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <h1>👤 회원 목록</h1>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>이메일</th>
+        <th>이름</th>
+        <th>로그인 방식</th>
+        <th>관리자</th>
+        <th>가입일</th>
+        <th>관리</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const token = localStorage.getItem("jwtToken");
+
+    if (!token) {
+      alert("로그인이 필요합니다.");
+      window.location.replace("/index.html");  // 히스토리 제거
+      throw new Error("JWT 토큰 없음 → 실행 중단");
+    }
+
+    fetch("/api/admin/users", {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    .then(async res => {
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.message || "관리자 권한이 없거나 인증 실패");
+      }
+      return res.json();
+    })
+    .then(users => {
+      const tbody = document.querySelector("#userTable tbody");
+      users.forEach(user => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${user.id}</td>
+          <td>${user.email}</td>
+          <td>${user.name || '-'}</td>
+          <td>${user.provider}</td>
+          <td>${user.is_admin ? '✅' : ''}</td>
+          <td>${new Date(user.createdAt).toLocaleString()}</td>
+          <td><button class="deleteBtn" data-id="${user.id}">삭제</button></td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      // 삭제 버튼 이벤트 연결
+      document.querySelectorAll(".deleteBtn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const userId = btn.getAttribute("data-id");
+          const confirmed = confirm("정말로 이 사용자를 삭제하시겠습니까?");
+          if (!confirmed) return;
+
+          fetch(`/api/admin/users/${userId}`, {
+            method: "DELETE",
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          })
+          .then(res => {
+            if (!res.ok) throw new Error("삭제 실패");
+            alert("삭제 완료");
+            location.reload();
+          })
+          .catch(err => {
+            alert("삭제 중 오류 발생");
+            console.error(err);
+          });
+        });
+      });
+    })
+    .catch(err => {
+      alert("🚫 " + err.message);
+      window.location.replace("/index.html");
+    });
+  </script>
+</body>
+</html>

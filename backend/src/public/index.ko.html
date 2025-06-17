@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Practice | Speak Naturally</title>
+  <meta name="facebook-domain-verification" content="sq3d3nt33w851yluujahz39v31aq15" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      min-width: 360px;
+      min-height: 600px;
+      overflow: auto;
+      box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    .container {
+      max-width: 1024px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      width: 100%;
+      background: #0056c1;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .site-logo {
+      width: 60px;
+      height: auto;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      white-space: nowrap;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    select, button {
+      padding: 8px 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      min-width: 120px;
+    }
+
+    button {
+      background: #00c851;
+      color: white;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .social-login-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-login-text {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .social-login-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* 📱 모바일 대응 */
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+        flex-wrap: nowrap;
+      }
+
+      .branding {
+        flex-direction: row;
+        flex: 0 1 auto;
+        min-width: auto;
+      }
+
+      .nav-wrapper {
+        flex-direction: row;
+        width: auto;
+        flex: 0 1 auto;
+        justify-content: flex-end;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      select, button {
+        width: auto;
+        font-size: 0.9rem;
+        padding: 6px 8px;
+        min-width: 100px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .branding {
+        order: 1;
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .nav-wrapper {
+        order: 2;
+        flex: 1 1 100%;
+        justify-content: center;
+      }
+
+      select, button {
+        width: 48%;
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="branding">
+        <img src="logo.png" alt="Logo" class="site-logo" />
+        <h1>SamSpeak</h1>
+      </div>
+      <div class="nav-wrapper">
+        <select id="langSelect">
+          <option value="#" disabled selected>🌐 언어선택</option>
+          <option value="index.html">English</option>
+          <option value="index.ko.html">한국어</option>
+          <option value="index.ja.html">日本語</option>
+          <option value="index.zh.html">中文</option>
+          <option value="index.vi.html">Tiếng Việt</option>
+        </select>
+        <button id="loginBtn">로그인 / 회원가입</button>
+      </div>
+    </div>
+
+    <div id="loginModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:1000; justify-content:center; align-items:center;">
+      <div style="background:#fff; padding:30px; border-radius:10px; width:320px; box-shadow:0 0 10px rgba(0,0,0,0.2); position:relative;">
+        <div style="display:flex; justify-content:space-around; margin-bottom:20px;">
+          <button onclick="showLogin()" id="tabLogin" style="flex:1; padding:10px; background:#00c851; color:white; border:none;">Login</button>
+          <button onclick="showSignup()" id="tabSignup" style="flex:1; padding:10px; background:#eee; color:#333; border:none;">Sign Up</button>
+        </div>
+
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="이메일을 입력하세요" required style="width:100%; padding:8px; margin-bottom:10px;" />
+          <input type="password" id="loginPassword" placeholder="8자리 이상 입력해주세요" required style="width:100%; padding:8px; margin-bottom:10px;" />
+          <button type="submit" style="background:#00c851; color:white; border:none; padding:10px; width:100%; border-radius:5px;">Login</button>
+        </form>
+
+        <form id="signupForm" style="display:none;">
+          <input type="email" id="signupEmail" placeholder="이메일을 입력하세요" required style="width:100%; padding:8px; margin-bottom:10px;" />
+          <div id="emailStatus" style="margin-top:-5px; margin-bottom:10px; font-weight:bold; font-size:0.95rem; text-align:center;"></div>
+          <input type="password" id="signupPassword" placeholder="8자리 이상 입력해주세요" required style="width:100%; padding:8px; margin-bottom:10px;" />
+          <input type="password" id="signupConfirm" placeholder="비밀번호를 다시 입력하세요" required style="width:100%; padding:8px; margin-bottom:10px;" />
+          <button type="submit" style="background:#007bff; color:white; border:none; padding:10px; width:100%; border-radius:5px;">Sign Up</button>
+        </form>
+
+        <button onclick="closeModal()" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:18px; cursor:pointer;">×</button>
+        <div id="authMessage" style="text-align: center; font-size: 1.2rem; font-weight: bold; padding: 10px;"></div>
+
+        <div class="social-login-container">
+          <p class="social-login-text">다음으로 로그인</p>
+          <div class="social-login-buttons">
+            <img src="./assets/icons/ko/apple.png" alt="Apple Login" class="social-icon" onclick="loginWithFacebook()" />
+            <img src="./assets/icons/ko/facebook.png" alt="Facebook Login" class="social-icon" onclick="loginWithFacebook()" />
+            <img src="./assets/icons/ko/kakao.png" alt="Kakao Login" class="social-icon" onclick="loginWithFacebook()" />
+            <img src="./assets/icons/ko/google.png" alt="Google Login" class="social-icon" onclick="loginWithGoogle()" />
+            <img src="./assets/icons/ko/naver.png" alt="Naver Login" class="social-icon" onclick="loginWithFacebook()" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <p>This is a test page. Use the dropdown to navigate to another language.</p>
+    </section>
+
+    <section id="signup">
+      <h2>Sign Up Section</h2>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

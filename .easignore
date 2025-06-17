@@ -1,0 +1,67 @@
+# Dependencies & build
+node_modules/
+build/
+dist/
+web-build/
+.expo/
+.expo-shared/
+*.log
+
+# Native credentials
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.orig.*
+
+# Metro / debug
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS-specific
+.DS_Store
+
+# Env & config
+.env*
+*.tsbuildinfo
+expo-env.d.ts
+
+# IDE/Editor
+.vscode/
+
+# ✅ 반드시 포함해야 할 예외 목록
+!node_modules/react-native-whisper/
+!node_modules/react-native-whisper/android/
+!node_modules/react-native-whisper/android/CMakeLists.txt
+!node_modules/react-native-whisper/cpp/
+!react-native-whisper/
+!react-native-whisper/android/
+!react-native-whisper/android/CMakeLists.txt
+!react-native-whisper/cpp/
+!whisper.cpp/
+!android/
+!android/app/build.gradle
+!android/build.gradle
+!android/gradle.properties
+!android/settings.gradle
+!android/gradle/
+!constants/secrets.ts
+
+# 실제로 제외해도 되는 프로젝트 폴더
+ios/
+scripts/
+venv/
+
+# 기타 큰 파일
+*.bin
+*.zip
+*.tar.gz
+test_audio.m4a
+
+# 민감 Android 파일
+android/app/google-services.json
+

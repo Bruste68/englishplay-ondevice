@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>콘텐츠 관리</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; }
+    h1 { margin-bottom: 1rem; }
+    input[type="file"] { margin-right: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 2rem; background: white; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+    th { background-color: #eee; }
+    .active-row { background-color: #e0ffe0; font-weight: bold; }
+    button { padding: 5px 10px; margin: 2px; }
+  </style>
+</head>
+<body>
+  <h1>📁 콘텐츠 관리</h1>
+
+  <div>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">업로드</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>파일명</th>
+        <th>업로드일</th>
+        <th>업로더</th>
+        <th>상태</th>
+        <th>다운로드</th>
+        <th>활성화</th>
+        <th>삭제</th>
+      </tr>
+    </thead>
+    <tbody id="contentBody"></tbody>
+  </table>
+
+  <script>
+    const token = localStorage.getItem('jwtToken');
+    if (!token) {
+      alert('로그인이 필요합니다.');
+      location.replace('/index.html');
+      throw new Error('No token');
+    }
+
+    function uploadFile() {
+      const fileInput = document.getElementById("fileInput");
+      if (!fileInput.files.length) return alert("파일을 선택하세요.");
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      fetch("/api/admin/content/upload", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+        body: formData
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            alert("업로드 완료");
+            loadContents();
+          } else {
+            alert("업로드 실패: " + data.message);
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          alert("업로드 중 오류 발생");
+        });
+    }
+
+    function activateContent(id) {
+      if (!confirm("이 콘텐츠를 사용자에게 활성화하시겠습니까?")) return;
+      fetch(`/api/admin/content/activate/${id}`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` }
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            alert("콘텐츠가 활성화되었습니다.");
+            loadContents();
+          } else {
+            alert("활성화 실패: " + data.message);
+          }
+        });
+    }
+
+    function deleteContent(id) {
+      if (!confirm("정말로 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.")) return;
+      fetch(`/api/admin/content/${id}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` }
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            alert("삭제 완료");
+            loadContents();
+          } else {
+            alert("삭제 실패: " + data.message);
+          }
+        });
+    }
+
+    function loadContents() {
+      fetch("/api/admin/content/list", {
+        headers: { Authorization: `Bearer ${token}` }
+      })
+        .then(res => res.json())
+        .then(contents => {
+          const tbody = document.getElementById("contentBody");
+          tbody.innerHTML = "";
+
+          contents.forEach(content => {
+            const tr = document.createElement("tr");
+            if (content.is_active) tr.classList.add("active-row");
+
+            tr.innerHTML = `
+              <td>${content.filename}</td>
+              <td>${new Date(content.uploadedAt).toLocaleString()}</td>
+              <td>${content.uploadedBy}</td>
+              <td>${content.is_active ? "✅ 사용 중" : ""}</td>
+              <td><a href="${content.url}" target="_blank">🔗</a></td>
+              <td>${content.is_active ? "-" : `<button onclick="activateContent(${content.id})">활성화</button>`}</td>
+              <td><button onclick="deleteContent(${content.id})">🗑 삭제</button></td>
+            `;
+            tbody.appendChild(tr);
+          });
+        });
+    }
+
+    loadContents();
+  </script>
+</body>
+</html>

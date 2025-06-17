@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">=3.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": {
+        "ndk": "25.1.8937393"
+      },
+      "env": {
+        "EXPO_FLAVOR": "play",
+        "EXPO_USE_LOCAL_WHISPER": "true"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "ndk": "25.1.8937393"
+      },
+      "env": {
+        "EXPO_FLAVOR": "play",
+        "EXPO_PUBLIC_SHOW_WHISPER_TEST": "true",
+        "EXPO_USE_LOCAL_WHISPER": "true"
+      }
+    },
+    "production": {
+      "android": {
+        "ndk": "25.1.8937393"
+      },
+      "env": {
+        "EXPO_FLAVOR": "play",
+        "EXPO_USE_LOCAL_WHISPER": "true",
+        "EXPO_DEV_LAUNCHER_DISABLED": "true"
+      }
+    }
+  }
+}

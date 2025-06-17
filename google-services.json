@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338940621434",
+    "project_id": "englishplayondevice",
+    "storage_bucket": "englishplayondevice.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338940621434:android:07d9d448dfff5068ea01c3",
+        "android_client_info": {
+          "package_name": "com.bruste68.englishplayondevice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2VGmp2FpMZKifHa4HI4q24sax_5CIjPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

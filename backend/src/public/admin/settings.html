@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>설정 관리</title>
+</head>
+<body>
+  <h1>⚙️ 시스템 설정</h1>
+  <p>여기는 향후 설정 기능이 들어갈 곳입니다.</p>
+
+  <script>
+    const token = localStorage.getItem("jwtToken");
+    if (!token) {
+      alert("로그인이 필요합니다.");
+      location.replace("/index.html");
+      throw new Error("No token");
+    }
+
+    fetch("/api/me", { headers: { Authorization: `Bearer ${token}` } })
+      .then(res => res.json())
+      .then(user => {
+        if (!user.is_admin) {
+          alert("관리자 권한이 필요합니다.");
+          location.replace("/index.html");
+        }
+      });
+  </script>
+</body>
+</html>

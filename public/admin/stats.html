@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>관리자 통계</title>
+</head>
+<body>
+  <h1>📊 사용자 통계</h1>
+  <p id="userCount">총 회원 수: 불러오는 중...</p>
+  <p id="adminCount">관리자 수: 불러오는 중...</p>
+
+  <script>
+    const token = localStorage.getItem("jwtToken");
+
+    // 인증 검사 (공통)
+    if (!token) {
+      alert("로그인이 필요합니다.");
+      location.replace("/index.html");
+      throw new Error("No token");
+    }
+
+    fetch("/api/me", { headers: { Authorization: `Bearer ${token}` } })
+      .then(res => res.json())
+      .then(user => {
+        if (!user.is_admin) {
+          alert("관리자 권한이 필요합니다.");
+          location.replace("/index.html");
+          return;
+        }
+
+        // 통계 API 호출
+        fetch("/api/admin/stats", {
+          headers: { Authorization: `Bearer ${token}` }
+        })
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("userCount").textContent = `총 회원 수: ${data.totalUsers}`;
+          document.getElementById("adminCount").textContent = `관리자 수: ${data.adminUsers}`;
+        });
+      });
+  </script>
+</body>
+</html>
