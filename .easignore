@@ -6,6 +6,12 @@ web-build/
 .expo/
 .expo-shared/
 *.log
+.pnp.*
+.yarn/
+
+android/.gradle/
+android/.cxx/
+android/build/
 
 # Native credentials
 *.jks
@@ -15,6 +21,8 @@ web-build/
 *.mobileprovision
 *.pem
 *.orig.*
+*.apk
+*.aab
 
 # Metro / debug
 .metro-health-check*
@@ -32,6 +40,7 @@ expo-env.d.ts
 
 # IDE/Editor
 .vscode/
+.idea/
 
 # ✅ 반드시 포함해야 할 예외 목록
 !node_modules/react-native-whisper/
