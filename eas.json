@@ -20,7 +20,6 @@
       "distribution": "internal",
       "android": {
         "ndk": "25.1.8937393",
-        "gradleCommand": ":app:assembleDebug"
       },
       "env": {
         "EXPO_FLAVOR": "play",
