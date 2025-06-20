@@ -37,7 +37,6 @@
         "EXPO_USE_LOCAL_WHISPER": "true",
         "EXPO_DEV_LAUNCHER_DISABLED": "true",
         "EXPO_DEV_MENU_DISABLED": "true",
-        "EXPO_PUBLIC_ENV": "production"
       }
     }
   }
