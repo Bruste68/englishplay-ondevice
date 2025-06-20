@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>로그 보기</title>
+</head>
+<body>
+  <h1>🗂 최근 활동 로그</h1>
+  <ul id="logList"></ul>
+
+  <script>
+    const token = localStorage.getItem("jwtToken");
+
+    if (!token) {
+      alert("로그인이 필요합니다.");
+      location.replace("/index.html");
+      throw new Error("No token");
+    }
+
+    fetch("/api/me", { headers: { Authorization: `Bearer ${token}` } })
+      .then(res => res.json())
+      .then(user => {
+        if (!user.is_admin) {
+          alert("관리자 권한이 필요합니다.");
+          location.replace("/index.html");
+          return;
+        }
+
+        fetch("/api/admin/logs", {
+          headers: { Authorization: `Bearer ${token}` }
+        })
+        .then(res => res.json())
+        .then(logs => {
+          const list = document.getElementById("logList");
+          logs.forEach(log => {
+            const li = document.createElement("li");
+            li.textContent = `[${log.createdAt}] ${log.message}`;
+            list.appendChild(li);
+          });
+        });
+      });
+  </script>
+</body>
+</html>

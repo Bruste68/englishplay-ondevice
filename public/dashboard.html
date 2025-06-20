@@ -1,0 +1,78 @@
+<!-- /public/admin/dashboard.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>관리자 대시보드</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 2rem;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    section {
+      margin-top: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎛 관리자 대시보드</h1>
+  <nav>
+    <a href="/admin/users.html">👥 회원 관리</a>
+    <a href="#">📊 통계 보기</a>
+    <a href="#">📁 로그 관리</a>
+  </nav>
+
+  <section>
+    <h2>관리자 정보</h2>
+    <p id="adminEmail">이메일: 불러오는 중...</p>
+    <p id="adminRole">권한: 확인 중...</p>
+  </section>
+
+  <script>
+    const token = localStorage.getItem("jwtToken");
+
+    if (!token) {
+      alert("로그인이 필요합니다.");
+      window.location.replace("/index.html");
+      throw new Error("No token");
+    }
+
+    fetch("/api/me", {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    .then(res => {
+      if (!res.ok) throw new Error("권한 오류 또는 만료된 토큰");
+      return res.json();
+    })
+    .then(user => {
+      if (!user.is_admin) {
+        alert("🚫 관리자 권한이 필요합니다.");
+        window.location.replace("/index.html");
+        return;
+      }
+
+      document.getElementById("adminEmail").textContent = `이메일: ${user.email}`;
+      document.getElementById("adminRole").textContent = "권한: 관리자";
+    })
+    .catch(err => {
+      alert("❌ 관리자 인증 실패");
+      window.location.replace("/index.html");
+    });
+  </script>
+</body>
+</html>

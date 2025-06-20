@@ -1,0 +1,69 @@
+[33mcommit 9d85d376f3adc35ce1fe6e90a825e4a7d4dda69e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Brust <brust68@gmail.com>
+Date:   Tue Jun 17 12:33:36 2025 +0800
+
+    refactor: remove hardcoded API keys from secrets.ts
+
+[1mdiff --git a/constants/secrets.ts b/constants/secrets.ts[m
+[1mindex 9f2cc0c..7d957e2 100644[m
+[1m--- a/constants/secrets.ts[m
+[1m+++ b/constants/secrets.ts[m
+[36m@@ -1,2 +1,2 @@[m
+[31m-export const GOOGLE_API_KEY = 'AIzaSyCJGIMPerHw7k9_7BfAiEpJDQSyOYrCmog';[m
+[31m-export const OPENAI_API_KEY = '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';[m
+\ No newline at end of file[m
+[32m+[m[32mexport const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || '';[m[41m[m
+[32m+[m[32mexport const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';[m
+\ No newline at end of file[m
+
+[33mcommit 29357ed83d88f6aaeeec484d3a0fab0c2e8c4fb2[m
+Author: Brust <brust68@gmail.com>
+Date:   Tue Jun 17 11:07:58 2025 +0800
+
+    Ensure pre-install.sh is included for EAS hook
+
+[1mdiff --git a/constants/secrets.ts b/constants/secrets.ts[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9f2cc0c[m
+[1m--- /dev/null[m
+[1m+++ b/constants/secrets.ts[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32mexport const GOOGLE_API_KEY = 'AIzaSyCJGIMPerHw7k9_7BfAiEpJDQSyOYrCmog';[m
+[32m+[m[32mexport const OPENAI_API_KEY = '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';[m
+\ No newline at end of file[m
+[1mdiff --git a/google-services.json b/google-services.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b411bb6[m
+[1m--- /dev/null[m
+[1m+++ b/google-services.json[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "project_info": {[m
+[32m+[m[32m    "project_number": "338940621434",[m
+[32m+[m[32m    "project_id": "englishplayondevice",[m
+[32m+[m[32m    "storage_bucket": "englishplayondevice.firebasestorage.app"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "client": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "client_info": {[m
+[32m+[m[32m        "mobilesdk_app_id": "1:338940621434:android:07d9d448dfff5068ea01c3",[m
+[32m+[m[32m        "android_client_info": {[m
+[32m+[m[32m          "package_name": "com.bruste68.englishplayondevice"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "oauth_client": [],[m
+[32m+[m[32m      "api_key": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "current_key": "AIzaSyC2VGmp2FpMZKifHa4HI4q24sax_5CIjPo"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "services": {[m
+[32m+[m[32m        "appinvite_service": {[m
+[32m+[m[32m          "other_platform_oauth_client": [][m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  "configuration_version": "1"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m

@@ -1,0 +1,101 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+backend/
+gradle/
+
+# ===============================
+# ✅ 반드시 포함할 예외 파일/폴더
+# ===============================
+
+!node_modules/expo-dev-launcher/**
+!node_modules/expo-dev-menu/**
+
+# Whisper native 모듈 (node_modules 내부 직접 링크 시)
+!node_modules/react-native-whisper/
+!node_modules/react-native-whisper/android/
+!node_modules/react-native-whisper/android/CMakeLists.txt
+!node_modules/react-native-whisper/cpp/
+!node_modules/react-native/ReactAndroid/cmake/**
+
+# Whisper 프로젝트 직접 포함 시
+!react-native-whisper/
+!react-native-whisper/android/
+!react-native-whisper/android/CMakeLists.txt
+!react-native-whisper/cpp/
+!node_modules/react-native-whisper/cpp/example.cpp
+!node_modules/react-native-whisper/cpp/wrapper/louder.h
+!node_modules/react-native-whisper/cpp/wrapper/WhisperWrapper.cpp
+!react-native-whisper-patched/
+!react-native-whisper-patched/android/
+!react-native-whisper-patched/android/CMakeLists.txt
+!react-native-whisper-patched/cpp/
+!react-native-whisper-patched/**
+
+
+# whisper.cpp 직접 포함한 경우
+!whisper.cpp/
+!whisper.cpp/**
+
+# Android 프로젝트 유지 (전체 제외 금지!)
+!android/
+!android/**
+!android/app/build.gradle
+!android/build.gradle
+!android/gradle.properties
+!android/settings.gradle
+!android/gradle/
+
+# 프로젝트 설정 파일
+!constants/secrets.ts
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+.yarn/cache
+.yarn/install-state.gz
+
+# macOS
+.DS_Store
+
+# local env files
+.env
+.env.*
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# Sample or unused
+app-example
+
+# Native folders (recreated on prebuild)
+android/
+ios/
+
+# Editor
+.vscode/
+
+# Archives
+*.tar.gz
