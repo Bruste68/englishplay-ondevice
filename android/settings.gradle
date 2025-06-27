@@ -1,0 +1,50 @@
+rootProject.name = 'englishplay-ondevice'
+
+include ':app', ':react-native-iap'
+
+// ✅ 수동 링크된 라이브러리 경로 명시
+project(':react-native-iap').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-iap/android')
+
+// ✅ 의존성 관리 (React Native 버전에 맞는 라이브러리 사용)
+dependencyResolutionManagement {
+  versionCatalogs {
+    reactAndroidLibs {
+      from(files(
+        new File(
+          ["node", "--print", "require.resolve('react-native/package.json')"]
+            .execute(null, rootDir)
+            .text.trim(),
+          "../gradle/libs.versions.toml"
+        )
+      ))
+    }
+  }
+}
+
+// ✅ Expo 모듈 자동 연결
+apply from: new File(
+  ["node", "--print", "require.resolve('expo/package.json')"]
+    .execute(null, rootDir)
+    .text.trim(),
+  "../scripts/autolinking.gradle"
+)
+useExpoModules()
+
+// ✅ Native Modules 자동 연결
+apply from: new File(
+  ["node", "--print", "require.resolve('@react-native-community/cli-platform-android/package.json', { paths: [require.resolve('react-native/package.json')] })"]
+    .execute(null, rootDir)
+    .text.trim(),
+  "../native_modules.gradle"
+)
+applyNativeModulesSettingsGradle(settings)
+
+// ✅ React Native Gradle Plugin 연결
+includeBuild(new File(
+  ["node", "--print", "require.resolve('@react-native/gradle-plugin/package.json', { paths: [require.resolve('react-native/package.json')] })"]
+    .execute(null, rootDir)
+    .text.trim()
+).getParentFile())
+
+// ✅ 빌드 flavor 지정
+gradle.ext.productFlavors = ['play']

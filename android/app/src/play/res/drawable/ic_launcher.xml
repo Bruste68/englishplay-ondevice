@@ -1,0 +1,10 @@
+<!-- You can add your custom icons or use the default one here -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#000000"
+        android:pathData="M24,0C10.746,0,0,10.746,0,24s10.746,24,24,24s24-10.746,24-24S37.254,0,24,0z M24,44C12.956,44,4,35.044,4,24S12.956,4,24,4s20,8.956,20,20S35.044,44,24,44z"/>
+</vector>
