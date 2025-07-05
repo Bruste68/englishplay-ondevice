@@ -33,6 +33,7 @@
         "EXPO_FLAVOR": "play",
         "EXPO_DEV_LAUNCHER_DISABLED": "true",
         "EXPO_DEV_MENU_DISABLED": "true"
+        "EXPO_PUBLIC_WHISPER_URL": "https://samspeakgo.com/api" // ✅ 추가
       }
     }
   }
