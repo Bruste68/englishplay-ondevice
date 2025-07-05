@@ -61,6 +61,7 @@ function ChatScreen() {
     clearTranscript,
     startAutoRecording,
     abortWhisper,
+    audioUri,
   } = useVoice();
 
   const handlePracticeEnd = async () => {
@@ -110,7 +111,10 @@ function ChatScreen() {
            correction: expectedText,
            tip: feedbackMessage,
            role: 'user',
-           text: userMessage.text 
+           text: userMessage.text,
+           metadata: {
+             audioFile: userMessage.metadata?.audioFile || '' // ✅ 사용자 음성 URI 저장
+           }
          });
        }
 
@@ -138,6 +142,7 @@ function ChatScreen() {
     stopRecording, // 추가
     startAutoRecording, // 추가
     isRecording, // 추가
+    audioUri,
     onPracticeEnd: handlePracticeEnd // ✅ 이렇게 넣어야 함
   });
 

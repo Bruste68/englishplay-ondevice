@@ -33,7 +33,8 @@ const translations = {
     problem: 'Problem',
     correction: 'Correction',
     tip: '💡 Tip',
-    listening: '🔊 Listening',
+    userAudio: '▶ Own Voice',
+    listening: '🔊 AI Voice',
     speaking: '🎙️ Speaking',
     stop: '⏹️ Stop',
     check: '▶️ Check',
@@ -52,7 +53,8 @@ const translations = {
     problem: '※ 문제',
     correction: '□ 수정',
     tip: '💡 팁',
-    listening: '🔊 듣기',
+    userAudio: '▶ 본인음성',
+    listening: '🔊 AI음성',
     speaking: '🎙️ 말하기',
     stop: '⏹️ 중지',
     check: '▶️ 확인',
@@ -71,7 +73,8 @@ const translations = {
     problem: '※ 問題',
     correction: '□ 修正',
     tip: '💡 ヒント',
-    listening: '🔊 聞く',
+    userAudio: '▶ 本人音声',
+    listening: '🔊 AI音声',
     speaking: '🎙️ 話す',
     stop: '⏹️ 停止',
     check: '▶️ 確認',
@@ -90,7 +93,8 @@ const translations = {
     problem: '※ 问题',
     correction: '□ 修正',
     tip: '💡 提示',
-    listening: '🔊 听',
+    userAudio: '▶ 本人语音',
+    listening: '🔊 AI语音',
     speaking: '🎙️ 说',
     stop: '⏹️ 停止',
     check: '▶️ 检查',
@@ -109,7 +113,8 @@ const translations = {
     problem: '※ Vấn đề',
     correction: '□ Sửa chữa',
     tip: '💡 Gợi ý',
-    listening: '🔊 Nghe',
+    userAudio: '▶ Own Voice',
+    listening: '🔊 Âm AI',
     speaking: '🎙️ Nói',
     stop: '⏹️ Dừng',
     check: '▶️ Kiểm tra',
@@ -232,6 +237,16 @@ export default function FeedbackScreen() {
     return title[language] || title['en'] || '';
   };
 
+  const playUserAudio = async (uri: string) => {
+    try {
+      const { sound } = await Audio.Sound.createAsync({ uri });
+      setSound(sound);
+      await sound.playAsync();
+    } catch (err) {
+      console.error('사용자 음성 재생 실패', err);
+    }
+  };
+
   const labels = { beginner: 'Light', intermediate: 'Middle', advanced: 'Heavy' };  
 
   const renderItem = ({ item, index }: { item: FeedbackSession, index: number }) => {
@@ -283,6 +298,15 @@ export default function FeedbackScreen() {
 
               {f.type === 'pronunciation' && (
                 <View style={styles.buttonContainer}>
+                  {f.metadata?.audioFile && (
+                    <TouchableOpacity
+                       style={styles.practiceButton}
+                       onPress={() => playUserAudio(f.metadata!.audioFile!)}
+                    >
+                       <Text style={styles.practiceText}>{t.userAudio}</Text>
+                    </TouchableOpacity>
+                  )}
+
                   <TouchableOpacity style={styles.practiceButton} onPress={() => speak(f.correction || '')}>
                     <Text style={styles.practiceText}>{t.listening}</Text>
                   </TouchableOpacity>
