@@ -31,9 +31,9 @@ const whisperMessage = {
 export default function App() {
 
   useEffect(() => {
-    activateKeepAwake();
+    activateKeepAwake('samspeak');
     return () => {
-      deactivateKeepAwake();
+      deactivateKeepAwake('samspeak');
     };
   }, []);
 

@@ -12,7 +12,7 @@ import * as Speech from 'expo-speech';
 import { Audio } from 'expo-av';
 import { useLanguage } from '../hooks/useLanguage';
 import { generateFeedbackSummary } from '../utils/feedback';
-import { Image } from 'react-native';
+import { Image, BackHandler } from 'react-native';
 import type { Message, FeedbackItem, DialogState, LanguageCode, PracticeScene, TopicType, LevelType } from '../types';
 
 interface FeedbackSession {
@@ -176,6 +176,16 @@ export default function FeedbackScreen() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+      router.replace('/ChatScreen'); // 👈 연습화면으로 이동
+      return true; // 👈 기본 동작(앱 종료 또는 이전 화면 이동) 막음
+    });
+
+    return () => backHandler.remove(); // 👈 리스너 해제
+  }, []);
+
 
   const speak = (text: string) => {
     Speech.speak(text, { language: 'en', rate: 0.9 });
