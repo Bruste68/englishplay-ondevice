@@ -169,50 +169,44 @@ function ChatScreen() {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <View style={styles.header}>
-         <TouchableOpacity onPress={() => router.push('/feedback')}>
+      <View style={[styles.header, { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }]}>
+        {/* 왼쪽 FEEDBACK 버튼 */}
+        <TouchableOpacity onPress={() => router.push('/feedback')}>
           <Image
             source={require('../assets/images/feedback.png')}
             style={{ width: 60, height: 40, resizeMode: 'contain' }}
           />
         </TouchableOpacity>
 
+        {/* 중앙 타이틀 */}
+        <View style={{ flex: 1, alignItems: 'center' }}>
+          <Text style={[styles.topicTitle, { fontWeight: 'bold', fontSize: 18 }]}>
+            {topicTitle}
+          </Text>
+        </View>
 
-         {/* 우측 TOPIC 버튼 */}
-         <View style={{ position: 'absolute', right: 5, flexDirection: 'row', gap: 15 }}>
-           <Text style={[styles.topicTitle, { paddingTop: 15, fontWeight: 'bold', fontSize: 18 }]}>
-               {topicTitle}
-           </Text>
-           <TouchableOpacity onPress={() => {
-              // 모든 음성 활동 정지
-              stopRecording();
-              Speech.stop();
-    
-              // 연습 모드 상태 초기화
-              practice.setDialogState({
-                step: 0,
-                isUserTurn: false,
-                isActive: false,
-                isSpeaking: false,
-                isPaused: false,
-                loadingSummary: false,
-              });
-    
-              // 로컬 메시지 초기화
-              setLocalMessages([]);
-    
-              // 이전 화면으로 이동
-              router.back();
-              }}>
-             <Image
-               source={require('../assets/images/topic.png')}
-               style={{ width: 80, height: 50, resizeMode: 'contain' }}
-           />
-           </TouchableOpacity>
-
-
-
-         </View>
+        {/* 오른쪽 TOPIC 버튼 */}
+        <TouchableOpacity
+          onPress={() => {
+            stopRecording();
+            Speech.stop();
+            practice.setDialogState({
+              step: 0,
+              isUserTurn: false,
+              isActive: false,
+              isSpeaking: false,
+              isPaused: false,
+              loadingSummary: false,
+            });
+            setLocalMessages([]);
+            router.back();
+          }}
+        >
+          <Image
+            source={require('../assets/images/topic.png')}
+            style={{ width: 80, height: 50, resizeMode: 'contain' }}
+          />
+        </TouchableOpacity>
       </View>
 
       {isFreeTalk ? (
