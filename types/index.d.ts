@@ -16,6 +16,7 @@ export type Message = {
   role: 'user' | 'ai' | 'system';
   text: string;
   timestamp: number;
+  [key: string]: any;
   userMessage?: boolean;
   scene?: number;
   step?: number;

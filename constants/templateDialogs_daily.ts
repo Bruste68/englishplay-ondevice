@@ -2159,2103 +2159,2313 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
       ]
     }
   ],
-  "intermediate_plus": [
+  "intermediate": [
     {
       "description": {
-        "ko": "주말 여행 계획하기",
-        "zh": "计划周末旅行",
-        "ja": "週末の旅行を計画する",
-        "vi": "Lên kế hoạch cho một chuyến đi cuối tuần"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Do you happen to have any plans for the weekend yet?",
-          "translations": {
-            "ko": "혹시 주말 계획이 이미 세워져 있나요?",
-            "zh": "你有周末的计划了吗？",
-            "ja": "すでに週末の予定はありますか？",
-            "vi": "Bạn có dự định gì cho cuối tuần này chưa?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Not at the moment—I was hoping something would come up.",
-          "translations": {
-            "ko": "아직은 없어요—뭔가 생길 것 같아 기대하고 있었어요.",
-            "zh": "目前还没有——我希望能有什么事情发生。",
-            "ja": "今のところ何もないです。何か予定が入ることを期待していました。",
-            "vi": "Hiện tại thì chưa, tôi đang hy vọng sẽ có điều gì đó xảy ra."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you be interested in going hiking on Saturday?",
-          "translations": {
-            "ko": "토요일에 등산 가는 건 어떠세요?",
-            "zh": "你对周六去徒步旅行感兴趣吗？",
-            "ja": "土曜日にハイキングに行くのはどうですか？",
-            "vi": "Bạn có muốn đi leo núi vào thứ Bảy không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hiking sounds lovely. I’d definitely be up for that.",
-          "translations": {
-            "ko": "등산 좋네요. 그건 꼭 가고 싶어요.",
-            "zh": "徒步旅行听起来很好。我肯定愿意去。",
-            "ja": "ハイキング、いいですね。ぜひ行きたいです。",
-            "vi": "Đi leo núi nghe thật tuyệt. Tôi chắc chắn sẽ tham gia."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "According to the latest forecast, the weather should be ideal.",
-          "translations": {
-            "ko": "최근의 날씨 예보에 따르면, 날씨가 이상적일 것 같아요.",
-            "zh": "根据最新的预报，那天的天气应该很理想。",
-            "ja": "最新の予報によると、天気は最適なはずです。",
-            "vi": "Theo dự báo mới nhất, thời tiết sẽ rất lý tưởng."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s good to hear. I’ll double-check the weather just in case.",
-          "translations": {
-            "ko": "그런 소식 좋네요. 혹시 모르니 날씨를 다시 확인해 볼게요.",
-            "zh": "听起来不错。我会再次检查天气的。",
-            "ja": "それは良いニュースです。念のため天気を再確認します。",
-            "vi": "Thật tốt khi nghe điều đó. Tôi sẽ kiểm tra lại thời tiết để chắc chắn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We might want to consider leaving early to avoid traffic.",
-          "translations": {
-            "ko": "교통 체증을 피하려면 일찍 출발하는 것을 고려해봐야 할 것 같아요.",
-            "zh": "我们可能需要考虑早点出发以避开交通堵塞。",
-            "ja": "交通渋滞を避けるために早めに出発することを考えた方がいいかもしれません。",
-            "vi": "Chúng ta có thể muốn cân nhắc việc rời đi sớm để tránh kẹt xe."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, earlier would probably be much better.",
-          "translations": {
-            "ko": "네, 일찍 가는 게 훨씬 나을 것 같아요.",
-            "zh": "是的，早点出发可能会好得多。",
-            "ja": "はい、早めに出発した方が良いでしょう。",
-            "vi": "Đúng, đi sớm có lẽ sẽ tốt hơn nhiều."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you think we should bring our own lunch or dine somewhere?",
-          "translations": {
-            "ko": "점심을 직접 가져가야 할까요, 아니면 어딘가에서 식사를 해야 할까요?",
-            "zh": "你觉得我们应该自带午餐还是在某处用餐？",
-            "ja": "自分たちで昼食を持って行くべきか、どこかで食事をするべきかどう思いますか？",
-            "vi": "Bạn nghĩ chúng ta nên mang theo bữa trưa hay ăn ở đâu đó?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "I’d prefer bringing lunch. It's usually more relaxed that way.",
-          "translations": {
-            "ko": "점심을 가져가는 게 좋을 것 같아요. 그게 보통 더 편하니까요.",
-            "zh": "我更愿意带午餐。这样通常会更轻松。",
-            "ja": "昼食を持って行く方がいいですね。それの方がリラックスできます。",
-            "vi": "Tôi thích mang theo bữa trưa. Thông thường sẽ thư giãn hơn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I can take care of bringing some light refreshments.",
-          "translations": {
-            "ko": "가벼운 간식을 몇 가지 가져가는 건 제가 맡을게요.",
-            "zh": "我可以负责带一些轻便的点心。",
-            "ja": "軽いおつまみを持って行くことにします。",
-            "vi": "Tôi có thể chuẩn bị một số món ăn nhẹ."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s great. I can bring a thermos of tea too.",
-          "translations": {
-            "ko": "좋아요. 저도 차를 담은 터모스를 가져갈게요.",
-            "zh": "太好了。我也可以带一个保温瓶的茶。",
-            "ja": "それは素晴らしいです。私もお茶のサーモスを持って行きます。",
-            "vi": "Thật tuyệt. Tôi cũng có thể mang theo một bình nước trà."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Shall we reach out to a few others who might want to join?",
-          "translations": {
-            "ko": "같이 가고 싶을 만한 다른 사람들에게 연락해볼까요?",
-            "zh": "我们应该邀请一些可能想加入的人吗？",
-            "ja": "参加したいと思う他の人に声をかけましょうか？",
-            "vi": "Chúng ta có nên mời thêm một số người khác có thể muốn tham gia không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Absolutely, let’s invite a few friends and make it a group outing.",
-          "translations": {
-            "ko": "그럼요, 몇 명 친구들을 초대해서 그룹으로 놀러 가는 건 어떨까요?",
-            "zh": "当然，让我们邀请一些朋友，一起出去玩。",
-            "ja": "ぜひ、何人かの友人を誘ってグループで出かけましょう。",
-            "vi": "Chắc chắn, hãy mời thêm một số bạn bè và tổ chức một chuyến đi nhóm."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Ideally, we should aim to return before evening.",
-          "translations": {
-            "ko": "이상적으로는 저녁 전에 돌아오는 것이 좋을 것 같아요.",
-            "zh": "理想情况下，我们应该在傍晚前返回。",
-            "ja": "理想的には、夕方前に帰るべきです。",
-            "vi": "Lý tưởng nhất, chúng ta nên trở về trước buổi tối."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Perfect. I might have something later in the evening anyway.",
-          "translations": {
-            "ko": "좋아요. 어차피 저녁에 다른 일정이 있을 수도 있으니까요.",
-            "zh": "完美。反正我晚上可能还有事情。",
-            "ja": "完璧です。私は夕方に何か予定があるかもしれません。",
-            "vi": "Hoàn hảo. Tôi có thể có việc vào buổi tối."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "It might be wise to wear something comfortable for walking.",
-          "translations": {
-            "ko": "걷기 편한 옷을 입는 것이 현명할 것 같아요.",
-            "zh": "穿着舒适的衣服去散步可能会比较明智。",
-            "ja": "歩きやすい服装を選んだ方が賢明かもしれません。",
-            "vi": "Có thể sẽ khôn ngoan nếu mặc đồ thoải mái để đi bộ."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Good point. I’ll go with my trail shoes.",
-          "translations": {
-            "ko": "좋은 생각이네요. 제 등산화를 신을게요.",
-            "zh": "说得对。我会穿我的徒步鞋。",
-            "ja": "良いアドバイスです。私はトレイルシューズを履くことにします。",
-            "vi": "Ý tốt. Tôi sẽ mang giày đi bộ của mình."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I’ll share the meeting point with you later today.",
-          "translations": {
-            "ko": "나중에 만나는 장소를 알려드릴게요.",
-            "zh": "我今天晚些时候会告诉你集合地点。",
-            "ja": "後で集合場所を共有します。",
-            "vi": "Tôi sẽ chia sẻ điểm hẹn với bạn sau hôm nay."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks! Looking forward to it already.",
-          "translations": {
-            "ko": "감사합니다! 벌써부터 기대되네요.",
-            "zh": "谢谢！我已经开始期待了。",
-            "ja": "ありがとう！すでに楽しみにしています。",
-            "vi": "Cảm ơn! Tôi đã rất mong chờ điều này."
-          }
-        }
-      ]
-    },
-    {
-      "description": {
+        "en": "Making a doctor's appointment",
         "ko": "의사와의 약속 잡기",
-        "zh": "预约医生",
-        "ja": "医者の予約を取る",
+        "zh": "预约看医生",
+        "ja": "医者の予約をする",
         "vi": "Đặt lịch hẹn với bác sĩ"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Good morning. How may I assist you with scheduling your appointment?",
+          "text": "Good morning. How can I help you today?",
           "translations": {
-            "ko": "안녕하세요. 어떻게 약속을 예약해드릴까요?",
-            "zh": "早上好。我能帮助您预约吗？",
-            "ja": "おはようございます。予約の手配で何かお手伝いできることはありますか？",
-            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho việc lên lịch hẹn của bạn?"
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
           }
         },
         {
           "role": "user",
-          "text": "Hi, I was hoping to book an appointment for later this week.",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
           "translations": {
-            "ko": "안녕하세요, 이번 주에 약속을 잡고 싶었어요.",
-            "zh": "嗨，我希望预约本周晚些时候的一个时间。",
-            "ja": "こんにちは、今週後半に予約を取りたいと思っています。",
-            "vi": "Chào, tôi hy vọng có thể đặt một cuộc hẹn vào cuối tuần này."
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
           }
         },
         {
           "role": "ai",
-          "text": "Would you prefer a particular day this week?",
+          "text": "Sure. What day are you looking at?",
           "translations": {
-            "ko": "이번 주에 특정한 날짜를 선호하시나요?",
-            "zh": "你更希望本周的哪一天？",
-            "ja": "今週の特定の日にちをご希望ですか？",
-            "vi": "Bạn có muốn chọn một ngày cụ thể trong tuần này không?"
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
           }
         },
         {
           "role": "user",
-          "text": "Friday would work quite well, if possible.",
+          "text": "Is she available this Thursday afternoon?",
           "translations": {
-            "ko": "가능하다면 금요일이 좋을 것 같아요.",
-            "zh": "如果可能的话，周五会很好。",
-            "ja": "可能であれば金曜日が良いです。",
-            "vi": "Thứ Sáu sẽ rất phù hợp, nếu có thể."
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
           }
         },
         {
           "role": "ai",
-          "text": "Do mornings or afternoons generally work better for your schedule?",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
           "translations": {
-            "ko": "일반적으로 오전이나 오후 중 어느 시간이 더 편하신가요?",
-            "zh": "你一般上午还是下午的时间比较方便？",
-            "ja": "一般的には、午前中と午後のどちらがご都合がよろしいですか？",
-            "vi": "Buổi sáng hay buổi chiều thường phù hợp hơn với lịch trình của bạn?"
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
           }
         },
         {
           "role": "user",
-          "text": "Mornings are generally more convenient for me.",
+          "text": "That works. Please book it for me.",
           "translations": {
-            "ko": "보통 오전이 더 편해요.",
-            "zh": "对我来说，上午通常更方便。",
-            "ja": "一般的には、午前中が便利です。",
-            "vi": "Buổi sáng thường tiện lợi hơn đối với tôi."
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
           }
         },
         {
           "role": "ai",
-          "text": "We currently have an available slot at 10 AM this coming Friday.",
+          "text": "Alright, may I have your name and contact number?",
           "translations": {
-            "ko": "이번 주 금요일 오전 10시에 예약 가능한 시간이 있습니다.",
-            "zh": "我们这个周五上午10点有一个可用的时间段。",
-            "ja": "今週の金曜日の午前10時に空きがあります。",
-            "vi": "Chúng tôi hiện có một khe cắm khả dụng vào lúc 10 giờ sáng thứ Sáu tới."
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
           }
         },
         {
           "role": "user",
-          "text": "That sounds perfect. Please go ahead and book it.",
+          "text": "John Lee, 555-1023.",
           "translations": {
-            "ko": "그게 딱 좋네요. 예약해 주세요.",
-            "zh": "听起来很好。请预约吧。",
-            "ja": "それは完璧です。予約をお願いします。",
-            "vi": "Điều đó nghe hoàn hảo. Vui lòng tiến hành đặt lịch."
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
           }
         },
         {
           "role": "ai",
-          "text": "Is this your first time visiting our clinic?",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
           "translations": {
-            "ko": "이번이 저희 클리닉을 처음 방문하시는 건가요?",
-            "zh": "这是您第一次来我们诊所吗？",
-            "ja": "これが私たちのクリニックを訪れるのは初めてですか？",
-            "vi": "Đây có phải là lần đầu tiên bạn đến phòng khám của chúng tôi không?"
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, it’ll be my first visit to your clinic.",
+          "text": "A new concern. I’ve been having headaches.",
           "translations": {
-            "ko": "네, 저희 클리닉에 처음 방문하게 됩니다.",
-            "zh": "是的，这将是我第一次来你们的诊所。",
-            "ja": "はい、あなたのクリニックへの初めての訪問になります。",
-            "vi": "Vâng, đây sẽ là lần đầu tiên tôi đến phòng khám của bạn."
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
           }
         },
         {
           "role": "ai",
-          "text": "Please remember to bring a valid ID and your insurance card.",
+          "text": "Understood. I’ll make a note of that.",
           "translations": {
-            "ko": "유효한 신분증과 보험 카드를 꼭 가져오시기 바랍니다.",
-            "zh": "请记得带上有效身份证和保险卡。",
-            "ja": "有効なIDと保険証を持参することを忘れないでください。",
-            "vi": "Xin hãy nhớ mang theo giấy tờ tùy thân hợp lệ và thẻ bảo hiểm của bạn."
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
           }
         },
         {
           "role": "user",
-          "text": "Of course, I’ll make sure to bring everything that’s needed.",
+          "text": "Thank you. Should I bring anything with me?",
           "translations": {
-            "ko": "물론이죠, 필요한 모든 것을 반드시 가져올게요.",
-            "zh": "当然，我会确保带齐所有需要的东西。",
-            "ja": "もちろん、必要なものは全て持って行くようにします。",
-            "vi": "Tất nhiên, tôi sẽ chắc chắn mang theo mọi thứ cần thiết."
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
           }
         },
         {
           "role": "ai",
-          "text": "Are there any medical conditions or allergies we should be aware of?",
+          "text": "Please bring your ID and insurance card.",
           "translations": {
-            "ko": "알려진 질병이나 알레르기가 있을까요?",
-            "zh": "有没有我们应该知道的医疗状况或过敏情况？",
-            "ja": "私たちが知っておくべき医療上の状況やアレルギーはありますか？",
-            "vi": "Có bất kỳ tình trạng sức khỏe hoặc dị ứng nào chúng tôi cần biết không?"
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
           }
         },
         {
           "role": "user",
-          "text": "No, I don’t have any known conditions or allergies.",
+          "text": "Will do.",
           "translations": {
-            "ko": "아니요, 알려진 질병이나 알레르기는 없습니다.",
-            "zh": "不，我没有任何已知的疾病或过敏情况。",
-            "ja": "いいえ、私は既知の病状やアレルギーはありません。",
-            "vi": "Không, tôi không có bất kỳ tình trạng sức khỏe hay dị ứng nào đã biết."
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
           }
         },
         {
           "role": "ai",
-          "text": "We kindly ask that you arrive at least 10 minutes early.",
+          "text": "Do you need directions to the clinic?",
           "translations": {
-            "ko": "최소 10분은 일찍 도착해 주시기 바랍니다.",
-            "zh": "我们恳请您至少提前10分钟到达。",
-            "ja": "少なくとも10分前には到着していただくようお願い申し上げます。",
-            "vi": "Chúng tôi xin nhắc nhở bạn đến ít nhất 10 phút sớm."
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
           }
         },
         {
           "role": "user",
-          "text": "Understood. I’ll make sure to be there a bit early.",
+          "text": "No, I’ve been there before.",
           "translations": {
-            "ko": "알겠습니다. 조금 일찍 도착하도록 하겠습니다.",
-            "zh": "明白了。我会确保提前到达。",
-            "ja": "了解しました。少し早めに到着するようにします。",
-            "vi": "Tôi hiểu. Tôi sẽ chắc chắn đến sớm một chút."
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
           }
         },
         {
           "role": "ai",
-          "text": "Would you like us to send you a reminder the day before?",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
           "translations": {
-            "ko": "전날에 알림을 보내드릴까요?",
-            "zh": "您希望我们在前一天给您发送提醒吗？",
-            "ja": "前日にリマインダーを送りますか？",
-            "vi": "Bạn có muốn chúng tôi gửi nhắc nhở cho bạn vào ngày trước không?"
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
           }
         },
         {
           "role": "user",
-          "text": "Yes, a reminder would be much appreciated.",
+          "text": "Thank you very much.",
           "translations": {
-            "ko": "네, 알림이 있으면 매우 감사하겠습니다.",
-            "zh": "是的，我会非常感谢提醒。",
-            "ja": "はい、リマインダーをいただけると助かります。",
-            "vi": "Vâng, tôi rất cảm kích nếu nhận được lời nhắc nhở."
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
           }
         },
         {
           "role": "ai",
-          "text": "You're all set. Let us know if anything changes before then.",
+          "text": "You’re welcome. Take care.",
           "translations": {
-            "ko": "모두 준비되었습니다. 그 전에 변동 사항이 있으면 알려주세요.",
-            "zh": "您已经准备好了。如果在那之前有任何变化，请告诉我们。",
-            "ja": "予約は完了しました。それまでに何か変更があればお知らせください。",
-            "vi": "Bạn đã sẵn sàng. Hãy cho chúng tôi biết nếu có bất kỳ thay đổi nào trước đó."
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
           }
         },
         {
           "role": "user",
-          "text": "Thanks very much. I’ll see you on Friday then.",
+          "text": "Bye!",
           "translations": {
-            "ko": "정말 감사합니다. 그럼 금요일에 뵙겠습니다.",
-            "zh": "非常感谢。那么我周五见。",
-            "ja": "ありがとうございます。それでは金曜日にお会いしましょう。",
-            "vi": "Cảm ơn rất nhiều. Vậy thì tôi sẽ gặp bạn vào thứ Sáu."
-          }
-        }
-      ]
-    },
-    {
-      "description": {
-        "ko": "이웃과의 대화",
-        "zh": "和邻居聊天",
-        "ja": "隣人との会話",
-        "vi": "Trò chuyện với một người hàng xóm"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Hi there, how have things been lately?",
-          "translations": {
-            "ko": "안녕하세요, 요즘 어떻게 지내세요?",
-            "zh": "嗨，最近过得怎么样？",
-            "ja": "こんにちは、最近どうですか？",
-            "vi": "Chào bạn, dạo này mọi thứ thế nào?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hello! Things have been going quite well, thanks.",
-          "translations": {
-            "ko": "안녕하세요! 요즘 잘 지내고 있습니다, 감사합니다.",
-            "zh": "你好！最近过得很好，谢谢。",
-            "ja": "こんにちは！最近はとても良いです、ありがとう。",
-            "vi": "Xin chào! Mọi thứ đều khá tốt, cảm ơn bạn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I couldn’t help but admire your garden—it's beautiful.",
-          "translations": {
-            "ko": "정원이 너무 아름다워서 참을 수 없었어요.",
-            "zh": "我不禁欣赏你的花园——它真美。",
-            "ja": "あなたの庭を見ていて思わず感心してしまいました、とても美しいですね。",
-            "vi": "Tôi không thể không ngưỡng mộ khu vườn của bạn - nó thật đẹp."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thank you! I really enjoy spending time out there.",
-          "translations": {
-            "ko": "감사합니다! 저는 정말로 정원에서 시간을 보내는 것을 즐깁니다.",
-            "zh": "谢谢！我真的很喜欢在那里度过时间。",
-            "ja": "ありがとうございます！私はそこで過ごす時間を本当に楽しんでいます。",
-            "vi": "Cảm ơn bạn! Tôi thực sự thích dành thời gian ở đó."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you manage all the gardening by yourself?",
-          "translations": {
-            "ko": "정원 관리를 모두 혼자 하시나요?",
-            "zh": "你是自己管理所有的园艺工作吗？",
-            "ja": "庭の手入れはすべて自分でやっていますか？",
-            "vi": "Bạn tự quản lý toàn bộ công việc làm vườn à?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, it’s something I take a lot of pride in.",
-          "translations": {
-            "ko": "네, 저는 그것에 대해 많은 자부심을 가지고 있습니다.",
-            "zh": "是的，这是我引以为豪的事情。",
-            "ja": "はい、それは私が誇りに思っていることです。",
-            "vi": "Vâng, đó là điều tôi rất tự hào."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "What kind of flowers are those? They're stunning.",
-          "translations": {
-            "ko": "그 꽃들은 무슨 종류인가요? 정말 눈부시네요.",
-            "zh": "那些是什么花？它们真漂亮。",
-            "ja": "あの花は何ですか？とても素晴らしいですね。",
-            "vi": "Đó là loại hoa gì vậy? Chúng thật tuyệt vời."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Those are peonies and daffodils—my personal favorites.",
-          "translations": {
-            "ko": "그것들은 모란과 수선화입니다 - 제 개인적인 최애입니다.",
-            "zh": "那些是牡丹和水仙——我个人最喜欢的。",
-            "ja": "それらはボタンと水仙です、私のお気に入りです。",
-            "vi": "Đó là hoa mẫu đơn và hoa thủy tiên - những loại hoa yêu thích của tôi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "They really brighten up the whole neighborhood.",
-          "translations": {
-            "ko": "그들은 정말로 이웃을 환하게 만듭니다.",
-            "zh": "它们真的让整个社区都亮了起来。",
-            "ja": "それらは本当に全体の近所を明るくしていますね。",
-            "vi": "Chúng thực sự làm sáng lên cả khu phố."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s so kind of you to say!",
-          "translations": {
-            "ko": "그런 말씀 해주셔서 감사합니다!",
-            "zh": "你这么说真是太好了！",
-            "ja": "そう言っていただけると嬉しいです！",
-            "vi": "Thật tốt khi bạn nói như vậy!"
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you mind sharing some of your tips?",
-          "translations": {
-            "ko": "팁을 공유해 주실 수 있을까요?",
-            "zh": "你介意分享一些你的园艺技巧吗？",
-            "ja": "あなたのコツを教えていただけますか？",
-            "vi": "Bạn có thể chia sẻ một số mẹo của mình không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Of course not. I'd be happy to help however I can.",
-          "translations": {
-            "ko": "물론이죠. 제가 할 수 있는 한 도와드리겠습니다.",
-            "zh": "当然不介意。我会很乐意提供任何我能提供的帮助。",
-            "ja": "もちろんです。私ができる限りお手伝いします。",
-            "vi": "Tất nhiên không. Tôi sẽ rất vui lòng giúp đỡ bằng cách nào tôi có thể."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Have you ever thought of organizing a gardening group?",
-          "translations": {
-            "ko": "정원 그룹을 만들어 볼 생각은 해보셨나요?",
-            "zh": "你有没有想过组织一个园艺小组？",
-            "ja": "ガーデニンググループを組織することを考えたことはありますか？",
-            "vi": "Bạn có bao giờ nghĩ đến việc tổ chức một nhóm làm vườn không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "That actually sounds like a lovely idea.",
-          "translations": {
-            "ko": "그것은 사실로 좋은 생각 같네요.",
-            "zh": "那实际上听起来是个很好的主意。",
-            "ja": "実際にはそれは素晴らしいアイデアのように思えます。",
-            "vi": "Đó thực sự là một ý tưởng tuyệt vời."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I’ve been considering growing some vegetables this year.",
-          "translations": {
-            "ko": "올해 야채를 심어볼까 생각하고 있습니다.",
-            "zh": "我一直在考虑今年种一些蔬菜。",
-            "ja": "今年は野菜を育てることを考えています。",
-            "vi": "Tôi đã cân nhắc việc trồng một số loại rau trong năm nay."
-          }
-        },
-        {
-          "role": "user",
-          "text": "I think you’d really enjoy it. It’s therapeutic.",
-          "translations": {
-            "ko": "그것을 정말 즐길 수 있을 것 같아요. 치유가 되죠.",
-            "zh": "我想你会真的很喜欢。这是一种治疗方法。",
-            "ja": "あなたはそれを本当に楽しむと思います。それは癒しです。",
-            "vi": "Tôi nghĩ bạn sẽ thực sự thích nó. Nó có tính chất chữa lành."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you happen to know a good place to get quality seeds?",
-          "translations": {
-            "ko": "좋은 품질의 씨앗을 구할 수 있는 곳을 아시나요?",
-            "zh": "你知道哪里可以买到优质的种子吗？",
-            "ja": "良質な種を手に入れる良い場所を知っていますか？",
-            "vi": "Bạn có biết một nơi nào đó để mua hạt giống chất lượng không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, there’s a great shop just a few blocks away.",
-          "translations": {
-            "ko": "네, 몇 블록 떨어진 곳에 훌륭한 가게가 있어요.",
-            "zh": "是的，就在几个街区外有一个很好的商店。",
-            "ja": "はい、数ブロック先に素晴らしい店があります。",
-            "vi": "Có, có một cửa hàng tuyệt vời chỉ cách đây vài dãy nhà."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let’s try to catch up more regularly from now on.",
-          "translations": {
-            "ko": "앞으로는 좀 더 자주 연락하려고 노력해봅시다.",
-            "zh": "让我们从现在开始尝试更定期地联系。",
-            "ja": "これからはもっと定期的に話し合おうとしましょう。",
-            "vi": "Hãy cố gắng gặp nhau thường xuyên hơn từ bây giờ."
-          }
-        },
-        {
-          "role": "user",
-          "text": "I’d like that a lot. Let’s do it.",
-          "translations": {
-            "ko": "그게 좋겠네요. 해봅시다.",
-            "zh": "我很喜欢这个主意。我们就这么做吧。",
-            "ja": "それはとてもいいですね。やりましょう。",
-            "vi": "Tôi rất thích điều đó. Hãy làm đi."
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "배달 음식 주문하기",
-        "zh": "点外卖",
-        "ja": "フードデリバリーを注文する",
-        "vi": "Đặt món ăn giao hàng"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Good evening! What would you like to order tonight?",
-          "translations": {
-            "ko": "안녕하십니까! 오늘 밤 무엇을 주문하시겠습니까?",
-            "zh": "晚上好！您今晚想点什么？",
-            "ja": "こんばんは！今夜は何を注文しますか？",
-            "vi": "Chào buổi tối! Bạn muốn đặt món gì tối nay?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hi there! I’d like to place an order for delivery.",
-          "translations": {
-            "ko": "안녕하세요! 배달 주문을 하고 싶습니다.",
-            "zh": "嗨！我想要点外卖。",
-            "ja": "こんにちは！デリバリーの注文をしたいのですが。",
-            "vi": "Chào bạn! Tôi muốn đặt một đơn hàng giao tận nơi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Just so you know, we’re running a special on pasta today.",
-          "translations": {
-            "ko": "그냥 알려드리자면, 오늘은 파스타 특가 행사를 하고 있습니다.",
-            "zh": "只是让您知道，我们今天的意大利面有特价优惠。",
-            "ja": "今日はパスタが特価ですよ、ということをお知らせします。",
-            "vi": "Chỉ để bạn biết, hôm nay chúng tôi đang có chương trình khuyến mãi cho món pasta."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That sounds delicious. I’ll have the pasta, please.",
-          "translations": {
-            "ko": "들리기 좋네요. 파스타 주세요.",
-            "zh": "听起来很美味。我要一份意大利面，请。",
-            "ja": "それは美味しそうですね。パスタをお願いします。",
-            "vi": "Nghe có vẻ ngon. Tôi sẽ chọn món pasta, xin vui lòng."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you care for any beverages with that?",
-          "translations": {
-            "ko": "음료는 어떤 것을 드시겠습니까?",
-            "zh": "您需要搭配饮料吗？",
-            "ja": "それに何か飲み物はいかがですか？",
-            "vi": "Bạn có muốn thêm bất kỳ đồ uống nào không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, I’d like a sparkling water, if possible.",
-          "translations": {
-            "ko": "가능하다면 스파클링 워터 주세요.",
-            "zh": "是的，如果可以的话，我想要一瓶气泡水。",
-            "ja": "はい、可能であればスパークリングウォーターをお願いします。",
-            "vi": "Có, tôi muốn một chai nước suối có ga, nếu có thể."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you prefer delivery or would you rather pick it up yourself?",
-          "translations": {
-            "ko": "배달을 원하시나요, 아니면 직접 찾아가시겠습니까?",
-            "zh": "您是希望送货上门还是自己来取？",
-            "ja": "デリバリーと自分で取りに行く、どちらがよろしいですか？",
-            "vi": "Bạn muốn giao hàng hay tự đến lấy?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Delivery would be ideal tonight.",
-          "translations": {
-            "ko": "오늘은 배달이 좋겠습니다.",
-            "zh": "今晚最好是送货上门。",
-            "ja": "今夜はデリバリーが理想的です。",
-            "vi": "Giao hàng sẽ là lựa chọn tốt nhất tối nay."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Our current delivery estimate is about 40 to 45 minutes.",
-          "translations": {
-            "ko": "현재 배달 예상 시간은 약 40분에서 45분입니다.",
-            "zh": "我们目前的预计送货时间大约是40到45分钟。",
-            "ja": "現在の配達予定時間は約40から45分です。",
-            "vi": "Thời gian giao hàng dự kiến hiện tại của chúng tôi là khoảng 40 đến 45 phút."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s totally fine—I’m not in a rush.",
-          "translations": {
-            "ko": "괜찮아요 - 서두르지 않아도 됩니다.",
-            "zh": "这完全没问题——我不急。",
-            "ja": "全然大丈夫です、急いでいません。",
-            "vi": "Hoàn toàn không sao - tôi không vội."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you like us to include napkins and utensils?",
-          "translations": {
-            "ko": "냅킨과 식기를 포함시켜 드릴까요?",
-            "zh": "您需要我们提供餐巾纸和餐具吗？",
-            "ja": "ナプキンと食器を同梱しますか？",
-            "vi": "Bạn có muốn chúng tôi bao gồm khăn ăn và đồ ăn không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, that would be appreciated.",
-          "translations": {
-            "ko": "네, 감사합니다.",
-            "zh": "是的，我会很感激的。",
-            "ja": "はい、それはありがたいです。",
-            "vi": "Có, tôi sẽ rất biết ơn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Is there anything you’d like the driver to know?",
-          "translations": {
-            "ko": "배달원에게 전해야 할 사항이 있으신가요?",
-            "zh": "您有什么特别的要求要告诉送货员吗？",
-            "ja": "配達員に伝えておきたいことは何かありますか？",
-            "vi": "Có điều gì bạn muốn tài xế biết không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Please ask them to call when they arrive.",
-          "translations": {
-            "ko": "도착하면 전화해 달라고 부탁해주세요.",
-            "zh": "请他们到达时打电话给我。",
-            "ja": "到着したら電話をしてもらえますか？",
-            "vi": "Xin hãy nhờ họ gọi khi đến nơi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We accept all major cards as well as mobile payments.",
-          "translations": {
-            "ko": "모든 주요 카드와 모바일 결제를 받습니다.",
-            "zh": "我们接受所有主要的信用卡以及手机支付。",
-            "ja": "主要なカード全てとモバイル決済を受け付けています。",
-            "vi": "Chúng tôi chấp nhận tất cả các loại thẻ chính cũng như thanh toán di động."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Perfect. I’ll pay using my phone.",
-          "translations": {
-            "ko": "좋아요. 휴대폰으로 결제하겠습니다.",
-            "zh": "太好了。我会用我的手机支付。",
-            "ja": "完璧です。私の携帯で支払います。",
-            "vi": "Hoàn hảo. Tôi sẽ thanh toán bằng điện thoại của mình."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "May I have your delivery address, please?",
-          "translations": {
-            "ko": "배달 주소를 알려주시겠습니까?",
-            "zh": "请问您的送货地址是？",
-            "ja": "配達先の住所を教えていただけますか？",
-            "vi": "Bạn có thể cho tôi biết địa chỉ giao hàng của bạn, xin vui lòng?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Sure, the address is 42 River Street.",
-          "translations": {
-            "ko": "네, 주소는 42 River Street입니다.",
-            "zh": "好的，地址是河街42号。",
-            "ja": "はい、住所は42 River Streetです。",
-            "vi": "Chắc chắn, địa chỉ là 42 River Street."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Great! Your order has been successfully placed.",
-          "translations": {
-            "ko": "좋아요! 주문이 성공적으로 접수되었습니다.",
-            "zh": "太好了！您的订单已经成功下单。",
-            "ja": "ありがとうございます！ご注文は無事に受け付けられました。",
-            "vi": "Tuyệt! Đơn hàng của bạn đã được đặt thành công."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks a lot. I’m looking forward to it!",
-          "translations": {
-            "ko": "감사합니다. 기대하고 있겠습니다!",
-            "zh": "非常感谢。我期待着！",
-            "ja": "どうもありがとうございます。楽しみにしています！",
-            "vi": "Cảm ơn rất nhiều. Tôi rất mong đợi!"
-          }
-        }
-      ]
-    },
-    {
-      "description": {
-        "ko": "상점에 물건 반품하기",
-        "zh": "将商品退回商店",
-        "ja": "店舗に商品を返品する",
-        "vi": "Trả lại một mặt hàng cho cửa hàng"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Hello! How may I assist you with your return today?",
-          "translations": {
-            "ko": "안녕하세요! 오늘 어떻게 도와드릴까요?",
-            "zh": "您好！今天我能帮您处理退货吗？",
-            "ja": "こんにちは！今日は何を返品しましょうか？",
-            "vi": "Xin chào! Tôi có thể giúp gì cho việc trả hàng của bạn hôm nay?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hi, I’d like to return this—it didn’t fit quite right.",
-          "translations": {
-            "ko": "안녕하세요, 이걸 반품하고 싶습니다 - 사이즈가 맞지 않아서요.",
-            "zh": "嗨，我想退回这个——它的尺寸不太合适。",
-            "ja": "こんにちは、これを返品したいのですが、サイズが合いませんでした。",
-            "vi": "Chào, tôi muốn trả lại món này - nó không vừa như tôi mong đợi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you happen to have the receipt with you?",
-          "translations": {
-            "ko": "혹시 영수증이 있으신가요?",
-            "zh": "您带着收据了吗？",
-            "ja": "レシートはお持ちですか？",
-            "vi": "Bạn có mang theo biên lai không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, I made sure to bring it with me.",
-          "translations": {
-            "ko": "네, 가져왔습니다.",
-            "zh": "是的，我确保带着它。",
-            "ja": "はい、持ってきています。",
-            "vi": "Có, tôi đã chắc chắn mang nó theo."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Could you let me know what was wrong with the item?",
-          "translations": {
-            "ko": "물건에 어떤 문제가 있었는지 알려주실 수 있나요?",
-            "zh": "您能告诉我商品有什么问题吗？",
-            "ja": "商品に何か問題がありましたか？教えていただけますか？",
-            "vi": "Bạn có thể cho tôi biết có gì không ổn với mặt hàng không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "It was a bit smaller than I expected.",
-          "translations": {
-            "ko": "제가 생각했던 것보다 좀 작았어요.",
-            "zh": "它比我预期的要小一些。",
-            "ja": "予想より少し小さかったです。",
-            "vi": "Nó hơi nhỏ hơn tôi mong đợi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you prefer a refund or would an exchange be better?",
-          "translations": {
-            "ko": "환불을 원하시나요, 아니면 교환을 원하시나요?",
-            "zh": "你更愿意退款还是换货更好？",
-            "ja": "返金を希望しますか、それとも交換がよろしいですか？",
-            "vi": "Bạn có muốn hoàn tiền hay đổi sản phẩm sẽ tốt hơn?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "A refund would be great, if that’s okay.",
-          "translations": {
-            "ko": "가능하다면 환불을 받고 싶습니다.",
-            "zh": "如果可以的话，我希望退款。",
-            "ja": "それでよければ、返金をお願いします。",
-            "vi": "Hoàn tiền sẽ tốt lắm, nếu được."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "No problem. I’ll start processing that right away.",
-          "translations": {
-            "ko": "문제 없습니다. 바로 처리하겠습니다.",
-            "zh": "没问题。我马上开始处理。",
-            "ja": "問題ありません。すぐに手続きを始めます。",
-            "vi": "Không sao. Tôi sẽ bắt đầu xử lý ngay lập tức."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thank you. I really appreciate your help.",
-          "translations": {
-            "ko": "감사합니다. 정말 도움이 많이 됐어요.",
-            "zh": "谢谢你。我真的很感谢你的帮助。",
-            "ja": "ありがとうございます。本当に助かります。",
-            "vi": "Cảm ơn bạn. Tôi thực sự đánh giá cao sự giúp đỡ của bạn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Please go ahead and place the item on the counter.",
-          "translations": {
-            "ko": "물건을 카운터에 올려두세요.",
-            "zh": "请把物品放在柜台上。",
-            "ja": "商品をカウンターに置いてください。",
-            "vi": "Vui lòng đặt món hàng lên quầy."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Here you are.",
-          "translations": {
-            "ko": "여기 있습니다.",
-            "zh": "给你。",
-            "ja": "はい、どうぞ。",
-            "vi": "Đây, xin mời bạn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Did you bring the original packaging by any chance?",
-          "translations": {
-            "ko": "혹시 원래 포장을 가지고 오셨나요?",
-            "zh": "你有没有带原包装？",
-            "ja": "偶然ですが、元のパッケージを持ってきましたか？",
-            "vi": "Bạn có mang theo bao bì gốc không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, I kept everything together.",
-          "translations": {
-            "ko": "네, 모든 것을 함께 가지고 왔습니다.",
-            "zh": "是的，我把所有东西都保存好了。",
-            "ja": "はい、すべてまとめて保管してあります。",
-            "vi": "Có, tôi đã giữ tất cả mọi thứ lại."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Just so you know, refunds typically take a few business days.",
-          "translations": {
-            "ko": "참고로 환불은 보통 몇 영업일이 걸립니다.",
-            "zh": "你知道，退款通常需要几个工作日。",
-            "ja": "ご了承ください、返金には通常、数営業日かかります。",
-            "vi": "Chỉ để bạn biết, việc hoàn tiền thường mất vài ngày làm việc."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s fine. I’ll keep an eye on my account.",
-          "translations": {
-            "ko": "괜찮습니다. 계좌를 확인해보겠습니다.",
-            "zh": "没关系。我会关注我的账户的。",
-            "ja": "大丈夫です。口座を確認しておきます。",
-            "vi": "Không sao. Tôi sẽ kiểm tra tài khoản của mình."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We’re very sorry for any inconvenience this caused.",
-          "translations": {
-            "ko": "불편을 끼쳐드려 죄송합니다.",
-            "zh": "对给你带来的任何不便，我们深感抱歉。",
-            "ja": "ご不便をおかけして申し訳ありません。",
-            "vi": "Chúng tôi rất xin lỗi vì bất kỳ sự bất tiện nào đã gây ra."
-          }
-        },
-        {
-          "role": "user",
-          "text": "No worries. These things happen.",
-          "translations": {
-            "ko": "괜찮아요. 이런 일도 있죠.",
-            "zh": "没关系。这些事情都会发生。",
-            "ja": "気にしないでください。こういうことはありますから。",
-            "vi": "Không sao. Những chuyện như thế này thường xảy ra."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Is there anything else I could assist you with today?",
-          "translations": {
-            "ko": "오늘 도와드릴 다른 것이 있나요?",
-            "zh": "今天还有其他我可以帮助你的事情吗？",
-            "ja": "今日、他に何かお手伝いできることはありますか？",
-            "vi": "Có gì khác tôi có thể giúp bạn hôm nay không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "No, that’s all. You’ve been very helpful!",
-          "translations": {
-            "ko": "아니요, 그게 다예요. 많은 도움이 됐습니다!",
-            "zh": "不，就这些了。你帮了我很大的忙！",
-            "ja": "いえ、それだけです。大変助かりました！",
-            "vi": "Không, đó là tất cả. Bạn đã giúp đỡ rất nhiều!"
-          }
-        }
-      ]
-    },
-    {
-      "description": {
-        "ko": "카페에서 누군가를 만나다",
-        "zh": "在咖啡馆见面",
-        "ja": "カフェで誰かに会う",
-        "vi": "Gặp ai đó tại quán cà phê"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Hey! Glad you could make it. How have you been?",
-          "translations": {
-            "ko": "헤이! 와줘서 고마워. 요즘 어떻게 지내?",
-            "zh": "嘿！很高兴你能来。你最近怎么样？",
-            "ja": "やあ！来てくれてうれしいよ。元気だった？",
-            "vi": "Chào! Rất vui khi bạn đến. Bạn đã ổn chứ?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Great to see you! I’ve been doing pretty well.",
-          "translations": {
-            "ko": "만나서 반가워! 나는 꽤 잘 지내고 있어.",
-            "zh": "很高兴见到你！我过得还不错。",
-            "ja": "会えてうれしい！私は結構元気だよ。",
-            "vi": "Rất vui được gặp bạn! Tôi đã khá ổn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Shall we grab something to drink before we sit down?",
-          "translations": {
-            "ko": "앉기 전에 뭔가 마실 것을 가져볼까요?",
-            "zh": "我们在坐下之前要不要先点点喝的？",
-            "ja": "座る前に何か飲み物を取りましょうか？",
-            "vi": "Chúng ta có nên mua thứ gì đó để uống trước khi ngồi xuống không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Sure, I’d love a latte or maybe some tea.",
-          "translations": {
-            "ko": "그럼요, 라떼나 차를 마시고 싶어요.",
-            "zh": "好的，我想要一杯拿铁，或者也许是一些茶。",
-            "ja": "うん、ラテか、もしくはお茶がいいな。",
-            "vi": "Chắc chắn, tôi thích một ly latte hoặc có thể là trà."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "They’re known for their pastries here—want to try one?",
-          "translations": {
-            "ko": "여기는 빵이 유명해요—하나 먹어볼래요?",
-            "zh": "这里的糕点很有名——想试试吗？",
-            "ja": "ここはパスタリーが有名だよ—試してみる？",
-            "vi": "Họ nổi tiếng với các loại bánh ngọt ở đây - bạn muốn thử không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Sounds tempting—I’ll try whatever you recommend.",
-          "translations": {
-            "ko": "유혹적이네요—당신이 추천하는 걸 먹어볼게요.",
-            "zh": "听起来很诱人——我会试试你推荐的。",
-            "ja": "そそられるね—君がおすすめするものを試してみるよ。",
-            "vi": "Nghe hấp dẫn - Tôi sẽ thử món bạn giới thiệu."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you prefer a spot by the window or somewhere quieter?",
-          "translations": {
-            "ko": "창가 자리를 원하시나요, 아니면 좀 더 조용한 곳을 원하시나요?",
-            "zh": "你更喜欢靠窗的位置还是安静一点的地方？",
-            "ja": "窓際の席がいいですか、それとももっと静かな場所がいいですか？",
-            "vi": "Bạn có muốn ngồi gần cửa sổ hay nơi yên tĩnh hơn không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Let’s go for the window seat. It’s bright and cozy.",
-          "translations": {
-            "ko": "창가 자리로 가요. 밝고 아늑하니까요.",
-            "zh": "我们坐窗边吧。那里明亮而舒适。",
-            "ja": "窓際の席にしよう。明るくて居心地がいいから。",
-            "vi": "Hãy chọn chỗ ngồi gần cửa sổ. Nó sáng sủa và ấm cúng."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "How’s everything going at work these days?",
-          "translations": {
-            "ko": "요즘 일은 어떻게 진행되고 있나요?",
-            "zh": "最近工作怎么样？",
-            "ja": "最近、仕事はどう？",
-            "vi": "Mọi thứ ở công việc đang diễn ra như thế nào?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "It’s been busy but manageable. How about you?",
-          "translations": {
-            "ko": "바쁘지만 다룰 만해요. 당신은요?",
-            "zh": "工作很忙，但还可以应对。你呢？",
-            "ja": "忙しいけど、なんとかやってるよ。君は？",
-            "vi": "Công việc khá bận rộn nhưng vẫn có thể kiểm soát. Còn bạn thì sao?"
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you have any fun plans coming up?",
-          "translations": {
-            "ko": "재미있는 계획이 있나요?",
-            "zh": "你有什么有趣的计划吗？",
-            "ja": "楽しい予定は何かある？",
-            "vi": "Bạn có kế hoạch vui vẻ nào sắp tới không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Possibly a short trip, if I can take time off.",
-          "translations": {
-            "ko": "시간을 내서 짧은 여행을 갈 수 있으면 좋겠어요.",
-            "zh": "如果我能请假的话，可能会去短途旅行。",
-            "ja": "時間が取れれば、短い旅行を計画しているかも。",
-            "vi": "Có thể là một chuyến đi ngắn, nếu tôi có thể nghỉ."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We really should catch up more often like this.",
-          "translations": {
-            "ko": "우리 이렇게 자주 만나서 이야기를 나눠야 해요.",
-            "zh": "我们真应该像这样经常聚聚。",
-            "ja": "こんな風にもっと頻繁に会って話すべきだね。",
-            "vi": "Chúng ta thực sự nên gặp nhau thường xuyên hơn như thế này."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Agreed! Life gets so hectic, doesn’t it?",
-          "translations": {
-            "ko": "동감이에요! 생활이 너무 바쁘죠, 그렇죠?",
-            "zh": "同意！生活真是忙碌，不是吗？",
-            "ja": "同感！人生は本当に忙しいよね？",
-            "vi": "Đồng ý! Cuộc sống thật bận rộn, phải không?"
-          }
-        },
-        {
-          "role": "ai",
-          "text": "This place has such a nice, relaxing atmosphere, doesn’t it?",
-          "translations": {
-            "ko": "이곳은 참으로 좋고 편안한 분위기를 가지고 있지 않나요?",
-            "zh": "这个地方的气氛真的很好，很放松，不是吗？",
-            "ja": "この場所は、とても素敵でリラックスできる雰囲気がありますね。",
-            "vi": "Nơi này có không khí thật dễ chịu và thư giãn, phải không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "It really does. I like the vibe here.",
-          "translations": {
-            "ko": "정말 그렇습니다. 여기 분위기가 마음에 듭니다.",
-            "zh": "确实如此。我喜欢这里的氛围。",
-            "ja": "本当にそうですね。ここの雰囲気が好きです。",
-            "vi": "Quả thật vậy. Tôi thích không gian ở đây."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let’s not wait so long before meeting again.",
-          "translations": {
-            "ko": "다음에 만나기까지 너무 오래 기다리지 않았으면 좋겠어요.",
-            "zh": "我们下次见面不要等那么久。",
-            "ja": "次に会うまで、こんなに長く待たないようにしましょう。",
-            "vi": "Chúng ta không nên chờ lâu trước khi gặp lại nhau."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, let’s make it a regular thing.",
-          "translations": {
-            "ko": "네, 정기적으로 만나는 것으로 하죠.",
-            "zh": "是的，我们应该经常见面。",
-            "ja": "はい、定期的に会うようにしましょう。",
-            "vi": "Vâng, hãy để nó trở thành một thói quen."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I’m really glad we were able to do this today.",
-          "translations": {
-            "ko": "오늘 이렇게 만날 수 있어서 정말 기쁩니다.",
-            "zh": "我真的很高兴我们今天能够做到这一点。",
-            "ja": "今日、これができて本当にうれしいです。",
-            "vi": "Tôi thật sự rất vui vì chúng ta đã có thể làm điều này hôm nay."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Same here. This was exactly what I needed.",
-          "translations": {
-            "ko": "저도 마찬가지입니다. 이게 바로 제가 필요한 것이었어요.",
-            "zh": "我也是。这正是我需要的。",
-            "ja": "私も同じです。これはまさに私が必要としていたものでした。",
-            "vi": "Tôi cũng vậy. Đây chính xác là điều tôi cần."
-          }
-        }
-      ]
-    },
-    {
-      "description": {
-        "ko": "은행에 가다",
-        "zh": "去银行",
-        "ja": "銀行へ行く",
-        "vi": "Đi đến ngân hàng"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Good afternoon. What can I assist you with today?",
-          "translations": {
-            "ko": "안녕하세요. 오늘 어떤 것을 도와드릴까요?",
-            "zh": "下午好。今天有什么我可以帮助您的吗？",
-            "ja": "こんにちは。今日は何をお手伝いできますか？",
-            "vi": "Chào buổi chiều. Tôi có thể giúp gì cho bạn hôm nay?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hi, I’d like to update my mailing address.",
-          "translations": {
-            "ko": "안녕하세요, 제 우편 주소를 변경하고 싶습니다.",
-            "zh": "你好，我想更新我的邮寄地址。",
-            "ja": "こんにちは、郵送先住所を更新したいのですが。",
-            "vi": "Xin chào, tôi muốn cập nhật địa chỉ gửi thư của mình."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "May I see a valid form of identification?",
-          "translations": {
-            "ko": "유효한 신분증을 보여주실 수 있으실까요?",
-            "zh": "我可以看一下您的有效身份证明吗？",
-            "ja": "有効な身分証明書を見せていただけますか？",
-            "vi": "Tôi có thể xem một hình thức giấy tờ tùy thân hợp lệ không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Sure, here’s my driver’s license.",
-          "translations": {
-            "ko": "네, 제 운전 면허증입니다.",
-            "zh": "当然，这是我的驾驶执照。",
-            "ja": "はい、こちらが私の運転免許証です。",
-            "vi": "Chắc chắn, đây là bằng lái xe của tôi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "What type of account do you currently have with us?",
-          "translations": {
-            "ko": "현재 저희 은행에서 어떤 계좌를 사용하고 계신가요?",
-            "zh": "您目前在我们这里有什么类型的账户？",
-            "ja": "現在、当行でどのような口座をお持ちですか？",
-            "vi": "Bạn đang có loại tài khoản nào với chúng tôi?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "It’s a checking account, I believe.",
-          "translations": {
-            "ko": "저는 예금 계좌를 사용하고 있는 것 같습니다.",
-            "zh": "我相信是支票账户。",
-            "ja": "当座預金口座だと思います。",
-            "vi": "Tôi nghĩ đó là tài khoản thanh toán."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you like to speak with a representative for further assistance?",
-          "translations": {
-            "ko": "추가로 도움을 받기 위해 상담원과 대화하시겠습니까?",
-            "zh": "您想和代表进一步沟通以获得帮助吗？",
-            "ja": "さらにアシスタンスが必要な場合は、担当者とお話ししますか？",
-            "vi": "Bạn có muốn nói chuyện với một người đại diện để được hỗ trợ thêm không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, that would probably be helpful.",
-          "translations": {
-            "ko": "네, 그게 도움이 될 것 같습니다.",
-            "zh": "是的，那可能会有所帮助。",
-            "ja": "はい、それが役立つでしょう。",
-            "vi": "Vâng, có lẽ điều đó sẽ hữu ích."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "You can update your personal details at this counter.",
-          "translations": {
-            "ko": "이 창구에서 개인 정보를 업데이트하실 수 있습니다.",
-            "zh": "您可以在这个柜台更新您的个人信息。",
-            "ja": "このカウンターで個人情報を更新できます。",
-            "vi": "Bạn có thể cập nhật thông tin cá nhân của mình tại quầy này."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Okay, I’ll fill it out right away.",
-          "translations": {
-            "ko": "알겠습니다, 바로 작성하겠습니다.",
-            "zh": "好的，我马上填写。",
-            "ja": "了解です、すぐに記入します。",
-            "vi": "Được, tôi sẽ điền ngay lập tức."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "There might be a short wait—about 10 to 15 minutes.",
-          "translations": {
-            "ko": "약 10분에서 15분 정도 기다리셔야 할 수도 있습니다.",
-            "zh": "可能需要稍等一下——大约10到15分钟。",
-            "ja": "少し待つことになるかもしれません—約10から15分です。",
-            "vi": "Có thể sẽ phải chờ một chút - khoảng 10 đến 15 phút."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s no problem. I have time.",
-          "translations": {
-            "ko": "문제 없습니다. 시간이 있습니다.",
-            "zh": "没问题。我有时间。",
-            "ja": "問題ありません。時間があります。",
-            "vi": "Không sao cả. Tôi có thời gian."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We can mail the new card to your home address.",
-          "translations": {
-            "ko": "새 카드를 집 주소로 보내드릴 수 있습니다.",
-            "zh": "我们可以把新卡邮寄到您的家庭地址。",
-            "ja": "新しいカードはご自宅の住所に郵送できます。",
-            "vi": "Chúng tôi có thể gửi thẻ mới đến địa chỉ nhà của bạn."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That works just fine. Thank you.",
-          "translations": {
-            "ko": "그렇게 해주시면 감사하겠습니다.",
-            "zh": "这样就很好了。谢谢你。",
-            "ja": "それで問題ありません。ありがとうございます。",
-            "vi": "Điều đó hoàn toàn phù hợp. Cảm ơn bạn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Please take a moment to complete this form.",
-          "translations": {
-            "ko": "이 양식을 작성하는 데 잠시 시간을 내 주십시오.",
-            "zh": "请花一点时间填写这个表格。",
-            "ja": "このフォームに記入していただく時間をお取りください。",
-            "vi": "Hãy dành một chút thời gian để hoàn thành biểu mẫu này."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Alright, I’ll take care of that now.",
-          "translations": {
-            "ko": "알겠습니다, 지금 바로 처리하겠습니다.",
-            "zh": "好的，我现在就去处理。",
-            "ja": "了解です、今すぐそれを済ませます。",
-            "vi": "Được, tôi sẽ làm ngay bây giờ."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let me just verify the information in our system.",
-          "translations": {
-            "ko": "시스템에 있는 정보를 확인해 보겠습니다.",
-            "zh": "让我在我们的系统中验证一下信息。",
-            "ja": "システム内の情報を確認させていただきます。",
-            "vi": "Để tôi xác minh thông tin trong hệ thống của chúng tôi."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks for checking that for me.",
-          "translations": {
-            "ko": "그것을 확인해 주셔서 감사합니다.",
-            "zh": "谢谢你帮我检查。",
-            "ja": "確認していただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã kiểm tra điều đó cho tôi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Is there anything else you’d like help with today?",
-          "translations": {
-            "ko": "오늘 도와드릴 다른 것이 있으실까요?",
-            "zh": "今天还有其他什么我可以帮助您的吗？",
-            "ja": "今日、他に何かお手伝いできることはありますか？",
-            "vi": "Còn điều gì khác bạn muốn được giúp đỡ hôm nay không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "No, that should be everything. I appreciate it.",
-          "translations": {
-            "ko": "아니요, 이제 다 됐습니다. 감사합니다.",
-            "zh": "不，这应该就是所有的了。我很感激。",
-            "ja": "いえ、それで全てです。感謝します。",
-            "vi": "Không, đó là tất cả. Tôi rất biết ơn."
-          }
-        }
-      ]
-    },
-    {
-      "description": {
-        "ko": "가게에서 도움을 청하다",
-        "zh": "在商店里寻求帮助",
-        "ja": "店内での助けを求める",
-        "vi": "Yêu cầu giúp đỡ trong cửa hàng"
-      },
-      "dialogues": [
-        {
-          "role": "ai",
-          "text": "Hello! Can I help you find anything in particular today?",
-          "translations": {
-            "ko": "안녕하세요! 오늘 특별히 찾으시는 물건이 있으신가요?",
-            "zh": "你好！今天有什么特别的东西我可以帮你找吗？",
-            "ja": "こんにちは！今日は何か特にお探しのものがありますか？",
-            "vi": "Xin chào! Tôi có thể giúp bạn tìm kiếm thứ gì đặc biệt hôm nay không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Hi! I’m looking for a jacket, preferably something lightweight.",
-          "translations": {
-            "ko": "안녕하세요! 가벼운 재킷을 찾고 있습니다.",
-            "zh": "嗨！我在找一件夹克，最好是轻便一些的。",
-            "ja": "こんにちは！ジャケットを探しています、できれば軽量のものがいいです。",
-            "vi": "Xin chào! Tôi đang tìm một chiếc áo khoác, ưu tiên là loại nhẹ."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Do you know what size or color you're looking for?",
-          "translations": {
-            "ko": "어떤 사이즈나 색상을 찾고 계신지 아시나요?",
-            "zh": "你知道你在找什么尺寸或颜色吗？",
-            "ja": "ご希望のサイズや色はお分かりですか？",
-            "vi": "Bạn biết bạn đang tìm kiếm kích cỡ hay màu sắc gì không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Medium usually works best for me. Maybe in navy or gray?",
-          "translations": {
-            "ko": "보통 중간 사이즈가 제게 가장 잘 맞습니다. 네이비나 그레이는 어떨까요?",
-            "zh": "中号通常最适合我。可能是海军蓝或灰色？",
-            "ja": "私には中サイズが一番合っています。ネイビーかグレーがいいかもしれません。",
-            "vi": "Thường thì kích cỡ trung bình phù hợp với tôi nhất. Có thể là màu xanh hải quân hoặc xám?"
-          }
-        },
-        {
-          "role": "ai",
-          "text": "This style is one of our most popular this season.",
-          "translations": {
-            "ko": "이 스타일은 이번 시즌 가장 인기 있는 제품 중 하나입니다.",
-            "zh": "这款风格是我们这个季度最受欢迎的之一。",
-            "ja": "このスタイルは今シーズンの中でも特に人気があります。",
-            "vi": "Kiểu dáng này là một trong những mẫu phổ biến nhất của chúng tôi mùa này."
-          }
-        },
-        {
-          "role": "user",
-          "text": "I can see why it looks really nice.",
-          "translations": {
-            "ko": "그 이유를 알 것 같아요. 정말 멋있게 보입니다.",
-            "zh": "我可以看出为什么。它看起来真的很好。",
-            "ja": "なるほど、それは見ていてもわかります。とても素敵ですね。",
-            "vi": "Tôi hiểu tại sao. Nó trông thực sự đẹp."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Would you like to try it on in the fitting room?",
-          "translations": {
-            "ko": "fitting room에서 입어보시겠어요?",
-            "zh": "你想在试衣间试穿一下吗？",
-            "ja": "試着室で試着されますか？",
-            "vi": "Bạn có muốn thử nó trong phòng thay đồ không?"
-          }
-        },
-        {
-          "role": "user",
-          "text": "Yes, I’d love to see how it fits.",
-          "translations": {
-            "ko": "네, 어떻게 맞는지 한번 보고 싶습니다.",
-            "zh": "是的，我很想看看它合不合身。",
-            "ja": "はい、どんな感じか試してみたいです。",
-            "vi": "Vâng, tôi muốn xem nó vừa với tôi như thế nào."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "The fitting rooms are just around the corner to your left.",
-          "translations": {
-            "ko": "fitting room은 왼쪽 코너를 돌면 바로 있습니다.",
-            "zh": "试衣间就在你左边的角落里。",
-            "ja": "試着室は左手に曲がったところにあります。",
-            "vi": "Phòng thay đồ nằm ngay góc bên trái của bạn."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks! I see the signs now.",
-          "translations": {
-            "ko": "감사합니다! 이제 안내 표시를 볼 수 있네요.",
-            "zh": "谢谢！我现在看到指示牌了。",
-            "ja": "ありがとう！看板が見えました。",
-            "vi": "Cảm ơn! Tôi đã thấy biển chỉ dẫn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "We’re running a promotion on select items today.",
-          "translations": {
-            "ko": "오늘은 일부 품목에 대한 프로모션을 진행하고 있습니다.",
-            "zh": "我们今天正在对部分商品进行促销。",
-            "ja": "本日は一部商品を対象にプロモーションを行っています。",
-            "vi": "Chúng tôi đang có chương trình khuyến mãi cho một số mặt hàng hôm nay."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Oh great—what kind of discount is available?",
-          "translations": {
-            "ko": "좋네요—어떤 할인이 가능한가요?",
-            "zh": "太好了——有什么折扣吗？",
-            "ja": "それは良いですねーどのくらいの割引がありますか？",
-            "vi": "Thật tuyệt - có loại giảm giá nào đang có sẵn không?"
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let me check the back and see if we have more in stock.",
-          "translations": {
-            "ko": "뒤쪽에서 재고가 더 있는지 확인해 보겠습니다.",
-            "zh": "让我去后面看看我们是否还有更多库存。",
-            "ja": "裏で在庫があるか確認してみます。",
-            "vi": "Để tôi kiểm tra phía sau và xem chúng tôi còn hàng không."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Sure, I don’t mind waiting a minute.",
-          "translations": {
-            "ko": "네, 잠시 기다리는 것은 문제 없습니다.",
-            "zh": "好的，我不介意等一会儿。",
-            "ja": "了解です、少々お待ちします。",
-            "vi": "Được, tôi không phiền chờ một chút."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "This design also comes in a few other colors.",
-          "translations": {
-            "ko": "이 디자인은 몇 가지 다른 색상으로도 제공됩니다.",
-            "zh": "这款设计还有其他几种颜色。",
-            "ja": "このデザインは他の色でも提供しています。",
-            "vi": "Kiểu dáng này cũng có thêm một số màu khác."
-          }
-        },
-        {
-          "role": "user",
-          "text": "I might go with blue if it's available.",
-          "translations": {
-            "ko": "가능하다면 파란색으로 선택하려고 합니다.",
-            "zh": "如果有的话，我可能会选择蓝色。",
-            "ja": "青があればそれにするかもしれません。",
-            "vi": "Nếu có, tôi có thể chọn màu xanh."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Just so you know, our return policy allows 30 days.",
-          "translations": {
-            "ko": "참고로, 저희의 반품 정책은 30일입니다.",
-            "zh": "你知道，我们的退货政策允许30天。",
-            "ja": "ご了承ください、当店の返品ポリシーは30日間です。",
-            "vi": "Chỉ để bạn biết, chính sách trả hàng của chúng tôi cho phép trong vòng 30 ngày."
-          }
-        },
-        {
-          "role": "user",
-          "text": "That’s good to know. Thanks for mentioning it.",
-          "translations": {
-            "ko": "알려주셔서 감사합니다. 그 사실을 알게 되어 좋습니다.",
-            "zh": "这很好知道。谢谢你提醒我。",
-            "ja": "それは良い情報です。教えてくれてありがとう。",
-            "vi": "Thật tốt khi biết điều đó. Cảm ơn bạn đã nhắc nhở."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Please let me know if you need anything else at all.",
-          "translations": {
-            "ko": "다른 무엇이든 필요하시면 알려주세요.",
-            "zh": "如果你需要任何其他东西，请告诉我。",
-            "ja": "他に何か必要なことがあればお知らせください。",
-            "vi": "Vui lòng cho tôi biết nếu bạn cần bất cứ thứ gì khác."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Will do. You’ve been super helpful!",
-          "translations": {
-            "ko": "그렇게 하겠습니다. 정말 도움이 많이 되었습니다!",
-            "zh": "我会的。你帮助了我很多！",
-            "ja": "了解しました。大変助かりました！",
-            "vi": "Tôi sẽ làm vậy. Bạn đã giúp đỡ rất nhiều!"
-          }
-        }
-      ]
-    },
-    {
-      "description": {
+        "en": "Calling customer service",
         "ko": "고객 서비스에 전화하기",
-        "zh": "呼叫客户服务",
+        "zh": "打电话给客户服务",
         "ja": "カスタマーサービスに電話する",
-        "vi": "Gọi dịch vụ khách hàng."
+        "vi": "Gọi dịch vụ khách hàng"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thank you for calling. How can I assist you today?",
+          "text": "Good morning. How can I help you today?",
           "translations": {
-            "ko": "전화 주셔서 감사합니다. 오늘 어떻게 도와드릴까요?",
-            "zh": "感谢您的来电。今天我可以为您提供什么帮助？",
-            "ja": "お電話ありがとうございます。何でお手伝いできますか？",
-            "vi": "Cảm ơn bạn đã gọi. Tôi có thể giúp gì cho bạn hôm nay?"
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
           }
         },
         {
           "role": "user",
-          "text": "Hi, I recently placed an order and there's been a problem.",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
           "translations": {
-            "ko": "안녕하세요, 최근에 주문을 했는데 문제가 생겼습니다.",
-            "zh": "嗨，我最近下了一个订单，但出了问题。",
-            "ja": "こんにちは、最近注文したのですが問題が発生しました。",
-            "vi": "Xin chào, tôi mới đặt một đơn hàng và có một vấn đề."
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
           }
         },
         {
           "role": "ai",
-          "text": "May I please have your order number to get started?",
+          "text": "Sure. What day are you looking at?",
           "translations": {
-            "ko": "시작하기 위해 주문 번호를 알려주실 수 있으신가요?",
-            "zh": "为了开始处理，我能拿到你的订单号码吗？",
-            "ja": "まずは注文番号をお教えいただけますか？",
-            "vi": "Bạn có thể cho tôi biết số đơn hàng để bắt đầu không?"
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, the number is 15678-A.",
+          "text": "Is she available this Thursday afternoon?",
           "translations": {
-            "ko": "네, 번호는 15678-A입니다.",
-            "zh": "是的，号码是15678-A。",
-            "ja": "はい、番号は15678-Aです。",
-            "vi": "Vâng, số đơn hàng là 15678-A."
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
           }
         },
         {
           "role": "ai",
-          "text": "Could you describe the issue you're experiencing?",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
           "translations": {
-            "ko": "어떤 문제를 겪고 계신지 설명해주실 수 있나요?",
-            "zh": "你能描述一下你遇到的问题吗？",
-            "ja": "お困りの状況を詳しく教えていただけますか？",
-            "vi": "Bạn có thể mô tả vấn đề bạn đang gặp phải không?"
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
           }
         },
         {
           "role": "user",
-          "text": "The package arrived damaged and missing an item.",
+          "text": "That works. Please book it for me.",
           "translations": {
-            "ko": "패키지가 손상되어 도착하고, 물건 하나가 빠져있습니다.",
-            "zh": "包裹到达时已经损坏，还缺少一件商品。",
-            "ja": "荷物が破損して届き、商品が一つ足りませんでした。",
-            "vi": "Gói hàng đã đến bị hỏng và thiếu một mặt hàng."
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
           }
         },
         {
           "role": "ai",
-          "text": "I’m sorry to hear about that—it must be frustrating.",
+          "text": "Alright, may I have your name and contact number?",
           "translations": {
-            "ko": "그런 일이 생겨서 죄송합니다—정말로 답답하시겠어요.",
-            "zh": "很抱歉听到这个——这一定让你很沮丧。",
-            "ja": "それは大変申し訳ありません、困惑されていることと思います。",
-            "vi": "Tôi rất tiếc khi nghe điều đó - nó phải rất làm bạn bực bội."
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
           }
         },
         {
           "role": "user",
-          "text": "It was a bit disappointing, honestly.",
+          "text": "John Lee, 555-1023.",
           "translations": {
-            "ko": "솔직히 말해서 좀 실망스럽습니다.",
-            "zh": "说实话，这确实有点令人失望。",
-            "ja": "正直、少し残念でした。",
-            "vi": "Thật sự thì nó hơi làm tôi thất vọng."
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
           }
         },
         {
           "role": "ai",
-          "text": "Let me check the details and see what we can do.",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
           "translations": {
-            "ko": "상세 정보를 확인하고 어떻게 할 수 있는지 알아보겠습니다.",
-            "zh": "让我查看一下详情，看看我们能做些什么。",
-            "ja": "詳細を確認して、何ができるか見てみましょう。",
-            "vi": "Để tôi kiểm tra chi tiết và xem chúng tôi có thể làm gì."
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks for looking into it so quickly.",
+          "text": "A new concern. I’ve been having headaches.",
           "translations": {
-            "ko": "빠르게 조사해 주셔서 감사합니다.",
-            "zh": "谢谢你这么快就开始处理。",
-            "ja": "すぐに対応していただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã kiểm tra nhanh chóng."
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
           }
         },
         {
           "role": "ai",
-          "text": "We should be able to resolve this within 24 hours.",
+          "text": "Understood. I’ll make a note of that.",
           "translations": {
-            "ko": "24시간 내에 이 문제를 해결할 수 있을 것입니다.",
-            "zh": "我们应该能在24小时内解决这个问题。",
-            "ja": "24時間以内にこの問題を解決できるはずです。",
-            "vi": "Chúng tôi nên có thể giải quyết vấn đề này trong vòng 24 giờ."
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
           }
         },
         {
           "role": "user",
-          "text": "That would be great. I’d appreciate a quick resolution.",
+          "text": "Thank you. Should I bring anything with me?",
           "translations": {
-            "ko": "그것이 좋겠습니다. 빠른 해결을 부탁드립니다.",
-            "zh": "那太好了。我希望能尽快解决。",
-            "ja": "それは素晴らしいです。早急な解決をお願いします。",
-            "vi": "Điều đó thật tuyệt. Tôi rất trân trọng một giải pháp nhanh chóng."
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
           }
         },
         {
           "role": "ai",
-          "text": "Would you like a confirmation sent via email?",
+          "text": "Please bring your ID and insurance card.",
           "translations": {
-            "ko": "이메일로 확인서를 보내드릴까요?",
-            "zh": "您希望通过电子邮件接收确认信息吗？",
-            "ja": "メールで確認を送りますか？",
-            "vi": "Bạn có muốn nhận xác nhận qua email không?"
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
           }
         },
         {
           "role": "user",
-          "text": "Yes, please send a confirmation to my email.",
+          "text": "Will do.",
           "translations": {
-            "ko": "네, 이메일로 확인서를 보내주세요.",
-            "zh": "是的，请将确认信息发送到我的电子邮件。",
-            "ja": "はい、メールで確認を送ってください。",
-            "vi": "Vâng, vui lòng gửi xác nhận đến email của tôi."
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
           }
         },
         {
           "role": "ai",
-          "text": "I'll go ahead and escalate this to our supervisor team.",
+          "text": "Do you need directions to the clinic?",
           "translations": {
-            "ko": "이 문제를 우리 팀장님께 상황을 전달하겠습니다.",
-            "zh": "我会将此事升级到我们的主管团队。",
-            "ja": "これを私たちの上司チームにエスカレートします。",
-            "vi": "Tôi sẽ tiếp tục và nâng cấp vấn đề này lên nhóm người quản lý của chúng tôi."
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
           }
         },
         {
           "role": "user",
-          "text": "Okay, thanks. I think that would help.",
+          "text": "No, I’ve been there before.",
           "translations": {
-            "ko": "좋습니다, 감사합니다. 그렇게 하면 도움이 될 것 같습니다.",
-            "zh": "好的，谢谢。我认为这会有所帮助。",
-            "ja": "はい、ありがとう。それが役立つと思います。",
-            "vi": "Ok, cảm ơn. Tôi nghĩ điều đó sẽ giúp ích."
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
           }
         },
         {
           "role": "ai",
-          "text": "You should receive a follow-up shortly.",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
           "translations": {
-            "ko": "곧 후속 조치를 받으실 수 있을 것입니다.",
-            "zh": "您应该很快会收到后续回复。",
-            "ja": "まもなくフォローアップを受け取るはずです。",
-            "vi": "Bạn sẽ nhận được một thông báo theo dõi ngay sau đó."
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
           }
         },
         {
           "role": "user",
-          "text": "I’ll keep an eye out for the update.",
+          "text": "Thank you very much.",
           "translations": {
-            "ko": "업데이트를 계속 확인하겠습니다.",
-            "zh": "我会密切关注更新情况。",
-            "ja": "更新をチェックしておきます。",
-            "vi": "Tôi sẽ theo dõi cập nhật."
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
           }
         },
         {
           "role": "ai",
-          "text": "Is there anything else I can assist you with today?",
+          "text": "You’re welcome. Take care.",
           "translations": {
-            "ko": "오늘 도와드릴 수 있는 다른 것이 있으신가요?",
-            "zh": "今天还有其他我可以帮助您的事情吗？",
-            "ja": "今日、他に何かお手伝いできることはありますか？",
-            "vi": "Còn điều gì khác tôi có thể giúp bạn hôm nay không?"
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
           }
         },
         {
           "role": "user",
-          "text": "No, that covers it. Thank you again.",
+          "text": "Bye!",
           "translations": {
-            "ko": "아니요, 그게 다입니다. 다시 한번 감사드립니다.",
-            "zh": "不，已经包括了所有事情。再次感谢您。",
-            "ja": "いえ、それで全てです。再度ありがとうございます。",
-            "vi": "Không, điều đó đã bao gồm tất cả. Cảm ơn bạn một lần nữa."
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "도서관 카드 갱신",
-        "zh": "续借图书馆卡",
-        "ja": "図書館カードの更新",
-        "vi": "Gia hạn thẻ thư viện"
+        "en": "Talking about a news article",
+        "ko": "뉴스 기사에 대해 이야기하기",
+        "zh": "讨论新闻文章",
+        "ja": "ニュース記事について話す",
+        "vi": "Thảo luận về một bài báo"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Welcome to the library. How may I help you today?",
+          "text": "Good morning. How can I help you today?",
           "translations": {
-            "ko": "도서관에 오신 것을 환영합니다. 오늘 어떻게 도와드릴까요?",
-            "zh": "欢迎来到图书馆。今天有什么我可以帮助您的吗？",
-            "ja": "図書館へようこそ。今日は何のお手伝いができますか？",
-            "vi": "Chào mừng đến với thư viện. Tôi có thể giúp gì cho bạn hôm nay?"
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
           }
         },
         {
           "role": "user",
-          "text": "Hi, I’d like to renew my library membership, please.",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
           "translations": {
-            "ko": "안녕하세요, 도서관 회원 자격을 갱신하고 싶습니다.",
-            "zh": "嗨，我想续借我的图书馆会员卡。",
-            "ja": "こんにちは、図書館の会員権を更新したいのですが。",
-            "vi": "Xin chào, tôi muốn gia hạn thẻ thành viên thư viện của mình."
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
           }
         },
         {
           "role": "ai",
-          "text": "Are you here to renew your membership card?",
+          "text": "Sure. What day are you looking at?",
           "translations": {
-            "ko": "회원 카드를 갱신하러 오셨나요?",
-            "zh": "您是来续借会员卡的吗？",
-            "ja": "会員カードの更新のために来られましたか？",
-            "vi": "Bạn đến đây để gia hạn thẻ thành viên của mình phải không?"
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, that’s exactly why I came in.",
+          "text": "Is she available this Thursday afternoon?",
           "translations": {
-            "ko": "네, 그래서 왔습니다.",
-            "zh": "是的，这正是我来的原因。",
-            "ja": "はい、それがまさに私が来た理由です。",
-            "vi": "Vâng, đó chính xác là lý do tôi đến đây."
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
           }
         },
         {
           "role": "ai",
-          "text": "Could I see your ID for verification purposes?",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
           "translations": {
-            "ko": "확인을 위해 신분증을 보여주실 수 있을까요?",
-            "zh": "我可以看一下您的身份证明吗？",
-            "ja": "確認のためにIDを見せていただけますか？",
-            "vi": "Tôi có thể xem ID của bạn để xác minh không?"
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
           }
         },
         {
           "role": "user",
-          "text": "Certainly. Here’s my ID.",
+          "text": "That works. Please book it for me.",
           "translations": {
-            "ko": "네, 여기 제 신분증입니다.",
-            "zh": "当然可以。这是我的身份证。",
-            "ja": "もちろんです。これが私のIDです。",
-            "vi": "Chắc chắn. Đây là ID của tôi."
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
           }
         },
         {
           "role": "ai",
-          "text": "This process will just take a moment.",
+          "text": "Alright, may I have your name and contact number?",
           "translations": {
-            "ko": "이 과정은 잠시만 걸릴 것입니다.",
-            "zh": "这个过程只需要一会儿。",
-            "ja": "この手続きは少々お時間をいただきます。",
-            "vi": "Quy trình này chỉ mất một chút thời gian."
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
           }
         },
         {
           "role": "user",
-          "text": "No problem. Take your time.",
+          "text": "John Lee, 555-1023.",
           "translations": {
-            "ko": "괜찮습니다. 천천히 하세요.",
-            "zh": "没问题。慢慢来。",
-            "ja": "問題ありません。お時間をかけてください。",
-            "vi": "Không vấn đề. Hãy dành thời gian của bạn."
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
           }
         },
         {
           "role": "ai",
-          "text": "Would you like to update any contact details today?",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
           "translations": {
-            "ko": "오늘 연락처 정보를 업데이트하시겠습니까?",
-            "zh": "您今天想更新任何联系方式吗？",
-            "ja": "今日、連絡先の詳細を更新しますか？",
-            "vi": "Bạn có muốn cập nhật bất kỳ thông tin liên hệ nào hôm nay không?"
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, I recently changed my phone number.",
+          "text": "A new concern. I’ve been having headaches.",
           "translations": {
-            "ko": "네, 최근에 전화번호를 바꿨습니다.",
-            "zh": "是的，我最近换了电话号码。",
-            "ja": "はい、最近電話番号を変更しました。",
-            "vi": "Vâng, tôi vừa mới thay đổi số điện thoại của mình."
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
           }
         },
         {
           "role": "ai",
-          "text": "Your renewed card will be valid for another year.",
+          "text": "Understood. I’ll make a note of that.",
           "translations": {
-            "ko": "갱신된 카드는 다음 해까지 유효합니다.",
-            "zh": "您的新卡将再有效一年。",
-            "ja": "更新されたカードは、再び1年間有効となります。",
-            "vi": "Thẻ đã gia hạn của bạn sẽ có hiệu lực trong một năm nữa."
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
           }
         },
         {
           "role": "user",
-          "text": "Perfect. That works well for me.",
+          "text": "Thank you. Should I bring anything with me?",
           "translations": {
-            "ko": "완벽합니다. 저에게 잘 맞습니다.",
-            "zh": "完美。这对我来说很合适。",
-            "ja": "完璧です。それで私にとって都合が良いです。",
-            "vi": "Hoàn hảo. Điều đó rất phù hợp với tôi."
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
           }
         },
         {
           "role": "ai",
-          "text": "Would you be interested in signing up for email notices?",
+          "text": "Please bring your ID and insurance card.",
           "translations": {
-            "ko": "이메일로 알림을 받으실 의향이 있으신가요?",
-            "zh": "您有兴趣注册接收电子邮件通知吗？",
-            "ja": "メールでの通知にサインアップすることに興味はありますか？",
-            "vi": "Bạn có muốn đăng ký nhận thông báo qua email không?"
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
           }
         },
         {
           "role": "user",
-          "text": "Sure, I’d like to receive those updates.",
+          "text": "Will do.",
           "translations": {
-            "ko": "네, 그런 업데이트를 받고 싶습니다.",
-            "zh": "当然，我希望接收这些更新。",
-            "ja": "はい、その更新情報を受け取りたいです。",
-            "vi": "Chắc chắn, tôi muốn nhận những cập nhật đó."
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
           }
         },
         {
           "role": "ai",
-          "text": "With your updated card, you can borrow more items.",
+          "text": "Do you need directions to the clinic?",
           "translations": {
-            "ko": "업데이트된 카드로 더 많은 아이템을 대출하실 수 있습니다.",
-            "zh": "您的新卡可以借阅更多的物品。",
-            "ja": "更新されたカードで、より多くのアイテムを借りることができます。",
-            "vi": "Với thẻ đã cập nhật, bạn có thể mượn nhiều mục hơn."
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
           }
         },
         {
           "role": "user",
-          "text": "Great, I’ll take full advantage of that.",
+          "text": "No, I’ve been there before.",
           "translations": {
-            "ko": "좋습니다, 그 기회를 최대한 활용하겠습니다.",
-            "zh": "太好了，我会充分利用的。",
-            "ja": "素晴らしい、それを存分に利用します。",
-            "vi": "Tuyệt, tôi sẽ tận dụng triệt để điều đó."
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
           }
         },
         {
           "role": "ai",
-          "text": "Please remember to return items by their due dates.",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
           "translations": {
-            "ko": "반납 기한을 잊지 말아주세요.",
-            "zh": "请记住按时归还物品。",
-            "ja": "返却期限までにアイテムを返すことを忘れないでください。",
-            "vi": "Vui lòng nhớ trả lại các mục theo hạn trả."
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
           }
         },
         {
           "role": "user",
-          "text": "Of course. I always return things on time.",
+          "text": "Thank you very much.",
           "translations": {
-            "ko": "물론입니다. 항상 시간에 맞춰 반납합니다.",
-            "zh": "当然。我总是准时归还物品。",
-            "ja": "もちろんです。私は常に時間通りに物を返します。",
-            "vi": "Tất nhiên. Tôi luôn trả đồ đúng hạn."
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
           }
         },
         {
           "role": "ai",
-          "text": "You're all set. Enjoy your reading!",
+          "text": "You’re welcome. Take care.",
           "translations": {
-            "ko": "모든 준비가 끝났습니다. 즐거운 독서 되세요!",
-            "zh": "您已经准备好了。享受您的阅读吧！",
-            "ja": "全て準備が整いました。読書を楽しんでください！",
-            "vi": "Bạn đã sẵn sàng. Chúc bạn đọc sách vui vẻ!"
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
           }
         },
         {
           "role": "user",
-          "text": "Thank you very much!",
+          "text": "Bye!",
           "translations": {
-            "ko": "정말 감사합니다!",
-            "zh": "非常感谢！",
-            "ja": "どうもありがとうございます！",
-            "vi": "Cảm ơn rất nhiều!"
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Making casual conversation at work",
+        "ko": "직장에서 캐주얼한 대화하기",
+        "zh": "在工作中进行随意的交谈",
+        "ja": "職場でのカジュアルな会話",
+        "vi": "Trò chuyện thông thường tại nơi làm việc"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Explaining symptoms at a pharmacy",
+        "ko": "약국에서 증상 설명하기",
+        "zh": "在药店解释症状",
+        "ja": "薬局で症状を説明する",
+        "vi": "Giải thích triệu chứng tại hiệu thuốc"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Discussing weekend activities",
+        "ko": "주말 활동에 대해 이야기하기",
+        "zh": "讨论周末活动",
+        "ja": "週末の活動について話す",
+        "vi": "Thảo luận về hoạt động cuối tuần"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Handling a minor home repair",
+        "ko": "가정의 소소한 수리 다루기",
+        "zh": "处理小型家居维修",
+        "ja": "小さな家の修理をする",
+        "vi": "Xử lý sửa chữa nhỏ tại nhà"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Talking about the weather and plans",
+        "ko": "날씨와 계획에 대해 이야기하기",
+        "zh": "谈论天气和计划",
+        "ja": "天気と予定について話す",
+        "vi": "Nói về thời tiết và kế hoạch"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Giving directions to a visitor",
+        "ko": "방문객에게 길 안내하기",
+        "zh": "给访客指路",
+        "ja": "訪問者への道案内をする",
+        "vi": "Hướng dẫn đường cho khách thăm"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "en": "Talking about hobbies in more detail",
+        "ko": "취미에 대해 더 자세히 이야기하기",
+        "zh": "更详细地谈论爱好",
+        "ja": "趣味について詳しく話す",
+        "vi": "Thảo luận chi tiết về sở thích"
+      },
+      "dialogues": [
+        {
+          "role": "ai",
+          "text": "Good morning. How can I help you today?",
+          "translations": {
+            "ko": "좋은 아침입니다. 오늘 어떻게 도와드릴까요?",
+            "zh": "早上好。今天我能帮你做什么？",
+            "ja": "おはようございます。何かお手伝いできることはありますか？",
+            "vi": "Chào buổi sáng. Tôi có thể giúp gì cho bạn hôm nay?",
+            "en": "Good morning. How can I help you today?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Hi, I’d like to make an appointment with Dr. Kim.",
+          "translations": {
+            "ko": "안녕하세요, 김 의사와 약속을 잡고 싶습니다.",
+            "zh": "嗨，我想预约金医生的诊疗。",
+            "ja": "こんにちは、キム医師の予約をしたいのですが。",
+            "vi": "Chào, tôi muốn đặt lịch hẹn với bác sĩ Kim.",
+            "en": "Hi, I’d like to make an appointment with Dr. Kim."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Sure. What day are you looking at?",
+          "translations": {
+            "ko": "알겠습니다. 어느 날짜를 원하시나요?",
+            "zh": "好的。你想预约哪一天？",
+            "ja": "了解です。何日をご希望ですか？",
+            "vi": "Được. Bạn muốn hẹn ngày nào?",
+            "en": "Sure. What day are you looking at?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "Is she available this Thursday afternoon?",
+          "translations": {
+            "ko": "이번 주 목요일 오후에 가능한가요?",
+            "zh": "她这周四下午有空吗？",
+            "ja": "今週の木曜日の午後は空いていますか？",
+            "vi": "Bác ấy có rảnh vào chiều thứ năm này không?",
+            "en": "Is she available this Thursday afternoon?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Let me check... Yes, we have a 3:30 PM slot open.",
+          "translations": {
+            "ko": "확인해보겠습니다... 네, 오후 3시 30분에 가능합니다.",
+            "zh": "让我查一下...是的，我们下午3:30有空位。",
+            "ja": "確認します...はい、午後3時30分の枠が空いています。",
+            "vi": "Để tôi kiểm tra... Vâng, chúng tôi còn trống lịch vào lúc 3:30 chiều.",
+            "en": "Let me check... Yes, we have a 3:30 PM slot open."
+          }
+        },
+        {
+          "role": "user",
+          "text": "That works. Please book it for me.",
+          "translations": {
+            "ko": "그 시간 괜찮습니다. 예약해 주세요.",
+            "zh": "那就行。请帮我预约。",
+            "ja": "それで大丈夫です。予約をお願いします。",
+            "vi": "Được. Xin vui lòng đặt cho tôi.",
+            "en": "That works. Please book it for me."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Alright, may I have your name and contact number?",
+          "translations": {
+            "ko": "알겠습니다, 이름과 연락처를 알려주시겠어요?",
+            "zh": "好的，能告诉我你的名字和联系电话吗？",
+            "ja": "了解しました、お名前と連絡先を教えていただけますか？",
+            "vi": "Được, tôi có thể biết tên và số điện thoại liên lạc của bạn không?",
+            "en": "Alright, may I have your name and contact number?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "John Lee, 555-1023.",
+          "translations": {
+            "ko": "존 리, 555-1023입니다.",
+            "zh": "我叫李约翰，电话是555-1023。",
+            "ja": "ジョン・リー、555-1023です。",
+            "vi": "John Lee, 555-1023.",
+            "en": "John Lee, 555-1023."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Got it. Is this visit for a follow-up or a new concern?",
+          "translations": {
+            "ko": "알겠습니다. 이번 방문은 후속 진료인가요, 아니면 새로운 문제가 생긴 건가요?",
+            "zh": "明白了。这次就诊是复诊还是有新的病情？",
+            "ja": "了解しました。今回の診察はフォローアップですか、それとも新たな問題ですか？",
+            "vi": "Đã hiểu. Lần khám này là để theo dõi hay là có vấn đề mới?",
+            "en": "Got it. Is this visit for a follow-up or a new concern?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "A new concern. I’ve been having headaches.",
+          "translations": {
+            "ko": "새로운 문제입니다. 머리가 아파요.",
+            "zh": "是新的病情。我一直头痛。",
+            "ja": "新たな問題です。頭痛が続いています。",
+            "vi": "Một vấn đề mới. Tôi bị đau đầu.",
+            "en": "A new concern. I’ve been having headaches."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Understood. I’ll make a note of that.",
+          "translations": {
+            "ko": "알겠습니다. 그 내용을 기록해두겠습니다.",
+            "zh": "明白了。我会记下来的。",
+            "ja": "了解しました。それをメモにします。",
+            "vi": "Đã hiểu. Tôi sẽ ghi chú lại.",
+            "en": "Understood. I’ll make a note of that."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you. Should I bring anything with me?",
+          "translations": {
+            "ko": "감사합니다. 제가 가져가야 할 것이 있나요?",
+            "zh": "谢谢。我需要带些什么吗？",
+            "ja": "ありがとうございます。何か持って行くものはありますか？",
+            "vi": "Cảm ơn. Tôi cần mang theo thứ gì không?",
+            "en": "Thank you. Should I bring anything with me?"
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Please bring your ID and insurance card.",
+          "translations": {
+            "ko": "신분증과 보험 카드를 가져오세요.",
+            "zh": "请带上你的身份证和保险卡。",
+            "ja": "身分証明書と保険証をお持ちください。",
+            "vi": "Xin vui lòng mang theo CMND và thẻ bảo hiểm.",
+            "en": "Please bring your ID and insurance card."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Will do.",
+          "translations": {
+            "ko": "알겠습니다.",
+            "zh": "好的。",
+            "ja": "了解しました。",
+            "vi": "Tôi sẽ làm như vậy.",
+            "en": "Will do."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Do you need directions to the clinic?",
+          "translations": {
+            "ko": "병원까지 길을 안내해 드릴까요?",
+            "zh": "你需要诊所的路线指示吗？",
+            "ja": "クリニックへの道順は必要ですか？",
+            "vi": "Bạn cần chỉ đường đến phòng khám không?",
+            "en": "Do you need directions to the clinic?"
+          }
+        },
+        {
+          "role": "user",
+          "text": "No, I’ve been there before.",
+          "translations": {
+            "ko": "아니요, 전 거기를 알고 있습니다.",
+            "zh": "不用，我以前来过。",
+            "ja": "いえ、以前に行ったことがあります。",
+            "vi": "Không, tôi đã đến đó trước đây.",
+            "en": "No, I’ve been there before."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "Okay, we’ll see you Thursday at 3:30 PM.",
+          "translations": {
+            "ko": "알겠습니다, 목요일 오후 3시 30분에 뵙겠습니다.",
+            "zh": "好的，我们周四下午3:30见。",
+            "ja": "了解しました、木曜日の午後3時30分にお待ちしています。",
+            "vi": "Được, chúng tôi sẽ gặp bạn vào thứ năm lúc 3:30 chiều.",
+            "en": "Okay, we’ll see you Thursday at 3:30 PM."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Thank you very much.",
+          "translations": {
+            "ko": "감사합니다.",
+            "zh": "非常感谢。",
+            "ja": "ありがとうございます。",
+            "vi": "Cảm ơn rất nhiều.",
+            "en": "Thank you very much."
+          }
+        },
+        {
+          "role": "ai",
+          "text": "You’re welcome. Take care.",
+          "translations": {
+            "ko": "천만에요. 건강하세요.",
+            "zh": "不客气。注意身体。",
+            "ja": "どういたしまして。お気をつけて。",
+            "vi": "Không có gì, hãy giữ gìn sức khỏe.",
+            "en": "You’re welcome. Take care."
+          }
+        },
+        {
+          "role": "user",
+          "text": "Bye!",
+          "translations": {
+            "ko": "안녕히 계세요!",
+            "zh": "再见！",
+            "ja": "さようなら！",
+            "vi": "Tạm biệt!",
+            "en": "Bye!"
           }
         }
       ]
@@ -4264,2100 +4474,2288 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
   "advanced": [
     {
       "description": {
-        "ko": "직장에서의 갈등 해결",
-        "zh": "解决职场冲突",
-        "ja": "職場の対立解決",
-        "vi": "Giải quyết một mâu thuẫn tại nơi làm việc"
+        "en": "Navigating a complex home repair situation",
+        "ko": "복잡한 집 수리 상황 다루기",
+        "zh": "导航复杂的家庭维修情况",
+        "ja": "複雑な家の修理状況をナビゲートする",
+        "vi": "Điều hướng tình huống sửa chữa nhà phức tạp"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thank you for taking the time to meet. I wanted to address the tension we've noticed.",
+          "text": "The faucet in the kitchen is leaking again. I think we need a plumber.",
           "translations": {
-            "ko": "만나주셔서 감사합니다. 우리가 느낀 긴장감을 해소하고 싶었습니다.",
-            "zh": "感谢您抽出时间来见我。我想解决我们注意到的紧张关系。",
-            "ja": "お時間をいただきありがとうございます。私たちが感じている緊張感について話したいと思っていました。",
-            "vi": "Cảm ơn bạn đã dành thời gian để gặp gỡ. Tôi muốn thảo luận về sự căng thẳng mà chúng ta đã nhận thấy."
+            "ko": "부엌의 수도꼭지가 또 새고 있어. 배관공이 필요할 것 같아.",
+            "zh": "厨房的水龙头又漏水了。我想我们需要一个水管工。",
+            "ja": "台所の蛇口がまた漏れています。配管工が必要だと思います。",
+            "vi": "Vòi nước trong bếp lại bị rò rỉ. Tôi nghĩ chúng ta cần một thợ sửa ống nước.",
+            "en": "The faucet in the kitchen is leaking again. I think we need a plumber."
           }
         },
         {
           "role": "user",
-          "text": "Thank you for initiating this—I agree it’s important to talk things through.",
+          "text": "Didn’t we fix it last month? Maybe it’s a deeper issue.",
           "translations": {
-            "ko": "이 문제를 제기해주셔서 감사합니다. 이야기를 통해 문제를 해결하는 것이 중요하다고 동의합니다.",
-            "zh": "感谢您的主动，我同意我们需要好好谈谈。",
-            "ja": "この話し合いを提案してくれてありがとう。私も話し合うことが大切だと思います。",
-            "vi": "Cảm ơn bạn đã khởi xướng điều này - tôi đồng ý rằng việc thảo luận mọi thứ là rất quan trọng."
+            "ko": "지난달에 고쳤지 않았나? 좀 더 깊은 문제일지도 모르겠다.",
+            "zh": "我们不是上个月修好了吗？也许问题更深。",
+            "ja": "先月修理したばかりではなかったですか？もっと深刻な問題かもしれません。",
+            "vi": "Chúng ta không phải đã sửa nó tháng trước sao? Có thể đó là một vấn đề sâu hơn.",
+            "en": "Didn’t we fix it last month? Maybe it’s a deeper issue."
           }
         },
         {
           "role": "ai",
-          "text": "It seems there have been some misunderstandings between you and your colleague.",
+          "text": "Possibly. The water pressure seems inconsistent too.",
           "translations": {
-            "ko": "당신과 당신의 동료 사이에 오해가 있었던 것 같습니다.",
-            "zh": "看起来你和你的同事之间有一些误解。",
-            "ja": "あなたとあなたの同僚との間に何か誤解があったようですね。",
-            "vi": "Dường như đã có một số hiểu lầm giữa bạn và đồng nghiệp của bạn."
+            "ko": "그럴 수도 있어. 물압도 일정하지 않아 보여.",
+            "zh": "可能。水压也似乎不稳定。",
+            "ja": "そうかもしれません。水圧も一定していません。",
+            "vi": "Có thể. Áp suất nước cũng không ổn định.",
+            "en": "Possibly. The water pressure seems inconsistent too."
           }
         },
         {
           "role": "user",
-          "text": "There have definitely been some challenges in our interactions.",
+          "text": "Let me take a look under the sink.",
           "translations": {
-            "ko": "우리의 상호 작용에서 몇 가지 어려움이 있었습니다.",
-            "zh": "我们的互动中确实遇到了一些挑战。",
-            "ja": "確かに私たちのやり取りにはいくつかの課題がありました。",
-            "vi": "Chắc chắn đã có một số thách thức trong các tương tác của chúng tôi."
+            "ko": "싱크대 아래를 한번 살펴볼게.",
+            "zh": "让我看看水槽下面。",
+            "ja": "流しの下を見てみます。",
+            "vi": "Để tôi xem dưới bồn rửa.",
+            "en": "Let me take a look under the sink."
           }
         },
         {
           "role": "ai",
-          "text": "Could you share your perspective on what’s been happening?",
+          "text": "Be careful. Last time it was quite damp down there.",
           "translations": {
-            "ko": "지금까지 일어난 일에 대한 당신의 견해를 공유해주실 수 있나요?",
-            "zh": "你能分享一下你对发生的事情的看法吗？",
-            "ja": "これまでの状況について、あなたの視点を共有してもらえますか？",
-            "vi": "Bạn có thể chia sẻ quan điểm của mình về những gì đã xảy ra không?"
+            "ko": "조심해. 마지막에는 꽤 축축했었어.",
+            "zh": "小心点。上次那里很潮湿。",
+            "ja": "気をつけてください。前回はかなり湿っていました。",
+            "vi": "Hãy cẩn thận. Lần trước nó khá ẩm ướt dưới đó.",
+            "en": "Be careful. Last time it was quite damp down there."
           }
         },
         {
           "role": "user",
-          "text": "From my side, I feel there’s been a lack of transparency and clarity.",
+          "text": "You’re right. There’s visible corrosion on the pipe.",
           "translations": {
-            "ko": "제 입장에서는 투명성과 명확성이 부족했다고 느꼈습니다.",
-            "zh": "从我的角度来看，我觉得缺乏透明度和清晰度。",
-            "ja": "私の側から見ると、透明性と明確さが欠けているように感じます。",
-            "vi": "Từ phía tôi, tôi cảm thấy đã có sự thiếu minh bạch và rõ ràng."
+            "ko": "맞아. 파이프에 부식이 보여.",
+            "zh": "你说得对。管子上有明显的腐蚀。",
+            "ja": "その通りです。配管には明らかな腐食が見られます。",
+            "vi": "Bạn đúng. Có sự ăn mòn rõ ràng trên ống.",
+            "en": "You’re right. There’s visible corrosion on the pipe."
           }
         },
         {
           "role": "ai",
-          "text": "I appreciate your honesty—it helps to understand both sides clearly.",
+          "text": "We might need to replace the entire valve system.",
           "translations": {
-            "ko": "당신의 솔직함에 감사드립니다. 양측을 명확하게 이해하는 데 도움이 됩니다.",
-            "zh": "我欣赏你的诚实，这有助于我们清楚地理解双方的立场。",
-            "ja": "あなたの正直さに感謝します。それは両方の立場を明確に理解するのに役立ちます。",
-            "vi": "Tôi đánh giá cao sự trung thực của bạn - nó giúp hiểu rõ cả hai bên."
+            "ko": "전체 밸브 시스템을 교체해야 할 수도 있어.",
+            "zh": "我们可能需要更换整个阀门系统。",
+            "ja": "バルブシステム全体を交換する必要があるかもしれません。",
+            "vi": "Chúng ta có thể cần thay thế toàn bộ hệ thống van.",
+            "en": "We might need to replace the entire valve system."
           }
         },
         {
           "role": "user",
-          "text": "I understand things may have been misinterpreted.",
+          "text": "Should we call the same contractor?",
           "translations": {
-            "ko": "일부가 잘못 해석되었을 수 있다는 것을 이해합니다.",
-            "zh": "我理解可能有些事情被误解了。",
-            "ja": "物事が誤解されていた可能性があることを理解しています。",
-            "vi": "Tôi hiểu rằng có thể đã có sự hiểu lầm."
+            "ko": "같은 건설업자에게 전화를 해야 할까?",
+            "zh": "我们应该再找那个承包商吗？",
+            "ja": "同じ業者に連絡すべきですか？",
+            "vi": "Chúng ta nên gọi thợ cùng nhà thầu không?",
+            "en": "Should we call the same contractor?"
           }
         },
         {
           "role": "ai",
-          "text": "Do you think there’s been a breakdown in communication?",
+          "text": "He was expensive, but reliable. We could get a second opinion.",
           "translations": {
-            "ko": "의사소통이 중단된 것 같다고 생각하나요?",
-            "zh": "你认为我们的沟通出现了问题吗？",
-            "ja": "コミュニケーションが崩れていると思いますか？",
-            "vi": "Bạn có nghĩ rằng đã có sự cố trong giao tiếp không?"
+            "ko": "비싸긴 했지만, 신뢰할 수 있었어. 다른 의견을 구해볼 수도 있어.",
+            "zh": "他收费高，但是可靠。我们可以再听听别人的意见。",
+            "ja": "彼は高価ですが、信頼できます。他の意見も聞いてみましょう。",
+            "vi": "Anh ấy đắt, nhưng đáng tin cậy. Chúng ta có thể tìm ý kiến thứ hai.",
+            "en": "He was expensive, but reliable. We could get a second opinion."
           }
         },
         {
           "role": "user",
-          "text": "Yes, I think communication hasn’t always been clear or timely.",
+          "text": "I’ll search for a few more licensed plumbers.",
           "translations": {
-            "ko": "네, 의사소통이 항상 명확하거나 적시에 이루어지지 않았다고 생각합니다.",
-            "zh": "是的，我认为我们的沟通并不总是清晰及时的。",
-            "ja": "はい、コミュニケーションが常に明確でタイムリーではなかったと思います。",
-            "vi": "Đúng, tôi nghĩ rằng giao tiếp chưa luôn rõ ràng hoặc kịp thời."
+            "ko": "몇 명의 라이센스를 가진 배관공을 찾아볼게.",
+            "zh": "我会再找几个有执照的水管工。",
+            "ja": "他の資格を持つ配管工を探してみます。",
+            "vi": "Tôi sẽ tìm thêm một số thợ ống nước có giấy phép.",
+            "en": "I’ll search for a few more licensed plumbers."
           }
         },
         {
           "role": "ai",
-          "text": "What would a constructive resolution look like to you?",
+          "text": "Good idea. Let’s also check if it’s covered by our home insurance.",
           "translations": {
-            "ko": "당신에게 건설적인 해결책은 어떤 모습일까요?",
-            "zh": "对你来说，一个建设性的解决方案会是什么样子？",
-            "ja": "あなたにとって建設的な解決策はどのようなものになりますか？",
-            "vi": "Theo bạn, một giải pháp xây dựng sẽ trông như thế nào?"
+            "ko": "좋은 생각이야. 우리의 주택 보험에 포함되어 있는지도 확인해봐야겠어.",
+            "zh": "好主意。我们也要检查一下是否可以由我们的家庭保险来承担。",
+            "ja": "良い考えです。家の保険でカバーされているかも確認しましょう。",
+            "vi": "Ý tưởng tốt. Hãy cũng kiểm tra xem nó có được bảo hiểm nhà cửa không.",
+            "en": "Good idea. Let’s also check if it’s covered by our home insurance."
           }
         },
         {
           "role": "user",
-          "text": "A fair resolution would involve setting clearer expectations and roles.",
+          "text": "Do you have the policy document handy?",
           "translations": {
-            "ko": "공정한 해결책은 더 명확한 기대치와 역할 설정을 포함해야 합니다.",
-            "zh": "公平的解决方案应该包括设定更清晰的期望和角色。",
-            "ja": "公平な解決策は、期待と役割を明確に設定することを含むべきだと思います。",
-            "vi": "Một giải pháp công bằng sẽ liên quan đến việc đặt ra các kỳ vọng và vai trò rõ ràng hơn."
+            "ko": "보험 정책 문서가 있을까?",
+            "zh": "你手头有保单文件吗？",
+            "ja": "保険証書は手元にありますか？",
+            "vi": "Bạn có giấy tờ bảo hiểm sẵn không?",
+            "en": "Do you have the policy document handy?"
           }
         },
         {
           "role": "ai",
-          "text": "Would you be open to a mediated conversation with your colleague?",
+          "text": "It should be in the cabinet near the desk.",
           "translations": {
-            "ko": "동료와의 중재된 대화에 열려 있을까요?",
-            "zh": "你愿意和你的同事进行一次调解对话吗？",
-            "ja": "同僚との調停を通じた会話に開かれていますか？",
-            "vi": "Bạn có sẵn lòng tham gia vào một cuộc trò chuyện có người hòa giải với đồng nghiệp của mình không?"
+            "ko": "책상 근처의 캐비닛에 있어야 해.",
+            "zh": "应该在书桌旁边的柜子里。",
+            "ja": "机の近くのキャビネットにあるはずです。",
+            "vi": "Nó nên nằm trong tủ gần bàn làm việc.",
+            "en": "It should be in the cabinet near the desk."
           }
         },
         {
           "role": "user",
-          "text": "I’m open to that, as long as it’s a respectful dialogue.",
+          "text": "Found it. I’ll give them a call and confirm.",
           "translations": {
-            "ko": "그것이 존중받는 대화라면, 저는 그것에 열려 있습니다.",
-            "zh": "只要是尊重的对话，我愿意。",
-            "ja": "それは尊重のある対話であれば、私はそれに開かれています。",
-            "vi": "Tôi sẵn lòng tham gia, miễn là đó là một cuộc đối thoại tôn trọng."
+            "ko": "찾았어. 전화해서 확인해볼게.",
+            "zh": "找到了。我会给他们打电话确认的。",
+            "ja": "見つけました。電話して確認します。",
+            "vi": "Tôi đã tìm thấy nó. Tôi sẽ gọi cho họ và xác nhận.",
+            "en": "Found it. I’ll give them a call and confirm."
           }
         },
         {
           "role": "ai",
-          "text": "Our goal is to restore trust and foster a collaborative environment.",
+          "text": "Thanks. Meanwhile, I’ll shut off the main water line.",
           "translations": {
-            "ko": "우리의 목표는 신뢰를 회복하고 협력적인 환경을 조성하는 것입니다.",
-            "zh": "我们的目标是恢复信任，促进协作环境。",
-            "ja": "私たちの目標は信頼を回復し、協力的な環境を育てることです。",
-            "vi": "Mục tiêu của chúng tôi là khôi phục lòng tin và tạo ra một môi trường hợp tác."
+            "ko": "고마워. 그 동안에 나는 주 수도관을 차단할게.",
+            "zh": "谢谢。同时，我会关闭主水线。",
+            "ja": "ありがとう。その間、私は主水道を止めます。",
+            "vi": "Cảm ơn. Trong khi đó, tôi sẽ tắt đường ống nước chính.",
+            "en": "Thanks. Meanwhile, I’ll shut off the main water line."
           }
         },
         {
           "role": "user",
-          "text": "That sounds like a productive direction.",
+          "text": "Let me grab the wrench for you.",
           "translations": {
-            "ko": "그것은 생산적인 방향으로 보입니다.",
-            "zh": "这听起来是一个有成效的方向。",
-            "ja": "それは生産的な方向性に聞こえます。",
-            "vi": "Đó nghe có vẻ như một hướng đi đầy hiệu quả."
+            "ko": "너를 위해 렌치를 가져올게.",
+            "zh": "让我帮你拿扳手。",
+            "ja": "レンチを取ってきます。",
+            "vi": "Để tôi lấy cây cờ lê cho bạn.",
+            "en": "Let me grab the wrench for you."
           }
         },
         {
           "role": "ai",
-          "text": "We’re here to support you throughout this process.",
+          "text": "We should also inform the neighbors, just in case.",
           "translations": {
-            "ko": "우리는 이 과정에서 당신을 지원하기 위해 여기에 있습니다.",
-            "zh": "我们将在整个过程中支持你。",
-            "ja": "私たちはこのプロセス全体を通じてあなたをサポートします。",
-            "vi": "Chúng tôi ở đây để hỗ trợ bạn trong suốt quá trình này."
+            "ko": "혹시 모르니 이웃들에게도 알려야겠어.",
+            "zh": "我们也应该通知邻居，以防万一。",
+            "ja": "念のため、隣人にも知らせておくべきです。",
+            "vi": "Chúng ta cũng nên thông báo cho hàng xóm, chỉ để đảm bảo.",
+            "en": "We should also inform the neighbors, just in case."
           }
         },
         {
           "role": "user",
-          "text": "I appreciate the support. It makes it easier to speak up.",
+          "text": "Yes, especially since they had flooding recently.",
           "translations": {
-            "ko": "지원에 감사드립니다. 이것이 말하기 더 쉽게 만듭니다.",
-            "zh": "我感谢你们的支持，这让我更容易表达自己。",
-            "ja": "サポートに感謝します。それは自分の意見を言いやすくします。",
-            "vi": "Tôi đánh giá cao sự hỗ trợ - nó giúp tôi dễ dàng nói lên."
+            "ko": "그래, 특히 최근에 그들이 홍수 피해를 입었으니까.",
+            "zh": "是的，尤其是他们最近刚遭受过洪水。",
+            "ja": "はい、特に最近彼らは水害に遭っていましたから。",
+            "vi": "Đúng, đặc biệt là vì họ gần đây đã bị ngập.",
+            "en": "Yes, especially since they had flooding recently."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s schedule a follow-up to evaluate how things progress.",
+          "text": "Alright, let’s handle this step by step.",
           "translations": {
-            "ko": "어떻게 진행되는지 평가하기 위해 후속 회의를 예정합시다.",
-            "zh": "让我们安排一次后续会议，看看事情的进展如何。",
-            "ja": "進行状況を評価するためのフォローアップをスケジュールしましょう。",
-            "vi": "Hãy lên lịch một cuộc theo dõi để đánh giá cách mọi thứ tiến triển."
+            "ko": "좋아, 차근차근 처리해보자.",
+            "zh": "好的，我们一步一步来处理。",
+            "ja": "それでは、一歩ずつ対処しましょう。",
+            "vi": "Được rồi, hãy xử lý từng bước một.",
+            "en": "Alright, let’s handle this step by step."
           }
         },
         {
           "role": "user",
-          "text": "Yes, a follow-up sounds good. Let’s make sure we keep it constructive.",
+          "text": "Agreed. Teamwork makes it manageable.",
           "translations": {
-            "ko": "네, 후속 회의가 좋을 것 같습니다. 우리는 건설적으로 유지하기 위해 노력해야 합니다.",
-            "zh": "是的，后续会议听起来不错。我们要确保保持建设性。",
-            "ja": "はい、フォローアップは良いと思います。私たちが建設的に保つことを確認しましょう。",
-            "vi": "Đúng, một cuộc theo dõi nghe có vẻ tốt. Hãy đảm bảo rằng chúng ta giữ nó mang tính xây dựng."
+            "ko": "동의해. 팀워크로 해결할 수 있어.",
+            "zh": "同意。团队合作使事情变得可行。",
+            "ja": "同意します。チームワークがあれば何とかなります。",
+            "vi": "Đồng ý. Làm việc nhóm giúp nó dễ quản lý hơn.",
+            "en": "Agreed. Teamwork makes it manageable."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "전략적 제안 제시",
-        "zh": "提出战略提案",
-        "ja": "戦略的提案の提示",
-        "vi": "Trình bày một đề xuất chiến lược"
+        "en": "Discussing long-term personal goals with a partner",
+        "ko": "파트너와 장기 개인 목표 논의하기",
+        "zh": "与伙伴讨论长期个人目标",
+        "ja": "パートナーと長期的な個人目標について話し合う",
+        "vi": "Thảo luận về mục tiêu cá nhân dài hạn với đối tác"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Good morning. I’d like to walk you through the strategic proposal we’ve developed.",
+          "text": "Have you thought more about where you see yourself in five years?",
           "translations": {
-            "ko": "좋은 아침입니다. 우리가 개발한 전략적 제안에 대해 설명하고자 합니다.",
-            "zh": "早上好。我想向你们详细介绍我们制定的战略提案。",
-            "ja": "おはようございます。私たちが開発した戦略的提案をご説明したいと思います。",
-            "vi": "Chào buổi sáng. Tôi muốn hướng dẫn bạn qua đề xuất chiến lược mà chúng tôi đã phát triển."
+            "ko": "5년 후에 너 자신을 어디에서 보고 싶은지 더 생각해봤니?",
+            "zh": "你有没有更深入地思考过五年后你想在哪里？",
+            "ja": "5年後に自分をどこで見ているか、もっと考えましたか？",
+            "vi": "Bạn đã nghĩ thêm về bạn sẽ ở đâu trong năm năm tới chưa?",
+            "en": "Have you thought more about where you see yourself in five years?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks. I’ve been looking forward to hearing about this.",
+          "text": "I’ve been reflecting on that lately.",
           "translations": {
-            "ko": "감사합니다. 이것에 대해 듣기를 기다렸습니다.",
-            "zh": "谢谢。我一直很期待听到这个。",
-            "ja": "ありがとう。これについて聞くのを楽しみにしていました。",
-            "vi": "Cảm ơn. Tôi đã rất mong chờ để nghe về điều này."
+            "ko": "최근에 그것에 대해 생각해 보았어.",
+            "zh": "我最近一直在反思这个问题。",
+            "ja": "最近それについて考えています。",
+            "vi": "Tôi đã suy ngẫm về điều đó gần đây.",
+            "en": "I’ve been reflecting on that lately."
           }
         },
         {
           "role": "ai",
-          "text": "This plan aims to streamline our operations and boost long-term growth.",
+          "text": "Career-wise, I’d like to move into a leadership role.",
           "translations": {
-            "ko": "이 계획은 우리의 운영을 간소화하고 장기 성장을 촉진하는 것을 목표로 합니다.",
-            "zh": "这个计划旨在简化我们的运营并提升长期增长。",
-            "ja": "この計画は、私たちの業務を効率化し、長期的な成長を促進することを目指しています。",
-            "vi": "Kế hoạch này nhằm tối ưu hóa hoạt động của chúng tôi và thúc đẩy tăng trưởng dài hạn."
+            "ko": "직업적으로는 리더십 역할을 맡고 싶어.",
+            "zh": "在职业上，我想担任一个领导角色。",
+            "ja": "キャリア的には、リーダーシップの役割に移りたいです。",
+            "vi": "Về mặt nghề nghiệp, tôi muốn chuyển sang vai trò lãnh đạo.",
+            "en": "Career-wise, I’d like to move into a leadership role."
           }
         },
         {
           "role": "user",
-          "text": "That’s promising—operational efficiency is definitely a priority.",
+          "text": "That makes sense given your recent progress.",
           "translations": {
-            "ko": "그것은 유망해 보입니다. 운영 효율성은 확실히 우선 순위입니다.",
-            "zh": "这很有前景，提高运营效率绝对是我们的优先事项。",
-            "ja": "それは有望ですね。運用効率は確かに優先事項です。",
-            "vi": "Điều đó rất đáng mừng - hiệu quả hoạt động chắc chắn là ưu tiên."
+            "ko": "너의 최근 진전을 고려하면 그게 맞는 것 같아.",
+            "zh": "鉴于你最近的进步，这是有道理的。",
+            "ja": "あなたの最近の進歩を考えると、それは理にかなっています。",
+            "vi": "Điều đó có lý khi xem xét sự tiến bộ gần đây của bạn.",
+            "en": "That makes sense given your recent progress."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve conducted extensive market research to support our recommendations.",
+          "text": "What about you? Any big-picture goals?",
           "translations": {
-            "ko": "우리는 우리의 권장 사항을 지원하기 위해 광범위한 시장 조사를 수행했습니다.",
-            "zh": "我们进行了广泛的市场研究来支持我们的建议。",
-            "ja": "私たちは、私たちの提案をサポートするために、広範な市場調査を行いました。",
-            "vi": "Chúng tôi đã tiến hành nghiên cứu thị trường rộng lớn để hỗ trợ các khuyến nghị của chúng tôi."
+            "ko": "너는 어때? 큰 그림의 목표가 있니?",
+            "zh": "你呢？有什么大的目标吗？",
+            "ja": "あなたはどうですか？大きな目標はありますか？",
+            "vi": "Còn bạn thì sao? Bất kỳ mục tiêu lớn nào không?",
+            "en": "What about you? Any big-picture goals?"
           }
         },
         {
           "role": "user",
-          "text": "Glad to hear the insights are grounded in data.",
+          "text": "I’ve been considering starting my own business.",
           "translations": {
-            "ko": "인사이트가 데이터에 기반을 두고 있다는 것을 들어 기쁩니다.",
-            "zh": "很高兴听到这些见解都是基于数据的。",
-            "ja": "データに基づいた洞察を得られてうれしいです。",
-            "vi": "Rất vui khi nghe thấy các thông tin được dựa trên dữ liệu."
+            "ko": "나는 스스로 사업을 시작하려고 생각하고 있어.",
+            "zh": "我一直在考虑创办自己的公司。",
+            "ja": "自分のビジネスを始めることを考えています。",
+            "vi": "Tôi đã cân nhắc việc khởi nghiệp.",
+            "en": "I’ve been considering starting my own business."
           }
         },
         {
           "role": "ai",
-          "text": "Would you like me to start with the high-level overview or dive into specifics?",
+          "text": "That’s ambitious. What field?",
           "translations": {
-            "ko": "전체적인 개요부터 시작하거나 세부 사항에 들어가길 원하시나요?",
-            "zh": "你希望我从总体概述开始还是深入到具体细节？",
-            "ja": "高レベルの概要から始めるか、具体的な内容に深く入るか、どちらから始めますか？",
-            "vi": "Bạn có muốn tôi bắt đầu với tổng quan cấp cao hay đi sâu vào chi tiết không?"
+            "ko": "그건 야심차네. 어떤 분야?",
+            "zh": "那很有野心。什么领域的？",
+            "ja": "それは野心的ですね。どの分野ですか？",
+            "vi": "Đó là một mục tiêu tham vọng. Lĩnh vực nào?",
+            "en": "That’s ambitious. What field?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s start with the overview to get the big picture.",
+          "text": "Something related to wellness and sustainability.",
           "translations": {
-            "ko": "큰 그림을 얻기 위해 개요부터 시작합시다.",
-            "zh": "让我们从概述开始，先了解大局。",
-            "ja": "大枠を把握するために、概要から始めましょう。",
-            "vi": "Hãy bắt đầu với tổng quan để có cái nhìn tổng thể."
+            "ko": "웰니스와 지속 가능성과 관련된 것.",
+            "zh": "与健康和可持续性有关的领域。",
+            "ja": "ウェルネスと持続可能性に関連した何かです。",
+            "vi": "Một cái gì đó liên quan đến sức khỏe và bền vững.",
+            "en": "Something related to wellness and sustainability."
           }
         },
         {
           "role": "ai",
-          "text": "One key initiative involves restructuring our regional approach.",
+          "text": "I fully support that. Have you made any concrete steps?",
           "translations": {
-            "ko": "주요한 한 가지 방안은 우리의 지역 접근 방식을 재구성하는 것입니다.",
-            "zh": "一项关键的倡议涉及到我们对区域策略的重组。",
-            "ja": "1つの重要な取り組みは、私たちの地域戦略の再構築を含んでいます。",
-            "vi": "Một sáng kiến quan trọng liên quan đến việc tái cấu trúc phương pháp tiếp cận khu vực của chúng tôi."
+            "ko": "나는 완전히 지지해. 구체적인 계획을 세웠니?",
+            "zh": "我完全支持。你有做出任何具体的步骤吗？",
+            "ja": "私は全面的にサポートします。具体的なステップを踏んでいますか？",
+            "vi": "Tôi hoàn toàn ủng hộ điều đó. Bạn đã thực hiện bất kỳ bước cụ thể nào chưa?",
+            "en": "I fully support that. Have you made any concrete steps?"
           }
         },
         {
           "role": "user",
-          "text": "Interesting—how would that affect existing team structures?",
+          "text": "I started a certification course last month.",
           "translations": {
-            "ko": "흥미롭네요-그렇다면 기존 팀 구조에 어떤 영향을 미칠까요?",
-            "zh": "有趣——这将如何影响现有的团队结构？",
-            "ja": "面白いですね、それは既存のチーム構造にどのような影響を与えますか？",
-            "vi": "Thú vị - điều đó sẽ ảnh hưởng như thế nào đến cấu trúc nhóm hiện tại?"
+            "ko": "지난달에 인증 과정을 시작했어.",
+            "zh": "我上个月开始了一个认证课程。",
+            "ja": "先月から認定コースを始めました。",
+            "vi": "Tôi đã bắt đầu một khóa học chứng chỉ vào tháng trước.",
+            "en": "I started a certification course last month."
           }
         },
         {
           "role": "ai",
-          "text": "We’re also proposing investment in automation to reduce recurring costs.",
+          "text": "That’s a great start. We’ll need to plan financially.",
           "translations": {
-            "ko": "또한 반복되는 비용을 줄이기 위해 자동화에 투자하는 것을 제안하고 있습니다.",
-            "zh": "我们还提出投资自动化以降低重复性成本。",
-            "ja": "私たちはまた、反復的なコストを削減するための自動化への投資を提案しています。",
-            "vi": "Chúng tôi cũng đề xuất đầu tư vào tự động hóa để giảm chi phí định kỳ."
+            "ko": "좋은 시작이야. 우리는 재정적으로 계획을 세워야 해.",
+            "zh": "这是一个很好的开始。我们需要进行财务规划。",
+            "ja": "それは素晴らしいスタートです。私たちは金銭的に計画する必要があります。",
+            "vi": "Đó là một khởi đầu tuyệt vời. Chúng ta sẽ cần lập kế hoạch về tài chính.",
+            "en": "That’s a great start. We’ll need to plan financially."
           }
         },
         {
           "role": "user",
-          "text": "Automation sounds promising. What’s the estimated return on investment?",
+          "text": "Yes, budgeting and saving will be crucial.",
           "translations": {
-            "ko": "자동화는 유망해 보입니다. 투자 수익률은 어느 정도로 예상되나요?",
-            "zh": "自动化听起来很有前景。投资回报率预计是多少？",
-            "ja": "自動化は有望に聞こえます。投資回収の見積もりはどのくらいですか？",
-            "vi": "Tự động hóa nghe có vẻ hứa hẹn. Lợi nhuận dự kiến từ đầu tư là bao nhiêu?"
+            "ko": "그래, 예산을 세우고 저축하는 것이 중요해.",
+            "zh": "是的，预算和储蓄将是关键。",
+            "ja": "はい、予算を立てて節約することが重要です。",
+            "vi": "Đúng, lập ngân sách và tiết kiệm sẽ rất quan trọng.",
+            "en": "Yes, budgeting and saving will be crucial."
           }
         },
         {
           "role": "ai",
-          "text": "All projected outcomes are based on conservative forecasting models.",
+          "text": "Would relocating help either of our plans?",
           "translations": {
-            "ko": "모든 예상 결과는 보수적인 예측 모델에 기반하고 있습니다.",
-            "zh": "所有预计的结果都基于保守的预测模型。",
-            "ja": "すべての予測結果は保守的な予測モデルに基づいています。",
-            "vi": "Tất cả các kết quả dự kiến đều dựa trên các mô hình dự báo thận trọng."
+            "ko": "우리의 계획에 도움이 될까? 이사하는 것은 어떨까?",
+            "zh": "搬迁会帮助我们实现计划吗？",
+            "ja": "移住すると私たちの計画に役立ちますか？",
+            "vi": "Việc di chuyển có giúp ích cho bất kỳ kế hoạch nào của chúng ta không?",
+            "en": "Would relocating help either of our plans?"
           }
         },
         {
           "role": "user",
-          "text": "That’s a smart approach. I appreciate the conservative estimates.",
+          "text": "Possibly. I’ve been eyeing a few cities.",
           "translations": {
-            "ko": "그것은 똑똑한 접근 방식입니다. 보수적인 추정치를 감사하게 생각합니다.",
-            "zh": "这是一个聪明的做法。我欣赏这种保守的估计。",
-            "ja": "賢明なアプローチですね。保守的な見積もりに感謝します。",
-            "vi": "Đó là một cách tiếp cận thông minh. Tôi đánh giá cao các ước lượng thận trọng."
+            "ko": "그럴 수도 있어. 몇몇 도시를 눈여겨 보고 있었어.",
+            "zh": "可能。我一直在关注几个城市。",
+            "ja": "そうかもしれません。いくつかの都市を見ています。",
+            "vi": "Có thể. Tôi đã để mắt đến một số thành phố.",
+            "en": "Possibly. I’ve been eyeing a few cities."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve also outlined potential risks and corresponding mitigation strategies.",
+          "text": "Let’s create a roadmap together.",
           "translations": {
-            "ko": "또한 잠재적인 위험과 그에 대응하는 완화 전략을 개요로 제시했습니다.",
-            "zh": "我们还概述了潜在的风险和相应的缓解策略。",
-            "ja": "私たちはまた、潜在的なリスクとそれに対応する緩和策を明示しています。",
-            "vi": "Chúng tôi cũng đã mô tả các rủi ro tiềm năng và các chiến lược giảm nhẹ tương ứng."
+            "ko": "같이 로드맵을 만들어보자.",
+            "zh": "我们一起制定一个路线图吧。",
+            "ja": "一緒にロードマップを作りましょう。",
+            "vi": "Hãy tạo ra một lộ trình cùng nhau.",
+            "en": "Let’s create a roadmap together."
           }
         },
         {
           "role": "user",
-          "text": "Good to know the risks have been anticipated.",
+          "text": "Good idea. I’ll draft some goals this week.",
           "translations": {
-            "ko": "위험이 예상되었다는 것을 알게 되어 좋습니다.",
-            "zh": "很高兴知道风险已经被预见到。",
-            "ja": "リスクが予想されていることを知って安心しました。",
-            "vi": "Rất tốt khi biết các rủi ro đã được dự đoán."
+            "ko": "좋은 생각이야. 이번 주에 몇 가지 목표를 세워볼게.",
+            "zh": "好主意。我这周会制定一些目标。",
+            "ja": "良い考えです。今週中にいくつかの目標を立てます。",
+            "vi": "Ý tưởng tốt. Tôi sẽ soạn một số mục tiêu trong tuần này.",
+            "en": "Good idea. I’ll draft some goals this week."
           }
         },
         {
           "role": "ai",
-          "text": "I’d be happy to address any questions or concerns you may have.",
+          "text": "We can review them on Sunday.",
           "translations": {
-            "ko": "귀하가 가지고 계실 수 있는 질문이나 우려사항에 대해 답변해 드리겠습니다.",
-            "zh": "我很乐意解答您可能有的任何问题或疑虑。",
-            "ja": "あなたが持つ可能性のある質問や懸念に対応することを喜んで行います。",
-            "vi": "Tôi sẽ rất vui lòng giải đáp bất kỳ câu hỏi hoặc mối quan tâm nào bạn có thể có."
+            "ko": "일요일에 그것들을 검토할 수 있어.",
+            "zh": "我们可以在周日复习一下。",
+            "ja": "日曜日にそれらを見直しましょう。",
+            "vi": "Chúng ta có thể xem xét chúng vào Chủ Nhật.",
+            "en": "We can review them on Sunday."
           }
         },
         {
           "role": "user",
-          "text": "I do have a few follow-up questions I’ll bring up shortly.",
+          "text": "Let’s treat it like a strategy session.",
           "translations": {
-            "ko": "곧 제기할 몇 가지 후속 질문이 있습니다.",
-            "zh": "我确实有一些后续问题，稍后会提出。",
-            "ja": "後ほど提起するいくつかのフォローアップの質問があります。",
-            "vi": "Tôi có một số câu hỏi theo dõi, tôi sẽ đưa ra ngay sau đây."
+            "ko": "전략 회의처럼 다루자.",
+            "zh": "我们把它当作一个战略会议。",
+            "ja": "戦略セッションのように扱いましょう。",
+            "vi": "Hãy xem nó như một phiên họp chiến lược.",
+            "en": "Let’s treat it like a strategy session."
           }
         },
         {
           "role": "ai",
-          "text": "Shall we proceed with reviewing the implementation timeline?",
+          "text": "This feels exciting and meaningful.",
           "translations": {
-            "ko": "실행 시간표를 검토하는 것으로 계속 진행할까요?",
-            "zh": "我们是否继续审查实施时间表？",
-            "ja": "実装のタイムラインのレビューを進めてもよろしいですか？",
-            "vi": "Chúng ta có nên tiếp tục xem xét lịch trình triển khai không?"
+            "ko": "이것은 흥미롭고 의미있게 느껴져.",
+            "zh": "这感觉既令人兴奋又有意义。",
+            "ja": "これは刺激的で意味のあることに感じます。",
+            "vi": "Điều này cảm thấy thú vị và có ý nghĩa.",
+            "en": "This feels exciting and meaningful."
           }
         },
         {
           "role": "user",
-          "text": "Yes, let’s go over the next steps together.",
+          "text": "Absolutely. We’re building something real.",
           "translations": {
-            "ko": "네, 다음 단계를 함께 살펴보겠습니다.",
-            "zh": "是的，让我们一起讨论下一步的计划。",
-            "ja": "はい、次のステップを一緒に見ていきましょう。",
-            "vi": "Vâng, hãy cùng nhau xem xét các bước tiếp theo."
+            "ko": "그렇지. 우리는 실제로 무언가를 만들고 있어.",
+            "zh": "绝对。我们正在建立一些真实的东西。",
+            "ja": "確かに。私たちは何か本物を作り上げています。",
+            "vi": "Chắc chắn. Chúng ta đang xây dựng một cái gì đó thật sự.",
+            "en": "Absolutely. We’re building something real."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "서비스 계약 협상",
-        "zh": "商谈服务协议",
-        "ja": "サービス契約の交渉",
-        "vi": "Đàm phán một thỏa thuận dịch vụ"
+        "en": "Dealing with an unexpected guest at home",
+        "ko": "집에서 예상치 못한 손님 다루기",
+        "zh": "应对家中意外来客的情况",
+        "ja": "家で予期しないゲストを扱う",
+        "vi": "Đối phó với một vị khách bất ngờ tại nhà"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thank you for joining the call. Let’s begin by reviewing the contract terms.",
+          "text": "Did you know your cousin was coming this weekend?",
           "translations": {
-            "ko": "통화에 참여해 주셔서 감사합니다. 계약 조건을 검토하는 것부터 시작하겠습니다.",
-            "zh": "感谢您参加电话会议。让我们从审查合同条款开始。",
-            "ja": "電話会議に参加していただきありがとうございます。まず契約条件のレビューから始めましょう。",
-            "vi": "Cảm ơn bạn đã tham gia cuộc gọi. Hãy bắt đầu bằng cách xem xét các điều khoản hợp đồng."
+            "ko": "이번 주말에 너의 사촌이 올 거라는 걸 알고 있었니?",
+            "zh": "你知道你的表亲这个周末要来吗？",
+            "ja": "あなたのいとこが今週末に来ることを知っていましたか？",
+            "vi": "Bạn có biết anh em họ của bạn sẽ đến cuối tuần này không?",
+            "en": "Did you know your cousin was coming this weekend?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks for organizing this. I’ve reviewed the contract in detail.",
+          "text": "No, I just found out this morning.",
           "translations": {
-            "ko": "이것을 준비해 주셔서 감사합니다. 저는 계약을 자세히 검토했습니다.",
-            "zh": "感谢您的组织。我已经详细审查了合同。",
-            "ja": "この件を整理していただきありがとうございます。契約を詳細に見てきました。",
-            "vi": "Cảm ơn bạn đã tổ chức điều này. Tôi đã xem xét hợp đồng một cách chi tiết."
+            "ko": "아니, 오늘 아침에야 알았어.",
+            "zh": "不，我今天早上才知道。",
+            "ja": "いいえ、今朝知りました。",
+            "vi": "Không, tôi chỉ biết vào sáng nay.",
+            "en": "No, I just found out this morning."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve outlined the scope of services along with expected deliverables.",
+          "text": "Do we have enough space?",
           "translations": {
-            "ko": "우리는 서비스 범위와 예상되는 결과물을 개요로 제시했습니다.",
-            "zh": "我们已经概述了服务范围以及预期的交付成果。",
-            "ja": "私たちはサービスの範囲と期待される成果物を明示しています。",
-            "vi": "Chúng tôi đã mô tả phạm vi dịch vụ cùng với các sản phẩm mong đợi."
+            "ko": "우리는 충분한 공간이 있을까?",
+            "zh": "我们有足够的空间吗？",
+            "ja": "スペースは十分ありますか？",
+            "vi": "Chúng ta có đủ không gian không?",
+            "en": "Do we have enough space?"
           }
         },
         {
           "role": "user",
-          "text": "The scope looks good, but I do have a question about timelines.",
+          "text": "We’ll need to set up the guest room.",
           "translations": {
-            "ko": "범위는 좋아 보이지만, 시간표에 대한 질문이 있습니다.",
-            "zh": "范围看起来不错，但我对时间表有一个问题。",
-            "ja": "範囲は良さそうですが、タイムラインについては質問があります。",
-            "vi": "Phạm vi nhìn chung tốt, nhưng tôi có một câu hỏi về thời gian."
+            "ko": "우리는 게스트룸을 준비해야 해.",
+            "zh": "我们需要准备好客房。",
+            "ja": "ゲストルームを準備する必要があります。",
+            "vi": "Chúng ta sẽ cần dọn phòng khách.",
+            "en": "We’ll need to set up the guest room."
           }
         },
         {
           "role": "ai",
-          "text": "Are there any specific clauses you’d like to revisit before proceeding?",
+          "text": "How long is he staying?",
           "translations": {
-            "ko": "진행하기 전에 다시 살펴보고 싶은 특정 조항이 있나요?",
-            "zh": "在继续之前，有没有任何特定的条款你想再看一下？",
-            "ja": "進行する前に再訪問したい特定の条項はありますか？",
-            "vi": "Có bất kỳ điều khoản cụ thể nào bạn muốn xem xét lại trước khi tiếp tục không?"
+            "ko": "그는 얼마나 머무를 거야?",
+            "zh": "他要住多久？",
+            "ja": "彼はどのくらい滞在しますか？",
+            "vi": "Anh ấy sẽ ở lại bao lâu?",
+            "en": "How long is he staying?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, the termination clause might need clarification.",
+          "text": "He said three nights.",
           "translations": {
-            "ko": "네, 종료 조항에 대한 명확화가 필요할 수 있습니다.",
-            "zh": "是的，终止条款可能需要澄清。",
-            "ja": "はい、終了条項は明確化が必要かもしれません。",
-            "vi": "Vâng, điều khoản chấm dứt có thể cần được làm rõ."
+            "ko": "그는 3박을 할 거라고 했어.",
+            "zh": "他说要住三晚。",
+            "ja": "彼は3泊だと言いました。",
+            "vi": "Anh ấy nói sẽ ở lại ba đêm.",
+            "en": "He said three nights."
           }
         },
         {
           "role": "ai",
-          "text": "We’re flexible on the payment terms within reason.",
+          "text": "Should we rearrange our plans?",
           "translations": {
-            "ko": "합리적인 범위 내에서 결제 조건에 대해 유연하게 대응할 수 있습니다.",
-            "zh": "在合理范围内，我们对付款条款有灵活性。",
-            "ja": "私たちは、合理的な範囲内で支払い条件に柔軟性を持っています。",
-            "vi": "Chúng tôi linh hoạt về điều khoản thanh toán trong phạm vi hợp lý."
+            "ko": "우리는 계획을 재정립해야 할까?",
+            "zh": "我们应该重新安排我们的计划吗？",
+            "ja": "私たちの予定を変更すべきですか？",
+            "vi": "Chúng ta nên sắp xếp lại kế hoạch của mình không?",
+            "en": "Should we rearrange our plans?"
           }
         },
         {
           "role": "user",
-          "text": "Appreciate the flexibility on payment terms.",
+          "text": "Yes, we’ll need to move dinner on Saturday.",
           "translations": {
-            "ko": "결제 조건에 대한 유연성에 감사드립니다.",
-            "zh": "感谢您对付款条款的灵活性。",
-            "ja": "支払い条件についての柔軟性に感謝します。",
-            "vi": "Tôi đánh giá cao sự linh hoạt về điều khoản thanh toán."
+            "ko": "그래, 토요일 저녁 식사를 옮겨야 해.",
+            "zh": "是的，我们需要把周六的晚餐时间改一下。",
+            "ja": "はい、土曜日の夕食を移動する必要があります。",
+            "vi": "Đúng, chúng ta sẽ cần dời bữa tối vào thứ Bảy.",
+            "en": "Yes, we’ll need to move dinner on Saturday."
           }
         },
         {
           "role": "ai",
-          "text": "Would you prefer quarterly billing or monthly installments?",
+          "text": "Does he have any dietary restrictions?",
           "translations": {
-            "ko": "분기별 청구서를 선호하시나요, 아니면 월별 할부를 선호하시나요?",
-            "zh": "您更喜欢季度结算还是月分期付款？",
-            "ja": "四半期ごとの請求を希望しますか、それとも月々の分割払いを希望しますか？",
-            "vi": "Bạn có muốn thanh toán hàng quý hay trả góp hàng tháng?"
+            "ko": "그는 식사 제한이 있을까?",
+            "zh": "他有任何饮食限制吗？",
+            "ja": "彼に食事制限はありますか？",
+            "vi": "Anh ấy có bất kỳ hạn chế chế độ ăn nào không?",
+            "en": "Does he have any dietary restrictions?"
           }
         },
         {
           "role": "user",
-          "text": "Monthly installments would work better on our end.",
+          "text": "He’s vegan now.",
           "translations": {
-            "ko": "월별 할부가 우리 쪽에 더 잘 맞을 것 같습니다.",
-            "zh": "月分期付款更适合我们。",
-            "ja": "月々の分割払いが私たちにとってはより適しています。",
-            "vi": "Trả góp hàng tháng sẽ phù hợp hơn với chúng tôi."
+            "ko": "그는 이제 비건이야.",
+            "zh": "他现在是素食者。",
+            "ja": "彼は今、ビーガンです。",
+            "vi": "Anh ấy hiện đang ăn chay trường.",
+            "en": "He’s vegan now."
           }
         },
         {
           "role": "ai",
-          "text": "Our legal team can make minor adjustments if needed.",
+          "text": "I’ll plan the meals accordingly.",
           "translations": {
-            "ko": "필요하다면 우리 법률팀이 소소한 조정을 할 수 있습니다.",
-            "zh": "如果需要，我们的法律团队可以做出小的调整。",
-            "ja": "必要であれば、私たちの法務チームが小さな調整を行うことができます。",
-            "vi": "Đội ngũ pháp lý của chúng tôi có thể điều chỉnh nhỏ nếu cần."
+            "ko": "그에 맞게 식사를 계획할게.",
+            "zh": "我会相应地计划餐食。",
+            "ja": "それに合わせて食事を計画します。",
+            "vi": "Tôi sẽ lên kế hoạch cho các bữa ăn tương ứng.",
+            "en": "I’ll plan the meals accordingly."
           }
         },
         {
           "role": "user",
-          "text": "That sounds reasonable. I'll run it by our counsel.",
+          "text": "Thanks. I’ll go pick up some groceries.",
           "translations": {
-            "ko": "그것은 합리적으로 들립니다. 저희 법률 고문에게 문의해 보겠습니다.",
-            "zh": "这听起来很合理。我会让我们的法律顾问审查一下。",
-            "ja": "それは合理的に聞こえます。私たちの弁護士に相談してみます。",
-            "vi": "Điều đó nghe có vẻ hợp lý. Tôi sẽ trình bày với luật sư của chúng tôi."
+            "ko": "고마워. 나는 몇 가지 식료품을 사러 갈게.",
+            "zh": "谢谢。我去买一些杂货。",
+            "ja": "ありがとう。私はいくつかの食料品を買いに行きます。",
+            "vi": "Cảm ơn. Tôi sẽ đi mua một số thực phẩm.",
+            "en": "Thanks. I’ll go pick up some groceries."
           }
         },
         {
           "role": "ai",
-          "text": "We’d like to finalize this by early next week, if possible.",
+          "text": "What about bedding and towels?",
           "translations": {
-            "ko": "가능하다면 다음 주 초에 이것을 마무리 짓고 싶습니다.",
-            "zh": "如果可能的话，我们希望在下周初完成这个。",
-            "ja": "可能であれば、来週初めまでにこれを最終化したいと考えています。",
-            "vi": "Chúng tôi muốn hoàn thiện điều này vào đầu tuần sau, nếu có thể."
+            "ko": "침구와 수건은 어떨까?",
+            "zh": "床上用品和毛巾怎么办？",
+            "ja": "ベッドリネンとタオルはどうですか？",
+            "vi": "Còn về đệm và khăn tắm thì sao?",
+            "en": "What about bedding and towels?"
           }
         },
         {
           "role": "user",
-          "text": "Early next week is doable if no major edits arise.",
+          "text": "We’ve got extras in the closet.",
           "translations": {
-            "ko": "큰 수정이 없다면 다음 주 초에 가능합니다.",
-            "zh": "如果没有大的修改，下周初是可以的。",
-            "ja": "大きな編集がなければ、来週初めには可能です。",
-            "vi": "Đầu tuần sau là khả thi nếu không có sửa đổi lớn nào xảy ra."
+            "ko": "우리는 옷장에 여분이 있어.",
+            "zh": "我们在壁橱里有额外的。",
+            "ja": "クローゼットに余分があります。",
+            "vi": "Chúng ta có thêm trong tủ.",
+            "en": "We’ve got extras in the closet."
           }
         },
         {
           "role": "ai",
-          "text": "Can we agree to schedule a legal review by Friday?",
+          "text": "Should we inform the neighbors?",
           "translations": {
-            "ko": "금요일까지 법률 검토를 예정할 수 있을까요?",
-            "zh": "我们可以同意在周五之前安排法律审查吗？",
-            "ja": "金曜日までに法的なレビューをスケジュールすることに同意できますか？",
-            "vi": "Chúng ta có thể đồng ý lên lịch xem xét pháp lý vào thứ Sáu không?"
+            "ko": "이웃들에게 알려야 할까?",
+            "zh": "我们应该通知邻居吗？",
+            "ja": "隣人に知らせるべきですか？",
+            "vi": "Chúng ta nên thông báo cho hàng xóm không?",
+            "en": "Should we inform the neighbors?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, Friday works. I’ll notify our legal team.",
+          "text": "Just in case, yes.",
           "translations": {
-            "ko": "네, 금요일이 괜찮습니다. 저희 법률팀에게 알려드리겠습니다.",
-            "zh": "是的，周五可以。我会通知我们的法律团队。",
-            "ja": "はい、金曜日は大丈夫です。私たちの法務チームに通知します。",
-            "vi": "Vâng, thứ Sáu phù hợp. Tôi sẽ thông báo cho đội ngũ pháp lý của chúng tôi."
+            "ko": "혹시 모르니까, 그래.",
+            "zh": "以防万一，是的。",
+            "ja": "念のため、はい。",
+            "vi": "Chỉ để đảm bảo, đúng.",
+            "en": "Just in case, yes."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll provide the finalized draft by end of day tomorrow.",
+          "text": "I hope it won’t be too disruptive.",
           "translations": {
-            "ko": "우리는 내일 하루 종일에 걸쳐 최종 초안을 제공할 것입니다.",
-            "zh": "我们将在明天结束时提供最后的草案。",
-            "ja": "明日の終わりまでに最終案を提供します。",
-            "vi": "Chúng tôi sẽ cung cấp bản dự thảo hoàn thiện vào cuối ngày mai."
+            "ko": "너무 방해가 되지 않았으면 좋겠어.",
+            "zh": "我希望不会太打扰他们。",
+            "ja": "それがあまりにも混乱を招かないことを願います。",
+            "vi": "Tôi hy vọng nó sẽ không gây quá nhiều phiền toái.",
+            "en": "I hope it won’t be too disruptive."
           }
         },
         {
           "role": "user",
-          "text": "Great. We’ll look out for the updated draft.",
+          "text": "Let’s stay flexible.",
           "translations": {
-            "ko": "좋습니다. 업데이트된 초안을 기다리겠습니다.",
-            "zh": "很好。我们会关注最新的草案。",
-            "ja": "素晴らしい。更新版のドラフトを待っています。",
-            "vi": "Tốt. Chúng tôi sẽ chờ đợi bản dự thảo cập nhật."
+            "ko": "유연하게 대처하자.",
+            "zh": "我们要保持灵活。",
+            "ja": "フレキシブルにいきましょう。",
+            "vi": "Hãy linh hoạt.",
+            "en": "Let’s stay flexible."
           }
         },
         {
           "role": "ai",
-          "text": "Please let us know if you require additional documentation.",
+          "text": "It’ll be fine. Let’s make him feel welcome.",
           "translations": {
-            "ko": "추가 문서가 필요하면 알려주세요.",
-            "zh": "如果您需要额外的文件，请告诉我们。",
-            "ja": "追加の書類が必要な場合はお知らせください。",
-            "vi": "Vui lòng cho chúng tôi biết nếu bạn cần thêm tài liệu."
+            "ko": "괜찮을 거야. 그를 환영하게 만들자.",
+            "zh": "没问题。让我们让他感到欢迎。",
+            "ja": "大丈夫です。彼を歓迎しましょう。",
+            "vi": "Sẽ ổn thôi. Hãy làm cho anh ấy cảm thấy được chào đón.",
+            "en": "It’ll be fine. Let’s make him feel welcome."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. I’ll follow up if we need anything further.",
+          "text": "Absolutely.",
           "translations": {
-            "ko": "감사합니다. 필요한 것이 더 있으면 연락하겠습니다.",
-            "zh": "谢谢。如果我们需要其他信息，我会跟进的。",
-            "ja": "ありがとう。何か他に必要なものがあればフォローアップします。",
-            "vi": "Cảm ơn. Tôi sẽ liên lạc nếu chúng tôi cần thêm thông tin gì."
+            "ko": "그럼.",
+            "zh": "绝对。",
+            "ja": "もちろんです。",
+            "vi": "Chắc chắn.",
+            "en": "Absolutely."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "성과 피드백 제공",
-        "zh": "提供绩效反馈",
-        "ja": "パフォーマンスのフィードバックを提供する",
-        "vi": "Cung cấp phản hồi về hiệu suất"
+        "en": "Exploring dietary preferences and restrictions",
+        "ko": "식이 선호도와 제한 탐색하기",
+        "zh": "探索饮食偏好和限制",
+        "ja": "食事の好みと制限を探る",
+        "vi": "Khám phá sở thích ăn uống và hạn chế"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for coming in. I wanted to give you feedback on your recent work.",
+          "text": "I noticed you’ve been avoiding dairy lately.",
           "translations": {
-            "ko": "오셔서 감사합니다. 최근 작업에 대한 피드백을 드리려고 했습니다.",
-            "zh": "谢谢你过来。我想就你最近的工作给你一些反馈。",
-            "ja": "来てくれてありがとう。最近のあなたの仕事についてフィードバックをしたいと思います。",
-            "vi": "Cảm ơn bạn đã đến. Tôi muốn đưa ra phản hồi về công việc gần đây của bạn."
+            "ko": "요즘 너가 유제품을 피하는 것을 눈치챘어.",
+            "zh": "我注意到你最近一直在避免乳制品。",
+            "ja": "最近あなたが乳製品を避けているのに気づきました。",
+            "vi": "Tôi nhận thấy bạn đã tránh sữa gần đây.",
+            "en": "I noticed you’ve been avoiding dairy lately."
           }
         },
         {
           "role": "user",
-          "text": "Thanks for the feedback. I appreciate your openness.",
+          "text": "Yes, I’ve been trying a plant-based diet.",
           "translations": {
-            "ko": "피드백 감사합니다. 당신의 솔직함에 감사드립니다.",
-            "zh": "谢谢你的反馈。我很感激你的坦诚。",
-            "ja": "フィードバックをありがとう。あなたのオープンさに感謝します。",
-            "vi": "Cảm ơn phản hồi. Tôi đánh giá cao sự mở lòng của bạn."
+            "ko": "그래, 나는 식물성 식단을 시도하고 있어.",
+            "zh": "是的，我一直在尝试植物性饮食。",
+            "ja": "はい、植物ベースの食事を試しています。",
+            "vi": "Đúng, tôi đã thử chế độ ăn dựa trên thực vật.",
+            "en": "Yes, I’ve been trying a plant-based diet."
           }
         },
         {
           "role": "ai",
-          "text": "Overall, your performance has been solid and consistent.",
+          "text": "Is it for health reasons or ethical?",
           "translations": {
-            "ko": "전반적으로 성과가 안정적이고 일관되었습니다.",
-            "zh": "总的来说，你的表现稳定且连贯。",
-            "ja": "全体的に、あなたのパフォーマンスは安定しています。",
-            "vi": "Tổng thể, hiệu suất của bạn đã rất ổn định và nhất quán."
+            "ko": "건강상의 이유인가 아니면 윤리적인 이유인가?",
+            "zh": "这是出于健康原因还是道德原因？",
+            "ja": "それは健康上の理由ですか、それとも倫理的な理由ですか？",
+            "vi": "Đó là vì lý do sức khỏe hay đạo đức?",
+            "en": "Is it for health reasons or ethical?"
           }
         },
         {
           "role": "user",
-          "text": "I’ve been trying to stay consistent in my output.",
+          "text": "Both, actually.",
           "translations": {
-            "ko": "나는 항상 일관된 결과를 내려고 노력했습니다.",
-            "zh": "我一直在努力保持我的输出稳定。",
-            "ja": "私は自分のアウトプットが一貫しているように努力しています。",
-            "vi": "Tôi đã cố gắng duy trì sự nhất quán trong công việc của mình."
+            "ko": "둘 다야.",
+            "zh": "两者都有。",
+            "ja": "実際には両方です。",
+            "vi": "Cả hai, thực ra.",
+            "en": "Both, actually."
           }
         },
         {
           "role": "ai",
-          "text": "One area that stands out is your proactive approach to problem-solving.",
+          "text": "How’s it been so far?",
           "translations": {
-            "ko": "문제 해결에 대한 당신의 적극적인 접근이 눈에 띕니다.",
-            "zh": "你主动解决问题的方式是你的一个突出之处。",
-            "ja": "特筆すべき点は、問題解決に対するあなたの積極的なアプローチです。",
-            "vi": "Một lĩnh vực nổi bật là cách tiếp cận chủ động của bạn trong việc giải quyết vấn đề."
+            "ko": "지금까지 어땠어?",
+            "zh": "到目前为止怎么样？",
+            "ja": "それはどうでしたか？",
+            "vi": "Thế nó ra sao cho đến nay?",
+            "en": "How’s it been so far?"
           }
         },
         {
           "role": "user",
-          "text": "I’m glad the initiative has been noticeable.",
+          "text": "Surprisingly easy.",
           "translations": {
-            "ko": "그런 노력이 눈에 띄었다니 기쁩니다.",
-            "zh": "我很高兴我的主动性被注意到了。",
-            "ja": "その積極性が認められてうれしいです。",
-            "vi": "Tôi rất vui khi sự chủ động của mình đã được chú ý."
+            "ko": "놀랍게도 쉬웠어.",
+            "zh": "出乎意料的容易。",
+            "ja": "驚くほど簡単です。",
+            "vi": "Dễ dàng hơn tôi tưởng.",
+            "en": "Surprisingly easy."
           }
         },
         {
           "role": "ai",
-          "text": "That said, there are a few things we can work on together.",
+          "text": "Are you getting enough protein?",
           "translations": {
-            "ko": "그렇지만, 함께 개선해야 할 몇 가지 사항이 있습니다.",
-            "zh": "话虽如此，我们还有一些事情可以一起改进。",
-            "ja": "それはそうと、一緒に取り組むことができるいくつかの点があります。",
-            "vi": "Tuy nhiên, có một số điều chúng ta có thể cùng nhau cải thiện."
+            "ko": "단백질을 충분히 섭취하고 있니?",
+            "zh": "你的蛋白质摄入量足够吗？",
+            "ja": "十分なタンパク質を摂っていますか？",
+            "vi": "Bạn có đủ protein không?",
+            "en": "Are you getting enough protein?"
           }
         },
         {
           "role": "user",
-          "text": "I’m open to feedback and improvement.",
+          "text": "I’ve been using legumes and tofu.",
           "translations": {
-            "ko": "피드백과 개선에 열려 있습니다.",
-            "zh": "我愿意接受反馈和改进。",
-            "ja": "フィードバックと改善には開放的です。",
-            "vi": "Tôi rất sẵn lòng nhận phản hồi và cải thiện."
+            "ko": "나는 콩과 두부를 사용하고 있어.",
+            "zh": "我一直在吃豆类和豆腐。",
+            "ja": "豆類と豆腐を使っています。",
+            "vi": "Tôi đã sử dụng đậu và đậu hũ.",
+            "en": "I’ve been using legumes and tofu."
           }
         },
         {
           "role": "ai",
-          "text": "Meeting deadlines has occasionally been a challenge.",
+          "text": "We should research balanced recipes.",
           "translations": {
-            "ko": "마감일을 지키는 것이 가끔 어려웠습니다.",
-            "zh": "有时候，你在满足截止日期方面有些挑战。",
-            "ja": "締め切りを守ることが時々課題になっています。",
-            "vi": "Việc đáp ứng thời hạn đôi khi là một thách thức."
+            "ko": "균형 잡힌 레시피를 연구해야 해.",
+            "zh": "我们应该研究一下均衡的食谱。",
+            "ja": "バランスの取れたレシピを調査すべきです。",
+            "vi": "Chúng ta nên tìm hiểu về các công thức món ăn cân đối.",
+            "en": "We should research balanced recipes."
           }
         },
         {
           "role": "user",
-          "text": "Yes, I know I’ve missed a couple of target dates.",
+          "text": "I’ve saved a few already.",
           "translations": {
-            "ko": "네, 몇 번의 목표 날짜를 놓친 것을 알고 있습니다.",
-            "zh": "是的，我知道我错过了几个目标日期。",
-            "ja": "はい、私はいくつかの目標日を逃したことを知っています。",
-            "vi": "Đúng, tôi biết tôi đã bỏ lỡ một vài ngày mục tiêu."
+            "ko": "이미 몇 가지를 저장해 두었어.",
+            "zh": "我已经保存了一些。",
+            "ja": "すでにいくつか保存しています。",
+            "vi": "Tôi đã lưu một số công thức rồi.",
+            "en": "I’ve saved a few already."
           }
         },
         {
           "role": "ai",
-          "text": "Improving time estimates would greatly benefit your planning.",
+          "text": "How about we try meal prepping together?",
           "translations": {
-            "ko": "시간 예측을 개선하면 계획에 큰 도움이 될 것입니다.",
-            "zh": "改进时间估计将极大地有助于你的计划。",
-            "ja": "時間の見積もりを改善することがあなたの計画に大いに役立つでしょう。",
-            "vi": "Việc cải thiện ước lượng thời gian sẽ hỗ trợ rất nhiều cho việc lập kế hoạch của bạn."
+            "ko": "함께 식사 준비를 해보는 건 어때?",
+            "zh": "我们可以一起尝试做饭吗？",
+            "ja": "一緒に食事の準備を試してみませんか？",
+            "vi": "Làm thế nào nếu chúng ta thử chuẩn bị bữa ăn cùng nhau?",
+            "en": "How about we try meal prepping together?"
           }
         },
         {
           "role": "user",
-          "text": "I agree. Better time estimation is something I need to work on.",
+          "text": "That would be fun.",
           "translations": {
-            "ko": "동의합니다. 시간 예측을 더 잘하는 것이 필요합니다.",
-            "zh": "我同意。更好的时间估计是我需要改进的地方。",
-            "ja": "同意します。時間の見積もりの改善は私が取り組むべきことです。",
-            "vi": "Tôi đồng ý. Việc ước lượng thời gian tốt hơn là điều tôi cần cải thiện."
+            "ko": "재미있을 것 같아.",
+            "zh": "那会很有趣。",
+            "ja": "それは楽しいでしょう。",
+            "vi": "Điều đó sẽ vui.",
+            "en": "That would be fun."
           }
         },
         {
           "role": "ai",
-          "text": "Have you encountered any obstacles that impacted your workflow?",
+          "text": "Do you miss anything?",
           "translations": {
-            "ko": "작업 흐름에 영향을 미친 장애물이 있었나요?",
-            "zh": "你有遇到过任何影响你工作流程的障碍吗？",
-            "ja": "あなたのワークフローに影響を与える障害に遭遇しましたか？",
-            "vi": "Bạn có gặp phải bất kỳ trở ngại nào ảnh hưởng đến quy trình làm việc của bạn không?"
+            "ko": "뭔가 그리워하니?",
+            "zh": "你想念什么吗？",
+            "ja": "何か恋しいものはありますか？",
+            "vi": "Bạn có nhớ gì không?",
+            "en": "Do you miss anything?"
           }
         },
         {
           "role": "user",
-          "text": "Mostly internal dependencies and shifting priorities.",
+          "text": "Honestly, just cheese.",
           "translations": {
-            "ko": "대부분 내부 의존성과 변화하는 우선순위였습니다.",
-            "zh": "主要是内部依赖和优先级的变化。",
-            "ja": "主に内部依存と優先順位の変更です。",
-            "vi": "Chủ yếu là sự phụ thuộc nội bộ và sự thay đổi ưu tiên."
+            "ko": "솔직히 말하면, 그냥 치즈야.",
+            "zh": "老实说，就是奶酪。",
+            "ja": "正直に言うと、チーズだけです。",
+            "vi": "Thật lòng mà nói, chỉ có phô mai.",
+            "en": "Honestly, just cheese."
           }
         },
         {
           "role": "ai",
-          "text": "We’d like to support you in developing project management skills.",
+          "text": "There are good substitutes now.",
           "translations": {
-            "ko": "프로젝트 관리 기술을 개발하는 데 도움을 드리고 싶습니다.",
-            "zh": "我们希望支持你发展项目管理技能。",
-            "ja": "プロジェクト管理のスキルを開発するためのサポートをしたいと思います。",
-            "vi": "Chúng tôi muốn hỗ trợ bạn trong việc phát triển kỹ năng quản lý dự án."
+            "ko": "지금은 좋은 대체품이 있어.",
+            "zh": "现在有好的替代品。",
+            "ja": "今は良い代替品があります。",
+            "vi": "Hiện nay có những sản phẩm thay thế tốt.",
+            "en": "There are good substitutes now."
           }
         },
         {
           "role": "user",
-          "text": "That would be great. I’d welcome that kind of support.",
+          "text": "True, I’ll explore more options.",
           "translations": {
-            "ko": "그것이 좋겠습니다. 그런 지원을 환영합니다.",
-            "zh": "那太好了。我欢迎这种支持。",
-            "ja": "それは素晴らしい。そのようなサポートは大歓迎です。",
-            "vi": "Điều đó thật tuyệt. Tôi rất hoan nghênh sự hỗ trợ như vậy."
+            "ko": "그렇지, 더 많은 옵션을 찾아볼게.",
+            "zh": "是的，我会探索更多的选项。",
+            "ja": "そうですね、もっと選択肢を探してみます。",
+            "vi": "Đúng, tôi sẽ tìm hiểu thêm các tùy chọn.",
+            "en": "True, I’ll explore more options."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s set some specific goals for the upcoming quarter.",
+          "text": "Would you be open to a nutritionist visit?",
           "translations": {
-            "ko": "다가오는 분기에 대한 구체적인 목표를 설정해봅시다.",
-            "zh": "让我们为下个季度设定一些具体的目标。",
-            "ja": "来四半期に向けて具体的な目標を設定しましょう。",
-            "vi": "Hãy đặt một số mục tiêu cụ thể cho quý sắp tới."
+            "ko": "영양사를 찾아보는 것에 열려 있을까?",
+            "zh": "你愿意去看营养师吗？",
+            "ja": "栄養士の訪問にオープンですか？",
+            "vi": "Bạn có mở lòng đón nhận việc thăm dò dinh dưỡng không?",
+            "en": "Would you be open to a nutritionist visit?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, setting concrete goals would help with focus.",
+          "text": "That’s a great idea.",
           "translations": {
-            "ko": "네, 구체적인 목표를 설정하는 것이 집중력에 도움이 될 것 같습니다.",
-            "zh": "是的，设定具体的目标会有助于集中精力。",
-            "ja": "はい、具体的な目標を設定することは集中力に役立つでしょう。",
-            "vi": "Đúng, việc đặt mục tiêu cụ thể sẽ giúp tôi tập trung hơn."
+            "ko": "좋은 생각이야.",
+            "zh": "那是个好主意。",
+            "ja": "それは素晴らしいアイデアです。",
+            "vi": "Đó là một ý tưởng tuyệt vời.",
+            "en": "That’s a great idea."
           }
         },
         {
           "role": "ai",
-          "text": "Does that sound like a good plan to you?",
+          "text": "Let’s book one next week.",
           "translations": {
-            "ko": "그것이 좋은 계획으로 보이나요?",
-            "zh": "这听起来像一个好计划吗？",
-            "ja": "それはあなたにとって良い計画に聞こえますか？",
-            "vi": "Điều đó có giống như một kế hoạch tốt đối với bạn không?"
+            "ko": "다음 주에 하나를 예약하자.",
+            "zh": "我们下周预约一个。",
+            "ja": "来週一人を予約しましょう。",
+            "vi": "Hãy đặt một lịch vào tuần sau.",
+            "en": "Let’s book one next week."
           }
         },
         {
           "role": "user",
-          "text": "Absolutely. Let’s move forward with that.",
+          "text": "Perfect.",
           "translations": {
-            "ko": "그럼요. 그렇게 진행합시다.",
-            "zh": "绝对的。让我们按照这个计划进行。",
-            "ja": "絶対に。それで進めましょう。",
-            "vi": "Chắc chắn. Hãy tiếp tục với kế hoạch đó."
+            "ko": "완벽해.",
+            "zh": "完美。",
+            "ja": "完璧です。",
+            "vi": "Hoàn hảo.",
+            "en": "Perfect."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "팀 회의 주재",
-        "zh": "主持团队会议",
-        "ja": "チームミーティングをリードする",
-        "vi": "Lãnh đạo một cuộc họp nhóm"
+        "en": "Coordinating a family gathering or event",
+        "ko": "가족 모임이나 이벤트 조정하기",
+        "zh": "协调家庭聚会或活动",
+        "ja": "家族の集まりやイベントを調整する",
+        "vi": "Phối hợp một buổi họp mặt hoặc sự kiện gia đình"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks everyone for being here. Let’s start with a quick status update.",
+          "text": "Are we still hosting the family lunch next weekend?",
           "translations": {
-            "ko": "여기에 오신 모든 분들께 감사드립니다. 빠른 상태 업데이트부터 시작해봅시다.",
-            "zh": "感谢大家的到来。让我们从快速的状态更新开始。",
-            "ja": "皆さん、ここに来てくれてありがとう。まずは簡単なステータスのアップデートから始めましょう。",
-            "vi": "Cảm ơn mọi người đã đến. Hãy bắt đầu với một bản cập nhật tình hình nhanh."
+            "ko": "다음 주말에 가족 점심을 여전히 주최하고 있니?",
+            "zh": "我们下周末还要举办家庭午餐吗？",
+            "ja": "来週末の家族のランチをまだ主催していますか？",
+            "vi": "Chúng ta vẫn tổ chức bữa trưa gia đình vào cuối tuần tới chứ?",
+            "en": "Are we still hosting the family lunch next weekend?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks. I’ll go first with the status update.",
+          "text": "Yes, everyone confirmed.",
           "translations": {
-            "ko": "감사합니다. 상태 업데이트를 먼저 하겠습니다.",
-            "zh": "谢谢。我先来进行状态更新。",
-            "ja": "ありがとう。私からステータスのアップデートを始めます。",
-            "vi": "Cảm ơn. Tôi sẽ cập nhật tình hình đầu tiên."
+            "ko": "그래, 모두가 확인했어.",
+            "zh": "是的，每个人都确认来。",
+            "ja": "はい、全員が確認しました。",
+            "vi": "Đúng, mọi người đã xác nhận.",
+            "en": "Yes, everyone confirmed."
           }
         },
         {
           "role": "ai",
-          "text": "Please keep your updates brief and focused on current blockers.",
+          "text": "How many people total?",
           "translations": {
-            "ko": "업데이트를 간결하게 하고 현재의 장애물에 초점을 맞춰주세요.",
-            "zh": "请保持你的更新简洁并专注于当前的阻碍。",
-            "ja": "アップデートは簡潔に、現在のブロッカーに焦点を当ててください。",
-            "vi": "Vui lòng giữ bản cập nhật của bạn ngắn gọn và tập trung vào các vấn đề hiện tại."
+            "ko": "총 몇 명이야?",
+            "zh": "总共有多少人？",
+            "ja": "合計何人ですか？",
+            "vi": "Tổng cộng bao nhiêu người?",
+            "en": "How many people total?"
           }
         },
         {
           "role": "user",
-          "text": "No blockers on my end, just working through QA feedback.",
+          "text": "Twelve, including kids.",
           "translations": {
-            "ko": "제 쪽에는 장애물이 없고, QA 피드백을 처리하고 있습니다.",
-            "zh": "我这边没有阻碍，只是在处理QA反馈。",
-            "ja": "私の方ではブロッカーはありません、ただQAのフィードバックを処理しています。",
-            "vi": "Không có vấn đề gì ở phía tôi, chỉ đang xử lý phản hồi từ QA."
+            "ko": "아이들을 포함해서 열두 명이야.",
+            "zh": "包括孩子，一共十二个人。",
+            "ja": "子供を含めて12人です。",
+            "vi": "Mười hai, bao gồm cả trẻ em.",
+            "en": "Twelve, including kids."
           }
         },
         {
           "role": "ai",
-          "text": "After that, we’ll move on to the roadmap discussion.",
+          "text": "Should we rent extra chairs?",
           "translations": {
-            "ko": "그 후에 로드맵 토론으로 넘어갈 것입니다.",
-            "zh": "之后，我们将讨论路线图。",
-            "ja": "その後、ロードマップの議論に移ります。",
-            "vi": "Sau đó, chúng ta sẽ chuyển sang thảo luận về lộ trình."
+            "ko": "우리는 추가 의자를 빌려야 할까?",
+            "zh": "我们应该租一些额外的椅子吗？",
+            "ja": "追加の椅子をレンタルすべきですか？",
+            "vi": "Chúng ta nên thuê thêm ghế không?",
+            "en": "Should we rent extra chairs?"
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to discussing the roadmap.",
+          "text": "That would be smart.",
           "translations": {
-            "ko": "로드맵에 대해 논의하는 것을 기대하고 있습니다.",
-            "zh": "期待讨论路线图。",
-            "ja": "ロードマップについて議論するのを楽しみにしています。",
-            "vi": "Mong chờ thảo luận về lộ trình."
+            "ko": "그게 좋을 것 같아.",
+            "zh": "那会很明智。",
+            "ja": "それは賢明です。",
+            "vi": "Điều đó sẽ thông minh.",
+            "en": "That would be smart."
           }
         },
         {
           "role": "ai",
-          "text": "I’d also like to revisit our sprint goals.",
+          "text": "What’s the menu plan?",
           "translations": {
-            "ko": "저희의 스프린트 목표를 다시 살펴보고 싶습니다.",
-            "zh": "我也想重新审视我们的冲刺目标。",
-            "ja": "私たちのスプリントの目標を再訪したいと思います。",
-            "vi": "Tôi cũng muốn xem lại mục tiêu sprint của chúng ta."
+            "ko": "메뉴 계획은 어떻게 돼?",
+            "zh": "菜单计划是什么？",
+            "ja": "メニューの計画は何ですか？",
+            "vi": "Kế hoạch thực đơn là gì?",
+            "en": "What’s the menu plan?"
           }
         },
         {
           "role": "user",
-          "text": "I think we’re slightly behind on goal three.",
+          "text": "I was thinking buffet style.",
           "translations": {
-            "ko": "목표 세 가지 중에 약간 뒤처져 있는 것 같습니다.",
-            "zh": "我认为我们在第三个目标上稍微落后了。",
-            "ja": "私たちは目標3に少し遅れていると思います。",
-            "vi": "Tôi nghĩ chúng ta đang hơi chậm so với mục tiêu thứ ba."
+            "ko": "나는 뷔페 스타일을 생각하고 있어.",
+            "zh": "我在想自助式。",
+            "ja": "ビュッフェスタイルを考えていました。",
+            "vi": "Tôi nghĩ đến kiểu buffet.",
+            "en": "I was thinking buffet style."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s make sure we’re aligned on delivery timelines.",
+          "text": "Do we have enough serveware?",
           "translations": {
-            "ko": "배송 일정에 대해 우리가 일치하는지 확인합시다.",
-            "zh": "让我们确保我们在交付时间表上保持一致。",
-            "ja": "納期のタイムラインについて確認しましょう。",
-            "vi": "Hãy đảm bảo chúng ta đồng lòng về thời gian giao hàng."
+            "ko": "우리는 충분한 식기를 가지고 있을까?",
+            "zh": "我们有足够的餐具吗？",
+            "ja": "十分なサーブウェアはありますか？",
+            "vi": "Chúng ta có đủ dụng cụ phục vụ không?",
+            "en": "Do we have enough serveware?"
           }
         },
         {
           "role": "user",
-          "text": "We should adjust the timeline for that deliverable.",
+          "text": "I’ll double-check.",
           "translations": {
-            "ko": "그 배송물에 대한 타임라인을 조정해야 합니다.",
-            "zh": "我们应该调整那个可交付物的时间表。",
-            "ja": "その成果物のタイムラインを調整すべきです。",
-            "vi": "Chúng ta nên điều chỉnh thời gian biểu cho sản phẩm đó."
+            "ko": "확인해볼게.",
+            "zh": "我会再检查一下。",
+            "ja": "確認してみます。",
+            "vi": "Tôi sẽ kiểm tra lại.",
+            "en": "I’ll double-check."
           }
         },
         {
           "role": "ai",
-          "text": "If anyone needs help, feel free to raise it during the call.",
+          "text": "Any allergies we should be aware of?",
           "translations": {
-            "ko": "누구든지 도움이 필요하면 통화 중에 제기해 주세요.",
-            "zh": "如果有人需要帮助，可以在电话会议中提出。",
-            "ja": "誰かが助けが必要なら、電話会議中に気軽に言ってください。",
-            "vi": "Nếu ai cần giúp đỡ, hãy tự do nêu ra trong cuộc gọi."
+            "ko": "우리가 알아야 할 알레르기가 있을까?",
+            "zh": "有没有我们应该注意的过敏情况？",
+            "ja": "私たちが知っておくべきアレルギーはありますか？",
+            "vi": "Có bất kỳ dị ứng nào chúng ta nên biết không?",
+            "en": "Any allergies we should be aware of?"
           }
         },
         {
           "role": "user",
-          "text": "I might need some support from DevOps later this week.",
+          "text": "Uncle Joe can’t have gluten.",
           "translations": {
-            "ko": "이번 주 후반에는 DevOps로부터 지원이 필요할 수도 있습니다.",
-            "zh": "这周晚些时候我可能需要DevOps的一些支持。",
-            "ja": "今週後半にはDevOpsからのサポートが必要かもしれません。",
-            "vi": "Tôi có thể cần sự hỗ trợ từ DevOps vào cuối tuần này."
+            "ko": "조 삼촌은 글루텐을 먹을 수 없어.",
+            "zh": "乔叔叔不能吃麸质。",
+            "ja": "ジョーおじさんはグルテンを摂取できません。",
+            "vi": "Chú Joe không thể ăn gluten.",
+            "en": "Uncle Joe can’t have gluten."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll spend the last 10 minutes reviewing key risks.",
+          "text": "We’ll label all the dishes clearly.",
           "translations": {
-            "ko": "마지막 10분은 주요 위험을 검토하는 데 사용하겠습니다.",
-            "zh": "我们将在最后10分钟内审查关键风险。",
-            "ja": "最後の10分間は重要なリスクのレビューに費やします。",
-            "vi": "Chúng ta sẽ dành 10 phút cuối để xem xét các rủi ro chính."
+            "ko": "우리는 모든 요리를 명확하게 표시할 것이야.",
+            "zh": "我们会清楚地标记所有的菜肴。",
+            "ja": "すべての料理を明確にラベル付けしましょう。",
+            "vi": "Chúng ta sẽ ghi rõ tất cả các món ăn.",
+            "en": "We’ll label all the dishes clearly."
           }
         },
         {
           "role": "user",
-          "text": "That makes sense. Risk review is important.",
+          "text": "Good call.",
           "translations": {
-            "ko": "그게 맞습니다. 위험 검토는 중요합니다.",
-            "zh": "这很有道理。风险审查很重要。",
-            "ja": "それは理にかなっています。リスクレビューは重要です。",
-            "vi": "Điều đó có lý. Việc xem xét rủi ro là quan trọng."
+            "ko": "좋은 생각이야.",
+            "zh": "好主意。",
+            "ja": "良い考えです。",
+            "vi": "Gọi là quyết định tốt.",
+            "en": "Good call."
           }
         },
         {
           "role": "ai",
-          "text": "Don’t forget to update your task boards after the meeting.",
+          "text": "What about decorations?",
           "translations": {
-            "ko": "회의 후에는 작업 보드를 업데이트하는 것을 잊지 마세요.",
-            "zh": "会议结束后不要忘记更新你的任务板。",
-            "ja": "会議後にタスクボードを更新するのを忘れないでください。",
-            "vi": "Đừng quên cập nhật bảng công việc của bạn sau cuộc họp."
+            "ko": "장식은 어떨까?",
+            "zh": "装饰怎么样？",
+            "ja": "デコレーションはどうですか？",
+            "vi": "Còn về trang trí thì sao?",
+            "en": "What about decorations?"
           }
         },
         {
           "role": "user",
-          "text": "Will do. I’ll update my items today.",
+          "text": "Simple and cozy.",
           "translations": {
-            "ko": "알겠습니다. 오늘 제 항목을 업데이트하겠습니다.",
-            "zh": "好的，我今天会更新我的项目。",
-            "ja": "承知しました。今日中に私の項目を更新します。",
-            "vi": "Sẽ làm. Tôi sẽ cập nhật các mục của mình hôm nay."
+            "ko": "간단하고 아늑하게.",
+            "zh": "简单而舒适。",
+            "ja": "シンプルで居心地の良いもの。",
+            "vi": "Đơn giản và ấm cúng.",
+            "en": "Simple and cozy."
           }
         },
         {
           "role": "ai",
-          "text": "If there’s any follow-up, we’ll handle it asynchronously.",
+          "text": "Should we assign tasks?",
           "translations": {
-            "ko": "후속 조치가 필요하다면, 우리는 비동기적으로 처리하겠습니다.",
-            "zh": "如果有任何后续，我们将异步处理。",
-            "ja": "フォローアップが必要な場合は、非同期で対応します。",
-            "vi": "Nếu có bất kỳ việc theo dõi nào, chúng tôi sẽ xử lý nó một cách không đồng bộ."
+            "ko": "업무를 할당해야 할까?",
+            "zh": "我们应该分配任务吗？",
+            "ja": "タスクを割り当てるべきですか？",
+            "vi": "Chúng ta nên giao nhiệm vụ không?",
+            "en": "Should we assign tasks?"
           }
         },
         {
           "role": "user",
-          "text": "Okay. I’ll send follow-up notes afterward.",
+          "text": "Yes, I’ll make a checklist.",
           "translations": {
-            "ko": "알겠습니다. 나중에 후속 노트를 보내겠습니다.",
-            "zh": "好的，我会在之后发送后续笔记。",
-            "ja": "了解しました。後でフォローアップのメモを送ります。",
-            "vi": "Được. Tôi sẽ gửi ghi chú theo dõi sau đó."
+            "ko": "그래, 체크리스트를 만들게.",
+            "zh": "是的，我会做一个清单。",
+            "ja": "はい、チェックリストを作ります。",
+            "vi": "Đúng, tôi sẽ làm một danh sách kiểm tra.",
+            "en": "Yes, I’ll make a checklist."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s wrap up and aim to stay on track this week.",
+          "text": "Thanks for helping coordinate.",
           "translations": {
-            "ko": "마무리하고 이번 주에 계획대로 진행하려고 합시다.",
-            "zh": "让我们总结一下，本周目标是保持进度。",
-            "ja": "終わりにしましょう、そして今週は進行状況を保つことを目指しましょう。",
-            "vi": "Hãy kết thúc và hướng tới việc giữ đúng tiến độ trong tuần này."
+            "ko": "조정하는 데 도움을 줘서 고마워.",
+            "zh": "谢谢你帮忙协调。",
+            "ja": "協力して調整してくれてありがとう。",
+            "vi": "Cảm ơn bạn đã giúp điều phối.",
+            "en": "Thanks for helping coordinate."
           }
         },
         {
           "role": "user",
-          "text": "Sounds good. Thanks for facilitating.",
+          "text": "My pleasure.",
           "translations": {
-            "ko": "좋습니다. 주재해 주셔서 감사합니다.",
-            "zh": "听起来不错。感谢你的协助。",
-            "ja": "良いですね。ファシリテートしてくれてありがとう。",
-            "vi": "Nghe có vẻ tốt. Cảm ơn vì đã điều phối."
+            "ko": "천만에요.",
+            "zh": "我很乐意。",
+            "ja": "喜んで。",
+            "vi": "Rất vui được giúp đỡ.",
+            "en": "My pleasure."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "면접 진행하기",
-        "zh": "进行一次工作面试",
-        "ja": "面接を行う",
-        "vi": "Tiến hành một cuộc phỏng vấn xin việc"
+        "en": "Discussing work-life balance and stress management",
+        "ko": "직장과 생활의 균형 및 스트레스 관리 논의하기",
+        "zh": "讨论工作生活平衡和压力管理",
+        "ja": "ワークライフバランスとストレス管理について話し合う",
+        "vi": "Thảo luận về cân bằng công việc và cuộc sống, quản lý căng thẳng"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for taking the time to speak with us today.",
+          "text": "You’ve been looking drained lately. Everything alright?",
           "translations": {
-            "ko": "오늘 저희와 이야기할 시간을 내 주셔서 감사합니다.",
-            "zh": "感谢你今天抽出时间和我们交谈。",
-            "ja": "今日はお話しいただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã dành thời gian để nói chuyện với chúng tôi hôm nay."
+            "ko": "요즘 너가 피곤해 보여. 괜찮아?",
+            "zh": "你最近看起来很疲惫。一切还好吗？",
+            "ja": "最近あなたが疲れて見えます。大丈夫ですか？",
+            "vi": "Bạn trông rất mệt mỏi gần đây. Mọi thứ ổn không?",
+            "en": "You’ve been looking drained lately. Everything alright?"
           }
         },
         {
           "role": "user",
-          "text": "Thank you for having me. I appreciate the opportunity.",
+          "text": "Work’s been overwhelming.",
           "translations": {
-            "ko": "초대해 주셔서 감사합니다. 이 기회에 감사드립니다.",
-            "zh": "感谢你的邀请，我很感谢这个机会。",
-            "ja": "お招きいただきありがとうございます。この機会を大切にしたいと思います。",
-            "vi": "Cảm ơn bạn đã mời tôi. Tôi đánh giá cao cơ hội này."
+            "ko": "일이 좀 많아져서.",
+            "zh": "工作压力太大。",
+            "ja": "仕事が圧倒的です。",
+            "vi": "Công việc đang làm tôi quá sức.",
+            "en": "Work’s been overwhelming."
           }
         },
         {
           "role": "ai",
-          "text": "Could you walk me through your recent experience?",
+          "text": "Have you considered taking a few days off?",
           "translations": {
-            "ko": "최근의 경험을 설명해 주실 수 있나요?",
-            "zh": "你能介绍一下你最近的经历吗？",
-            "ja": "最近の経験について教えていただけますか？",
-            "vi": "Bạn có thể giới thiệu về kinh nghiệm gần đây của bạn?"
+            "ko": "며칠 쉬어보는 건 어때?",
+            "zh": "你有考虑过休几天假吗？",
+            "ja": "数日休むことを考えたことはありますか？",
+            "vi": "Bạn đã nghĩ đến việc nghỉ vài ngày chưa?",
+            "en": "Have you considered taking a few days off?"
           }
         },
         {
           "role": "user",
-          "text": "Certainly. I’ve spent the last two years in a similar role.",
+          "text": "I’ve been thinking about it.",
           "translations": {
-            "ko": "그럼요. 저는 최근 두 년 동안 비슷한 역할을 맡았습니다.",
-            "zh": "当然，我在过去的两年里在一个类似的角色中工作。",
-            "ja": "もちろんです。私は過去2年間、同様の役割を果たしてきました。",
-            "vi": "Chắc chắn. Tôi đã dành hai năm qua cho một vai trò tương tự."
+            "ko": "그것을 생각해 보고 있었어.",
+            "zh": "我一直在考虑。",
+            "ja": "それについて考えていました。",
+            "vi": "Tôi đã nghĩ về điều đó.",
+            "en": "I’ve been thinking about it."
           }
         },
         {
           "role": "ai",
-          "text": "What would you say are your core strengths?",
+          "text": "Sometimes a short break can do wonders.",
           "translations": {
-            "ko": "당신의 핵심 역량은 무엇이라고 말하시겠습니까?",
-            "zh": "你认为你的核心优势是什么？",
-            "ja": "あなたの主要な強みは何だと思いますか？",
-            "vi": "Bạn có thể nói những điểm mạnh cốt lõi của bạn là gì?"
+            "ko": "가끔 짧은 휴식이 큰 도움이 될 수 있어.",
+            "zh": "有时候短暂的休息可以创造奇迹。",
+            "ja": "短い休みが驚くほど効果的なこともあります。",
+            "vi": "Đôi khi một kỳ nghỉ ngắn có thể tạo nên điều kỳ diệu.",
+            "en": "Sometimes a short break can do wonders."
           }
         },
         {
           "role": "user",
-          "text": "I’d say problem-solving and adaptability are key strengths.",
+          "text": "That’s true.",
           "translations": {
-            "ko": "문제 해결과 적응성이 주요 강점이라고 말하겠습니다.",
-            "zh": "我认为解决问题和适应性是关键优势。",
-            "ja": "問題解決能力と適応性が主要な強みだと言えます。",
-            "vi": "Tôi nghĩ khả năng giải quyết vấn đề và thích ứng là những điểm mạnh chính."
+            "ko": "그게 맞아.",
+            "zh": "那是真的。",
+            "ja": "それは本当です。",
+            "vi": "Đúng vậy.",
+            "en": "That’s true."
           }
         },
         {
           "role": "ai",
-          "text": "Can you share a challenge you’ve faced and how you addressed it?",
+          "text": "How have you been managing stress?",
           "translations": {
-            "ko": "당신이 직면한 도전과 그것을 어떻게 해결했는지 공유해 주실 수 있나요?",
-            "zh": "你能分享一下你面临的挑战以及你是如何解决的吗？",
-            "ja": "あなたが直面した課題とそれにどのように対処したかを共有していただけますか？",
-            "vi": "Bạn có thể chia sẻ một thách thức mà bạn đã đối mặt và cách bạn giải quyết nó?"
+            "ko": "스트레스를 어떻게 관리하고 있니?",
+            "zh": "你是怎么管理压力的？",
+            "ja": "あなたはどのようにストレスを管理していますか？",
+            "vi": "Bạn đã quản lý căng thẳng như thế nào?",
+            "en": "How have you been managing stress?"
           }
         },
         {
           "role": "user",
-          "text": "Once I had to turn around a failing project under tight time pressure.",
+          "text": "Mostly walks and journaling.",
           "translations": {
-            "ko": "한번은 시간 압박 속에서 실패하고 있는 프로젝트를 뒤집어야 했습니다.",
-            "zh": "曾经我不得不在时间压力下扭转一个失败的项目。",
-            "ja": "一度、厳しい時間制約の下で失敗しそうなプロジェクトを立て直さなければならなかったことがあります。",
-            "vi": "Một lần tôi phải đảo ngược một dự án thất bại dưới áp lực thời gian chặt chẽ."
+            "ko": "주로 산책하고 일기를 쓰고 있어.",
+            "zh": "主要是散步和写日记。",
+            "ja": "主に散歩と日記を書いています。",
+            "vi": "Chủ yếu là đi dạo và viết nhật ký.",
+            "en": "Mostly walks and journaling."
           }
         },
         {
           "role": "ai",
-          "text": "How do you typically manage competing priorities?",
+          "text": "Do you sleep okay?",
           "translations": {
-            "ko": "일반적으로 경쟁하는 우선순위를 어떻게 관리하나요?",
-            "zh": "你通常如何管理相互竞争的优先事项？",
-            "ja": "あなたは通常、競合する優先順位をどのように管理しますか？",
-            "vi": "Bạn thường quản lý các ưu tiên cạnh tranh như thế nào?"
+            "ko": "잠은 잘 자니?",
+            "zh": "你睡得好吗？",
+            "ja": "眠れていますか？",
+            "vi": "Bạn ngủ ổn không?",
+            "en": "Do you sleep okay?"
           }
         },
         {
           "role": "user",
-          "text": "I prioritize based on deadlines and impact, then plan accordingly.",
+          "text": "Not really, my mind races.",
           "translations": {
-            "ko": "저는 마감일과 영향을 기준으로 우선순위를 정하고, 그에 따라 계획합니다.",
-            "zh": "我根据截止日期和影响进行优先排序，然后相应地计划。",
-            "ja": "締め切りと影響度に基づいて優先順位をつけ、それに応じて計画します。",
-            "vi": "Tôi ưu tiên dựa trên thời hạn và tác động, sau đó lập kế hoạch tương ứng."
+            "ko": "사실 그렇지 않아, 내 마음이 계속 빠르게 움직여.",
+            "zh": "不太好，我的脑子一直在转。",
+            "ja": "実際には、私の頭は走っています。",
+            "vi": "Không thực sự, tâm trí tôi luôn đang suy nghĩ.",
+            "en": "Not really, my mind races."
           }
         },
         {
           "role": "ai",
-          "text": "Why are you interested in this role specifically?",
+          "text": "Want to try mindfulness together?",
           "translations": {
-            "ko": "왜 이 역할에 특히 관심이 있나요?",
-            "zh": "你为什么对这个角色特别感兴趣？",
-            "ja": "なぜこの役割に特に興味があるのですか？",
-            "vi": "Tại sao bạn quan tâm đến vị trí này cụ thể?"
+            "ko": "함께 명상을 해보는 건 어때?",
+            "zh": "我们一起尝试正念怎么样？",
+            "ja": "一緒にマインドフルネスを試してみませんか？",
+            "vi": "Bạn muốn thử thiền cùng nhau không?",
+            "en": "Want to try mindfulness together?"
           }
         },
         {
           "role": "user",
-          "text": "The role aligns with my background and future goals.",
+          "text": "I’d love that.",
           "translations": {
-            "ko": "이 역할은 제 배경과 미래의 목표와 일치합니다.",
-            "zh": "这个角色与我的背景和未来目标相符。",
-            "ja": "この役割は私のバックグラウンドと未来の目標と一致しています。",
-            "vi": "Vị trí này phù hợp với lý lịch và mục tiêu tương lai của tôi."
+            "ko": "그게 좋겠어.",
+            "zh": "我很愿意。",
+            "ja": "それがいいです。",
+            "vi": "Tôi rất muốn.",
+            "en": "I’d love that."
           }
         },
         {
           "role": "ai",
-          "text": "What do you hope to achieve in the next few years?",
+          "text": "Let’s block time for it each evening.",
           "translations": {
-            "ko": "앞으로 몇 년 동안 어떤 것을 이루고 싶으신가요?",
-            "zh": "你希望在未来几年里实现什么？",
-            "ja": "あなたは次の数年で何を達成したいと考えていますか？",
-            "vi": "Bạn hy vọng đạt được gì trong vài năm tới?"
+            "ko": "매일 저녁에 그 시간을 막아두자.",
+            "zh": "我们每天晚上都留出时间来做。",
+            "ja": "毎晩それのための時間をブロックしましょう。",
+            "vi": "Hãy dành thời gian cho nó mỗi tối.",
+            "en": "Let’s block time for it each evening."
           }
         },
         {
           "role": "user",
-          "text": "I’d like to continue growing in leadership and strategy.",
+          "text": "That sounds doable.",
           "translations": {
-            "ko": "리더십과 전략에서 계속 성장하고 싶습니다.",
-            "zh": "我希望在领导力和策略上继续成长。",
-            "ja": "リーダーシップと戦略の成長を続けたいと考えています。",
-            "vi": "Tôi muốn tiếp tục phát triển về lãnh đạo và chiến lược."
+            "ko": "그게 가능하게 느껴져.",
+            "zh": "那听起来可行。",
+            "ja": "それは可能そうです。",
+            "vi": "Điều đó có thể thực hiện được.",
+            "en": "That sounds doable."
           }
         },
         {
           "role": "ai",
-          "text": "Do you prefer working independently or in a team environment?",
+          "text": "We could also set work boundaries.",
           "translations": {
-            "ko": "당신은 독립적으로 일하는 것을 선호하시나요, 아니면 팀 환경에서 일하는 것을 선호하시나요?",
-            "zh": "你更喜欢独立工作还是团队环境？",
-            "ja": "独立して働くこととチーム環境で働くこと、どちらが好きですか？",
-            "vi": "Bạn thích làm việc độc lập hay trong môi trường nhóm?"
+            "ko": "우리는 또한 업무 경계를 설정할 수 있어.",
+            "zh": "我们也可以设定工作界限。",
+            "ja": "また、仕事の境界を設定することもできます。",
+            "vi": "Chúng ta cũng có thể đặt ranh giới công việc.",
+            "en": "We could also set work boundaries."
           }
         },
         {
           "role": "user",
-          "text": "Both are important, but I thrive in team environments.",
+          "text": "Like no emails after 8 PM?",
           "translations": {
-            "ko": "둘 다 중요하지만, 저는 팀 환경에서 더 잘 해낼 수 있습니다.",
-            "zh": "两者都很重要，但我在团队环境中更能发挥。",
-            "ja": "どちらも重要ですが、私はチーム環境で活躍します。",
-            "vi": "Cả hai đều quan trọng, nhưng tôi thích làm việc trong môi trường nhóm hơn."
+            "ko": "8시 이후에는 이메일을 보내지 않는 것처럼?",
+            "zh": "比如晚上8点后不看邮件？",
+            "ja": "8時以降はメールを送らないということですか？",
+            "vi": "Như không gửi email sau 8 giờ tối?",
+            "en": "Like no emails after 8 PM?"
           }
         },
         {
           "role": "ai",
-          "text": "Is there anything you’d like to ask us?",
+          "text": "Exactly. Let’s protect our downtime.",
           "translations": {
-            "ko": "우리에게 물어보고 싶은 것이 있나요?",
-            "zh": "你有什么想问我们的吗？",
-            "ja": "何か私たちに尋ねたいことはありますか？",
-            "vi": "Có điều gì bạn muốn hỏi chúng tôi không?"
+            "ko": "정확해. 우리의 휴식 시간을 보호하자.",
+            "zh": "没错。让我们保护我们的休息时间。",
+            "ja": "まさにその通り。私たちのダウンタイムを守りましょう。",
+            "vi": "Chính xác. Hãy bảo vệ thời gian nghỉ ngơi của chúng ta.",
+            "en": "Exactly. Let’s protect our downtime."
           }
         },
         {
           "role": "user",
-          "text": "Yes, could you describe the day-to-day responsibilities?",
+          "text": "Agreed.",
           "translations": {
-            "ko": "네, 일상적인 업무 책임에 대해 설명해주실 수 있나요?",
-            "zh": "是的，你能描述一下日常的职责吗？",
-            "ja": "はい、日々の責任を説明していただけますか？",
-            "vi": "Vâng, bạn có thể mô tả về trách nhiệm hàng ngày không?"
+            "ko": "동의해.",
+            "zh": "同意。",
+            "ja": "同意します。",
+            "vi": "Đồng ý.",
+            "en": "Agreed."
           }
         },
         {
           "role": "ai",
-          "text": "Thanks again. We’ll be in touch soon.",
+          "text": "Balance is everything.",
           "translations": {
-            "ko": "다시 한번 감사드립니다. 곧 연락드리겠습니다.",
-            "zh": "再次感谢。我们会尽快与你联系。",
-            "ja": "再度ありがとうございます。近々連絡します。",
-            "vi": "Cảm ơn một lần nữa. Chúng tôi sẽ liên hệ lại sớm."
+            "ko": "균형이 모든 것이야.",
+            "zh": "平衡是一切。",
+            "ja": "バランスが全てです。",
+            "vi": "Sự cân bằng là mọi thứ.",
+            "en": "Balance is everything."
           }
         },
         {
           "role": "user",
-          "text": "Thank you. I look forward to hearing from you.",
+          "text": "Absolutely.",
           "translations": {
-            "ko": "감사합니다. 연락을 기다리겠습니다.",
-            "zh": "谢谢。我期待你的回复。",
-            "ja": "ありがとうございます。ご連絡をお待ちしております。",
-            "vi": "Cảm ơn. Tôi mong chờ tin từ bạn."
+            "ko": "그렇지.",
+            "zh": "绝对。",
+            "ja": "確かに。",
+            "vi": "Chắc chắn.",
+            "en": "Absolutely."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "컨퍼런스에서 발표하기",
-        "zh": "在会议上发表演讲",
-        "ja": "会議でのプレゼンテーション",
-        "vi": "Trình bày tại một hội nghị"
+        "en": "Making ethical choices in daily life",
+        "ko": "일상생활에서 윤리적인 선택을 하는 것",
+        "zh": "在日常生活中做出道德选择",
+        "ja": "日常生活での倫理的な選択をする",
+        "vi": "Đưa ra lựa chọn đạo đức trong cuộc sống hàng ngày"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Good morning everyone, and thank you for being here.",
+          "text": "Should we switch to more eco-friendly products?",
           "translations": {
-            "ko": "모두들 좋은 아침입니다. 여기에 참석해주셔서 감사드립니다.",
-            "zh": "大家早上好，感谢你们的到来。",
-            "ja": "皆さん、おはようございます。そして、ここにいてくださりありがとうございます。",
-            "vi": "Chào buổi sáng mọi người, và cảm ơn vì đã đến đây."
+            "ko": "우리는 더 친환경적인 제품으로 전환해야 할까?",
+            "zh": "我们应该转向更环保的产品吗？",
+            "ja": "もっとエコフレンドリーな製品に切り替えるべきですか？",
+            "vi": "Chúng ta nên chuyển sang sử dụng nhiều sản phẩm thân thiện với môi trường hơn không?",
+            "en": "Should we switch to more eco-friendly products?"
           }
         },
         {
           "role": "user",
-          "text": "Thank you for the introduction.",
+          "text": "Yes, I’ve been meaning to.",
           "translations": {
-            "ko": "소개해주셔서 감사합니다.",
-            "zh": "感谢你的介绍。",
-            "ja": "紹介いただきありがとうございます。",
-            "vi": "Cảm ơn vì đã giới thiệu."
+            "ko": "그래, 그것을 하려고 했어.",
+            "zh": "是的，我一直想这么做。",
+            "ja": "はい、それを意図していました。",
+            "vi": "Đúng, tôi đã có ý định làm như vậy.",
+            "en": "Yes, I’ve been meaning to."
           }
         },
         {
           "role": "ai",
-          "text": "Today, I’ll be discussing emerging trends in our industry.",
+          "text": "Like reusable kitchen wraps?",
           "translations": {
-            "ko": "오늘은 우리 산업에서 나타나는 신흥 트렌드에 대해 이야기하겠습니다.",
-            "zh": "今天，我将讨论我们行业中的新兴趋势。",
-            "ja": "今日は、私たちの業界での新興トレンドについて話します。",
-            "vi": "Hôm nay, tôi sẽ thảo luận về các xu hướng mới nổi trong ngành của chúng ta."
+            "ko": "재사용 가능한 주방 랩 같은 거야?",
+            "zh": "像可重复使用的厨房包装吗？",
+            "ja": "再利用可能なキッチンラップのようなものですか？",
+            "vi": "Như bọc bếp tái sử dụng?",
+            "en": "Like reusable kitchen wraps?"
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to hearing more about the data.",
+          "text": "Exactly.",
           "translations": {
-            "ko": "데이터에 대해 더 자세히 듣는 것을 기대합니다.",
-            "zh": "期待听到更多关于数据的信息。",
-            "ja": "データについて詳しく聞くのを楽しみにしています。",
-            "vi": "Mong chờ nghe thêm về dữ liệu."
+            "ko": "정확해.",
+            "zh": "没错。",
+            "ja": "まさにその通り。",
+            "vi": "Chính xác.",
+            "en": "Exactly."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll start with a brief overview of the data we collected.",
+          "text": "What about reducing plastic use?",
           "translations": {
-            "ko": "우리가 수집한 데이터에 대한 간략한 개요부터 시작하겠습니다.",
-            "zh": "我们将从我们收集的数据的简要概述开始。",
-            "ja": "私たちが収集したデータの概要から始めます。",
-            "vi": "Chúng tôi sẽ bắt đầu bằng một cái nhìn tổng quan về dữ liệu mà chúng tôi đã thu thập."
+            "ko": "플라스틱 사용을 줄이는 것은 어떨까?",
+            "zh": "我们应该减少塑料的使用吗？",
+            "ja": "プラスチックの使用を減らすことはどうですか？",
+            "vi": "Còn việc giảm sử dụng nhựa thì sao?",
+            "en": "What about reducing plastic use?"
           }
         },
         {
           "role": "user",
-          "text": "That sounds comprehensive.",
+          "text": "Let’s start with bulk buying.",
           "translations": {
-            "ko": "그것은 상세하게 들립니다.",
-            "zh": "听起来很全面。",
-            "ja": "それは包括的に聞こえます。",
-            "vi": "Điều đó nghe có vẻ toàn diện."
+            "ko": "대량 구매로 시작하자.",
+            "zh": "我们可以从大量购买开始。",
+            "ja": "まずは一括購入から始めましょう。",
+            "vi": "Hãy bắt đầu với việc mua hàng theo số lượng lớn.",
+            "en": "Let’s start with bulk buying."
           }
         },
         {
           "role": "ai",
-          "text": "Next, I’ll highlight key insights that emerged from our analysis.",
+          "text": "And composting food waste?",
           "translations": {
-            "ko": "다음으로, 우리의 분석에서 나타난 주요 인사이트를 강조하겠습니다.",
-            "zh": "接下来，我将突出我们的分析中出现的关键见解。",
-            "ja": "次に、分析から浮かび上がった重要な洞察を強調します。",
-            "vi": "Tiếp theo, tôi sẽ nêu bật những thông tin quan trọng từ phân tích của chúng tôi."
+            "ko": "그리고 음식물 쓰레기를 퇴비로 만드는 것은 어떨까?",
+            "zh": "那么堆肥食物垃圾呢？",
+            "ja": "食品廃棄物の堆肥化はどうですか？",
+            "vi": "Và việc ủ phân rác thực phẩm?",
+            "en": "And composting food waste?"
           }
         },
         {
           "role": "user",
-          "text": "Great, case studies always help bring things to life.",
+          "text": "That’s a bit tricky in our apartment.",
           "translations": {
-            "ko": "좋습니다, 케이스 스터디는 항상 이해를 돕습니다.",
-            "zh": "很好，案例研究总是能使事情更生动。",
-            "ja": "素晴らしい、ケーススタディは常に物事を生き生きとさせます。",
-            "vi": "Tuyệt, các nghiên cứu trường hợp luôn giúp mọi thứ trở nên sinh động hơn."
+            "ko": "우리 아파트에서는 좀 까다로울 수 있어.",
+            "zh": "在我们的公寓里这有点困难。",
+            "ja": "それは私たちのアパートでは少し難しいです。",
+            "vi": "Điều đó hơi khó khăn trong căn hộ của chúng ta.",
+            "en": "That’s a bit tricky in our apartment."
           }
         },
         {
           "role": "ai",
-          "text": "These findings have significant implications for the coming year.",
+          "text": "We could research local options.",
           "translations": {
-            "ko": "이러한 발견은 내년에 중요한 영향을 미칠 것입니다.",
-            "zh": "这些发现对于来年有重大影响。",
-            "ja": "これらの調査結果は、来年に向けて重大な意味を持っています。",
-            "vi": "Những phát hiện này có ý nghĩa quan trọng cho năm tới."
+            "ko": "우리는 지역 옵션을 연구할 수 있어.",
+            "zh": "我们可以研究一下当地的选择。",
+            "ja": "地元のオプションを調査することができます。",
+            "vi": "Chúng ta có thể tìm hiểu các tùy chọn địa phương.",
+            "en": "We could research local options."
           }
         },
         {
           "role": "user",
-          "text": "I'm curious about the implications for our own work.",
+          "text": "Good idea.",
           "translations": {
-            "ko": "우리의 작업에 미치는 영향에 대해 궁금합니다.",
-            "zh": "我对这对我们自己的工作的影响很好奇。",
-            "ja": "自分たちの仕事に対する影響について興味があります。",
-            "vi": "Tôi tò mò về hậu quả cho công việc của chúng tôi."
+            "ko": "좋은 생각이야.",
+            "zh": "好主意。",
+            "ja": "良い考えです。",
+            "vi": "Ý tưởng tốt.",
+            "en": "Good idea."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll also share a few case studies to illustrate our points.",
+          "text": "Have you seen the zero-waste kits?",
           "translations": {
-            "ko": "또한, 우리의 주장을 설명하기 위해 몇 가지 케이스 스터디를 공유하겠습니다.",
-            "zh": "我也会分享一些案例研究来说明我们的观点。",
-            "ja": "ポイントを説明するために、いくつかのケーススタディも共有します。",
-            "vi": "Tôi cũng sẽ chia sẻ một số nghiên cứu trường hợp để minh họa cho quan điểm của chúng tôi."
+            "ko": "너는 제로 웨이스트 키트를 봤니?",
+            "zh": "你见过零废弃套件吗？",
+            "ja": "ゼロウェイストキットを見たことがありますか？",
+            "vi": "Bạn đã thấy bộ dụng cụ không rác chưa?",
+            "en": "Have you seen the zero-waste kits?"
           }
         },
         {
           "role": "user",
-          "text": "Do you plan to expand the research further?",
+          "text": "Yes, they look promising.",
           "translations": {
-            "ko": "연구를 더 확장할 계획이 있나요?",
-            "zh": "你打算进一步扩展研究吗？",
-            "ja": "研究をさらに拡大する予定はありますか？",
-            "vi": "Bạn có dự định mở rộng nghiên cứu thêm không?"
+            "ko": "그래, 유망해 보여.",
+            "zh": "是的，它们看起来很有希望。",
+            "ja": "はい、それらは有望に見えます。",
+            "vi": "Đúng, chúng trông rất hứa hẹn.",
+            "en": "Yes, they look promising."
           }
         },
         {
           "role": "ai",
-          "text": "Please feel free to hold questions until the end.",
+          "text": "It might cost more upfront.",
           "translations": {
-            "ko": "질문은 마지막까지 기다려 주시기 바랍니다.",
-            "zh": "请在结束时再提问。",
-            "ja": "質問は最後まで保留していただいて構いません。",
-            "vi": "Xin vui lòng giữ câu hỏi cho đến cuối."
+            "ko": "초기 비용이 더 들 수 있어.",
+            "zh": "它可能会有更高的初期成本。",
+            "ja": "最初はもっと費用がかかるかもしれません。",
+            "vi": "Nó có thể tốn nhiều hơn ban đầu.",
+            "en": "It might cost more upfront."
           }
         },
         {
           "role": "user",
-          "text": "Noted. I’ll hold my questions until the end.",
+          "text": "But worth it long-term.",
           "translations": {
-            "ko": "알겠습니다. 질문은 마지막까지 기다리겠습니다.",
-            "zh": "注意到了。我会在结束时提问。",
-            "ja": "承知しました。質問は最後まで保留します。",
-            "vi": "Đã ghi nhớ. Tôi sẽ giữ câu hỏi cho đến cuối."
+            "ko": "하지만 장기적으로는 가치가 있어.",
+            "zh": "但从长远来看是值得的。",
+            "ja": "しかし、長期的にはそれが価値があります。",
+            "vi": "Nhưng đáng giá lâu dài.",
+            "en": "But worth it long-term."
           }
         },
         {
           "role": "ai",
-          "text": "All materials will be made available afterward for download.",
+          "text": "Ethical shopping also includes fair trade.",
           "translations": {
-            "ko": "모든 자료는 나중에 다운로드 받을 수 있게 제공될 것입니다.",
-            "zh": "所有材料将在之后提供下载。",
-            "ja": "すべての資料は後でダウンロード可能になります。",
-            "vi": "Tất cả tài liệu sẽ được cung cấp sau để tải về."
+            "ko": "윤리적인 쇼핑에는 또한 공정 무역이 포함돼.",
+            "zh": "道德购物也包括公平贸易。",
+            "ja": "倫理的なショッピングにはフェアトレードも含まれます。",
+            "vi": "Mua sắm đạo đức cũng bao gồm thương mại công bằng.",
+            "en": "Ethical shopping also includes fair trade."
           }
         },
         {
           "role": "user",
-          "text": "Appreciate that. I’d love to review the slides.",
+          "text": "Let’s review our brands.",
           "translations": {
-            "ko": "감사합니다. 슬라이드를 다시 검토하고 싶습니다.",
-            "zh": "感谢。我想复习一下幻灯片。",
-            "ja": "それはありがたいです。スライドを見直したいです。",
-            "vi": "Cảm ơn. Tôi muốn xem lại các slide."
+            "ko": "우리의 브랜드를 검토하자.",
+            "zh": "我们来审查一下我们的品牌。",
+            "ja": "私たちのブランドを見直しましょう。",
+            "vi": "Hãy xem xét lại các thương hiệu của chúng ta.",
+            "en": "Let’s review our brands."
           }
         },
         {
           "role": "ai",
-          "text": "We welcome feedback and further discussion after the session.",
+          "text": "Can we do a monthly review?",
           "translations": {
-            "ko": "세션 후에 피드백과 추가 토론을 환영합니다.",
-            "zh": "我们欢迎在会议结束后提供反馈和进一步讨论。",
-            "ja": "セッション後のフィードバックとさらなる議論を歓迎します。",
-            "vi": "Chúng tôi hoan nghênh phản hồi và thảo luận thêm sau phiên họp."
+            "ko": "우리는 월간 리뷰를 할 수 있을까?",
+            "zh": "我们可以做一个月的回顾吗？",
+            "ja": "月次レビューを行うことができますか？",
+            "vi": "Chúng ta có thể làm đánh giá hàng tháng không?",
+            "en": "Can we do a monthly review?"
           }
         },
         {
           "role": "user",
-          "text": "Sure, I may follow up afterward.",
+          "text": "Absolutely.",
           "translations": {
-            "ko": "그럼요, 나중에 추가적으로 연락드릴 수도 있습니다.",
-            "zh": "好的，我可能会在之后跟进。",
-            "ja": "了解です、後でフォローアップするかもしれません。",
-            "vi": "Được, tôi có thể liên hệ sau."
+            "ko": "그럼.",
+            "zh": "绝对可以。",
+            "ja": "もちろんです。",
+            "vi": "Chắc chắn.",
+            "en": "Absolutely."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s begin with the first section of the presentation.",
+          "text": "Small steps matter.",
           "translations": {
-            "ko": "발표의 첫 번째 부분부터 시작하겠습니다.",
-            "zh": "让我们从演示文稿的第一部分开始。",
-            "ja": "プレゼンテーションの最初のセクションから始めましょう。",
-            "vi": "Hãy bắt đầu với phần đầu tiên của bài thuyết trình."
+            "ko": "작은 단계가 중요해.",
+            "zh": "小步骤很重要。",
+            "ja": "小さなステップが重要です。",
+            "vi": "Những bước nhỏ quan trọng.",
+            "en": "Small steps matter."
           }
         },
         {
           "role": "user",
-          "text": "Ready for the content. Please go ahead.",
+          "text": "They really do.",
           "translations": {
-            "ko": "내용에 대해 준비되었습니다. 시작해주세요.",
-            "zh": "准备好了内容。请继续。",
-            "ja": "内容に備えています。どうぞ進めてください。",
-            "vi": "Sẵn sàng cho nội dung. Xin hãy tiếp tục."
+            "ko": "정말 그래.",
+            "zh": "确实如此。",
+            "ja": "本当にそうです。",
+            "vi": "Chúng thực sự quan trọng.",
+            "en": "They really do."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "브레인스토밍 세션 진행하기",
-        "zh": "主持一个头脑风暴会议",
-        "ja": "ブレインストーミングセッションの進行",
-        "vi": "Điều phối một phiên họp động não"
+        "en": "Reflecting on a past mistake or regret",
+        "ko": "과거의 실수나 후회를 반성하기",
+        "zh": "反思过去的错误或遗憾",
+        "ja": "過去の間違いや後悔について反省する",
+        "vi": "Suy ngẫm về một lỗi hoặc hối tiếc trong quá khứ"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s begin by setting a few ground rules for today’s session.",
+          "text": "Do you ever think about that argument we had last year?",
           "translations": {
-            "ko": "오늘의 세션에 대한 몇 가지 기본 규칙을 설정하는 것부터 시작하겠습니다.",
-            "zh": "让我们通过设定今天会议的一些基本规则开始。",
-            "ja": "今日のセッションのためのいくつかの基本ルールを設定して始めましょう。",
-            "vi": "Hãy bắt đầu bằng việc đặt ra một số quy tắc cơ bản cho phiên họp hôm nay."
+            "ko": "작년에 우리가 한 싸움을 생각하니?",
+            "zh": "你有没有想过我们去年那次争论？",
+            "ja": "昨年私たちがした議論について考えることはありますか？",
+            "vi": "Bạn có bao giờ nghĩ về cuộc tranh cãi chúng ta đã có vào năm ngoái không?",
+            "en": "Do you ever think about that argument we had last year?"
           }
         },
         {
           "role": "user",
-          "text": "Sounds great. I’ll keep an open mind.",
+          "text": "More often than I’d like.",
           "translations": {
-            "ko": "좋습니다. 개방적인 마음으로 참여하겠습니다.",
-            "zh": "听起来不错。我会保持开放的心态。",
-            "ja": "いいですね。オープンマインドで参加します。",
-            "vi": "Nghe có vẻ tốt. Tôi sẽ giữ tâm trí mở."
+            "ko": "내가 원하는 것보다 더 자주 생각하게 돼.",
+            "zh": "比我愿意承认的更多。",
+            "ja": "私が望むよりも頻繁に。",
+            "vi": "Nhiều hơn tôi muốn.",
+            "en": "More often than I’d like."
           }
         },
         {
           "role": "ai",
-          "text": "There are no bad ideas—we want to encourage creativity.",
+          "text": "I regret how I handled it.",
           "translations": {
-            "ko": "나쁜 아이디어는 없습니다—창의성을 장려하고 싶습니다.",
-            "zh": "没有坏的想法——我们要鼓励创新。",
-            "ja": "悪いアイデアはありません—創造性を奨励したいです。",
-            "vi": "Không có ý tưởng nào là xấu—chúng tôi muốn khuyến khích sự sáng tạo."
+            "ko": "나는 그것을 어떻게 처리했는지 후회해.",
+            "zh": "我后悔我当时的处理方式。",
+            "ja": "私はそれをどのように扱ったかを後悔しています。",
+            "vi": "Tôi hối tiếc về cách tôi xử lý nó.",
+            "en": "I regret how I handled it."
           }
         },
         {
           "role": "user",
-          "text": "I like that approach—it helps loosen things up.",
+          "text": "Me too.",
           "translations": {
-            "ko": "그 접근법이 좋네요—것들을 풀어주는 데 도움이 됩니다.",
-            "zh": "我喜欢这种方法——它有助于放松气氛。",
-            "ja": "そのアプローチが好きです—物事をリラックスさせるのに役立ちます。",
-            "vi": "Tôi thích cách tiếp cận đó—nó giúp mọi thứ trở nên lỏng lẻo hơn."
+            "ko": "나도 그래.",
+            "zh": "我也是。",
+            "ja": "私もです。",
+            "vi": "Tôi cũng vậy.",
+            "en": "Me too."
           }
         },
         {
           "role": "ai",
-          "text": "Feel free to build on someone else’s suggestion.",
+          "text": "We’ve come a long way since then.",
           "translations": {
-            "ko": "다른 사람의 제안을 바탕으로 자유롭게 발전시켜 보세요.",
-            "zh": "随意在别人的建议上做出补充。",
-            "ja": "自由に他の人の提案に取り組んでください。",
-            "vi": "Hãy tự do xây dựng trên đề xuất của người khác."
+            "ko": "그 이후로 우리는 많이 성장했어.",
+            "zh": "从那时起我们已经走了很长的路。",
+            "ja": "それ以来、私たちは長い道のりを来ました。",
+            "vi": "Chúng ta đã đi được một quãng đường dài kể từ đó.",
+            "en": "We’ve come a long way since then."
           }
         },
         {
           "role": "user",
-          "text": "I’ll try to add to what someone else says.",
+          "text": "Yes, but it still stings.",
           "translations": {
-            "ko": "다른 사람이 말한 것에 더하려고 노력하겠습니다.",
-            "zh": "我会尝试对别人的话进行补充。",
-            "ja": "私は他の人が言ったことに追加しようとします。",
-            "vi": "Tôi sẽ cố gắng thêm vào những gì người khác nói."
+            "ko": "그래, 하지만 여전히 아프네.",
+            "zh": "是的，但它仍然刺痛。",
+            "ja": "はい、でもそれはまだ痛いです。",
+            "vi": "Đúng, nhưng nó vẫn còn đau.",
+            "en": "Yes, but it still stings."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s focus on quantity of ideas before we assess quality.",
+          "text": "Would it help to talk it through again?",
           "translations": {
-            "ko": "아이디어의 질을 평가하기 전에 양에 집중합시다.",
-            "zh": "在我们评估质量之前，让我们先关注想法的数量。",
-            "ja": "質を評価する前に、アイデアの量に焦点を当てましょう。",
-            "vi": "Hãy tập trung vào số lượng ý tưởng trước khi chúng ta đánh giá chất lượng."
+            "ko": "다시 이야기해보는 것이 도움이 될까?",
+            "zh": "再谈一次会有帮助吗？",
+            "ja": "もう一度それを話し合うことが助けになると思いますか？",
+            "vi": "Nói lại nó có giúp ích không?",
+            "en": "Would it help to talk it through again?"
           }
         },
         {
           "role": "user",
-          "text": "Got it. Volume over precision for now.",
+          "text": "I think so.",
           "translations": {
-            "ko": "알겠습니다. 지금은 정확성보다 양에 초점을 맞추겠습니다.",
-            "zh": "明白了。现在重视数量而非精确度。",
-            "ja": "了解しました。今のところは量重視です。",
-            "vi": "Hiểu rồi. Ưu tiên số lượng hơn độ chính xác trong thời gian này."
+            "ko": "그렇게 생각해.",
+            "zh": "我想会的。",
+            "ja": "そう思います。",
+            "vi": "Tôi nghĩ vậy.",
+            "en": "I think so."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll use a whiteboard to capture everything in real time.",
+          "text": "I was defensive and didn’t listen.",
           "translations": {
-            "ko": "실시간으로 모든 것을 기록하기 위해 화이트보드를 사용하겠습니다.",
-            "zh": "我们将使用白板实时记录所有内容。",
-            "ja": "ホワイトボードを使って、すべてをリアルタイムで記録します。",
-            "vi": "Chúng tôi sẽ sử dụng bảng trắng để ghi lại mọi thứ theo thời gian thực."
+            "ko": "나는 방어적이었고 듣지 않았어.",
+            "zh": "我当时防御心态强，没有听你说话。",
+            "ja": "私は防御的で、聞いていませんでした。",
+            "vi": "Tôi đã phòng vệ và không lắng nghe.",
+            "en": "I was defensive and didn’t listen."
           }
         },
         {
           "role": "user",
-          "text": "That’s helpful. Real-time notes are useful.",
+          "text": "And I wasn’t fair to you either.",
           "translations": {
-            "ko": "도움이 되네요. 실시간 메모는 유용합니다.",
-            "zh": "这很有帮助。实时记录是有用的。",
-            "ja": "それは役立ちます。リアルタイムのメモは便利です。",
-            "vi": "Điều đó rất hữu ích. Ghi chú theo thời gian thực rất hữu ích."
+            "ko": "나도 너에게 공정하지 않았어.",
+            "zh": "我也对你不公平。",
+            "ja": "私もあなたに対して公平ではありませんでした。",
+            "vi": "Và tôi cũng không công bằng với bạn.",
+            "en": "And I wasn’t fair to you either."
           }
         },
         {
           "role": "ai",
-          "text": "Try to avoid overthinking. Just speak freely.",
+          "text": "Let’s forgive ourselves.",
           "translations": {
-            "ko": "과도한 생각을 피하려고 노력하세요. 그냥 자유롭게 말하세요.",
-            "zh": "尽量避免过度思考。随意发言。",
-            "ja": "考えすぎるのを避けてください。自由に話してください。",
-            "vi": "Cố gắng tránh suy nghĩ quá nhiều. Hãy tự do phát biểu."
+            "ko": "우리는 우리 자신을 용서하자.",
+            "zh": "让我们原谅自己。",
+            "ja": "自分自身を許しましょう。",
+            "vi": "Hãy tha thứ cho chính mình.",
+            "en": "Let’s forgive ourselves."
           }
         },
         {
           "role": "user",
-          "text": "Okay, I’ll try not to filter my thoughts too much.",
+          "text": "That’s not always easy.",
           "translations": {
-            "ko": "알겠습니다, 생각을 너무 걸러내지 않도록 노력하겠습니다.",
-            "zh": "好的，我会尽量不过滤我的想法。",
-            "ja": "はい、思考をあまりフィルタリングしないようにします。",
-            "vi": "Được, tôi sẽ cố gắng không lọc suy nghĩ của mình quá nhiều."
+            "ko": "그게 항상 쉽지는 않아.",
+            "zh": "那并不总是容易的。",
+            "ja": "それは常に簡単ではありません。",
+            "vi": "Điều đó không phải lúc nào cũng dễ dàng.",
+            "en": "That’s not always easy."
           }
         },
         {
           "role": "ai",
-          "text": "Once we’ve gathered input, we’ll cluster ideas into themes.",
+          "text": "But necessary for closure.",
           "translations": {
-            "ko": "의견을 모두 모은 후, 아이디어를 테마별로 묶을 것입니다.",
-            "zh": "收集完意见后，我们将把想法归类为主题。",
-            "ja": "意見を集めたら、アイデアをテーマごとにまとめます。",
-            "vi": "Khi chúng tôi đã thu thập đầu vào, chúng tôi sẽ phân nhóm ý tưởng thành các chủ đề."
+            "ko": "하지만 폐쇄를 위해 필요해.",
+            "zh": "但为了得到解脱，这是必要的。",
+            "ja": "しかし、クロージャーには必要です。",
+            "vi": "Nhưng cần thiết để có sự kết thúc.",
+            "en": "But necessary for closure."
           }
         },
         {
           "role": "user",
-          "text": "Makes sense. Grouping them later will help.",
+          "text": "I agree.",
           "translations": {
-            "ko": "이해가 됩니다. 나중에 그룹화하면 도움이 될 것입니다.",
-            "zh": "有道理。稍后进行分组会有帮助。",
-            "ja": "理解しました。後でグループ化すると役立ちます。",
-            "vi": "Có lý. Việc phân nhóm chúng sau sẽ giúp ích."
+            "ko": "동의해.",
+            "zh": "我同意。",
+            "ja": "同意します。",
+            "vi": "Tôi đồng ý.",
+            "en": "I agree."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll then vote on which ones to pursue further.",
+          "text": "I appreciate your openness.",
           "translations": {
-            "ko": "그 후 어떤 것을 더 추구할지 투표하겠습니다.",
-            "zh": "然后我们将投票决定进一步追求哪些想法。",
-            "ja": "その後、どのアイデアをさらに追求するか投票します。",
-            "vi": "Sau đó, chúng tôi sẽ bỏ phiếu để xem nên tiếp tục theo đuổi ý tưởng nào."
+            "ko": "너의 개방성에 감사해.",
+            "zh": "我很感激你的坦诚。",
+            "ja": "あなたの開放性を評価します。",
+            "vi": "Tôi đánh giá cao sự mở lòng của bạn.",
+            "en": "I appreciate your openness."
           }
         },
         {
           "role": "user",
-          "text": "Happy to vote on what resonates most.",
+          "text": "It means a lot.",
           "translations": {
-            "ko": "가장 공감되는 것에 투표하는 것이 기쁩니다.",
-            "zh": "很愿意对最有共鸣的想法进行投票。",
-            "ja": "最も共感するものに投票するのは嬉しいです。",
-            "vi": "Rất vui được bỏ phiếu cho những điều tôi cảm thấy phù hợp nhất."
+            "ko": "그게 많이 의미해.",
+            "zh": "这意味着很多。",
+            "ja": "それは大きな意味があります。",
+            "vi": "Điều đó có ý nghĩa rất nhiều.",
+            "en": "It means a lot."
           }
         },
         {
           "role": "ai",
-          "text": "Please be respectful of all contributions, even if you disagree.",
+          "text": "Let’s keep growing together.",
           "translations": {
-            "ko": "동의하지 않더라도 모든 기여에 대해 존중해 주세요.",
-            "zh": "即使你不同意，也请尊重所有的贡献。",
-            "ja": "同意できないとしても、すべての貢献を尊重してください。",
-            "vi": "Hãy tôn trọng tất cả các đóng góp, ngay cả khi bạn không đồng ý."
+            "ko": "계속 함께 성장하자.",
+            "zh": "让我们一起成长。",
+            "ja": "一緒に成長し続けましょう。",
+            "vi": "Hãy tiếp tục phát triển cùng nhau.",
+            "en": "Let’s keep growing together."
           }
         },
         {
           "role": "user",
-          "text": "Absolutely. Respect makes for better collaboration.",
+          "text": "Always.",
           "translations": {
-            "ko": "맞습니다. 존중은 더 나은 협업을 위해 필요합니다.",
-            "zh": "绝对的。尊重有助于更好的协作。",
-            "ja": "確かに。尊重はより良い協力を生む。",
-            "vi": "Chắc chắn. Sự tôn trọng tạo nên sự hợp tác tốt hơn."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let’s start with a warm-up: name one product you wish existed.",
-          "translations": {
-            "ko": "워밍업으로 시작해봅시다: 존재했으면 하는 제품 하나를 말해보세요.",
-            "zh": "让我们从一个热身开始：说出你希望存在的一个产品。",
-            "ja": "ウォームアップから始めましょう：存在してほしい製品を1つ挙げてください。",
-            "vi": "Hãy bắt đầu với một phần mở đầu: đặt tên cho một sản phẩm bạn mong muốn tồn tại."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Fun! I’ve got a few ideas already.",
-          "translations": {
-            "ko": "재미있네요! 이미 몇 가지 아이디어가 있습니다.",
-            "zh": "有趣！我已经有几个想法了。",
-            "ja": "楽しい！既にいくつかのアイデアがあります。",
-            "vi": "Thú vị! Tôi đã có một số ý tưởng."
+            "ko": "언제나.",
+            "zh": "永远。",
+            "ja": "常に。",
+            "vi": "Luôn luôn.",
+            "en": "Always."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "분기 보고서를 검토하다",
-        "zh": "审查季度报告",
-        "ja": "四半期報告のレビュー",
-        "vi": "Đánh giá báo cáo quý"
+        "en": "Planning a sustainable lifestyle",
+        "ko": "지속 가능한 생활 계획하기",
+        "zh": "规划可持续的生活方式",
+        "ja": "持続可能なライフスタイルを計画する",
+        "vi": "Lập kế hoạch cho lối sống bền vững"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s take a look at this quarter’s performance metrics.",
+          "text": "Do you think we could reduce our carbon footprint?",
           "translations": {
-            "ko": "이번 분기의 성과 지표를 살펴봅시다.",
-            "zh": "让我们看看这个季度的绩效指标。",
-            "ja": "今四半期のパフォーマンス指標を見てみましょう。",
-            "vi": "Hãy xem xét các chỉ số hiệu suất của quý này."
+            "ko": "우리는 탄소 발자국을 줄일 수 있을까?",
+            "zh": "你认为我们可以减少我们的碳足迹吗？",
+            "ja": "私たちはカーボンフットプリントを減らすことができますか？",
+            "vi": "Bạn nghĩ chúng ta có thể giảm lượng khí thải carbon của mình không?",
+            "en": "Do you think we could reduce our carbon footprint?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks for pulling all of this together.",
+          "text": "Yes, we could start with our energy use.",
           "translations": {
-            "ko": "이 모든 것을 준비해줘서 고맙습니다.",
-            "zh": "感谢你整理了所有这些信息。",
-            "ja": "これをまとめてくれてありがとう。",
-            "vi": "Cảm ơn bạn đã tổng hợp tất cả những điều này."
+            "ko": "그래, 우리는 에너지 사용부터 시작할 수 있어.",
+            "zh": "是的，我们可以从我们的能源使用开始。",
+            "ja": "はい、私たちはエネルギー使用から始めることができます。",
+            "vi": "Đúng, chúng ta có thể bắt đầu với việc sử dụng năng lượng của mình.",
+            "en": "Yes, we could start with our energy use."
           }
         },
         {
           "role": "ai",
-          "text": "Revenue is up by 12 percent compared to the last quarter.",
+          "text": "What about installing solar panels?",
           "translations": {
-            "ko": "수익이 지난 분기에 비해 12 퍼센트 상승했습니다.",
-            "zh": "与上个季度相比，收入增长了12%。",
-            "ja": "売上は前四半期に比べて12パーセント増加しました。",
-            "vi": "Doanh thu tăng 12 phần trăm so với quý trước."
+            "ko": "태양광 패널을 설치하는 것은 어떨까?",
+            "zh": "安装太阳能板怎么样？",
+            "ja": "太陽パネルを設置することはどうですか？",
+            "vi": "Còn việc lắp đặt tấm pin mặt trời thì sao?",
+            "en": "What about installing solar panels?"
           }
         },
         {
           "role": "user",
-          "text": "That revenue jump is encouraging.",
+          "text": "That would be a smart investment.",
           "translations": {
-            "ko": "수익 증가는 희망적입니다.",
-            "zh": "收入的增长是令人鼓舞的。",
-            "ja": "売上の増加は励みになります。",
-            "vi": "Sự tăng trưởng doanh thu là điều khả quan."
+            "ko": "그것은 현명한 투자가 될 것이야.",
+            "zh": "那将是一个明智的投资。",
+            "ja": "それは賢い投資になるでしょう。",
+            "vi": "Đó sẽ là một khoản đầu tư thông minh.",
+            "en": "That would be a smart investment."
           }
         },
         {
           "role": "ai",
-          "text": "Customer retention improved, particularly in key segments.",
+          "text": "And switching to an electric car?",
           "translations": {
-            "ko": "고객 유지율이 특히 핵심 세그먼트에서 개선되었습니다.",
-            "zh": "客户保留率有所提高，特别是在关键部分。",
-            "ja": "顧客の保持率が向上し、特に重要なセグメントで改善しました。",
-            "vi": "Sự giữ chân khách hàng đã cải thiện, đặc biệt là trong các phân khúc chính."
+            "ko": "그리고 전기차로 바꾸는 것은 어떨까?",
+            "zh": "换成电动车怎么样？",
+            "ja": "電気自動車に切り替えることはどうですか？",
+            "vi": "Và chuyển sang sử dụng xe điện?",
+            "en": "And switching to an electric car?"
           }
         },
         {
           "role": "user",
-          "text": "Retention improvements are good news.",
+          "text": "I’ve been researching that.",
           "translations": {
-            "ko": "유지율 개선은 좋은 소식입니다.",
-            "zh": "保留率的提高是个好消息。",
-            "ja": "保持率の改善は良いニュースです。",
-            "vi": "Sự cải thiện về giữ chân khách hàng là tin tốt."
+            "ko": "그것에 대해 연구하고 있었어.",
+            "zh": "我一直在研究这个。",
+            "ja": "それについて調査しています。",
+            "vi": "Tôi đã nghiên cứu về điều đó.",
+            "en": "I’ve been researching that."
           }
         },
         {
           "role": "ai",
-          "text": "However, support ticket volume also saw a noticeable increase.",
+          "text": "We should calculate our monthly usage first.",
           "translations": {
-            "ko": "그러나, 지원 티켓의 양도 눈에 띄게 증가했습니다.",
-            "zh": "然而，支持票务量也显著增加。",
-            "ja": "しかし、サポートチケットの量も目立って増加しました。",
-            "vi": "Tuy nhiên, số lượng vé hỗ trợ cũng tăng đáng kể."
+            "ko": "우리는 먼저 월간 사용량을 계산해야 해.",
+            "zh": "我们应该先计算我们的月度使用量。",
+            "ja": "最初に月間使用量を計算するべきです。",
+            "vi": "Chúng ta nên tính toán lượng sử dụng hàng tháng của chúng ta trước.",
+            "en": "We should calculate our monthly usage first."
           }
         },
         {
           "role": "user",
-          "text": "I wonder what’s driving the support ticket spike.",
+          "text": "Agreed.",
           "translations": {
-            "ko": "지원 티켓의 급증 원인이 무엇인지 궁금합니다.",
-            "zh": "我想知道是什么导致了支持票务的激增。",
-            "ja": "サポートチケットの急増の原因が何か気になります。",
-            "vi": "Tôi tự hỏi điều gì đang làm tăng số vé hỗ trợ."
+            "ko": "동의해.",
+            "zh": "同意。",
+            "ja": "同意します。",
+            "vi": "Đồng ý.",
+            "en": "Agreed."
           }
         },
         {
           "role": "ai",
-          "text": "Marketing spend came in slightly above budget.",
+          "text": "What about eating more plant-based meals?",
           "translations": {
-            "ko": "마케팅 비용이 예산보다 약간 높게 나왔습니다.",
-            "zh": "市场营销开支略高于预算。",
-            "ja": "マーケティングの支出は予算をわずかに上回りました。",
-            "vi": "Chi tiêu cho marketing vượt mức ngân sách một chút."
+            "ko": "더 많은 식물성 식사를 하는 것은 어떨까?",
+            "zh": "我们应该多吃植物性食品吗？",
+            "ja": "もっと植物ベースの食事を食べることはどうですか？",
+            "vi": "Còn việc ăn nhiều bữa ăn dựa trên thực vật hơn thì sao?",
+            "en": "What about eating more plant-based meals?"
           }
         },
         {
           "role": "user",
-          "text": "That’s something we’ll need to plan for next time.",
+          "text": "Let’s aim for 3 nights a week.",
           "translations": {
-            "ko": "그것은 다음 번에 계획해야 할 것입니다.",
-            "zh": "这是我们下次需要计划的事情。",
-            "ja": "それは次回の計画に必要なことです。",
-            "vi": "Đó là điều chúng tôi cần lên kế hoạch cho lần sau."
+            "ko": "일주일에 3번은 해보자.",
+            "zh": "我们的目标是每周三晚。",
+            "ja": "週に3夜を目指しましょう。",
+            "vi": "Hãy đặt mục tiêu 3 đêm mỗi tuần.",
+            "en": "Let’s aim for 3 nights a week."
           }
         },
         {
           "role": "ai",
-          "text": "We exceeded our hiring goals across all departments.",
+          "text": "And minimizing fast fashion?",
           "translations": {
-            "ko": "모든 부서에서 채용 목표를 초과했습니다.",
-            "zh": "我们在所有部门都超额完成了招聘目标。",
-            "ja": "全部門で採用目標を上回りました。",
-            "vi": "Chúng tôi đã vượt mục tiêu tuyển dụng ở tất cả các bộ phận."
+            "ko": "그리고 패스트 패션을 최소화하는 것은 어떨까?",
+            "zh": "减少快时尚怎么样？",
+            "ja": "ファストファッションを最小限に抑えることはどうですか？",
+            "vi": "Và giảm thiểu thời trang nhanh?",
+            "en": "And minimizing fast fashion?"
           }
         },
         {
           "role": "user",
-          "text": "Great to hear about the hiring success.",
+          "text": "Thrift shops and quality pieces only.",
           "translations": {
-            "ko": "채용 성공에 대해 들어서 기쁩니다.",
-            "zh": "很高兴听到招聘成功的消息。",
-            "ja": "採用成功について聞いてうれしいです。",
-            "vi": "Rất vui khi nghe về thành công trong việc tuyển dụng."
+            "ko": "구제 상점과 품질 좋은 제품만.",
+            "zh": "只买旧货店和质量好的衣服。",
+            "ja": "古着屋と品質の良い品物だけです。",
+            "vi": "Chỉ mua hàng từ cửa hàng đồ cũ và những món đồ chất lượng.",
+            "en": "Thrift shops and quality pieces only."
           }
         },
         {
           "role": "ai",
-          "text": "Profit margins were slightly impacted by supply chain costs.",
+          "text": "Should we document our journey?",
           "translations": {
-            "ko": "공급망 비용으로 인해 이익률이 약간 영향을 받았습니다.",
-            "zh": "供应链成本略微影响了利润率。",
-            "ja": "供給チェーンのコストが利益率に少し影響を与えました。",
-            "vi": "Biên lợi nhuận đã bị ảnh hưởng nhẹ bởi chi phí chuỗi cung ứng."
+            "ko": "우리의 여정을 기록해야 할까?",
+            "zh": "我们应该记录我们的旅程吗？",
+            "ja": "私たちの旅を記録するべきですか？",
+            "vi": "Chúng ta nên ghi lại hành trình của mình không?",
+            "en": "Should we document our journey?"
           }
         },
         {
           "role": "user",
-          "text": "Supply chain costs seem like a recurring challenge.",
+          "text": "Great idea. Could help others too.",
           "translations": {
-            "ko": "공급망 비용은 반복적으로 문제가 되는 것 같습니다.",
-            "zh": "供应链成本似乎是一个反复出现的挑战。",
-            "ja": "供給チェーンのコストは繰り返し問題となっているようです。",
-            "vi": "Chi phí chuỗi cung ứng dường như là một thách thức lặp đi lặp lại."
+            "ko": "좋은 생각이야. 다른 사람들에게도 도움이 될 수 있어.",
+            "zh": "好主意。也可以帮助其他人。",
+            "ja": "素晴らしいアイデア。他の人にも役立つかもしれません。",
+            "vi": "Ý tưởng tuyệt vời. Cũng có thể giúp người khác.",
+            "en": "Great idea. Could help others too."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll need to keep a close eye on inventory turnover next quarter.",
+          "text": "Let’s set yearly sustainability goals.",
           "translations": {
-            "ko": "다음 분기에는 재고 회전율을 철저히 관리해야 합니다.",
-            "zh": "下个季度我们需要密切关注库存周转。",
-            "ja": "次の四半期は在庫回転率に注意を払う必要があります。",
-            "vi": "Chúng tôi sẽ cần để mắt đến vấn đề lưu chuyển hàng tồn kho vào quý tới."
+            "ko": "연간 지속 가능성 목표를 설정하자.",
+            "zh": "我们设定年度可持续性目标。",
+            "ja": "持続可能性の目標を年間で設定しましょう。",
+            "vi": "Hãy đặt mục tiêu bền vững hàng năm.",
+            "en": "Let’s set yearly sustainability goals."
           }
         },
         {
           "role": "user",
-          "text": "Yes, inventory turnover has been tricky lately.",
+          "text": "I’ll draft a plan.",
           "translations": {
-            "ko": "네, 요즘 재고 회전율이 까다로운 편입니다.",
-            "zh": "是的，最近库存周转一直比较棘手。",
-            "ja": "はい、最近の在庫回転率は難しいです。",
-            "vi": "Đúng, vấn đề lưu chuyển hàng tồn kho đã gặp khó khăn gần đây."
+            "ko": "계획을 세울게.",
+            "zh": "我会制定一个计划。",
+            "ja": "プランを作成します。",
+            "vi": "Tôi sẽ soạn một kế hoạch.",
+            "en": "I’ll draft a plan."
           }
         },
         {
           "role": "ai",
-          "text": "Please review the appendix for department-level breakdowns.",
+          "text": "We’re on the right track.",
           "translations": {
-            "ko": "부서별 세부 내역은 부록을 참고해 주세요.",
-            "zh": "请查看附录以了解部门级别的细分。",
-            "ja": "部門別の詳細については付録をご確認ください。",
-            "vi": "Vui lòng xem phụ lục để biết thông tin chi tiết theo từng bộ phận."
+            "ko": "우리는 올바른 길에 있어.",
+            "zh": "我们走在正确的道路上。",
+            "ja": "私たちは正しい道にいます。",
+            "vi": "Chúng ta đang đi đúng hướng.",
+            "en": "We’re on the right track."
           }
         },
         {
           "role": "user",
-          "text": "I’ll take a closer look at the appendix.",
+          "text": "Feels good.",
           "translations": {
-            "ko": "부록을 좀 더 자세히 살펴보겠습니다.",
-            "zh": "我会仔细查看附录。",
-            "ja": "付録を詳しく見てみます。",
-            "vi": "Tôi sẽ xem kỹ hơn phụ lục."
+            "ko": "기분이 좋아.",
+            "zh": "感觉很好。",
+            "ja": "気持ちがいいです。",
+            "vi": "Cảm thấy tốt.",
+            "en": "Feels good."
           }
         },
         {
           "role": "ai",
-          "text": "Let me know if you have any questions about the numbers.",
+          "text": "Let’s stay consistent.",
           "translations": {
-            "ko": "숫자에 대해 궁금한 점이 있으면 알려주세요.",
-            "zh": "如果你对这些数字有任何疑问，请告诉我。",
-            "ja": "数字について何か質問があればお知らせください。",
-            "vi": "Hãy cho tôi biết nếu bạn có bất kỳ câu hỏi nào về các con số."
+            "ko": "일관성을 유지하자.",
+            "zh": "我们要保持一致。",
+            "ja": "一貫性を保ちましょう。",
+            "vi": "Hãy duy trì sự kiên trì.",
+            "en": "Let’s stay consistent."
           }
         },
         {
           "role": "user",
-          "text": "I do have a few questions I’ll send later.",
+          "text": "Absolutely.",
           "translations": {
-            "ko": "나중에 보낼 몇 가지 질문이 있습니다.",
-            "zh": "我确实有几个问题稍后会发送。",
-            "ja": "後で送るいくつかの質問があります。",
-            "vi": "Tôi có một số câu hỏi sẽ gửi sau."
+            "ko": "그럼.",
+            "zh": "绝对。",
+            "ja": "確かに。",
+            "vi": "Chắc chắn.",
+            "en": "Absolutely."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "긴급한 고객 요청 처리",
-        "zh": "处理紧急的客户请求",
-        "ja": "緊急のクライアントリクエストの対応",
-        "vi": "Xử lý yêu cầu khẩn cấp từ khách hàng"
+        "en": "Helping a neighbor in a delicate situation",
+        "ko": "섬세한 상황에서 이웃 돕기",
+        "zh": "在微妙的情况下帮助邻居",
+        "ja": "繊細な状況で隣人を助ける",
+        "vi": "Giúp hàng xóm trong một tình huống nhạy cảm"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for reaching out. We understand this is time-sensitive.",
+          "text": "Did you hear what happened to Mrs. Kim upstairs?",
           "translations": {
-            "ko": "연락 주셔서 감사합니다. 이것이 시간이 중요한 것임을 이해합니다.",
-            "zh": "感谢你的联系。我们理解这是时间敏感的。",
-            "ja": "ご連絡いただきありがとうございます。これは時間が重要であることを理解しています。",
-            "vi": "Cảm ơn bạn đã liên hệ. Chúng tôi hiểu rằng điều này đòi hỏi sự nhanh chóng."
+            "ko": "위층에 사는 김 할머니에게 무슨 일이 생겼는지 들었니?",
+            "zh": "你听说楼上的金太太发生了什么事吗？",
+            "ja": "上の階のキムさんに何が起こったか聞きましたか？",
+            "vi": "Bạn có nghe về chuyện gì đã xảy ra với bà Kim ở tầng trên không?",
+            "en": "Did you hear what happened to Mrs. Kim upstairs?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks for getting back to me so quickly.",
+          "text": "Yes, I heard her husband passed.",
           "translations": {
-            "ko": "빠르게 답변해 주셔서 감사합니다.",
-            "zh": "感谢你这么快就回复我。",
-            "ja": "すぐに返信していただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã phản hồi tôi nhanh chóng."
+            "ko": "그래, 그녀의 남편이 돌아갔다고 들었어.",
+            "zh": "是的，我听说她的丈夫去世了。",
+            "ja": "はい、彼女の夫が亡くなったと聞きました。",
+            "vi": "Đúng, tôi nghe nói chồng bà ấy đã qua đời.",
+            "en": "Yes, I heard her husband passed."
           }
         },
         {
           "role": "ai",
-          "text": "Can you walk me through the issue as it stands?",
+          "text": "That must be incredibly hard.",
           "translations": {
-            "ko": "현재 상황을 자세히 설명해 주실 수 있나요?",
-            "zh": "你能帮我理解当前的问题吗？",
-            "ja": "現状の問題を詳しく教えていただけますか？",
-            "vi": "Bạn có thể giải thích cho tôi vấn đề hiện tại?"
+            "ko": "그것은 무척 힘들 것이야.",
+            "zh": "那一定非常难受。",
+            "ja": "それは非常に困難でしょう。",
+            "vi": "Điều đó phải rất khó khăn.",
+            "en": "That must be incredibly hard."
           }
         },
         {
           "role": "user",
-          "text": "Yes, here’s what’s going on right now.",
+          "text": "She’s all alone now.",
           "translations": {
-            "ko": "네, 지금 이런 상황입니다.",
-            "zh": "是的，这就是现在的情况。",
-            "ja": "はい、現在の状況は次の通りです。",
-            "vi": "Đúng, đây là những gì đang xảy ra ngay bây giờ."
+            "ko": "그녀는 이제 혼자야.",
+            "zh": "她现在一个人了。",
+            "ja": "彼女は今、一人ぼっちです。",
+            "vi": "Bà ấy giờ đây hoàn toàn một mình.",
+            "en": "She’s all alone now."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll prioritize this and loop in the relevant teams immediately.",
+          "text": "Should we check in on her?",
           "translations": {
-            "ko": "이를 우선 순위에 두고 즉시 관련 팀에 알릴 것입니다.",
-            "zh": "我们会优先处理这个问题，并立即通知相关团队。",
-            "ja": "これを優先し、関連チームをすぐに巻き込みます。",
-            "vi": "Chúng tôi sẽ ưu tiên điều này và liên lạc với các đội liên quan ngay lập tức."
+            "ko": "우리는 그녀를 찾아봐야 할까?",
+            "zh": "我们应该去看看她吗？",
+            "ja": "彼女を見に行くべきですか？",
+            "vi": "Chúng ta nên kiểm tra xem bà ấy có sao không?",
+            "en": "Should we check in on her?"
           }
         },
         {
           "role": "user",
-          "text": "Appreciate that. It really can’t wait.",
+          "text": "Definitely.",
           "translations": {
-            "ko": "그것을 감사합니다. 정말로 기다릴 수 없습니다.",
-            "zh": "感谢你的理解。这真的不能等待。",
-            "ja": "それを評価します。これは待つことができません。",
-            "vi": "Cảm ơn. Điều này thực sự không thể chờ đợi."
+            "ko": "반드시.",
+            "zh": "当然。",
+            "ja": "確かに。",
+            "vi": "Chắc chắn.",
+            "en": "Definitely."
           }
         },
         {
           "role": "ai",
-          "text": "Do you have a specific deadline we should be aware of?",
+          "text": "Maybe bring her a meal?",
           "translations": {
-            "ko": "우리가 알아야 할 특정한 마감 시간이 있나요?",
-            "zh": "你们有特定的截止日期吗，我们需要知道吗？",
-            "ja": "私たちが知るべき特定の締め切りはありますか？",
-            "vi": "Bạn có một thời hạn cụ thể mà chúng tôi nên biết không?"
+            "ko": "아마 그녀에게 식사를 가져다 줄 수 있을까?",
+            "zh": "也许带给她一顿饭？",
+            "ja": "彼女に食事を持って行くべきですか？",
+            "vi": "Có thể mang cho bà ấy một bữa ăn?",
+            "en": "Maybe bring her a meal?"
           }
         },
         {
           "role": "user",
-          "text": "Ideally we’d have a solution before end of day.",
+          "text": "Or offer help with errands.",
           "translations": {
-            "ko": "이상적으로는 하루 종일 해결책을 갖고 있었으면 합니다.",
-            "zh": "理想情况下，我们希望在今天结束之前有一个解决方案。",
-            "ja": "理想的には、一日の終わりまでに解決策を持っていたいです。",
-            "vi": "Lý tưởng nhất là chúng tôi có giải pháp trước cuối ngày."
+            "ko": "아니면 심부름을 도와줄 수 있을까?",
+            "zh": "或者提供帮助做一些杂事。",
+            "ja": "または、用事の手伝いを申し出る。",
+            "vi": "Hoặc đề nghị giúp đỡ với các việc vặt.",
+            "en": "Or offer help with errands."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll send a confirmation once the update is live.",
+          "text": "What’s the best way to approach it?",
           "translations": {
-            "ko": "업데이트가 적용되면 확인 메시지를 보내드리겠습니다.",
-            "zh": "更新上线后，我们会发送确认信息。",
-            "ja": "更新がライブになったら確認を送ります。",
-            "vi": "Chúng tôi sẽ gửi xác nhận một khi bản cập nhật đã được đưa lên."
+            "ko": "그것을 접근하는 가장 좋은 방법은 무엇일까?",
+            "zh": "最好的方法是什么？",
+            "ja": "それをどのようにアプローチするのが最善ですか？",
+            "vi": "Cách tiếp cận tốt nhất là gì?",
+            "en": "What’s the best way to approach it?"
           }
         },
         {
           "role": "user",
-          "text": "Got it. I’ll wait for confirmation.",
+          "text": "Gently and respectfully.",
           "translations": {
-            "ko": "알겠습니다. 확인을 기다리겠습니다.",
-            "zh": "明白了。我会等待确认。",
-            "ja": "了解しました。確認を待ちます。",
-            "vi": "Đã hiểu. Tôi sẽ chờ xác nhận."
+            "ko": "부드럽고 존중스럽게.",
+            "zh": "轻轻地，尊重地。",
+            "ja": "優しく、敬意を持って。",
+            "vi": "Nhẹ nhàng và tôn trọng.",
+            "en": "Gently and respectfully."
           }
         },
         {
           "role": "ai",
-          "text": "If anything changes on your side, please let us know.",
+          "text": "Do you think she’d be open to visitors?",
           "translations": {
-            "ko": "여러분 쪽에서 변동 사항이 있으면 알려주세요.",
-            "zh": "如果你们那边有任何变化，请告诉我们。",
-            "ja": "あなたの側で何か変わることがあれば、お知らせください。",
-            "vi": "Nếu có bất kỳ thay đổi nào từ phía bạn, vui lòng cho chúng tôi biết."
+            "ko": "그녀가 방문객에게 열려 있을까?",
+            "zh": "你觉得她愿意接待访客吗？",
+            "ja": "彼女は訪問者を受け入れることにオープンだと思いますか？",
+            "vi": "Bạn nghĩ bà ấy có mở lòng đón nhận khách không?",
+            "en": "Do you think she’d be open to visitors?"
           }
         },
         {
           "role": "user",
-          "text": "Will do. I’ll notify you if anything shifts.",
+          "text": "Only if we ask first.",
           "translations": {
-            "ko": "그렇게 하겠습니다. 변동 사항이 있으면 알려드리겠습니다.",
-            "zh": "好的。如果有任何变动，我会通知你们。",
-            "ja": "了解しました。何か変わることがあればお知らせします。",
-            "vi": "Được rồi. Tôi sẽ thông báo cho bạn nếu có bất kỳ thay đổi nào."
+            "ko": "먼저 물어봐야만 해.",
+            "zh": "只有我们先问她。",
+            "ja": "最初に尋ねるなら、そうです。",
+            "vi": "Chỉ khi chúng ta hỏi trước.",
+            "en": "Only if we ask first."
           }
         },
         {
           "role": "ai",
-          "text": "We’re escalating this to ensure it gets prompt attention.",
+          "text": "I’ll write a note and leave it at her door.",
           "translations": {
-            "ko": "이것을 즉시 처리하기 위해 상황을 긴급히 상향 조정하고 있습니다.",
-            "zh": "我们正在升级处理这个问题，以确保它得到及时的关注。",
-            "ja": "これをエスカレートして、迅速な対応を確保します。",
-            "vi": "Chúng tôi đang tăng cường điều này để đảm bảo nó nhận được sự chú ý kịp thời."
+            "ko": "나는 메모를 써서 그녀의 문에 남겨둘게.",
+            "zh": "我会写一个便条，放在她的门口。",
+            "ja": "彼女のドアにメモを書いて置きます。",
+            "vi": "Tôi sẽ viết một lá thư và để nó ở cửa nhà bà ấy.",
+            "en": "I’ll write a note and leave it at her door."
           }
         },
         {
           "role": "user",
-          "text": "Thanks for treating this as a top priority.",
+          "text": "That’s kind.",
           "translations": {
-            "ko": "이것을 최우선 순위로 처리해 주셔서 감사합니다.",
-            "zh": "感谢你把这个问题作为首要任务。",
-            "ja": "これを最優先事項として扱っていただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã coi điều này là ưu tiên hàng đầu."
+            "ko": "친절하네.",
+            "zh": "那很善良。",
+            "ja": "それは親切です。",
+            "vi": "Đó là một hành động tốt bụng.",
+            "en": "That’s kind."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll provide progress updates every few hours.",
+          "text": "We can offer without pressure.",
           "translations": {
-            "ko": "몇 시간마다 진행 상황을 업데이트해 드리겠습니다.",
-            "zh": "我们会每隔几小时提供一次进度更新。",
-            "ja": "数時間ごとに進捗状況を更新します。",
-            "vi": "Chúng tôi sẽ cung cấp cập nhật tiến trình sau mỗi vài giờ."
+            "ko": "우리는 압박 없이 제공할 수 있어.",
+            "zh": "我们可以提供帮助，但不施压。",
+            "ja": "プレッシャーなしで提供できます。",
+            "vi": "Chúng ta có thể đề nghị mà không áp lực.",
+            "en": "We can offer without pressure."
           }
         },
         {
           "role": "user",
-          "text": "That would be helpful. I’ll keep an eye out.",
+          "text": "Yes, let her decide.",
           "translations": {
-            "ko": "그것이 도움이 될 것입니다. 주의 깊게 지켜보겠습니다.",
-            "zh": "那会很有帮助。我会留意的。",
-            "ja": "それは助かります。注意して見ています。",
-            "vi": "Điều đó sẽ hữu ích. Tôi sẽ để ý."
+            "ko": "그래, 그녀가 결정하게 두자.",
+            "zh": "是的，让她决定。",
+            "ja": "はい、彼女に決めさせましょう。",
+            "vi": "Đúng, để bà ấy quyết định.",
+            "en": "Yes, let her decide."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s schedule a check-in tomorrow morning just in case.",
+          "text": "Small gestures can mean a lot.",
           "translations": {
-            "ko": "혹시 모르니 내일 아침에 확인하는 시간을 잡아봅시다.",
-            "zh": "以防万一，我们明天早上安排一个检查。",
-            "ja": "念のため、明日の朝にチェックインをスケジュールしましょう。",
-            "vi": "Hãy lên lịch họp kiểm tra vào sáng mai chỉ để đảm bảo."
+            "ko": "작은 친절한 행동이 많은 의미를 가질 수 있어.",
+            "zh": "小手势可能意味着很多。",
+            "ja": "小さなジェスチャーは大きな意味を持つことがあります。",
+            "vi": "Những hành động nhỏ có thể có ý nghĩa rất lớn.",
+            "en": "Small gestures can mean a lot."
           }
         },
         {
           "role": "user",
-          "text": "Let’s do that. I’ll be available at 10.",
+          "text": "Absolutely.",
           "translations": {
-            "ko": "그렇게 합시다. 저는 10시에 가능합니다.",
-            "zh": "好的。我在10点有空。",
-            "ja": "それにしましょう。私は10時に利用可能です。",
-            "vi": "Hãy làm như vậy. Tôi sẽ rảnh vào lúc 10 giờ."
+            "ko": "그럼.",
+            "zh": "绝对。",
+            "ja": "確かに。",
+            "vi": "Chắc chắn.",
+            "en": "Absolutely."
           }
         },
         {
           "role": "ai",
-          "text": "Is there anything else you need from us right now?",
+          "text": "Let’s show we care.",
           "translations": {
-            "ko": "지금 우리에게 필요한 것이 또 있나요?",
-            "zh": "现在你们还需要我们提供什么吗？",
-            "ja": "今すぐ私たちから何か必要なことはありますか？",
-            "vi": "Có điều gì khác bạn cần từ chúng tôi ngay bây giờ không?"
+            "ko": "우리가 신경 쓴다는 것을 보여주자.",
+            "zh": "让我们表现出我们在乎。",
+            "ja": "私たちが気にかけていることを示しましょう。",
+            "vi": "Hãy thể hiện sự quan tâm của chúng ta.",
+            "en": "Let’s show we care."
           }
         },
         {
           "role": "user",
-          "text": "No, that covers it. Thank you again.",
+          "text": "Always.",
           "translations": {
-            "ko": "아니요, 그것으로 충분합니다. 다시 한번 감사합니다.",
-            "zh": "不，这就够了。再次感谢你。",
-            "ja": "いえ、それで十分です。再度ありがとうございます。",
-            "vi": "Không, điều đó đã bao gồm tất cả. Cảm ơn bạn một lần nữa."
+            "ko": "언제나.",
+            "zh": "总是这样。",
+            "ja": "常に。",
+            "vi": "Luôn luôn.",
+            "en": "Always."
           }
         }
       ]

@@ -2272,2100 +2272,2310 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
   "intermediate": [
     {
       "description": {
-        "ko": "주간 팀 회의 일정 짜기",
-        "zh": "安排每周团队会议",
-        "ja": "週次チームミーティングのスケジュールを立てる",
-        "vi": "Lập lịch cho cuộc họp nhóm hàng tuần"
+        "en": "Organizing a cross-department meeting",
+        "ko": "부서 간 회의 준비하기",
+        "zh": "组织跨部门会议",
+        "ja": "部署間の会議を組織する",
+        "vi": "Tổ chức một cuộc họp liên bộ phận"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Hey everyone, let’s figure out the best time for our weekly meeting.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "여러분, 주간 회의에 가장 적합한 시간을 정해봅시다.",
-            "zh": "大家好，让我们确定一下每周会议的最佳时间。",
-            "ja": "皆さん、週次ミーティングの最適な時間を決めましょう。",
-            "vi": "Chào mọi người, hãy cùng xác định thời gian tốt nhất cho cuộc họp hàng tuần của chúng ta."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "I think Monday mornings could work, but not too early.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "월요일 아침이 괜찮을 것 같은데, 너무 이른 시간은 아니었으면 좋겠어요.",
-            "zh": "我觉得周一早上可能可以，但不要太早。",
-            "ja": "月曜日の朝が良いと思いますが、あまり早くはない方がいいです。",
-            "vi": "Tôi nghĩ buổi sáng thứ Hai có thể phù hợp, nhưng không quá sớm."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Does Monday morning work for most of you?",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "대부분의 여러분에게 월요일 아침이 괜찮나요?",
-            "zh": "大部分人周一早上有空吗？",
-            "ja": "月曜日の朝は大半の方に都合が良いですか？",
-            "vi": "Buổi sáng thứ Hai có phù hợp với hầu hết mọi người không?"
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "What about 10 AM? That leaves time to prep.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "오전 10시는 어떨까요? 그럼 준비할 시간이 충분히 있을 것입니다.",
-            "zh": "10点怎么样？这样还有时间准备。",
-            "ja": "午前10時はどうでしょうか？準備の時間も取れます。",
-            "vi": "Còn về 10 giờ sáng thì sao? Điều này sẽ để lại thời gian để chuẩn bị."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "We want to make sure it doesn’t conflict with other priorities.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "다른 중요한 일정과 겹치지 않게 하려고 합니다.",
-            "zh": "我们要确保它不会与其他优先事项冲突。",
-            "ja": "他の優先事項との競合がないことを確認したいです。",
-            "vi": "Chúng ta muốn đảm bảo nó không xung đột với các ưu tiên khác."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "I have a conflict on Mondays after lunch.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "저는 월요일 점심 후에 다른 일정이 겹쳐요.",
-            "zh": "周一午饭后我有其他安排。",
-            "ja": "月曜日の昼食後は都合が悪いです。",
-            "vi": "Tôi có một mâu thuẫn vào thứ Hai sau bữa trưa."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Should we consider a recurring calendar invite?",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "반복되는 캘린더 초대를 고려해볼까요?",
-            "zh": "我们是否应该考虑定期的日历邀请？",
-            "ja": "定期的なカレンダーの招待を考慮すべきですか？",
-            "vi": "Chúng ta có nên xem xét một lời mời lịch định kỳ không?"
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "A recurring invite would help me remember.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "반복 초대가 있으면 기억하기 편할 것 같아요.",
-            "zh": "定期的邀请会帮助我记住。",
-            "ja": "定期的な招待があると覚えていられます。",
-            "vi": "Một lời mời định kỳ sẽ giúp tôi nhớ."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "How long should the meeting be? Thirty minutes or an hour?",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "회의는 얼마나 길게 할까요? 30분 또는 1시간?",
-            "zh": "会议应该持续多久？三十分钟还是一个小时？",
-            "ja": "ミーティングはどのくらいの時間が必要ですか？30分か1時間？",
-            "vi": "Cuộc họp nên kéo dài bao lâu? Ba mươi phút hay một giờ?"
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "Thirty minutes should be enough for now.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "일단은 30분이면 충분할 것 같습니다.",
-            "zh": "目前来看，三十分钟应该足够了。",
-            "ja": "今のところ30分で十分だと思います。",
-            "vi": "Ba mươi phút nên đủ cho bây giờ."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Would mornings or afternoons be more productive?",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "오전과 오후 중 어느 시간이 더 생산적일까요?",
-            "zh": "上午还是下午更有成效？",
-            "ja": "朝と午後、どちらが生産的ですか？",
-            "vi": "Buổi sáng hay buổi chiều sẽ hiệu quả hơn?"
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Mornings are better for my focus.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "저는 오전이 집중하기 더 좋아요.",
-            "zh": "对我来说，早上更容易集中注意力。",
-            "ja": "私の集中力は朝の方が高いです。",
-            "vi": "Buổi sáng tốt hơn cho sự tập trung của tôi."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s also decide who will lead each week’s meeting.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "또한 매주 회의를 이끌 사람을 정해야 합니다.",
-            "zh": "让我们也决定谁将主持每周的会议。",
-            "ja": "また、毎週のミーティングを誰がリードするかも決めましょう。",
-            "vi": "Hãy cũng quyết định ai sẽ dẫn dắt cuộc họp hàng tuần."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "I'm happy to lead the first session.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "첫 세션은 제가 이끌게요.",
-            "zh": "我很乐意主持第一次会议。",
-            "ja": "最初のセッションは私がリードします。",
-            "vi": "Tôi sẽ rất vui khi dẫn dắt phiên đầu tiên."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "We can rotate facilitators to keep it balanced.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "균형을 유지하기 위해 회의 주재를 돌아가며 맡는 것이 좋겠습니다.",
-            "zh": "我们可以轮流主持，保持平衡。",
-            "ja": "ファシリテーターをローテーションさせてバランスを保つことができます。",
-            "vi": "Chúng ta có thể thay phiên nhau làm người điều hành để giữ sự cân bằng."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Rotating sounds fair to me.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "돌아가며 하는 것이 공평하다고 생각합니다.",
-            "zh": "对我来说，轮流主持听起来很公平。",
-            "ja": "ローテーションは公平だと思います。",
-            "vi": "Thay phiên nhau nghe có vẻ công bằng với tôi."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll take notes and share the summary afterward.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "저는 회의록을 작성하고 나중에 요약본을 공유하겠습니다.",
-            "zh": "我会做笔记并在会后分享总结。",
-            "ja": "ノートを取り、後で要約を共有します。",
-            "vi": "Tôi sẽ ghi chú và chia sẻ bản tóm tắt sau đó."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. Notes would be helpful.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "감사합니다. 회의록이 도움이 될 것 같아요.",
-            "zh": "谢谢。笔记会很有帮助。",
-            "ja": "ありがとう。ノートは役立ちます。",
-            "vi": "Cảm ơn. Ghi chú sẽ hữu ích."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s confirm the time by the end of the day.",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "오늘 하루가 끝나기 전에 시간을 확정합시다.",
-            "zh": "让我们在今天结束前确认时间。",
-            "ja": "今日中に時間を確定しましょう。",
-            "vi": "Hãy xác nhận thời gian vào cuối ngày."
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Agreed. Let’s lock it in today.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "동의합니다. 오늘 안에 확정합시다.",
-            "zh": "同意。让我们今天确定下来。",
-            "ja": "同意します。今日中に決定しましょう。",
-            "vi": "Đồng ý. Hãy khóa nó vào hôm nay."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "회의 목표를 맞추기",
-        "zh": "对会议目标达成一致",
-        "ja": "ミーティングの目標を合わせる",
-        "vi": "Đồng lòng về mục tiêu cuộc họp"
+        "en": "Addressing low team morale",
+        "ko": "팀의 사기 저하 문제 해결하기",
+        "zh": "解决团队士气低落问题",
+        "ja": "チームの士気低下に対処する",
+        "vi": "Giải quyết tình hình động viên nhóm thấp"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Before we begin, let’s clarify what we want to accomplish today.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "시작하기 전에, 오늘 우리가 달성하고자 하는 것을 명확히 해봅시다.",
-            "zh": "在我们开始之前，让我们明确我们今天想要达成的目标。",
-            "ja": "始める前に、今日達成したいことを明確にしましょう。",
-            "vi": "Trước khi chúng ta bắt đầu, hãy làm rõ những gì chúng ta muốn đạt được hôm nay."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Sounds good. I like having clear objectives.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "좋습니다. 명확한 목표가 있는 것이 좋아요.",
-            "zh": "听起来不错。我喜欢有明确的目标。",
-            "ja": "良いですね。明確な目標があるといいです。",
-            "vi": "Nghe tốt đấy. Tôi thích có mục tiêu rõ ràng."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "It looks like we have three main topics to cover.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "우리가 다루어야 할 주요 주제가 세 가지인 것 같습니다.",
-            "zh": "看起来我们有三个主要的议题需要讨论。",
-            "ja": "主要なトピックは3つあるようです。",
-            "vi": "Có vẻ như chúng ta có ba chủ đề chính cần bàn."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "Three topics seem manageable within the hour.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "한 시간 안에 세 가지 주제를 다루는 것은 가능해 보입니다.",
-            "zh": "一个小时内处理三个议题似乎可行。",
-            "ja": "1時間以内に3つのトピックを管理することは可能だと思います。",
-            "vi": "Ba chủ đề dường như có thể quản lý được trong vòng một giờ."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "Let’s try to keep each section within 15 minutes.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "각 부분을 15분 안에 끝내려고 노력합시다.",
-            "zh": "让我们尝试将每个部分控制在15分钟内。",
-            "ja": "各セクションを15分以内に収めるようにしましょう。",
-            "vi": "Hãy cố gắng giữ mỗi phần trong vòng 15 phút."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "That timeline works for me.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "그 시간표가 저에게는 괜찮습니다.",
-            "zh": "这个时间表对我来说可行。",
-            "ja": "そのタイムラインで私は問題ありません。",
-            "vi": "Khung thời gian đó phù hợp với tôi."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Does everyone agree with the agenda?",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "모두가 의제에 동의하시나요?",
-            "zh": "大家都同意这个议程吗？",
-            "ja": "皆さん、議題に同意しますか？",
-            "vi": "Mọi người có đồng ý với chương trình không?"
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "Yes, the agenda looks fine to me.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "네, 의제가 저에게는 괜찮습니다.",
-            "zh": "是的，我觉得这个议程很好。",
-            "ja": "はい、議題は私にとって問題ありません。",
-            "vi": "Đúng, chương trình nhìn chung đều phù hợp với tôi."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "If we run out of time, we’ll prioritize the urgent items.",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "시간이 부족하면 긴급한 항목을 우선적으로 처리하겠습니다.",
-            "zh": "如果我们时间不够，我们将优先处理紧急的事项。",
-            "ja": "時間がなくなった場合は、緊急の項目を優先しましょう。",
-            "vi": "Nếu chúng ta hết thời gian, chúng ta sẽ ưu tiên những mục cần thiết."
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s make sure we focus on the client issue first.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "우리는 먼저 고객의 문제에 집중하는 것이 중요합니다.",
-            "zh": "让我们确保首先关注客户的问题。",
-            "ja": "まずはクライアントの問題に焦点を当てるようにしましょう。",
-            "vi": "Hãy chắc chắn rằng chúng ta tập trung vào vấn đề của khách hàng trước tiên."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s avoid going off-topic so we can stay efficient.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "주제에서 벗어나지 않도록 해서 효율성을 유지합시다.",
-            "zh": "让我们避免偏离主题，以保持效率。",
-            "ja": "話題をそれるのを避けて、効率的に進めましょう。",
-            "vi": "Hãy tránh lạc đề để chúng ta có thể hoạt động hiệu quả."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Good idea. Let’s keep things moving.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "좋은 생각입니다. 계속 진행합시다.",
-            "zh": "好主意。让我们保持事情的进行。",
-            "ja": "良いアイデアです。進行を続けましょう。",
-            "vi": "Ý tưởng hay. Hãy tiếp tục công việc."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "Please save detailed questions for the Q&A section.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "자세한 질문은 Q&A 섹션에서 해주시기 바랍니다.",
-            "zh": "请在问答环节提出详细的问题。",
-            "ja": "詳細な質問はQ&Aのセクションでお願いします。",
-            "vi": "Vui lòng giữ các câu hỏi chi tiết cho phần hỏi và đáp."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Got it. I’ll note down any questions for later.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "알겠습니다. 나중에 질문할 내용을 적어두겠습니다.",
-            "zh": "明白了。我会把任何问题记下来，以便稍后讨论。",
-            "ja": "了解しました。後で質問をメモします。",
-            "vi": "Đã hiểu. Tôi sẽ ghi chú lại bất kỳ câu hỏi nào để sau này."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll keep track of time and flag when we need to move on.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "시간을 체크하고, 다음으로 넘어가야 할 때 알려드리겠습니다.",
-            "zh": "我会跟踪时间，并在我们需要继续前进时提醒大家。",
-            "ja": "時間を管理し、進行する必要があるときには指摘します。",
-            "vi": "Tôi sẽ theo dõi thời gian và cảnh báo khi chúng ta cần chuyển sang công việc khác."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Appreciate you keeping track of time.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "시간을 체크해주셔서 감사합니다.",
-            "zh": "感谢你跟踪时间。",
-            "ja": "時間を管理してくれてありがとう。",
-            "vi": "Cảm ơn bạn đã theo dõi thời gian."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll wrap up with clear action items and owners.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "명확한 행동 계획과 주인을 가지고 마무리하겠습니다.",
-            "zh": "我们将以明确的行动项目和负责人结束。",
-            "ja": "明確なアクションアイテムとオーナーで締めくくります。",
-            "vi": "Chúng ta sẽ kết thúc với các mục công việc cụ thể và người chịu trách nhiệm."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Clear next steps will help a lot.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "명확한 다음 단계가 많은 도움이 될 것입니다.",
-            "zh": "明确的下一步将会很有帮助。",
-            "ja": "明確な次のステップが大いに助けになります。",
-            "vi": "Các bước tiếp theo rõ ràng sẽ giúp rất nhiều."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Any other objectives we should add before we start?",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "시작하기 전에 추가해야 할 다른 목표가 있나요?",
-            "zh": "在我们开始之前，还有其他目标我们应该添加吗？",
-            "ja": "開始する前に追加すべき他の目標はありますか？",
-            "vi": "Có mục tiêu nào khác chúng ta nên thêm vào trước khi bắt đầu không?"
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Nothing from me. Ready to begin.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "저는 없습니다. 시작할 준비가 되었습니다.",
-            "zh": "我没有什么。准备开始了。",
-            "ja": "私からは何もありません。始める準備ができています。",
-            "vi": "Không có gì từ tôi. Sẵn sàng để bắt đầu."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "고객 회의에 대한 기대치 설정",
-        "zh": "为客户会议设定期望",
-        "ja": "クライアントミーティングの期待値を設定する",
-        "vi": "Đặt kỳ vọng cho một cuộc họp với khách hàng"
+        "en": "Reviewing project delays",
+        "ko": "프로젝트 지연 문제 검토하기",
+        "zh": "审查项目延误",
+        "ja": "プロジェクトの遅延を見直す",
+        "vi": "Rà soát sự chậm trễ của dự án"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s go over the agenda for tomorrow’s client meeting.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "내일 고객 회의의 안건을 살펴봅시다.",
-            "zh": "让我们过一下明天客户会议的议程。",
-            "ja": "明日のクライアントミーティングの議題を確認しましょう。",
-            "vi": "Hãy xem qua chương trình cho cuộc họp với khách hàng vào ngày mai."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. Reviewing the agenda sounds helpful.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "감사합니다. 안건을 검토하는 것이 도움이 될 것 같습니다.",
-            "zh": "谢谢。审查议程听起来很有帮助。",
-            "ja": "ありがとう。議題の確認は役立ちそうです。",
-            "vi": "Cảm ơn. Xem lại chương trình nghe có vẻ hữu ích."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "We should be clear on who is presenting each section.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "각 섹션을 누가 발표하는지 명확히 해야 합니다.",
-            "zh": "我们应该清楚谁来介绍每个部分。",
-            "ja": "各セクションを誰がプレゼンするかは明確にすべきです。",
-            "vi": "Chúng ta nên rõ ràng về ai sẽ trình bày mỗi phần."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "I’ll handle the intro and first section.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "저는 소개와 첫 번째 섹션을 맡겠습니다.",
-            "zh": "我会处理介绍和第一部分。",
-            "ja": "私がイントロと最初のセクションを担当します。",
-            "vi": "Tôi sẽ đảm nhận phần giới thiệu và phần đầu tiên."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "The client will likely ask about our Q2 performance.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "고객은 우리의 2분기 성과에 대해 물어볼 가능성이 높습니다.",
-            "zh": "客户可能会询问我们第二季度的表现。",
-            "ja": "クライアントはおそらく私たちのQ2のパフォーマンスについて尋ねるでしょう。",
-            "vi": "Khách hàng có thể sẽ hỏi về hiệu suất của chúng ta trong quý 2."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "I’ll prepare some notes on our numbers.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "우리의 성과에 대한 몇 가지 노트를 준비하겠습니다.",
-            "zh": "我会准备一些关于我们数据的笔记。",
-            "ja": "数字についてのメモを準備します。",
-            "vi": "Tôi sẽ chuẩn bị một số ghi chú về số liệu của chúng ta."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s make sure we’re aligned on the key talking points.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "핵심 토론 주제에 대해 일치하는지 확인합시다.",
-            "zh": "让我们确保我们在关键的讨论点上达成一致。",
-            "ja": "重要な話題について意見が一致していることを確認しましょう。",
-            "vi": "Hãy chắc chắn rằng chúng ta đồng lòng về các điểm nói chính."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "Let’s highlight results and upcoming plans.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "결과와 다가오는 계획을 강조합시다.",
-            "zh": "让我们突出结果和即将到来的计划。",
-            "ja": "結果と今後の計画を強調しましょう。",
-            "vi": "Hãy nêu bật kết quả và kế hoạch sắp tới."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Who will take the lead during the product demo?",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "누가 제품 시연을 이끌 것인가요?",
-            "zh": "谁会在产品演示中担任主导？",
-            "ja": "製品デモのリードは誰が担当しますか？",
-            "vi": "Ai sẽ dẫn dắt trong phần trình diễn sản phẩm?"
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "I can take the demo. I’ve done it before.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "제가 시연을 맡을 수 있습니다. 이전에 해본 적이 있습니다.",
-            "zh": "我可以做演示。我以前做过。",
-            "ja": "デモは私が担当します。以前にやったことがあります。",
-            "vi": "Tôi có thể thực hiện phần trình diễn. Tôi đã làm nó trước đây."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "We should keep answers concise and focused.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "답변은 간결하고 집중적으로 유지해야 합니다.",
-            "zh": "我们应该保持回答简洁和有针对性。",
-            "ja": "回答は簡潔で焦点を絞るべきです。",
-            "vi": "Chúng ta nên giữ cho câu trả lời ngắn gọn và tập trung."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Good point. I’ll keep things brief.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "좋은 지적입니다. 저는 간결하게 유지하겠습니다.",
-            "zh": "好点。我会保持简洁。",
-            "ja": "良いポイントです。私は簡潔にします。",
-            "vi": "Điểm quan trọng. Tôi sẽ giữ mọi thứ ngắn gọn."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s avoid sharing anything that isn’t finalized yet.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "아직 확정되지 않은 것은 공유하지 않는 것이 좋습니다.",
-            "zh": "让我们避免分享任何尚未确定的内容。",
-            "ja": "まだ確定していないことは共有しないようにしましょう。",
-            "vi": "Hãy tránh chia sẻ bất cứ điều gì chưa được hoàn thiện."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Agreed. We’ll stick to confirmed updates.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "동의합니다. 확정된 업데이트에만 초점을 맞추겠습니다.",
-            "zh": "同意。我们将坚持确认的更新。",
-            "ja": "同意します。確認済みの更新情報にとどめておきます。",
-            "vi": "Đồng ý. Chúng ta sẽ tuân theo những cập nhật đã được xác nhận."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Do we have time set aside for Q&A?",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "Q&A를 위한 시간을 따로 두었나요?",
-            "zh": "我们有为问答环节预留时间吗？",
-            "ja": "Q&Aのための時間は設けていますか？",
-            "vi": "Chúng ta có dành thời gian cho phần hỏi và đáp không?"
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Yes, we should save five to ten minutes.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "네, 5분에서 10분 정도를 두어야 합니다.",
-            "zh": "是的，我们应该预留五到十分钟。",
-            "ja": "はい、5から10分程度は確保すべきです。",
-            "vi": "Có, chúng ta nên dành từ năm đến mười phút."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll send out the final slide deck this afternoon.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "오후에 최종 슬라이드 덱을 보내드리겠습니다.",
-            "zh": "我会在今天下午发送最后的幻灯片。",
-            "ja": "今日の午後に最終スライドデッキを送ります。",
-            "vi": "Tôi sẽ gửi bộ slide cuối cùng vào chiều nay."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Great. I’ll look for it later today.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "좋아요. 나중에 찾아볼게요.",
-            "zh": "很好。我今天晚些时候会去找它。",
-            "ja": "それは素晴らしいです。今日の後でそれを探します。",
-            "vi": "Tốt. Tôi sẽ tìm nó sau hôm nay."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Any concerns before we meet with the client?",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "클라이언트와 만나기 전에 우려되는 점 있나요?",
-            "zh": "在我们与客户会面之前有任何疑虑吗？",
-            "ja": "クライアントと会う前に何か懸念点はありますか？",
-            "vi": "Có điều gì cần lo lắng trước khi chúng ta gặp khách hàng không?"
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "None from me. I think we’re ready.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "저는 없습니다. 우리는 준비가 된 것 같아요.",
-            "zh": "我没有。我认为我们已经准备好了。",
-            "ja": "私からは何もありません。私たちは準備ができていると思います。",
-            "vi": "Tôi không có. Tôi nghĩ chúng ta đã sẵn sàng."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "프로젝트 개시 회의 시작",
-        "zh": "开始一个项目启动会议",
-        "ja": "プロジェクトキックオフミーティングの開始",
-        "vi": "Bắt đầu cuộc họp khởi động dự án"
+        "en": "Discussing client feedback",
+        "ko": "고객 피드백 논의하기",
+        "zh": "讨论客户反馈",
+        "ja": "クライアントのフィードバックを議論する",
+        "vi": "Thảo luận phản hồi của khách hàng"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks everyone for joining the kickoff meeting.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "모두가 개시 회의에 참석해주셔서 감사합니다.",
-            "zh": "感谢大家参加这次启动会议。",
-            "ja": "皆さんがキックオフミーティングに参加してくれてありがとう。",
-            "vi": "Cảm ơn mọi người đã tham gia cuộc họp khởi động."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Happy to be part of the project.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "이 프로젝트의 일원이 되어 기쁩니다.",
-            "zh": "很高兴能成为项目的一部分。",
-            "ja": "プロジェクトの一部になれて嬉しいです。",
-            "vi": "Rất vui được là một phần của dự án."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s start with a quick round of introductions.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "먼저 간단한 자기소개부터 시작해봅시다.",
-            "zh": "让我们从简单的自我介绍开始。",
-            "ja": "まずは簡単な自己紹介から始めましょう。",
-            "vi": "Hãy bắt đầu với một vòng giới thiệu nhanh."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "I’m from the design team and will lead the UI work.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "저는 디자인 팀에서 왔고, UI 작업을 이끌게 됩니다.",
-            "zh": "我来自设计团队，将负责UI工作。",
-            "ja": "私はデザインチームから来ており、UIの作業をリードします。",
-            "vi": "Tôi là từ nhóm thiết kế và sẽ dẫn dắt công việc UI."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "I’ll give a high-level overview of the project goals.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "프로젝트 목표에 대한 고수준 개요를 제공하겠습니다.",
-            "zh": "我会给出项目目标的高级概述。",
-            "ja": "プロジェクトの目標について高レベルの概要を提供します。",
-            "vi": "Tôi sẽ đưa ra cái nhìn tổng quan về mục tiêu dự án."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to seeing the roadmap.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "로드맵을 기대하고 있습니다.",
-            "zh": "期待看到项目路线图。",
-            "ja": "ロードマップを見るのを楽しみにしています。",
-            "vi": "Mong chờ được thấy lộ trình."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "The timeline is ambitious, so we’ll need good coordination.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "시간표가 야심차기 때문에 좋은 조정이 필요합니다.",
-            "zh": "时间表很紧张，所以我们需要良好的协调。",
-            "ja": "タイムラインは野心的なので、良い調整が必要です。",
-            "vi": "Lịch trình rất tham vọng, vì vậy chúng ta cần phải phối hợp tốt."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "We’ll do our best to stay aligned.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "우리는 최선을 다해 일치하도록 노력하겠습니다.",
-            "zh": "我们会尽力保持一致。",
-            "ja": "私たちは最善を尽くして一致を保つつもりです。",
-            "vi": "Chúng tôi sẽ cố gắng hết sức để giữ cho mọi thứ đồng bộ."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Each team will have clear responsibilities and deadlines.",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "각 팀은 명확한 책임과 마감일을 가질 것입니다.",
-            "zh": "每个团队都将有明确的职责和截止日期。",
-            "ja": "各チームは明確な責任と期限を持つことになります。",
-            "vi": "Mỗi nhóm sẽ có trách nhiệm và thời hạn rõ ràng."
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "Clear expectations will help a lot.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "명확한 기대치가 많은 도움이 될 것입니다.",
-            "zh": "清晰的期望将会有很大帮助。",
-            "ja": "明確な期待は大いに助けになります。",
-            "vi": "Kỳ vọng rõ ràng sẽ giúp rất nhiều."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s walk through the first milestone in detail.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "첫 번째 마일스톤을 자세히 살펴봅시다.",
-            "zh": "让我们详细讨论第一个里程碑。",
-            "ja": "最初のマイルストーンを詳しく見ていきましょう。",
-            "vi": "Hãy xem xét chi tiết cột mốc đầu tiên."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. That would be helpful.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "감사합니다. 그것이 도움이 될 것입니다.",
-            "zh": "谢谢。这将会很有帮助。",
-            "ja": "ありがとう。それは役立つでしょう。",
-            "vi": "Cảm ơn. Điều đó sẽ rất hữu ích."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll share the full project plan after this call.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "이 통화 후에 전체 프로젝트 계획을 공유하겠습니다.",
-            "zh": "这次通话后，我会分享完整的项目计划。",
-            "ja": "このコールの後に全体のプロジェクト計画を共有します。",
-            "vi": "Tôi sẽ chia sẻ kế hoạch dự án đầy đủ sau cuộc gọi này."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Please include the updated Gantt chart.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "업데이트된 간트 차트를 포함해주세요.",
-            "zh": "请包括更新的甘特图。",
-            "ja": "更新されたガントチャートを含めてください。",
-            "vi": "Vui lòng bao gồm biểu đồ Gantt đã cập nhật."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Weekly check-ins will help us stay on track.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "주간 체크인이 우리를 올바른 길로 유지하는 데 도움이 될 것입니다.",
-            "zh": "每周的检查将帮助我们保持正轨。",
-            "ja": "週次のチェックインが私たちを軌道に保つのに役立ちます。",
-            "vi": "Cuộc kiểm tra hàng tuần sẽ giúp chúng ta giữ được tiến độ."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Weekly syncs sound good to me.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "주간 동기화는 저에게 좋아 보입니다.",
-            "zh": "每周同步听起来不错。",
-            "ja": "週次の同期は私にとって良いと思います。",
-            "vi": "Cuộc đồng bộ hàng tuần nghe có vẻ tốt đối với tôi."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s keep communication open and proactive.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "소통을 열린 상태로 유지하고 적극적으로 해봅시다.",
-            "zh": "让我们保持开放和主动的沟通。",
-            "ja": "コミュニケーションを開放的で積極的に保つようにしましょう。",
-            "vi": "Hãy giữ cho giao tiếp mở và chủ động."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "I’ll flag any issues early on.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "문제가 발생하면 조기에 알려드리겠습니다.",
-            "zh": "我会尽早标记出任何问题。",
-            "ja": "早期に問題をフラグします。",
-            "vi": "Tôi sẽ đánh dấu bất kỳ vấn đề nào sớm."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Any initial questions or concerns?",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "초기 질문이나 우려 사항이 있나요?",
-            "zh": "有任何初步的问题或疑虑吗？",
-            "ja": "最初の質問や懸念はありますか？",
-            "vi": "Có câu hỏi hoặc lo lắng ban đầu nào không?"
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "No questions for now. Let’s begin.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "지금은 질문이 없습니다. 시작합시다.",
-            "zh": "现在没有问题。让我们开始吧。",
-            "ja": "今のところ質問はありません。始めましょう。",
-            "vi": "Không có câu hỏi nào cho đến bây giờ. Hãy bắt đầu."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "팀 회의 마무리",
-        "zh": "结束团队会议",
-        "ja": "チームミーティングのまとめ",
-        "vi": "Kết thúc cuộc họp nhóm"
+        "en": "Preparing a presentation collaboratively",
+        "ko": "공동으로 발표 준비하기",
+        "zh": "协作准备演示",
+        "ja": "プレゼンテーションの共同準備",
+        "vi": "Chuẩn bị một bài thuyết trình cùng nhau"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Alright, let’s start wrapping things up.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "좋아요, 마무리를 시작합시다.",
-            "zh": "好的，让我们开始总结。",
-            "ja": "さて、まとめていきましょう。",
-            "vi": "Được rồi, hãy bắt đầu kết thúc mọi thứ."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Sounds good. I’ve noted the deadline.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "좋습니다. 마감일을 기록했습니다.",
-            "zh": "听起来不错。我已经记下了截止日期。",
-            "ja": "了解です。締め切りをメモしました。",
-            "vi": "Nghe có vẻ tốt. Tôi đã ghi chú lại thời hạn."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Here’s a quick summary of what we discussed.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "우리가 논의한 내용의 간단한 요약입니다.",
-            "zh": "这是我们讨论的快速总结。",
-            "ja": "私たちが話し合ったことの簡単な要約です。",
-            "vi": "Đây là một bản tóm tắt nhanh về những gì chúng ta đã thảo luận."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "I’ll get started on my section tomorrow.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "내일부터 제 부분을 시작하겠습니다.",
-            "zh": "我明天就开始我的部分。",
-            "ja": "明日から私のセクションを始めます。",
-            "vi": "Tôi sẽ bắt đầu phần của mình vào ngày mai."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "We agreed to complete the draft by next Wednesday.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "다음 수요일까지 초안을 완성하기로 합의했습니다.",
-            "zh": "我们同意在下周三之前完成草稿。",
-            "ja": "次の水曜日までにドラフトを完成させることに合意しました。",
-            "vi": "Chúng tôi đã đồng ý hoàn thành bản nháp vào thứ Tư tuần tới."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "Got it. Waiting for marketing’s input.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "알겠습니다. 마케팅 부서의 의견을 기다리고 있습니다.",
-            "zh": "明白了。正在等待市场部的反馈。",
-            "ja": "了解です。マーケティングからの意見を待っています。",
-            "vi": "Đã hiểu. Đang chờ phản hồi từ bộ phận marketing."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Marketing will provide feedback by the end of the week.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "마케팅 부서는 이번 주말까지 피드백을 제공할 것입니다.",
-            "zh": "市场部将在本周末之前提供反馈。",
-            "ja": "マーケティングは週末までにフィードバックを提供します。",
-            "vi": "Bộ phận marketing sẽ cung cấp phản hồi vào cuối tuần."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "I’ll make sure the doc is up to date.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "문서가 최신 상태인지 확인하겠습니다.",
-            "zh": "我会确保文档是最新的。",
-            "ja": "ドキュメントが最新の状態になるようにします。",
-            "vi": "Tôi sẽ đảm bảo tài liệu được cập nhật."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Please update the shared doc with your sections.",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "공유 문서에 각자의 부분을 업데이트해 주세요.",
-            "zh": "请在共享文档中更新你的部分。",
-            "ja": "あなたのセクションで共有ドキュメントを更新してください。",
-            "vi": "Vui lòng cập nhật tài liệu chia sẻ với phần của bạn."
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "The 20th works for me.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "저는 20일이 괜찮습니다.",
-            "zh": "20号对我来说可以。",
-            "ja": "20日は私にとって都合が良いです。",
-            "vi": "Ngày 20 phù hợp với tôi."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s aim to finalize everything by the 20th.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "20일까지 모든 것을 확정하려고 합시다.",
-            "zh": "让我们争取在20号之前完成所有事情。",
-            "ja": "20日までにすべてを最終化することを目指しましょう。",
-            "vi": "Hãy cố gắng hoàn thành mọi thứ trước ngày 20."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. That reminder will help.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "감사합니다. 그 리마인더가 도움이 될 것입니다.",
-            "zh": "谢谢。这个提醒会有帮助。",
-            "ja": "ありがとう。そのリマインダーは助けになります。",
-            "vi": "Cảm ơn. Lời nhắc này sẽ giúp ích."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll send a reminder ahead of our next check-in.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "다음 체크인 전에 리마인더를 보내드리겠습니다.",
-            "zh": "我们会在下次检查前发送提醒。",
-            "ja": "次のチェックインの前にリマインダーを送ります。",
-            "vi": "Chúng tôi sẽ gửi lời nhắc trước cuộc họp tiếp theo của chúng tôi."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Appreciate the clear wrap-up.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "명확한 마무리에 감사드립니다.",
-            "zh": "感谢你的清晰总结。",
-            "ja": "明確なまとめに感謝します。",
-            "vi": "Rất cảm kích vì sự tổng kết rõ ràng."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Thanks for staying on schedule today.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "오늘 일정에 맞춰주셔서 감사합니다.",
-            "zh": "感谢你今天按时完成工作。",
-            "ja": "今日はスケジュール通りに進めてくれてありがとう。",
-            "vi": "Cảm ơn vì đã tuân thủ lịch trình hôm nay."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "I’ll email you if I have questions.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "질문이 있으면 이메일로 연락드리겠습니다.",
-            "zh": "如果我有问题，我会给你发邮件。",
-            "ja": "質問があればメールします。",
-            "vi": "Tôi sẽ gửi email cho bạn nếu tôi có câu hỏi."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "Feel free to reach out with any follow-ups.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "후속 조치에 대해 언제든지 연락하실 수 있습니다.",
-            "zh": "如有任何后续问题，请随时联系。",
-            "ja": "フォローアップがあれば遠慮なく連絡してください。",
-            "vi": "Hãy liên hệ nếu bạn có bất kỳ câu hỏi nào."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to next week.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "다음 주를 기대하고 있습니다.",
-            "zh": "期待下周。",
-            "ja": "来週を楽しみにしています。",
-            "vi": "Mong chờ tuần tới."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "See you all at next week’s meeting.",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "다음 주 회의에서 모두 뵙겠습니다.",
-            "zh": "下周会议见。",
-            "ja": "来週の会議で皆さんに会いましょう。",
-            "vi": "Hẹn gặp tất cả mọi người tại cuộc họp tuần sau."
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Bye everyone. Have a good day.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "모두 안녕히 계세요. 좋은 하루 되세요.",
-            "zh": "再见，祝大家今天过得愉快。",
-            "ja": "さようなら皆さん。良い一日を。",
-            "vi": "Tạm biệt mọi người. Chúc một ngày tốt lành."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "프로젝트 진행 상황 확인 중입니다.",
-        "zh": "关于项目进度的检查",
-        "ja": "プロジェクトの進行状況を確認中",
-        "vi": "Kiểm tra tiến độ dự án"
+        "en": "Deciding on new tools for communication",
+        "ko": "새로운 커뮤니케이션 도구 결정하기",
+        "zh": "决定新的通信工具",
+        "ja": "コミュニケーションの新しいツールを決定する",
+        "vi": "Quyết định về công cụ giao tiếp mới"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s go around and hear updates from each team.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "각 팀에서 업데이트 사항을 들어봅시다.",
-            "zh": "让我们听听每个团队的更新情况。",
-            "ja": "各チームからのアップデートを聞きましょう。",
-            "vi": "Hãy lần lượt nghe cập nhật từ từng nhóm."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Engineering is 80 percent done with the feature.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "엔지니어링 팀은 기능의 80%를 완료했습니다.",
-            "zh": "工程部已经完成了80%的功能。",
-            "ja": "エンジニアリングは機能の80パーセントを完成させました。",
-            "vi": "Bộ phận kỹ thuật đã hoàn thành 80% tính năng."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Please keep it brief and focused on progress and blockers.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "진행 상황과 장애물에 초점을 맞춰 간략하게 말해주세요.",
-            "zh": "请保持简洁并专注于进度和阻碍。",
-            "ja": "簡潔に、進行状況とブロッカーに焦点を当ててください。",
-            "vi": "Vui lòng giữ ngắn gọn và tập trung vào tiến độ và vấn đề cản trở."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "One blocker came up with authentication logic.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "인증 로직과 관련하여 한 가지 문제가 발생했습니다.",
-            "zh": "在身份验证逻辑上出现了一个阻碍。",
-            "ja": "認証ロジックでブロッカーが出てきました。",
-            "vi": "Một vấn đề cản trở đã xuất hiện với logic xác thực."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "Where do we stand on the dev side?",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "개발 측면에서 우리는 어디에 있나요?",
-            "zh": "我们在开发方面的进度如何？",
-            "ja": "開発側はどの程度進んでいますか？",
-            "vi": "Chúng ta đang ở đâu về phía bên phát triển?"
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "We’re handling it now and expect a fix today.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "우리는 지금 처리하고 있으며 오늘 수정될 것으로 예상합니다.",
-            "zh": "我们正在处理，预计今天就能解决。",
-            "ja": "今それを対応しており、今日中には修正が完了する予定です。",
-            "vi": "Chúng tôi đang xử lý nó và dự kiến sẽ sửa xong hôm nay."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Any major issues we should escalate?",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "우리가 긴급히 대응해야 할 주요 문제가 있나요?",
-            "zh": "有没有我们应该升级的重大问题？",
-            "ja": "エスカレートすべき大きな問題はありますか？",
-            "vi": "Có vấn đề lớn nào chúng ta nên nâng cấp?"
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "No other issues to report at this time.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "현재 보고할 다른 문제는 없습니다.",
-            "zh": "目前没有其他问题要报告。",
-            "ja": "現時点では報告すべき他の問題はありません。",
-            "vi": "Không có vấn đề khác cần báo cáo vào thời điểm này."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Are we still on track for the mid-month launch?",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "중순 출시 계획이 여전히 유효한가요?",
-            "zh": "我们是否仍然按计划在月中发布？",
-            "ja": "中旬のローンチはまだ予定通りですか？",
-            "vi": "Chúng ta vẫn theo đúng kế hoạch cho việc ra mắt vào giữa tháng?"
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "Yes, we’re still aiming for the 15th.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "네, 우리는 여전히 15일을 목표로 하고 있습니다.",
-            "zh": "是的，我们仍然计划在15号。",
-            "ja": "はい、まだ15日を目指しています。",
-            "vi": "Có, chúng tôi vẫn đang nhắm đến ngày 15."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "How’s coordination with the vendor going?",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "공급업체와의 협력은 어떻게 진행되고 있나요?",
-            "zh": "与供应商的协调进展如何？",
-            "ja": "ベンダーとの調整はどう進んでいますか？",
-            "vi": "Việc phối hợp với nhà cung cấp đang diễn ra như thế nào?"
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Vendor feedback has been a bit slow.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "공급업체의 피드백이 조금 느립니다.",
-            "zh": "供应商的反馈有点慢。",
-            "ja": "ベンダーからのフィードバックが少し遅いです。",
-            "vi": "Phản hồi từ nhà cung cấp hơi chậm."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve seen good momentum over the past week.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "지난 주 동안 좋은 추진력을 보였습니다.",
-            "zh": "在过去的一周中，我们看到了良好的进展。",
-            "ja": "過去一週間で良い勢いを見せています。",
-            "vi": "Chúng tôi đã thấy sự tiến bộ tốt trong tuần qua."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "We’ve been pushing forward regardless.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "우리는 계속 앞으로 나아가고 있습니다.",
-            "zh": "我们一直在推进，不管怎样。",
-            "ja": "それにもかかわらず、我々は前進し続けています。",
-            "vi": "Chúng tôi đã tiếp tục đẩy mạnh dự án."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s flag anything that could impact the schedule.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "일정에 영향을 줄 수 있는 것들을 모두 표시합시다.",
-            "zh": "让我们标记可能影响进度的任何事项。",
-            "ja": "スケジュールに影響を及ぼす可能性のあるものはすべてフラグを立てましょう。",
-            "vi": "Hãy đánh dấu bất cứ điều gì có thể ảnh hưởng đến lịch trình."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Noted. I’ll raise anything urgent directly.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "알겠습니다. 긴급한 사항은 바로 제기하겠습니다.",
-            "zh": "已记录。我会直接提出任何紧急事项。",
-            "ja": "了解しました。緊急性のあることは直接提起します。",
-            "vi": "Đã ghi nhận. Tôi sẽ đưa ra mọi vấn đề khẩn cấp trực tiếp."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "I'll compile updates and share a summary afterward.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "업데이트를 정리하고 나중에 요약본을 공유하겠습니다.",
-            "zh": "我会整理更新并在之后分享总结。",
-            "ja": "更新情報をまとめて、後で要約を共有します。",
-            "vi": "Tôi sẽ tổng hợp cập nhật và chia sẻ bản tóm tắt sau."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Appreciate you summarizing everything.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "모든 것을 요약해 주셔서 감사합니다.",
-            "zh": "感谢你总结了所有事项。",
-            "ja": "すべてをまとめてくれてありがとう。",
-            "vi": "Cảm ơn bạn đã tổng hợp mọi thứ."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Thanks, everyone. Great input today.",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "감사합니다, 모두. 오늘 의견 제시가 좋았습니다.",
-            "zh": "谢谢大家，今天的反馈很棒。",
-            "ja": "皆さん、ありがとうございます。今日は素晴らしい意見が出ました。",
-            "vi": "Cảm ơn mọi người. Ý kiến đóng góp tuyệt vời hôm nay."
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Thanks all. Productive session.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "감사합니다. 생산적인 회의였습니다.",
-            "zh": "谢谢大家。这是个富有成效的会议。",
-            "ja": "皆さん、ありがとうございます。有意義なセッションでした。",
-            "vi": "Cảm ơn mọi người. Buổi làm việc hiệu quả."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "내부 검토를 계획 중입니다.",
-        "zh": "正在计划一次内部审查",
-        "ja": "内部レビューの計画",
-        "vi": "Đang lên kế hoạch đánh giá nội bộ"
+        "en": "Clarifying responsibilities",
+        "ko": "책임 분명히하기",
+        "zh": "澄清责任",
+        "ja": "責任の明確化",
+        "vi": "Làm rõ trách nhiệm"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s schedule a review session for the draft materials.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "초안 자료에 대한 검토 회의를 예정합시다.",
-            "zh": "让我们安排一次草案材料的审查会议。",
-            "ja": "下書き資料のレビューセッションをスケジュールしましょう。",
-            "vi": "Hãy lên lịch một buổi đánh giá cho các tài liệu dự thảo."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "Thursday afternoon works for me.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "목요일 오후가 저에게는 괜찮습니다.",
-            "zh": "星期四下午对我来说很合适。",
-            "ja": "木曜日の午後は私にとって都合が良いです。",
-            "vi": "Buổi chiều thứ Năm phù hợp với tôi."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Does Thursday afternoon work for everyone?",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "목요일 오후가 모두에게 괜찮은가요?",
-            "zh": "星期四下午对大家来说合适吗？",
-            "ja": "木曜日の午後は皆さんにとって都合が良いですか？",
-            "vi": "Buổi chiều thứ Năm có phù hợp với mọi người không?"
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "Good idea to get everyone in the same room.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "모두를 같은 방에 모으는 것이 좋은 생각입니다.",
-            "zh": "让所有人都在同一个房间是个好主意。",
-            "ja": "皆を同じ部屋に集めるのは良いアイデアです。",
-            "vi": "Ý tưởng tốt để mọi người cùng trong một phòng."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "We want all key contributors present for feedback.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "피드백을 위해 모든 주요 참여자들이 참석하는 것이 우리의 바람입니다.",
-            "zh": "我们希望所有关键贡献者都能提供反馈。",
-            "ja": "フィードバックのために、すべての主要な貢献者が参加することを望んでいます。",
-            "vi": "Chúng tôi muốn tất cả những người đóng góp chính có mặt để phản hồi."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "We’ll have our content ready by then.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "그때까지 우리의 컨텐츠를 준비할 것입니다.",
-            "zh": "我们会在那时准备好我们的内容。",
-            "ja": "その時点までに私たちのコンテンツを準備します。",
-            "vi": "Chúng tôi sẽ có nội dung sẵn sàng vào thời gian đó."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Each team should bring their latest versions.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "각 팀은 최신 버전을 가져와야 합니다.",
-            "zh": "每个团队都应该带来他们最新的版本。",
-            "ja": "各チームは最新のバージョンを持ってくるべきです。",
-            "vi": "Mỗi nhóm nên mang theo phiên bản mới nhất của họ."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "Understood. We’ll keep visuals separate.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "이해했습니다. 시각 자료는 따로 유지하겠습니다.",
-            "zh": "明白了。我们会将视觉元素单独保留。",
-            "ja": "了解しました。ビジュアルは別に保管します。",
-            "vi": "Đã hiểu. Chúng tôi sẽ giữ các hình ảnh riêng biệt."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll focus on structure and clarity, not formatting.",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "우리는 형식보다는 구조와 명료성에 집중하겠습니다.",
-            "zh": "我们会专注于结构和清晰度，而不是格式。",
-            "ja": "フォーマットではなく、構造と明瞭さに焦点を当てます。",
-            "vi": "Chúng tôi sẽ tập trung vào cấu trúc và rõ ràng, không phải định dạng."
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "I have a few open questions to bring up.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "제기할 몇 가지 미해결 질문이 있습니다.",
-            "zh": "我有一些待解决的问题要提出。",
-            "ja": "提起するべきいくつかの未解決の問題があります。",
-            "vi": "Tôi có một số câu hỏi chưa giải quyết cần đưa ra."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "It would be good to resolve any open questions then.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "그때 미해결 질문을 해결하는 것이 좋을 것입니다.",
-            "zh": "那时解决任何未解决的问题会很好。",
-            "ja": "その時に未解決の問題を解決するのが良いでしょう。",
-            "vi": "Sẽ tốt nếu giải quyết bất kỳ câu hỏi nào chưa giải quyết vào lúc đó."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. A checklist would be useful.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "감사합니다. 체크리스트가 유용할 것 같습니다.",
-            "zh": "谢谢。一个检查清单会很有用。",
-            "ja": "ありがとう。チェックリストがあると便利です。",
-            "vi": "Cảm ơn. Một danh sách kiểm tra sẽ hữu ích."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll prepare a checklist to guide the review.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "검토를 안내하기 위해 체크리스트를 준비하겠습니다.",
-            "zh": "我会准备一个检查清单来指导审查。",
-            "ja": "レビューをガイドするためのチェックリストを作成します。",
-            "vi": "Tôi sẽ chuẩn bị một danh sách kiểm tra để hướng dẫn việc đánh giá."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "An hour should be enough if we stay focused.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "집중한다면 한 시간이면 충분할 것입니다.",
-            "zh": "如果我们保持专注，一个小时应该就足够了。",
-            "ja": "集中すれば1時間で十分なはずです。",
-            "vi": "Một giờ sẽ đủ nếu chúng ta tập trung."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s allocate an hour for discussion and revisions.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "토론과 수정을 위해 한 시간을 할애합시다.",
-            "zh": "让我们分配一个小时来讨论和修改。",
-            "ja": "議論と修正のために1時間を確保しましょう。",
-            "vi": "Hãy dành một giờ cho thảo luận và sửa đổi."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "I’ll reply to the calendar invite today.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "오늘 달력 초대에 답장하겠습니다.",
-            "zh": "我今天会回复日历邀请。",
-            "ja": "今日中にカレンダーの招待に返信します。",
-            "vi": "Tôi sẽ trả lời lời mời lịch hôm nay."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "Please confirm your availability by tomorrow.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "내일까지 참석 가능 여부를 확인해 주세요.",
-            "zh": "请在明天之前确认你的可用时间。",
-            "ja": "明日までにご都合を確認してください。",
-            "vi": "Vui lòng xác nhận sự có mặt của bạn vào ngày mai."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to the session.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "세션을 기대하고 있습니다.",
-            "zh": "期待这次会议。",
-            "ja": "セッションを楽しみにしています。",
-            "vi": "Mong chờ buổi họp."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll send out a finalized time slot once confirmed.",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "확인되면 확정된 시간대를 보내드리겠습니다.",
-            "zh": "一旦确认，我们会发送一个最终的时间段。",
-            "ja": "確認が取れ次第、最終的な時間帯を送ります。",
-            "vi": "Chúng tôi sẽ gửi thời gian cuối cùng một khi đã xác nhận."
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Great. Let us know once it's scheduled.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "좋습니다. 일정이 확정되면 알려주세요.",
-            "zh": "很好。一旦安排好，请告诉我们。",
-            "ja": "すばらしい。スケジュールが決まったら知らせてください。",
-            "vi": "Tốt. Hãy cho chúng tôi biết khi nào đã lên lịch."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "새 제품 아이디어 브레인스토밍",
-        "zh": "对新产品的头脑风暴",
-        "ja": "新製品のアイデアをブレインストーミング",
-        "vi": "Đưa ra ý tưởng sản phẩm mới"
+        "en": "Recapping long-term goals",
+        "ko": "장기 목표 다시 한번 살펴보기",
+        "zh": "回顾长期目标",
+        "ja": "長期目標の再確認",
+        "vi": "Tóm tắt mục tiêu dài hạn"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s kick off the brainstorming session.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "브레인스토밍 세션을 시작합시다.",
-            "zh": "让我们开始头脑风暴会议。",
-            "ja": "ブレインストーミングセッションを始めましょう。",
-            "vi": "Hãy bắt đầu buổi họp đưa ra ý tưởng."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "I’ve been thinking about a mobile-only feature.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "모바일 전용 기능에 대해 생각해 보았습니다.",
-            "zh": "我一直在考虑一个只适用于移动设备的功能。",
-            "ja": "モバイル専用の機能について考えていました。",
-            "vi": "Tôi đã suy nghĩ về một tính năng chỉ dành cho di động."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Feel free to share even early-stage ideas.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "초기 단계 아이디어라도 자유롭게 공유해주세요.",
-            "zh": "随意分享即使是初期阶段的想法。",
-            "ja": "初期段階のアイデアでも気軽に共有してください。",
-            "vi": "Hãy thoải mái chia sẻ cả những ý tưởng ở giai đoạn sớm."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "What if we simplify onboarding for new users?",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "새로운 사용자를 위한 온보딩을 단순화하면 어떨까요?",
-            "zh": "如果我们简化新用户的入门流程会怎样？",
-            "ja": "新規ユーザーのオンボーディングを簡素化するのはどうでしょうか？",
-            "vi": "Nếu chúng ta đơn giản hóa quá trình làm quen cho người dùng mới thì sao?"
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "No need to be perfect. Just contribute freely.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "완벽할 필요 없습니다. 자유롭게 기여하세요.",
-            "zh": "不需要完美，只需自由贡献。",
-            "ja": "完璧である必要はありません。自由に貢献してください。",
-            "vi": "Không cần phải hoàn hảo. Chỉ cần tự do đóng góp."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "Here’s one: auto-save in offline mode.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "이것은 어떨까요: 오프라인 모드에서 자동 저장.",
-            "zh": "这是一个：离线模式下的自动保存。",
-            "ja": "これはどうでしょう：オフラインモードでの自動保存。",
-            "vi": "Đây là một ý tưởng: tự động lưu khi ở chế độ ngoại tuyến."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll go around once and then open it up.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "한 번 돌아본 후에 논의를 열겠습니다.",
-            "zh": "我们会先讨论一轮，然后再开放讨论。",
-            "ja": "一周したら、それを開放します。",
-            "vi": "Chúng ta sẽ đi một vòng và sau đó mở lên."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "I like that. Maybe tie it to notifications.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "좋아요. 알림과 연결하는 것도 좋을 것 같아요.",
-            "zh": "我喜欢这个。也许可以和通知功能关联起来。",
-            "ja": "それが好きです。通知にそれを結びつけるのはどうでしょうか？",
-            "vi": "Tôi thích điều đó. Có thể liên kết nó với thông báo."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll jot everything down on the whiteboard.",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "모든 것을 화이트보드에 적어두겠습니다.",
-            "zh": "我会把所有的内容都写在白板上。",
-            "ja": "ホワイトボードにすべてを書き留めます。",
-            "vi": "Tôi sẽ ghi chú tất cả mọi thứ lên bảng trắng."
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "Another idea: custom templates for each role.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "또 다른 아이디어: 각 역할에 맞는 사용자 정의 템플릿.",
-            "zh": "另一个想法：为每个角色定制模板。",
-            "ja": "別のアイデア：各役割ごとのカスタムテンプレート。",
-            "vi": "Một ý tưởng khác: mẫu tùy chỉnh cho mỗi vai trò."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s aim for quantity over quality at first.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "처음에는 양에 초점을 맞추어 봅시다.",
-            "zh": "我们首先要追求的是数量而不是质量。",
-            "ja": "最初は量を重視しましょう。",
-            "vi": "Hãy hướng tới số lượng trước chất lượng ở lúc đầu."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "That could work well for teams.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "그것은 팀에게 잘 맞을 수 있습니다.",
-            "zh": "这对团队可能会很有效。",
-            "ja": "それはチームにとってうまく機能する可能性があります。",
-            "vi": "Điều đó có thể hoạt động tốt cho các nhóm."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll vote on the top ideas at the end.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "마지막에 최고의 아이디어에 대해 투표하겠습니다.",
-            "zh": "我们将在最后对顶级的想法进行投票。",
-            "ja": "最後にトップのアイデアに投票します。",
-            "vi": "Chúng ta sẽ bỏ phiếu cho những ý tưởng hàng đầu vào cuối."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s make it flexible but easy to use.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "유연하면서도 사용하기 쉽게 만들어 봅시다.",
-            "zh": "让它既灵活又易于使用。",
-            "ja": "柔軟性を持たせつつ、使いやすさを保つようにしましょう。",
-            "vi": "Hãy làm cho nó linh hoạt nhưng dễ sử dụng."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "Try building on each other’s suggestions.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "서로의 제안을 바탕으로 만들어 보세요.",
-            "zh": "尝试在彼此的建议上进行构建。",
-            "ja": "お互いの提案を基に構築してみてください。",
-            "vi": "Hãy thử xây dựng dựa trên các đề xuất của nhau."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "We should test with early users if possible.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "가능하다면 초기 사용자들과 테스트해야 합니다.",
-            "zh": "如果可能的话，我们应该让早期用户进行测试。",
-            "ja": "可能であれば、早期のユーザーでテストすべきです。",
-            "vi": "Nếu có thể, chúng ta nên thử nghiệm với người dùng sớm."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "No criticism yet. We’re just collecting input.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "아직 비판은 없습니다. 우리는 그저 의견을 수집하고 있습니다.",
-            "zh": "现在还不需要批评，我们只是在收集意见。",
-            "ja": "まだ批判は不要です。ただ意見を集めているだけです。",
-            "vi": "Chưa phê bình gì cả. Chúng ta chỉ đang thu thập ý kiến."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "I’ve got a few more but will save them for later.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "몇 가지 더 있지만 나중에 말하겠습니다.",
-            "zh": "我还有一些想法，但我会留到以后再说。",
-            "ja": "他にもいくつかありますが、後で保存します。",
-            "vi": "Tôi có thêm một số ý tưởng nhưng sẽ lưu lại cho sau."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Ready? Who wants to start us off?",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "준비되셨나요? 누가 시작해주실래요?",
-            "zh": "准备好了吗？谁想先开始？",
-            "ja": "準備はいいですか？誰から始めますか？",
-            "vi": "Sẵn sàng chưa? Ai muốn bắt đầu cho chúng ta?"
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. This was a fun session.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "감사합니다. 재미있는 세션이었습니다.",
-            "zh": "谢谢。这是一个有趣的会议。",
-            "ja": "ありがとう。これは楽しいセッションでした。",
-            "vi": "Cảm ơn. Đây là một phiên họp thú vị."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "팀 간 협업에 대한 논의",
-        "zh": "讨论跨团队合作。",
-        "ja": "チーム間の協力について話し合う",
-        "vi": "Thảo luận về sự hợp tác giữa các nhóm"
+        "en": "Discussing offsite meeting logistics",
+        "ko": "외부 회의 로지스틱스 논의하기",
+        "zh": "讨论离线会议的物流问题",
+        "ja": "オフサイト会議のロジスティクスを議論する",
+        "vi": "Thảo luận về logistics cho cuộc họp ngoại vi"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Today we’ll talk about how to improve collaboration across teams.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "오늘은 팀 간 협업을 개선하는 방법에 대해 이야기하겠습니다.",
-            "zh": "今天我们将讨论如何提高跨团队的合作。",
-            "ja": "今日は、チーム間の協力をどのように改善するかについて話し合います。",
-            "vi": "Hôm nay chúng ta sẽ nói về cách cải thiện sự hợp tác giữa các nhóm."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "I think lack of visibility is a big factor.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "가시성 부족이 큰 요인인 것 같습니다.",
-            "zh": "我认为缺乏可见性是一个重要因素。",
-            "ja": "可視性の欠如が大きな要因だと思います。",
-            "vi": "Tôi nghĩ thiếu sự nhìn nhận rõ ràng là một yếu tố lớn."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s start by identifying current challenges.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "현재의 문제점을 파악하는 것부터 시작합시다.",
-            "zh": "让我们先确定当前的挑战。",
-            "ja": "現在の課題を特定することから始めましょう。",
-            "vi": "Hãy bắt đầu bằng việc xác định những thách thức hiện tại."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "Handoffs during testing are often unclear.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "테스트 중인 핸드오프가 종종 불명확합니다.",
-            "zh": "测试期间的交接通常不明确。",
-            "ja": "テスト中の引き継ぎはしばしば不明確です。",
-            "vi": "Việc chuyển giao trong quá trình kiểm tra thường không rõ ràng."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "Where are handoffs slowing things down?",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "어디서 핸드오프가 진행을 늦추고 있나요?",
-            "zh": "在哪些地方交接拖慢了进度？",
-            "ja": "どこで引き継ぎが進行を遅らせていますか？",
-            "vi": "Việc chuyển giao đang làm chậm quá trình ở đâu?"
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "More sync time could definitely help.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "더 많은 동기화 시간이 분명히 도움이 될 것입니다.",
-            "zh": "更多的同步时间肯定会有所帮助。",
-            "ja": "もっと同期時間があれば確かに助けになるでしょう。",
-            "vi": "Thời gian đồng bộ hóa nhiều hơn chắc chắn sẽ giúp ích."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Do we need better visibility into each team’s workflow?",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "각 팀의 작업 흐름에 대한 더 나은 가시성이 필요한가요?",
-            "zh": "我们需要更好地了解每个团队的工作流程吗？",
-            "ja": "各チームのワークフローに対するより良い可視性が必要ですか？",
-            "vi": "Chúng ta có cần hiểu rõ hơn về quy trình làm việc của mỗi nhóm không?"
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "A shared dashboard might improve alignment.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "공유 대시보드가 조정을 개선할 수 있습니다.",
-            "zh": "共享的仪表板可能会提高一致性。",
-            "ja": "共有ダッシュボードが整列を改善するかもしれません。",
-            "vi": "Một bảng điều khiển chung có thể cải thiện sự đồng lòng."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Would regular syncs help bridge the gaps?",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "정기적인 동기화가 격차를 메우는 데 도움이 될까요?",
-            "zh": "定期同步会帮助弥补差距吗？",
-            "ja": "定期的な同期はギャップを埋めるのに役立つでしょうか？",
-            "vi": "Liệu việc đồng bộ hóa thường xuyên có giúp lấp đầy các khoảng trống không?"
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "I’d suggest monthly cross-team check-ins.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "월간 팀 간 체크인을 제안하고 싶습니다.",
-            "zh": "我建议每月进行一次跨团队的检查。",
-            "ja": "月次のチーム間チェックインを提案します。",
-            "vi": "Tôi đề xuất kiểm tra chéo giữa các nhóm hàng tháng."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "We should also align on shared priorities.",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "공유 우선순위에 대해서도 일치시켜야 합니다.",
-            "zh": "我们也应该在共享的优先事项上达成一致。",
-            "ja": "共有の優先事項についても合意するべきです。",
-            "vi": "Chúng ta cũng nên thống nhất về các ưu tiên chung."
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Naming one contact per area makes sense.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "각 지역별로 한 명의 연락처를 지정하는 것이 합리적입니다.",
-            "zh": "每个区域指定一个联系人是有意义的。",
-            "ja": "エリアごとに1つの連絡先を指定するのは理にかなっています。",
-            "vi": "Đặt tên một liên hệ cho mỗi khu vực là hợp lý."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s assign points of contact for each function.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "각 기능에 대한 연락처를 지정합시다.",
-            "zh": "我们为每个功能指定联系点。",
-            "ja": "各機能に対する連絡先を割り当てましょう。",
-            "vi": "Hãy gán điểm liên hệ cho mỗi chức năng."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham dự không?",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "Great. That’ll help with accountability.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "좋습니다. 그렇게 하면 책임성이 높아질 것입니다.",
-            "zh": "很好。这将有助于明确责任。",
-            "ja": "素晴らしい。それで責任追及がしやすくなります。",
-            "vi": "Tốt. Điều đó sẽ giúp với trách nhiệm giải trình."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "Có, điều đó sẽ hữu ích.",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll document decisions in a shared space.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "우리는 결정 사항을 공유 공간에 기록할 것입니다.",
-            "zh": "我们将在一个共享空间记录决策。",
-            "ja": "決定事項は共有スペースに記録します。",
-            "vi": "Chúng tôi sẽ ghi lại các quyết định trong một không gian chung."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "Tôi sẽ đảm bảo thiết bị sẵn sàng.",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "Thanks for taking notes on this.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "이것에 대해 메모를 해주셔서 감사합니다.",
-            "zh": "感谢你对此进行记录。",
-            "ja": "これについてノートを取ってくれてありがとう。",
-            "vi": "Cảm ơn bạn đã ghi chú về điều này."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "Chúng ta cũng nên giao cho ai đó nhiệm vụ ghi chú.",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll draft a proposal for next steps after this.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "이후 다음 단계에 대한 제안서를 작성하겠습니다.",
-            "zh": "我会在此之后起草下一步的提案。",
-            "ja": "これ以降の次のステップについての提案案を作成します。",
-            "vi": "Tôi sẽ soạn thảo một đề xuất cho các bước tiếp theo sau này."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "Tôi sẽ hỏi Sam. Anh ấy giỏi việc đó.",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to seeing your proposal.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "당신의 제안서를 기대하고 있습니다.",
-            "zh": "期待看到你的提案。",
-            "ja": "あなたの提案を楽しみにしています。",
-            "vi": "Mong chờ xem đề xuất của bạn."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "Được rồi, hình như chúng ta đã sẵn sàng.",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Any feedback on what’s worked well in the past?",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "과거에 잘 작동했던 것에 대한 피드백이 있나요?",
-            "zh": "对过去效果好的事情有什么反馈？",
-            "ja": "過去にうまくいったことについてのフィードバックはありますか？",
-            "vi": "Có phản hồi nào về những gì đã hoạt động tốt trong quá khứ không?"
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "Cảm ơn sự giúp đỡ của bạn trong việc tổ chức điều này.",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Happy to share ideas after the meeting too.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "회의 후에도 아이디어를 공유하는 것을 기쁘게 생각합니다.",
-            "zh": "会议后也很乐意分享想法。",
-            "ja": "会議後もアイデアを共有することができます。",
-            "vi": "Rất vui khi chia sẻ ý tưởng sau cuộc họp."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "Bất cứ lúc nào!",
+            "en": "Anytime!"
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "회고 회의를 진행하는 것",
-        "zh": "进行回顾会议",
-        "ja": "振り返り会議を行う",
-        "vi": "Tiến hành một cuộc họp tổng kết."
+        "en": "Handling overlapping schedules",
+        "ko": "스케줄 중복 처리하기",
+        "zh": "处理重叠的日程",
+        "ja": "スケジュールの重複を処理する",
+        "vi": "Xử lý lịch trình chồng chéo"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Welcome to the sprint retrospective.",
+          "text": "I think it’s time we organize a meeting with all departments.",
           "translations": {
-            "ko": "스프린트 회고에 오신 것을 환영합니다.",
-            "zh": "欢迎参加冲刺回顾。",
-            "ja": "スプリントの振り返りへようこそ。",
-            "vi": "Chào mừng bạn đến với cuộc tổng kết sprint."
+            "ko": "모든 부서와 회의를 준비할 시간인 것 같아요.",
+            "zh": "我认为我们该组织一个全部门的会议了。",
+            "ja": "全部署との会議を開く時期だと思います。",
+            "vi": "Tôi nghĩ đã đến lúc chúng ta tổ chức một cuộc họp với tất cả các bộ phận.",
+            "en": "I think it’s time we organize a meeting with all departments."
           }
         },
         {
           "role": "user",
-          "text": "One thing that went well was communication.",
+          "text": "Agreed. We’ve had too many miscommunications lately.",
           "translations": {
-            "ko": "잘 진행된 한 가지는 커뮤니케이션이었습니다.",
-            "zh": "一个做得好的事情是沟通。",
-            "ja": "うまくいった一つのことはコミュニケーションでした。",
-            "vi": "Một điều đã diễn ra tốt là giao tiếp."
+            "ko": "동의합니다. 최근에 너무 많은 오해가 있었어요.",
+            "zh": "同意。我们最近的误会太多了。",
+            "ja": "同意します。最近、誤解が多すぎます。",
+            "vi": "Đồng ý. Gần đây chúng ta đã có quá nhiều sự hiểu lầm.",
+            "en": "Agreed. We’ve had too many miscommunications lately."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s begin by sharing what went well.",
+          "text": "How about inviting marketing, design, and sales for Thursday?",
           "translations": {
-            "ko": "잘 진행된 것에 대해 공유하는 것부터 시작합시다.",
-            "zh": "让我们开始分享做得好的事情。",
-            "ja": "うまくいったことを共有することから始めましょう。",
-            "vi": "Hãy bắt đầu bằng việc chia sẻ những gì đã diễn ra tốt."
+            "ko": "목요일에 마케팅, 디자인, 판매 팀을 초대하는 건 어떨까요?",
+            "zh": "那我们周四邀请市场部、设计部和销售部怎么样？",
+            "ja": "木曜日にマーケティング、デザイン、営業を招待するのはどうでしょうか？",
+            "vi": "Thế còn mời bộ phận tiếp thị, thiết kế và bán hàng vào thứ Năm?",
+            "en": "How about inviting marketing, design, and sales for Thursday?"
           }
         },
         {
           "role": "user",
-          "text": "Daily standups helped keep us aligned.",
+          "text": "Thursday works. Should we include logistics too?",
           "translations": {
-            "ko": "매일 스탠드업은 우리를 일치시키는 데 도움이 되었습니다.",
-            "zh": "每日站立会议帮助我们保持一致。",
-            "ja": "デイリースタンドアップは私たちを一致させるのに役立ちました。",
-            "vi": "Cuộc họp hàng ngày đã giúp chúng tôi giữ được sự đồng lòng."
+            "ko": "목요일 괜찮아요. 물류팀도 포함시켜야 할까요?",
+            "zh": "周四可以。我们应该也包括物流部吗？",
+            "ja": "木曜日は大丈夫です。物流も含めましょうか？",
+            "vi": "Thứ Năm được. Chúng ta có nên bao gồm cả bộ phận hậu cần không?",
+            "en": "Thursday works. Should we include logistics too?"
           }
         },
         {
           "role": "ai",
-          "text": "Now let’s talk about what didn’t go as planned.",
+          "text": "Good idea. Let’s not leave anyone out.",
           "translations": {
-            "ko": "이제 계획대로 진행되지 않은 것에 대해 이야기해 봅시다.",
-            "zh": "现在让我们谈谈没有按计划进行的事情。",
-            "ja": "今、計画通りにいかなかったことについて話しましょう。",
-            "vi": "Bây giờ hãy nói về những gì không diễn ra như kế hoạch."
+            "ko": "좋은 생각이에요. 아무도 빠뜨리지 않는 게 좋겠어요.",
+            "zh": "好主意。我们不要遗漏任何人。",
+            "ja": "良いアイデアです。誰も除外しないようにしましょう。",
+            "vi": "Ý tưởng hay. Chúng ta không nên bỏ sót ai.",
+            "en": "Good idea. Let’s not leave anyone out."
           }
         },
         {
           "role": "user",
-          "text": "The deployment process still needs work.",
+          "text": "I’ll book the large conference room.",
           "translations": {
-            "ko": "배포 과정이 아직 개선이 필요합니다.",
-            "zh": "部署过程仍需要改进。",
-            "ja": "デプロイメントプロセスはまだ改善が必要です。",
-            "vi": "Quá trình triển khai vẫn cần phải cải thiện."
+            "ko": "큰 회의실을 예약할게요.",
+            "zh": "我会预定大会议室。",
+            "ja": "大会議室を予約します。",
+            "vi": "Tôi sẽ đặt phòng họp lớn.",
+            "en": "I’ll book the large conference room."
           }
         },
         {
           "role": "ai",
-          "text": "Try to keep feedback constructive and specific.",
+          "text": "Perfect. I’ll draft the agenda by tomorrow.",
           "translations": {
-            "ko": "피드백은 건설적이고 구체적으로 유지해 주세요.",
-            "zh": "尽量保持反馈建设性和具体。",
-            "ja": "フィードバックは建設的で具体的にするようにしてください。",
-            "vi": "Hãy cố gắng giữ phản hồi mang tính xây dựng và cụ thể."
+            "ko": "완벽해요. 내일까지 의제를 작성하겠습니다.",
+            "zh": "完美。我明天会草拟议程。",
+            "ja": "完璧です。明日までに議題を作成します。",
+            "vi": "Hoàn hảo. Tôi sẽ soạn thảo chương trình họp vào ngày mai.",
+            "en": "Perfect. I’ll draft the agenda by tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "Some tickets weren’t fully scoped in advance.",
+          "text": "Include a section on cross-team workflow improvements.",
           "translations": {
-            "ko": "일부 티켓은 미리 완전히 정의되지 않았습니다.",
-            "zh": "有些票据没有提前完全确定范围。",
-            "ja": "一部のチケットは事前に完全にスコープされていませんでした。",
-            "vi": "Một số vé không được xác định rõ ràng trước."
+            "ko": "팀 간 업무 흐름 개선에 대한 부분도 포함시켜주세요.",
+            "zh": "在议程中加入一个关于跨团队工作流程改进的部分。",
+            "ja": "チーム間のワークフロー改善についてのセクションを含めてください。",
+            "vi": "Bao gồm một phần về cải tiến quy trình làm việc giữa các nhóm.",
+            "en": "Include a section on cross-team workflow improvements."
           }
         },
         {
           "role": "ai",
-          "text": "What slowed us down or caused confusion?",
+          "text": "Will do. Should I moderate the session?",
           "translations": {
-            "ko": "우리를 느리게 하거나 혼란을 일으킨 것은 무엇인가요?",
-            "zh": "什么让我们放慢了步伐或造成了混淆？",
-            "ja": "私たちを遅らせたり混乱させたりしたものは何ですか？",
-            "vi": "Điều gì đã làm chúng tôi chậm lại hoặc gây rối loạn?"
+            "ko": "알겠습니다. 제가 회의를 주재해야 할까요?",
+            "zh": "好的。我应该主持这个会议吗？",
+            "ja": "了解しました。私がセッションを進行すべきですか？",
+            "vi": "Tôi sẽ làm. Tôi có nên điều hành phiên họp không?",
+            "en": "Will do. Should I moderate the session?"
           }
         },
         {
           "role": "user",
-          "text": "We ran into some unexpected tech debt.",
+          "text": "Yes, you’re great at keeping discussions on track.",
           "translations": {
-            "ko": "예상치 못한 기술 부채에 부딪혔습니다.",
-            "zh": "我们遇到了一些意外的技术债务。",
-            "ja": "予期しない技術的な負債に遭遇しました。",
-            "vi": "Chúng tôi đã gặp phải một số nợ kỹ thuật không mong đợi."
+            "ko": "네, 토론을 잘 이끌어주시니까요.",
+            "zh": "是的，你很擅长保持讨论的进行。",
+            "ja": "はい、あなたは議論を進行させるのが得意です。",
+            "vi": "Có, bạn giỏi việc giữ cho cuộc thảo luận đi đúng hướng.",
+            "en": "Yes, you’re great at keeping discussions on track."
           }
         },
         {
           "role": "ai",
-          "text": "Are there any blockers we didn’t anticipate?",
+          "text": "Thanks. I’ll send out a calendar invite this afternoon.",
           "translations": {
-            "ko": "우리가 예상하지 못한 어떤 장애물이 있었나요?",
-            "zh": "有没有我们没预见到的阻碍？",
-            "ja": "予想しなかったブロッカーはありますか？",
-            "vi": "Có bất kỳ trở ngại nào mà chúng tôi không dự đoán được không?"
+            "ko": "감사합니다. 오후에 일정 초대장을 보내겠습니다.",
+            "zh": "谢谢。我今天下午会发送日历邀请。",
+            "ja": "ありがとう。今日の午後にカレンダーの招待を送ります。",
+            "vi": "Cảm ơn. Tôi sẽ gửi lời mời qua lịch vào chiều nay.",
+            "en": "Thanks. I’ll send out a calendar invite this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "We didn’t plan for the external review.",
+          "text": "I’ll follow up with anyone who hasn’t responded.",
           "translations": {
-            "ko": "외부 검토를 계획에 포함시키지 않았습니다.",
-            "zh": "我们没有计划外部审查。",
-            "ja": "外部レビューの計画を立てていませんでした。",
-            "vi": "Chúng tôi không lập kế hoạch cho việc xem xét bên ngoài."
+            "ko": "응답하지 않은 사람들에게는 따로 연락하겠습니다.",
+            "zh": "我会跟进那些还没回应的人。",
+            "ja": "返答がない人にはフォローアップします。",
+            "vi": "Tôi sẽ theo dõi với những người chưa phản hồi.",
+            "en": "I’ll follow up with anyone who hasn’t responded."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s come up with a few concrete improvements.",
+          "text": "Do we need to record the meeting for those who can’t attend?",
           "translations": {
-            "ko": "몇 가지 구체적인 개선 사항을 생각해 봅시다.",
-            "zh": "让我们想出一些具体的改进措施。",
-            "ja": "具体的な改善策をいくつか考えましょう。",
-            "vi": "Hãy đưa ra một số cải tiến cụ thể."
+            "ko": "참석하지 못하는 사람들을 위해 회의를 녹화해야 할까요?",
+            "zh": "我们需要为不能参加的人录制会议吗？",
+            "ja": "出席できない人のために会議を録音する必要がありますか？",
+            "vi": "Chúng ta có cần ghi lại cuộc họp cho những người không thể tham d",
+            "en": "Do we need to record the meeting for those who can’t attend?"
           }
         },
         {
           "role": "user",
-          "text": "We should document dependencies more clearly.",
+          "text": "Yes, that would be helpful.",
           "translations": {
-            "ko": "의존성을 더 명확하게 문서화해야 합니다.",
-            "zh": "我们应该更清楚地记录依赖关系。",
-            "ja": "依存関係をもっと明確に記録すべきです。",
-            "vi": "Chúng tôi nên ghi rõ ràng hơn về sự phụ thuộc."
+            "ko": "네, 그게 도움이 될 것 같아요.",
+            "zh": "是的，这会很有帮助。",
+            "ja": "はい、それは役立つでしょう。",
+            "vi": "",
+            "en": "Yes, that would be helpful."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll assign owners for each action item.",
+          "text": "I’ll make sure the equipment is ready.",
           "translations": {
-            "ko": "각 행동 항목에 대한 소유자를 지정하겠습니다.",
-            "zh": "我们将为每个行动项目指定负责人。",
-            "ja": "各アクションアイテムのオーナーを割り当てます。",
-            "vi": "Chúng tôi sẽ gán chủ sở hữu cho mỗi mục hành động."
+            "ko": "장비가 준비되어 있는지 확인하겠습니다.",
+            "zh": "我会确保设备准备就绪。",
+            "ja": "機器が準備できていることを確認します。",
+            "vi": "",
+            "en": "I’ll make sure the equipment is ready."
           }
         },
         {
           "role": "user",
-          "text": "I can take ownership of that task.",
+          "text": "Let’s also assign someone to take notes.",
           "translations": {
-            "ko": "그 작업에 대한 책임을 저가 맡겠습니다.",
-            "zh": "我可以负责那项任务。",
-            "ja": "そのタスクのオーナーシップを引き受けることができます。",
-            "vi": "Tôi có thể chịu trách nhiệm về nhiệm vụ đó."
+            "ko": "또한 누군가에게 메모를 쓰라고 부탁해야겠어요.",
+            "zh": "我们也应该指派一个人来做记录。",
+            "ja": "メモを取る人も指定しましょう。",
+            "vi": "",
+            "en": "Let’s also assign someone to take notes."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll post a summary of the discussion afterward.",
+          "text": "I’ll ask Sam. He’s good at that.",
           "translations": {
-            "ko": "나중에 논의 내용 요약을 게시하겠습니다.",
-            "zh": "我会在之后发布讨论的总结。",
-            "ja": "後で議論の要約を投稿します。",
-            "vi": "Tôi sẽ đăng tóm tắt cuộc thảo luận sau đó."
+            "ko": "샘에게 부탁하겠습니다. 그가 잘하니까요.",
+            "zh": "我会问Sam。他擅长这个。",
+            "ja": "サムに頼みます。彼はそれが得意です。",
+            "vi": "",
+            "en": "I’ll ask Sam. He’s good at that."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to the summary.",
+          "text": "Alright, looks like we’re all set.",
           "translations": {
-            "ko": "요약을 기대하고 있습니다.",
-            "zh": "期待总结。",
-            "ja": "要約を楽しみにしています。",
-            "vi": "Mong chờ xem tóm tắt."
+            "ko": "좋아요, 모든 준비가 끝난 것 같네요.",
+            "zh": "好的，看起来我们都准备好了。",
+            "ja": "さて、準備が整ったようです。",
+            "vi": "",
+            "en": "Alright, looks like we’re all set."
           }
         },
         {
           "role": "ai",
-          "text": "Thanks for your honest input today.",
+          "text": "Thanks for your help organizing this.",
           "translations": {
-            "ko": "오늘 솔직한 의견을 내주셔서 감사합니다.",
-            "zh": "感谢你今天的诚实反馈。",
-            "ja": "今日は率直な意見をありがとう。",
-            "vi": "Cảm ơn sự đóng góp thẳng thắn của bạn hôm nay."
+            "ko": "이 모든 것을 준비하는 데 도움을 줘서 고마워요.",
+            "zh": "感谢你帮忙组织这个。",
+            "ja": "この組織の手伝いをしてくれてありがとう。",
+            "vi": "",
+            "en": "Thanks for your help organizing this."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. This was a productive session.",
+          "text": "Anytime!",
           "translations": {
-            "ko": "감사합니다. 이번 세션은 생산적이었습니다.",
-            "zh": "谢谢。这是一个富有成效的会议。",
-            "ja": "ありがとう。これは生産的なセッションでした。",
-            "vi": "Cảm ơn. Đây là một phiên làm việc hiệu quả."
+            "ko": "언제든지!",
+            "zh": "随时！",
+            "ja": "いつでも！",
+            "vi": "",
+            "en": "Anytime!"
           }
         }
       ]
@@ -4374,2100 +4584,2200 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
   "advanced": [
     {
       "description": {
-        "ko": "경영진에게 분기별 결과를 발표하는 중",
-        "zh": "向高管报告季度业绩",
-        "ja": "幹部に対する四半期結果の発表",
-        "vi": "Trình bày kết quả quý cho các nhà điều hành"
+        "en": "Leading a cross-functional strategic meeting",
+        "ko": "여러 부서 간 전략 회의를 주도하다",
+        "zh": "领导跨职能战略会议",
+        "ja": "クロス機能的な戦略会議を主導する",
+        "vi": "Tổ chức một cuộc họp chiến lược chéo chức năng"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for joining. I’ll walk you through our Q2 performance highlights.",
+          "text": "Thanks everyone for joining. Let’s begin with our key objectives.",
           "translations": {
-            "ko": "참석해 주셔서 감사합니다. 2분기 성과 하이라이트를 안내하겠습니다.",
-            "zh": "感谢您的参与。我将带您了解我们第二季度的业绩亮点。",
-            "ja": "参加していただきありがとうございます。Q2のパフォーマンスハイライトをご説明します。",
-            "vi": "Cảm ơn đã tham gia. Tôi sẽ hướng dẫn bạn qua các điểm nổi bật về hiệu suất của chúng tôi trong quý 2."
+            "ko": "모두 참석해주셔서 감사합니다. 우리의 핵심 목표부터 시작해봅시다.",
+            "zh": "感谢大家的参与。让我们从我们的主要目标开始。",
+            "ja": "参加していただきありがとうございます。まずは主要な目標から始めましょう。",
+            "vi": "Cảm ơn mọi người đã tham gia. Hãy bắt đầu với mục tiêu chính của chúng ta.",
+            "en": "Thanks everyone for joining. Let’s begin with our key objectives."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. That was a clear overview.",
+          "text": "Are we prioritizing growth or operational efficiency this quarter?",
           "translations": {
-            "ko": "감사합니다. 명확한 개요였습니다.",
-            "zh": "谢谢。这是一个清晰的概述。",
-            "ja": "ありがとう。それは明確な概要でした。",
-            "vi": "Cảm ơn. Đó là một cái nhìn tổng quan rõ ràng."
+            "ko": "이번 분기에는 성장을 우선시할까요, 아니면 운영 효율성을 우선시할까요?",
+            "zh": "这个季度我们是优先考虑增长还是运营效率？",
+            "ja": "今四半期は成長を優先するか、それとも運用効率を優先するかですか？",
+            "vi": "Trong quý này, chúng ta ưu tiên tăng trưởng hay hiệu quả hoạt động?",
+            "en": "Are we prioritizing growth or operational efficiency this quarter?"
           }
         },
         {
           "role": "ai",
-          "text": "Revenue exceeded projections by 7 percent, driven by strong renewal rates.",
+          "text": "Great question. We're aiming for balanced progress on both.",
           "translations": {
-            "ko": "강력한 재계약률에 힘입어 수익이 예상치를 7퍼센트 초과하였습니다.",
-            "zh": "由于续约率强劲，收入超出预期7%。",
-            "ja": "強い更新率により、収益は予測を7％上回りました。",
-            "vi": "Doanh thu vượt quá dự báo 7 phần trăm, do tỷ lệ gia hạn mạnh."
+            "ko": "좋은 질문입니다. 우리는 두 가지 모두에서 균형있게 발전을 목표로 하고 있습니다.",
+            "zh": "很好的问题。我们的目标是在这两方面都取得平衡的进步。",
+            "ja": "良い質問です。両方に対して均衡の取れた進行を目指しています。",
+            "vi": "Câu hỏi tốt. Chúng tôi đang nhắm đến sự tiến bộ cân đối ở cả hai.",
+            "en": "Great question. We're aiming for balanced progress on both."
           }
         },
         {
           "role": "user",
-          "text": "Great to see performance beating forecasts.",
+          "text": "How do we measure success for each pillar?",
           "translations": {
-            "ko": "예상치를 뛰어넘는 성과를 보니 기쁩니다.",
-            "zh": "很高兴看到业绩超出预测。",
-            "ja": "パフォーマンスが予測を上回るのは素晴らしいことです。",
-            "vi": "Rất vui khi thấy hiệu suất vượt dự báo."
+            "ko": "각 핵심 요소에 대한 성공을 어떻게 측정하나요?",
+            "zh": "我们如何衡量每个支柱的成功？",
+            "ja": "各柱の成功をどのように測定しますか？",
+            "vi": "Làm thế nào để chúng ta đo lường thành công cho mỗi trụ cột?",
+            "en": "How do we measure success for each pillar?"
           }
         },
         {
           "role": "ai",
-          "text": "Customer churn decreased significantly compared to Q1.",
+          "text": "For growth, we’ll focus on user acquisition and retention.",
           "translations": {
-            "ko": "고객 이탈률이 1분기에 비해 크게 감소하였습니다.",
-            "zh": "与第一季度相比，客户流失率显著下降。",
-            "ja": "顧客の離脱率はQ1に比べて大幅に減少しました。",
-            "vi": "Tỷ lệ khách hàng rời bỏ giảm đáng kể so với quý 1."
+            "ko": "성장에 대해서는 사용자 획득 및 유지에 초점을 맞추겠습니다.",
+            "zh": "对于增长，我们将重点关注用户获取和保留。",
+            "ja": "成長については、ユーザー獲得と保持に焦点を当てます。",
+            "vi": "Đối với tăng trưởng, chúng ta sẽ tập trung vào việc thu hút và giữ chân người dùng.",
+            "en": "For growth, we’ll focus on user acquisition and retention."
           }
         },
         {
           "role": "user",
-          "text": "Lower churn is definitely a positive sign.",
+          "text": "And operational efficiency?",
           "translations": {
-            "ko": "이탈률 감소는 확실히 긍정적인 신호입니다.",
-            "zh": "流失率的降低绝对是一个积极的信号。",
-            "ja": "離脱率の低下は間違いなく良い兆候です。",
-            "vi": "Tỷ lệ churn thấp hơn chắc chắn là dấu hiệu tích cực."
+            "ko": "그럼 운영 효율성은요?",
+            "zh": "那运营效率呢？",
+            "ja": "そして運用効率は？",
+            "vi": "Còn hiệu quả hoạt động?",
+            "en": "And operational efficiency?"
           }
         },
         {
           "role": "ai",
-          "text": "We also launched two new features that contributed to upsell growth.",
+          "text": "Reducing churn, improving onboarding, and process automation.",
           "translations": {
-            "ko": "또한, 업셀링 성장에 기여한 두 가지 새로운 기능을 출시하였습니다.",
-            "zh": "我们还推出了两个新功能，这有助于提高销售额。",
-            "ja": "また、アップセル成長に貢献した2つの新機能を導入しました。",
-            "vi": "Chúng tôi cũng đã ra mắt hai tính năng mới đã góp phần vào sự tăng trưởng upsell."
+            "ko": "이탈률 감소, 온보딩 개선, 그리고 프로세스 자동화입니다.",
+            "zh": "减少流失，提高新员工入职效率，以及流程自动化。",
+            "ja": "チャーンの削減、オンボーディングの改善、プロセスの自動化です。",
+            "vi": "Giảm tỷ lệ rời bỏ, cải thiện quá trình đưa vào sử dụng và tự động hóa quy trình.",
+            "en": "Reducing churn, improving onboarding, and process automation."
           }
         },
         {
           "role": "user",
-          "text": "Nice work on getting those features out the door.",
+          "text": "Which teams will be driving those efforts?",
           "translations": {
-            "ko": "그 기능들을 출시한 것에 대해 잘 했습니다.",
-            "zh": "在推出这些新功能上做得很好。",
-            "ja": "その機能をリリースしたのは素晴らしい仕事です。",
-            "vi": "Công việc tốt trong việc đưa những tính năng này ra khỏi cửa."
+            "ko": "어떤 팀이 이러한 노력을 주도할 것인가요?",
+            "zh": "哪些团队将推动这些工作？",
+            "ja": "それらの取り組みを推進するのはどのチームですか？",
+            "vi": "Những đội nào sẽ thực hiện những nỗ lực này?",
+            "en": "Which teams will be driving those efforts?"
           }
         },
         {
           "role": "ai",
-          "text": "However, implementation delays slightly affected onboarding time.",
+          "text": "Marketing and Product will lead growth. Ops and CX on efficiency.",
           "translations": {
-            "ko": "그러나, 구현 지연이 온보딩 시간에 약간 영향을 미쳤습니다.",
-            "zh": "然而，实施延迟稍微影响了新用户的入门时间。",
-            "ja": "しかし、実装の遅延がオンボーディング時間に若干影響を与えました。",
-            "vi": "Tuy nhiên, sự chậm trễ trong việc triển khai đã ảnh hưởng nhẹ đến thời gian onboarding."
+            "ko": "마케팅과 제품 팀이 성장을 주도하고, 운영 및 고객 경험 팀이 효율성을 주도할 것입니다.",
+            "zh": "营销和产品团队将负责增长。运营和客户体验团队将负责效率。",
+            "ja": "成長はマーケティングとプロダクトが、効率はオペレーションとCXが担当します。",
+            "vi": "Marketing và Sản phẩm sẽ dẫn dắt tăng trưởng. Ops và CX về hiệu quả.",
+            "en": "Marketing and Product will lead growth. Ops and CX on efficiency."
           }
         },
         {
           "role": "user",
-          "text": "Understood. What caused the implementation delay?",
+          "text": "What’s the expected timeline?",
           "translations": {
-            "ko": "이해했습니다. 구현 지연의 원인은 무엇이었나요?",
-            "zh": "明白了。是什么导致了实施的延迟？",
-            "ja": "了解しました。実装の遅延の原因は何ですか？",
-            "vi": "Hiểu rồi. Điều gì đã gây ra sự chậm trễ trong việc triển khai?"
+            "ko": "예상 시간표는 어떻게 되나요?",
+            "zh": "预期的时间表是什么？",
+            "ja": "予想されるタイムラインは何ですか？",
+            "vi": "Thời gian dự kiến là bao lâu?",
+            "en": "What’s the expected timeline?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ve identified key areas for process improvement moving forward.",
+          "text": "We’ll break it into two-month sprints with monthly check-ins.",
           "translations": {
-            "ko": "앞으로 개선할 핵심 영역을 확인하였습니다.",
-            "zh": "我们已经确定了未来改进流程的关键领域。",
-            "ja": "私たちは、今後のプロセス改善のための重要な領域を特定しました。",
-            "vi": "Chúng tôi đã xác định các lĩnh vực chính để cải tiến quy trình tiếp theo."
+            "ko": "우리는 이를 두 달 단위의 스프린트로 나누고, 매달 체크인을 할 예정입니다.",
+            "zh": "我们将把它分成两个月的冲刺，每月进行一次检查。",
+            "ja": "2ヶ月ごとのスプリントに分け、月次でチェックインを行います。",
+            "vi": "Chúng tôi sẽ chia thành các giai đoạn hai tháng với việc kiểm tra hàng tháng.",
+            "en": "We’ll break it into two-month sprints with monthly check-ins."
           }
         },
         {
           "role": "user",
-          "text": "Process improvements sound like the right focus.",
+          "text": "Should we assign owners today?",
           "translations": {
-            "ko": "프로세스 개선이 중점이 되어야 한다고 생각합니다.",
-            "zh": "流程改进听起来是正确的重点。",
-            "ja": "プロセス改善は正しい焦点のように聞こえます。",
-            "vi": "Cải tiến quy trình nghe có vẻ là trọng tâm đúng."
+            "ko": "오늘 소유자를 지정해야 하나요?",
+            "zh": "我们今天应该指定负责人吗？",
+            "ja": "今日オーナーを割り当てるべきですか？",
+            "vi": "Có nên chỉ định chủ sở hữu ngay hôm nay không?",
+            "en": "Should we assign owners today?"
           }
         },
         {
           "role": "ai",
-          "text": "Operational efficiency increased across most departments.",
+          "text": "Yes, I’ll share a draft responsibility matrix after the meeting.",
           "translations": {
-            "ko": "대부분의 부서에서 운영 효율성이 향상되었습니다.",
-            "zh": "大多数部门的运营效率都有所提高。",
-            "ja": "ほとんどの部門で運用効率が向上しました。",
-            "vi": "Hiệu quả hoạt động tăng trong hầu hết các bộ phận."
+            "ko": "네, 회의 후에 초안 책임 행렬을 공유하겠습니다.",
+            "zh": "是的，会议后我会分享一个草案责任矩阵。",
+            "ja": "はい、会議後に責任マトリクスのドラフトを共有します。",
+            "vi": "Đúng, tôi sẽ chia sẻ một bản nháp về ma trận trách nhiệm sau cuộc họp.",
+            "en": "Yes, I’ll share a draft responsibility matrix after the meeting."
           }
         },
         {
           "role": "user",
-          "text": "Good to hear efficiency is trending up.",
+          "text": "Can we also align on dependencies across functions?",
           "translations": {
-            "ko": "효율성이 상승하는 것을 듣고 좋습니다.",
-            "zh": "很高兴听到效率正在提高。",
-            "ja": "効率が上昇傾向にあると聞いて良かったです。",
-            "vi": "Rất vui khi nghe hiệu quả đang theo xu hướng tăng."
+            "ko": "부서 간의 의존성에 대해서도 일치시킬 수 있을까요?",
+            "zh": "我们也可以在各职能间对依赖关系进行对齐吗？",
+            "ja": "各機能間の依存関係についても合意できますか？",
+            "vi": "Chúng ta cũng có thể thống nhất về sự phụ thuộc giữa các chức năng?",
+            "en": "Can we also align on dependencies across functions?"
           }
         },
         {
           "role": "ai",
-          "text": "Marketing ROI was strong, especially in digital campaigns.",
+          "text": "Absolutely. We’ll use a shared tracker to stay updated.",
           "translations": {
-            "ko": "마케팅 ROI가 특히 디지털 캠페인에서 강하게 나타났습니다.",
-            "zh": "市场投资回报率强劲，尤其是在数字营销活动中。",
-            "ja": "マーケティングのROIは特にデジタルキャンペーンで強かったです。",
-            "vi": "ROI của Marketing rất mạnh, đặc biệt là trong các chiến dịch kỹ thuật số."
+            "ko": "당연합니다. 우리는 공유 트래커를 사용하여 업데이트 상태를 유지하겠습니다.",
+            "zh": "当然。我们将使用共享跟踪器来保持更新。",
+            "ja": "もちろんです。共有トラッカーを使用して最新の情報を把握します。",
+            "vi": "Chắc chắn. Chúng tôi sẽ sử dụng một bộ theo dõi chung để cập nhật.",
+            "en": "Absolutely. We’ll use a shared tracker to stay updated."
           }
         },
         {
           "role": "user",
-          "text": "What drove the ROI spike in marketing?",
+          "text": "Thanks. This framework helps clarify the big picture.",
           "translations": {
-            "ko": "마케팅에서 ROI가 급증한 원인은 무엇인가요?",
-            "zh": "是什么导致了市场投资回报率的激增？",
-            "ja": "マーケティングのROIが急増した要因は何ですか？",
-            "vi": "Điều gì đã thúc đẩy sự tăng trưởng ROI trong marketing?"
+            "ko": "감사합니다. 이 프레임워크는 큰 그림을 명확히 이해하는 데 도움이 됩니다.",
+            "zh": "谢谢。这个框架有助于澄清大局。",
+            "ja": "ありがとう。このフレームワークは大局を明確にするのに役立ちます。",
+            "vi": "Cảm ơn. Khung này giúp làm rõ bức tranh tổng thể.",
+            "en": "Thanks. This framework helps clarify the big picture."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll review department KPIs next and open for questions.",
+          "text": "Let’s summarize our next steps.",
           "translations": {
-            "ko": "다음으로 부서별 KPI를 검토하고 질문을 받겠습니다.",
-            "zh": "接下来我们将审查部门的关键绩效指标，并回答问题。",
-            "ja": "次に部門のKPIをレビューし、質問を受け付けます。",
-            "vi": "Chúng tôi sẽ xem xét KPIs của các bộ phận tiếp theo và mở cửa cho câu hỏi."
+            "ko": "다음 단계를 요약해봅시다.",
+            "zh": "让我们总结一下我们的下一步行动。",
+            "ja": "次のステップをまとめましょう。",
+            "vi": "Hãy tóm tắt các bước tiếp theo của chúng ta.",
+            "en": "Let’s summarize our next steps."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to the KPI breakdown.",
+          "text": "I’ll draft the notes and circulate them today.",
           "translations": {
-            "ko": "KPI 분석을 기대하고 있습니다.",
-            "zh": "期待对关键绩效指标的详细解读。",
-            "ja": "KPIの詳細に期待しています。",
-            "vi": "Mong chờ phân tích KPI."
+            "ko": "나는 메모를 작성하고 오늘 그것들을 배포할 것입니다.",
+            "zh": "我会起草会议记录并在今天发放。",
+            "ja": "私が議事録のドラフトを作成し、今日中に回覧します。",
+            "vi": "Tôi sẽ soạn thảo ghi chú và gửi chúng ngày hôm nay.",
+            "en": "I’ll draft the notes and circulate them today."
           }
         },
         {
           "role": "ai",
-          "text": "Let me know if you'd like to dive deeper into any section.",
+          "text": "Let’s summarize our next steps.",
           "translations": {
-            "ko": "어떤 부분에 대해 더 자세히 알고 싶으시다면 알려주세요.",
-            "zh": "如果您想深入了解任何部分，请告诉我。",
-            "ja": "どのセクションを深く掘り下げたいか教えてください。",
-            "vi": "Hãy cho tôi biết nếu bạn muốn tìm hiểu sâu hơn về bất kỳ phần nào."
+            "ko": "다음 단계를 요약해봅시다.",
+            "zh": "让我们总结一下我们的下一步行动。",
+            "ja": "次のステップをまとめましょう。",
+            "vi": "Hãy tóm tắt các bước tiếp theo của chúng ta.",
+            "en": "Let’s summarize our next steps."
           }
         },
         {
           "role": "user",
-          "text": "I may have a question after reviewing the appendix.",
+          "text": "I’ll draft the notes and circulate them today.",
           "translations": {
-            "ko": "부록을 검토한 후에 질문이 있을 수도 있습니다.",
-            "zh": "在查看附录后，我可能会有问题。",
-            "ja": "付録を見た後に質問があるかもしれません。",
-            "vi": "Tôi có thể có câu hỏi sau khi xem phụ lục."
+            "ko": "나는 메모를 작성하고 오늘 그것들을 배포할 것입니다.",
+            "zh": "我会起草会议记录并在今天发放。",
+            "ja": "私が議事録のドラフトを作成し、今日中に回覧します。",
+            "vi": "Tôi sẽ soạn thảo ghi chú và gửi chúng ngày hôm nay.",
+            "en": "I’ll draft the notes and circulate them today."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "리더십 회의에서 전략적 우선순위를 정의하는 중",
-        "zh": "在领导会议中确定战略优先事项",
-        "ja": "リーダーシップミーティングで戦略的優先事項を定義する",
-        "vi": "Xác định ưu tiên chiến lược trong cuộc họp lãnh đạo"
+        "en": "Resolving conflict between team departments",
+        "ko": "팀 부서 간의 갈등 해결",
+        "zh": "解决团队部门之间的冲突",
+        "ja": "チーム間の対立を解決する",
+        "vi": "Giải quyết xung đột giữa các bộ phận trong nhóm"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s align on the top three strategic priorities for the next quarter.",
+          "text": "Let’s address the friction between Product and Support teams.",
           "translations": {
-            "ko": "다음 분기에 대한 상위 세 가지 전략적 우선순위에 대해 합의합시다.",
-            "zh": "让我们就下一季度的前三个战略优先事项达成一致。",
-            "ja": "次の四半期のトップ3の戦略的優先事項について合意しましょう。",
-            "vi": "Hãy đồng lòng về ba ưu tiên chiến lược hàng đầu cho quý tiếp theo."
+            "ko": "제품 팀과 지원 팀 간의 마찰을 해결해봅시다.",
+            "zh": "让我们解决产品和支持团队之间的摩擦。",
+            "ja": "プロダクトチームとサポートチーム間の摩擦を解決しましょう。",
+            "vi": "Hãy giải quyết sự ma sát giữa các nhóm Sản phẩm và Hỗ trợ.",
+            "en": "Let’s address the friction between Product and Support teams."
           }
         },
         {
           "role": "user",
-          "text": "Sounds like a strong set of focus areas.",
+          "text": "Thanks. We've been struggling with ticket prioritization.",
           "translations": {
-            "ko": "강력한 집중 영역 세트로 보입니다.",
-            "zh": "这听起来像是一套强有力的关注领域。",
-            "ja": "強力な焦点領域のセットのように聞こえます。",
-            "vi": "Nghe có vẻ như một tập hợp mạnh mẽ của các lĩnh vực tập trung."
+            "ko": "감사합니다. 우리는 티켓 우선 순위를 정하는 데 어려움을 겪고 있습니다.",
+            "zh": "谢谢。我们一直在为工单优先级问题苦恼。",
+            "ja": "ありがとう。私たちはチケットの優先順位付けに苦労しています。",
+            "vi": "Cảm ơn. Chúng tôi đã gặp khó khăn với việc ưu tiên vé.",
+            "en": "Thanks. We've been struggling with ticket prioritization."
           }
         },
         {
           "role": "ai",
-          "text": "Our first challenge is improving product reliability at scale.",
+          "text": "Product, how do you currently triage feature requests?",
           "translations": {
-            "ko": "첫 번째 도전은 제품의 신뢰성을 대규모로 향상시키는 것입니다.",
-            "zh": "我们的第一个挑战是提高产品的可靠性。",
-            "ja": "最初の課題は、製品の信頼性をスケールで改善することです。",
-            "vi": "Thách thức đầu tiên của chúng tôi là cải thiện độ tin cậy của sản phẩm ở quy mô lớn."
+            "ko": "제품 팀은 현재 기능 요청을 어떻게 처리하나요?",
+            "zh": "产品团队，你们目前是如何处理功能请求的？",
+            "ja": "プロダクト、現在のフィーチャーリクエストのトリアージはどのように行っていますか？",
+            "vi": "Sản phẩm, hiện tại bạn phân loại yêu cầu tính năng như thế nào?",
+            "en": "Product, how do you currently triage feature requests?"
           }
         },
         {
           "role": "user",
-          "text": "Agreed. Product reliability should be our top priority.",
+          "text": "We consider effort vs impact, but support volume isn’t factored enough.",
           "translations": {
-            "ko": "동의합니다. 제품의 신뢰성은 우리의 최우선 순위가 되어야 합니다.",
-            "zh": "同意。产品可靠性应该是我们的首要任务。",
-            "ja": "同意します。製品の信頼性は最優先事項であるべきです。",
-            "vi": "Đồng ý. Độ tin cậy của sản phẩm nên là ưu tiên hàng đầu của chúng tôi."
+            "ko": "우리는 노력 대비 영향을 고려하지만, 지원 부서의 볼륨이 충분히 고려되지 않습니다.",
+            "zh": "我们考虑的是努力与影响，但没有足够考虑到支持量。",
+            "ja": "労力と影響のバランスを考慮していますが、サポートのボリュームが十分に考慮されていません。",
+            "vi": "Chúng tôi xem xét nỗ lực so với tác động, nhưng khối lượng hỗ trợ không được tính đủ.",
+            "en": "We consider effort vs impact, but support volume isn’t factored enough."
           }
         },
         {
           "role": "ai",
-          "text": "Second, we need to accelerate time-to-value for new customers.",
+          "text": "Support, how does the backlog affect your workflows?",
           "translations": {
-            "ko": "두 번째로, 새로운 고객에 대한 가치 제공 시간을 가속화해야 합니다.",
-            "zh": "其次，我们需要加快为新客户提供价值的时间。",
-            "ja": "二つ目に、新規顧客の価値を早期に実現する必要があります。",
-            "vi": "Thứ hai, chúng tôi cần tăng tốc thời gian mang lại giá trị cho khách hàng mới."
+            "ko": "지원 팀은 백로그가 작업 흐름에 어떻게 영향을 미치나요?",
+            "zh": "支持团队，积压的工作对你们的工作流程有何影响？",
+            "ja": "サポート、バックログがあなたたちのワークフローにどのような影響を与えていますか？",
+            "vi": "Hỗ trợ, cách xử lý hàng đợi ảnh hưởng đến quy trình làm việc của bạn như thế nào?",
+            "en": "Support, how does the backlog affect your workflows?"
           }
         },
         {
           "role": "user",
-          "text": "Accelerating onboarding is also critical for growth.",
+          "text": "It delays urgent fixes and frustrates users.",
           "translations": {
-            "ko": "온보딩 가속화도 성장에 있어 중요합니다.",
-            "zh": "加快入门速度对增长也至关重要。",
-            "ja": "オンボーディングの加速も成長にとって重要です。",
-            "vi": "Việc tăng tốc onboarding cũng rất quan trọng cho sự tăng trưởng."
+            "ko": "긴급한 수정이 지연되고 사용자들이 좌절합니다.",
+            "zh": "它延迟了紧急修复，让用户感到沮丧。",
+            "ja": "緊急の修正が遅れ、ユーザーがイライラしています。",
+            "vi": "Nó làm trì hoãn việc sửa chữa khẩn cấp và làm khách hàng bực bực.",
+            "en": "It delays urgent fixes and frustrates users."
           }
         },
         {
           "role": "ai",
-          "text": "Third, we must refine our go-to-market strategy for APAC.",
+          "text": "Can we agree on a shared escalation policy?",
           "translations": {
-            "ko": "세 번째로, APAC에 대한 시장 진출 전략을 세밀하게 다듬어야 합니다.",
-            "zh": "第三，我们必须优化我们在亚太地区的市场进入策略。",
-            "ja": "三つ目に、APAC向けの市場参入戦略を見直す必要があります。",
-            "vi": "Thứ ba, chúng tôi phải tinh chỉnh chiến lược ra thị trường của chúng tôi cho APAC."
+            "ko": "공유된 에스컬레이션 정책에 대해 합의할 수 있을까요?",
+            "zh": "我们能否就共享升级政策达成一致？",
+            "ja": "共有のエスカレーションポリシーに合意できますか？",
+            "vi": "Chúng ta có thể đồng ý về một chính sách nâng cấp chung không?",
+            "en": "Can we agree on a shared escalation policy?"
           }
         },
         {
           "role": "user",
-          "text": "APAC strategy definitely needs refinement.",
+          "text": "Yes, with clearer response SLAs.",
           "translations": {
-            "ko": "APAC 전략은 확실히 개선이 필요합니다.",
-            "zh": "亚太地区的策略确实需要优化。",
-            "ja": "APAC戦略は確かに見直しが必要です。",
-            "vi": "Chiến lược APAC chắc chắn cần được tinh chỉnh."
+            "ko": "네, 더 명확한 응답 SLA와 함께요.",
+            "zh": "是的，需要更明确的响应服务等级协议。",
+            "ja": "はい、より明確なレスポンスSLAとともに。",
+            "vi": "Đúng, với các SLA phản hồi rõ ràng hơn.",
+            "en": "Yes, with clearer response SLAs."
           }
         },
         {
           "role": "ai",
-          "text": "I propose forming cross-functional task forces for each initiative.",
+          "text": "What about bi-weekly syncs to review the backlog together?",
           "translations": {
-            "ko": "각 이니셔티브에 대해 크로스 기능 작업 그룹을 구성하는 것을 제안합니다.",
-            "zh": "我建议为每个倡议组建跨职能任务小组。",
-            "ja": "各イニシアチブに対して、クロス機能タスクフォースを組織することを提案します。",
-            "vi": "Tôi đề xuất thành lập các nhóm nhiệm vụ chéo chức năng cho mỗi sáng kiến."
+            "ko": "백로그를 함께 검토하기 위해 격주로 동기화를 할 수 있을까요?",
+            "zh": "我们是否应该每两周同步一次，一起审查积压的工作？",
+            "ja": "バックログを一緒に見直すための隔週の同期はどうですか？",
+            "vi": "Còn về việc đồng bộ hai tuần một lần để xem xét hàng đợi cùng nhau?",
+            "en": "What about bi-weekly syncs to review the backlog together?"
           }
         },
         {
           "role": "user",
-          "text": "Task forces will help ensure traction across teams.",
+          "text": "That would help us stay aligned.",
           "translations": {
-            "ko": "작업 그룹은 팀 간의 추진력을 보장하는 데 도움이 될 것입니다.",
-            "zh": "任务小组将有助于确保团队之间的协调。",
-            "ja": "タスクフォースは、チーム間での進行を確保するのに役立ちます。",
-            "vi": "Nhóm nhiệm vụ sẽ giúp đảm bảo sự tiếp cận giữa các nhóm."
+            "ko": "그것이 우리가 일치를 유지하는 데 도움이 될 것입니다.",
+            "zh": "这将帮助我们保持一致。",
+            "ja": "それは私たちが一致を保つのに役立ちます。",
+            "vi": "Điều đó sẽ giúp chúng tôi duy trì sự đồng lòng.",
+            "en": "That would help us stay aligned."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll assign executive sponsors to ensure accountability.",
+          "text": "Should we designate a liaison for smoother handoffs?",
           "translations": {
-            "ko": "책임을 보장하기 위해 이사 스폰서를 지정하겠습니다.",
-            "zh": "我们将指派执行赞助人以确保责任落实。",
-            "ja": "説明責任を確保するために、エグゼクティブスポンサーを割り当てます。",
-            "vi": "Chúng tôi sẽ chỉ định những nhà tài trợ điều hành để đảm bảo trách nhiệm."
+            "ko": "더 원활한 인수를 위해 연락처를 지정해야 하나요?",
+            "zh": "我们应该指定一个联络人以便更顺畅的交接吗？",
+            "ja": "スムーズな引き継ぎのために連絡係を指名すべきですか？",
+            "vi": "Có nên chỉ định một liên lạc để làm cho việc chuyển giao mượt mà hơn không?",
+            "en": "Should we designate a liaison for smoother handoffs?"
           }
         },
         {
           "role": "user",
-          "text": "Good call assigning executive sponsors.",
+          "text": "Great idea. I can assign someone from our team.",
           "translations": {
-            "ko": "이사 스폰서를 지정하는 것은 좋은 결정이었습니다.",
-            "zh": "指派执行赞助人是个好主意。",
-            "ja": "エグゼクティブスポンサーを割り当てるのは良い判断です。",
-            "vi": "Quyết định chỉ định nhà tài trợ điều hành là một quyết định đúng đắn."
+            "ko": "좋은 생각입니다. 우리 팀에서 누군가를 지정할 수 있습니다.",
+            "zh": "好主意。我可以从我们团队中指派一个人。",
+            "ja": "良いアイデアです。私たちのチームから誰かを指名します。",
+            "vi": "Ý tưởng tốt. Tôi có thể chỉ định một người từ nhóm của chúng tôi.",
+            "en": "Great idea. I can assign someone from our team."
           }
         },
         {
           "role": "ai",
-          "text": "Progress will be tracked using OKRs and biweekly reviews.",
+          "text": "Let’s pilot this workflow for a month.",
           "translations": {
-            "ko": "진행 상황은 OKR과 격주 리뷰를 사용하여 추적됩니다.",
-            "zh": "我们将使用OKRs和双周评审来跟踪进度。",
-            "ja": "進捗はOKRと隔週のレビューを使用して追跡されます。",
-            "vi": "Tiến trình sẽ được theo dõi bằng OKRs và đánh giá hai tuần một lần."
+            "ko": "이 작업 흐름을 한 달 동안 시험해봅시다.",
+            "zh": "让我们试行这个工作流程一个月。",
+            "ja": "このワークフローを1ヶ月間試行しましょう。",
+            "vi": "Hãy thử nghiệm quy trình làm việc này trong một tháng.",
+            "en": "Let’s pilot this workflow for a month."
           }
         },
         {
           "role": "user",
-          "text": "OKRs and reviews will help with accountability.",
+          "text": "Agreed. We’ll monitor and iterate if needed.",
           "translations": {
-            "ko": "OKR과 리뷰는 책임성을 보장하는 데 도움이 될 것입니다.",
-            "zh": "OKRs和评审将有助于责任落实。",
-            "ja": "OKRとレビューは説明責任を確保するのに役立ちます。",
-            "vi": "OKRs và đánh giá sẽ giúp với trách nhiệm."
+            "ko": "동의합니다. 필요한 경우 모니터링하고 반복하겠습니다.",
+            "zh": "同意。我们将进行监控，并在需要时进行迭代。",
+            "ja": "同意します。必要に応じてモニタリングと反復を行います。",
+            "vi": "Đồng ý. Chúng tôi sẽ giám sát và điều chỉnh nếu cần.",
+            "en": "Agreed. We’ll monitor and iterate if needed."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s also define clear success metrics before next week.",
+          "text": "Thanks both. Conflict happens—but collaboration solves it.",
           "translations": {
-            "ko": "다음 주 전에 명확한 성공 지표를 정의합시다.",
-            "zh": "让我们在下周之前定义清晰的成功指标。",
-            "ja": "来週までに明確な成功指標を定義しましょう。",
-            "vi": "Hãy cũng xác định rõ ràng các chỉ số thành công trước tuần tới."
+            "ko": "감사합니다. 갈등은 발생하지만 협력이 그것을 해결합니다.",
+            "zh": "谢谢你们。冲突是会发生的，但合作可以解决它。",
+            "ja": "ありがとう、両方とも。対立は起こりますが、協力がそれを解決します。",
+            "vi": "Cảm ơn cả hai. Xung đột xảy ra - nhưng cộng tác giải quyết nó.",
+            "en": "Thanks both. Conflict happens—but collaboration solves it."
           }
         },
         {
           "role": "user",
-          "text": "We’ll prepare draft metrics by Friday.",
+          "text": "[User response needed]",
           "translations": {
-            "ko": "금요일까지 초안 지표를 준비하겠습니다.",
-            "zh": "我们将在周五之前准备好草案指标。",
-            "ja": "金曜日までに指標の草案を準備します。",
-            "vi": "Chúng tôi sẽ chuẩn bị các chỉ số nháp vào thứ Sáu."
+            "ko": "[사용자 응답 필요]",
+            "zh": "[需要用户回应]",
+            "ja": "[ユーザーの反応が必要]",
+            "vi": "[Cần phản hồi của người dùng]",
+            "en": "[User response needed]"
           }
         },
         {
           "role": "ai",
-          "text": "Any concerns about bandwidth or cross-team dependencies?",
+          "text": "Let’s summarize our next steps.",
           "translations": {
-            "ko": "대역폭이나 팀 간 의존성에 대한 우려가 있습니까?",
-            "zh": "对带宽或跨团队依赖有任何担忧吗？",
-            "ja": "バンド幅やクロスチーム依存性についての懸念はありますか？",
-            "vi": "Có bất kỳ lo lắng nào về băng thông hoặc sự phụ thuộc giữa các nhóm không?"
+            "ko": "다음 단계를 요약해봅시다.",
+            "zh": "让我们总结一下我们的下一步行动。",
+            "ja": "次のステップをまとめましょう。",
+            "vi": "Hãy tóm tắt các bước tiếp theo của chúng ta.",
+            "en": "Let’s summarize our next steps."
           }
         },
         {
           "role": "user",
-          "text": "I’m slightly concerned about engineering bandwidth.",
+          "text": "I’ll draft the notes and circulate them today.",
           "translations": {
-            "ko": "엔지니어링 대역폭에 대해 약간 우려하고 있습니다.",
-            "zh": "我对工程带宽有些担忧。",
-            "ja": "エンジニアリングのバンド幅については少し懸念しています。",
-            "vi": "Tôi hơi lo lắng về băng thông kỹ thuật."
+            "ko": "나는 메모를 작성하고 오늘 그것들을 배포할 것입니다.",
+            "zh": "我会起草会议记录并在今天发放。",
+            "ja": "私が議事録のドラフトを作成し、今日中に回覧します。",
+            "vi": "Tôi sẽ soạn thảo ghi chú và gửi chúng ngày hôm nay.",
+            "en": "I’ll draft the notes and circulate them today."
           }
         },
         {
           "role": "ai",
-          "text": "Please share final feedback before we lock in the priorities.",
+          "text": "Thanks both. Conflict happens—but collaboration solves it.",
           "translations": {
-            "ko": "우선 순위를 확정하기 전에 최종 피드백을 공유해주세요.",
-            "zh": "请在我们确定优先事项之前分享最后的反馈。",
-            "ja": "優先事項を確定する前に最終的なフィードバックを共有してください。",
-            "vi": "Vui lòng chia sẻ phản hồi cuối cùng trước khi chúng tôi khóa các ưu tiên."
+            "ko": "감사합니다. 갈등은 발생하지만 협력이 그것을 해결합니다.",
+            "zh": "谢谢你们。冲突是会发生的，但合作可以解决它。",
+            "ja": "ありがとう、両方とも。対立は起こりますが、協力がそれを解決します。",
+            "vi": "Cảm ơn cả hai. Xung đột xảy ra - nhưng cộng tác giải quyết nó.",
+            "en": "Thanks both. Conflict happens—but collaboration solves it."
           }
         },
         {
           "role": "user",
-          "text": "Noted. I’ll send additional input after this call.",
+          "text": "Let’s keep this process going and revisit next week.",
           "translations": {
-            "ko": "확인했습니다. 이 통화 후 추가 의견을 보내겠습니다.",
-            "zh": "已记录。我会在这次通话后发送额外的输入。",
-            "ja": "承知しました。この通話後に追加の意見を送ります。",
-            "vi": "Đã ghi nhận. Tôi sẽ gửi thêm ý kiến sau cuộc gọi này."
+            "ko": "이 과정을 계속하고 다음 주에 다시 검토합시다.",
+            "zh": "让我们保持这个过程，并在下周再次审查。",
+            "ja": "このプロセスを続け、来週再訪しましょう。",
+            "vi": "Hãy tiếp tục quy trình này và xem xét lại vào tuần sau.",
+            "en": "Let’s keep this process going and revisit next week."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "이사 결정 세션을 운영하는 것",
-        "zh": "促进一个执行决策会议",
-        "ja": "エグゼクティブの意思決定セッションを促進する",
-        "vi": "Tạo điều kiện cho một phiên họp quyết định của ban điều hành"
+        "en": "Facilitating a brainstorming session",
+        "ko": "브레인스토밍 세션 진행",
+        "zh": "主持一个头脑风暴会议",
+        "ja": "ブレインストーミングセッションを進行する",
+        "vi": "Tổ chức một phiên họp động não"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s review the key decision points before we proceed.",
+          "text": "Let’s kick off with blue-sky ideas—no judgment.",
           "translations": {
-            "ko": "진행하기 전에 주요 결정 사항을 검토합시다.",
-            "zh": "让我们在继续之前回顾关键决策点。",
-            "ja": "進行する前に、主要な決定点を見直しましょう。",
-            "vi": "Hãy xem lại các điểm quyết định chính trước khi chúng ta tiếp tục."
+            "ko": "판단 없는 파란 하늘 아이디어로 시작해봅시다.",
+            "zh": "让我们从蓝天思考开始，不做任何评判。",
+            "ja": "批判なしの青空のアイデアから始めましょう。",
+            "vi": "Hãy bắt đầu với những ý tưởng không giới hạn - không phán đoán.",
+            "en": "Let’s kick off with blue-sky ideas—no judgment."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. A quick recap helps clarify things.",
+          "text": "How about a referral program that rewards both sides?",
           "translations": {
-            "ko": "감사합니다. 빠른 요약은 이해를 돕습니다.",
-            "zh": "谢谢。快速回顾有助于澄清事情。",
-            "ja": "ありがとう。簡単なまとめが物事を明確にするのに役立ちます。",
-            "vi": "Cảm ơn. Một bản tóm tắt nhanh giúp làm rõ mọi thứ."
+            "ko": "양쪽 모두에게 보상을 주는 추천 프로그램은 어떨까요?",
+            "zh": "如何设立一个双方都能得到奖励的推荐计划呢？",
+            "ja": "両方に報酬がある紹介プログラムはどうでしょう？",
+            "vi": "Còn về một chương trình giới thiệu mà cả hai bên đều được thưởng?",
+            "en": "How about a referral program that rewards both sides?"
           }
         },
         {
           "role": "ai",
-          "text": "We’re evaluating two vendor proposals today.",
+          "text": "Nice! Anyone want to build on that?",
           "translations": {
-            "ko": "오늘 두 가지 공급업체 제안을 평가하고 있습니다.",
-            "zh": "我们今天正在评估两个供应商的提案。",
-            "ja": "今日は2つのベンダーの提案を評価しています。",
-            "vi": "Chúng tôi đang đánh giá hai đề xuất từ nhà cung cấp hôm nay."
+            "ko": "좋아요! 누가 그것을 발전시키고 싶나요?",
+            "zh": "不错！有人想在这个基础上建设吗？",
+            "ja": "いいね！それを発展させたい人はいますか？",
+            "vi": "Tốt! Ai muốn xây dựng dựa trên điều đó?",
+            "en": "Nice! Anyone want to build on that?"
           }
         },
         {
           "role": "user",
-          "text": "I favor Vendor B due to the stronger integrations.",
+          "text": "We could integrate with social sharing for bonus points.",
           "translations": {
-            "ko": "더 강력한 통합 때문에 공급업체 B를 선호합니다.",
-            "zh": "我更倾向于供应商B，因为他们的集成更强。",
-            "ja": "より強力な統合のため、ベンダーBを支持しています。",
-            "vi": "Tôi ủng hộ Nhà cung cấp B do có sự tích hợp mạnh mẽ hơn."
+            "ko": "보너스 포인트를 위해 소셜 공유와 통합할 수 있습니다.",
+            "zh": "我们可以与社交分享进行整合，以获得额外的积分。",
+            "ja": "ボーナスポイントのためのソーシャルシェアリングと統合できます。",
+            "vi": "Chúng ta có thể tích hợp với chia sẻ trên mạng xã hội để nhận thêm điểm.",
+            "en": "We could integrate with social sharing for bonus points."
           }
         },
         {
           "role": "ai",
-          "text": "Both offer similar pricing, but the timelines differ.",
+          "text": "Let’s note that. Any ideas for onboarding improvements?",
           "translations": {
-            "ko": "두 가지 모두 비슷한 가격을 제공하지만, 시간표는 다릅니다.",
-            "zh": "两者的价格相似，但时间线不同。",
-            "ja": "両方とも価格は似ていますが、タイムラインは異なります。",
-            "vi": "Cả hai đều cung cấp giá tương tự, nhưng thời gian thực hiện khác nhau."
+            "ko": "그것을 기록합시다. 온보딩 개선에 대한 아이디어는 어떤 것이 있나요?",
+            "zh": "让我们记下这个。有没有关于入职改进的想法？",
+            "ja": "それをメモしましょう。オンボーディングの改善のアイデアはありますか？",
+            "vi": "Hãy ghi chú điều đó. Có ý tưởng nào để cải thiện quá trình đưa vào sử dụng không?",
+            "en": "Let’s note that. Any ideas for onboarding improvements?"
           }
         },
         {
           "role": "user",
-          "text": "Speed is important, but compatibility matters more.",
+          "text": "Interactive tutorials based on user role.",
           "translations": {
-            "ko": "속도는 중요하지만, 호환성이 더 중요합니다.",
-            "zh": "速度很重要，但兼容性更重要。",
-            "ja": "速度は重要ですが、互換性の方が重要です。",
-            "vi": "Tốc độ quan trọng, nhưng khả năng tương thích lại quan trọng hơn."
+            "ko": "사용자 역할에 기반한 대화형 튜토리얼입니다.",
+            "zh": "根据用户角色进行互动式教程。",
+            "ja": "ユーザーの役割に基づいたインタラクティブなチュートリアルです。",
+            "vi": "Hướng dẫn tương tác dựa trên vai trò người dùng.",
+            "en": "Interactive tutorials based on user role."
           }
         },
         {
           "role": "ai",
-          "text": "The first option delivers faster but lacks integrations.",
+          "text": "Interesting. What tech would we need for that?",
           "translations": {
-            "ko": "첫 번째 옵션은 더 빠르게 제공하지만 통합이 부족합니다.",
-            "zh": "第一个选项交付速度更快，但缺乏集成。",
-            "ja": "最初のオプションは速く提供しますが、統合が不足しています。",
-            "vi": "Lựa chọn đầu tiên cung cấp nhanh hơn nhưng thiếu tích hợp."
+            "ko": "흥미롭군요. 그것을 위해 어떤 기술이 필요한가요?",
+            "zh": "有趣。我们需要什么技术来实现这个？",
+            "ja": "面白い。それにはどのような技術が必要ですか？",
+            "vi": "Thú vị. Chúng ta cần công nghệ gì cho điều đó?",
+            "en": "Interesting. What tech would we need for that?"
           }
         },
         {
           "role": "user",
-          "text": "What support model do they each offer?",
+          "text": "Conditional rendering and tracking progress.",
           "translations": {
-            "ko": "각각 어떤 지원 모델을 제공합니까?",
-            "zh": "他们每个都提供什么样的支持模式？",
-            "ja": "彼らが提供するサポートモデルは何ですか？",
-            "vi": "Họ cung cấp mô hình hỗ trợ như thế nào?"
+            "ko": "조건부 렌더링 및 진행 상황 추적입니다.",
+            "zh": "条件渲染和跟踪进度。",
+            "ja": "条件付きレンダリングと進行状況の追跡です。",
+            "vi": "Hiển thị điều kiện và theo dõi tiến trình.",
+            "en": "Conditional rendering and tracking progress."
           }
         },
         {
           "role": "ai",
-          "text": "The second aligns better with our tech stack.",
+          "text": "Any cost concerns?",
           "translations": {
-            "ko": "두 번째가 우리의 기술 스택에 더 잘 맞습니다.",
-            "zh": "第二个更符合我们的技术堆栈。",
-            "ja": "2番目の方が私たちのテクノロジースタックにより適しています。",
-            "vi": "Lựa chọn thứ hai phù hợp hơn với ngăn xếp công nghệ của chúng tôi."
+            "ko": "비용에 대한 우려는 있나요?",
+            "zh": "有关于成本的担忧吗？",
+            "ja": "コストに関する懸念はありますか？",
+            "vi": "Có lo lắng về chi phí không?",
+            "en": "Any cost concerns?"
           }
         },
         {
           "role": "user",
-          "text": "Do we know how scalable each platform is?",
+          "text": "We can prototype it in Figma before dev work.",
           "translations": {
-            "ko": "각 플랫폼이 얼마나 확장 가능한지 알고 있습니까?",
-            "zh": "我们知道每个平台的可扩展性如何吗？",
-            "ja": "各プラットフォームがどれだけスケーラブルかはわかっていますか？",
-            "vi": "Chúng ta có biết mỗi nền tảng có thể mở rộng đến mức nào không?"
+            "ko": "개발 작업 전에 Figma에서 프로토타입을 만들 수 있습니다.",
+            "zh": "我们可以在开发工作之前在Figma中制作原型。",
+            "ja": "開発作業の前にFigmaでプロトタイプを作成できます。",
+            "vi": "Chúng ta có thể tạo mô hình trong Figma trước khi làm việc phát triển.",
+            "en": "We can prototype it in Figma before dev work."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s weigh the trade-offs based on our Q4 goals.",
+          "text": "Keep going—how about community engagement?",
           "translations": {
-            "ko": "4분기 목표를 바탕으로 상충되는 점을 고려합시다.",
-            "zh": "让我们根据第四季度的目标权衡利弊。",
-            "ja": "Q4の目標に基づいてトレードオフを考えましょう。",
-            "vi": "Hãy cân nhắc các sự đánh đổi dựa trên mục tiêu Q4 của chúng ta."
+            "ko": "계속해봅시다 - 커뮤니티 참여에 대해서는 어떻게 생각하나요?",
+            "zh": "继续，关于社区参与有什么想法？",
+            "ja": "続けてください—コミュニティエンゲージメントについてはどうですか？",
+            "vi": "Tiếp tục - còn về việc tham gia cộng đồng?",
+            "en": "Keep going—how about community engagement?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s not overlook future maintenance needs.",
+          "text": "Live AMAs with our founders.",
           "translations": {
-            "ko": "미래의 유지 보수 요구 사항을 간과하지 말아야 합니다.",
-            "zh": "让我们不忽视未来的维护需求。",
-            "ja": "将来のメンテナンスニーズを見落とさないようにしましょう。",
-            "vi": "Đừng bỏ qua nhu cầu bảo dưỡng trong tương lai."
+            "ko": "우리 창업자들과의 실시간 AMA입니다.",
+            "zh": "我们的创始人进行现场问答。",
+            "ja": "私たちの創設者とのライブAMAです。",
+            "vi": "AMA trực tiếp với các nhà sáng lập của chúng tôi.",
+            "en": "Live AMAs with our founders."
           }
         },
         {
           "role": "ai",
-          "text": "I’ll summarize each option’s pros and cons.",
+          "text": "Love it. What about product naming for our next release?",
           "translations": {
-            "ko": "각 옵션의 장단점을 요약하겠습니다.",
-            "zh": "我会总结每个选项的利弊。",
-            "ja": "各オプションの長所と短所をまとめます。",
-            "vi": "Tôi sẽ tóm tắt ưu và nhược điểm của mỗi lựa chọn."
+            "ko": "좋아요. 다음 릴리스의 제품 명명에 대해서는 어떻게 생각하나요?",
+            "zh": "喜欢这个。关于我们下一次发布的产品命名有什么想法？",
+            "ja": "それが好きです。次のリリースのための製品命名についてはどうですか？",
+            "vi": "Tôi thích nó. Còn về việc đặt tên sản phẩm cho phiên bản phát hành tiếp theo của chúng ta?",
+            "en": "Love it. What about product naming for our next release?"
           }
         },
         {
           "role": "user",
-          "text": "A side-by-side summary would be great.",
+          "text": "Let's involve users through a naming contest.",
           "translations": {
-            "ko": "옆으로 비교하는 요약이 좋을 것입니다.",
-            "zh": "并排总结会很好。",
-            "ja": "両方を並べて比較すると良いですね。",
-            "vi": "Một bản tóm tắt so sánh bên cạnh nhau sẽ rất tốt."
+            "ko": "사용자를 통한 명명 대회를 진행해봅시다.",
+            "zh": "让我们通过命名比赛让用户参与进来。",
+            "ja": "ユーザーを巻き込んだ命名コンテストを行いましょう。",
+            "vi": "Hãy để người dùng tham gia thông qua một cuộc thi đặt tên.",
+            "en": "Let's involve users through a naming contest."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll take a quick straw poll for alignment.",
+          "text": "Fun idea. OK, we’ll synthesize themes and vote next week.",
           "translations": {
-            "ko": "일치를 위해 빠른 투표를 진행하겠습니다.",
-            "zh": "我们将进行一个快速的草拟投票以达成一致。",
-            "ja": "合意を確認するために、簡単な意見調査を行います。",
-            "vi": "Chúng tôi sẽ thực hiện một cuộc bỏ phiếu nhanh để đạt được sự thống nhất."
+            "ko": "재미있는 아이디어입니다. 그럼, 다음 주에 테마를 종합하고 투표하겠습니다.",
+            "zh": "有趣的想法。好的，我们下周将整合主题并进行投票。",
+            "ja": "楽しいアイデアです。OK、来週テーマをまとめて投票しましょう。",
+            "vi": "Ý tưởng vui. OK, chúng tôi sẽ tổng hợp các chủ đề và bỏ phiếu vào tuần sau.",
+            "en": "Fun idea. OK, we’ll synthesize themes and vote next week."
           }
         },
         {
           "role": "user",
-          "text": "I’m aligned with the majority on this.",
+          "text": "[User response needed]",
           "translations": {
-            "ko": "이에 대해 대다수와 일치합니다.",
-            "zh": "我与大多数人在这个问题上保持一致。",
-            "ja": "私はこの件について、多数派と一致しています。",
-            "vi": "Tôi đồng lòng với đa số trong vấn đề này."
+            "ko": "[사용자 응답 필요]",
+            "zh": "[需要用户回应]",
+            "ja": "[ユーザーの反応が必要]",
+            "vi": "[Cần phản hồi của người dùng]",
+            "en": "[User response needed]"
           }
         },
         {
           "role": "ai",
-          "text": "If there’s consensus, we can move forward today.",
+          "text": "Let’s summarize our next steps.",
           "translations": {
-            "ko": "합의가 있다면, 오늘 진행할 수 있습니다.",
-            "zh": "如果有共识，我们今天就可以向前推进。",
-            "ja": "合意があれば、今日から進めることができます。",
-            "vi": "Nếu có sự đồng lòng, chúng ta có thể tiến lên hôm nay."
+            "ko": "다음 단계를 요약해봅시다.",
+            "zh": "让我们总结一下我们的下一步行动。",
+            "ja": "次のステップをまとめましょう。",
+            "vi": "Hãy tóm tắt các bước tiếp theo của chúng ta.",
+            "en": "Let’s summarize our next steps."
           }
         },
         {
           "role": "user",
-          "text": "Let’s make a call today if possible.",
+          "text": "I’ll draft the notes and circulate them today.",
           "translations": {
-            "ko": "가능하다면 오늘 전화로 연락하자.",
-            "zh": "如果可能的话，我们今天就打个电话。",
-            "ja": "可能であれば、今日電話をしましょう。",
-            "vi": "Hãy thử gọi điện hôm nay nếu có thể."
+            "ko": "나는 메모를 작성하고 오늘 그것들을 배포할 것입니다.",
+            "zh": "我会起草会议记录并在今天发放。",
+            "ja": "私が議事録のドラフトを作成し、今日中に回覧します。",
+            "vi": "Tôi sẽ soạn thảo ghi chú và gửi chúng ngày hôm nay.",
+            "en": "I’ll draft the notes and circulate them today."
           }
         },
         {
           "role": "ai",
-          "text": "Otherwise, we’ll escalate for further discussion.",
+          "text": "Fun idea. OK, we’ll synthesize themes and vote next week.",
           "translations": {
-            "ko": "그렇지 않으면 더 깊게 논의하기 위해 상황을 고조시킬 것입니다.",
-            "zh": "否则，我们会升级以进行进一步讨论。",
-            "ja": "それ以外の場合は、さらなる議論のためにエスカレートします。",
-            "vi": "Nếu không, chúng tôi sẽ đẩy mạnh để thảo luận thêm."
+            "ko": "재미있는 아이디어입니다. 그럼, 다음 주에 테마를 종합하고 투표하겠습니다.",
+            "zh": "有趣的想法。好的，我们下周将整合主题并进行投票。",
+            "ja": "楽しいアイデアです。OK、来週テーマをまとめて投票しましょう。",
+            "vi": "Ý tưởng vui. OK, chúng tôi sẽ tổng hợp các chủ đề và bỏ phiếu vào tuần sau.",
+            "en": "Fun idea. OK, we’ll synthesize themes and vote next week."
           }
         },
         {
           "role": "user",
-          "text": "I’m okay with escalating if we’re split.",
+          "text": "I’ll organize the results and prepare options to vote on.",
           "translations": {
-            "ko": "의견이 분분하다면 상황을 고조시키는 것에 동의합니다.",
-            "zh": "如果我们意见不合，我同意升级处理。",
-            "ja": "意見が分かれている場合、エスカレートしても構いません。",
-            "vi": "Tôi đồng ý đẩy mạnh nếu chúng ta không thống nhất."
+            "ko": "나는 결과를 정리하고 투표할 옵션을 준비하겠습니다.",
+            "zh": "我会整理结果并准备投票选项。",
+            "ja": "私が結果を整理し、投票のための選択肢を準備します。",
+            "vi": "Tôi sẽ tổ chức kết quả và chuẩn bị các lựa chọn để bỏ phiếu.",
+            "en": "I’ll organize the results and prepare options to vote on."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "국가 간 플래닝 회의를 진행하다",
-        "zh": "进行跨区域的规划电话会议",
-        "ja": "地域間の計画会議を行う",
-        "vi": "Tiến hành cuộc gọi lên kế hoạch khu vực"
+        "en": "Aligning project goals across teams",
+        "ko": "팀 간의 프로젝트 목표 일치",
+        "zh": "在团队之间对齐项目目标",
+        "ja": "チーム間でプロジェクトの目標を調整する",
+        "vi": "Định rõ mục tiêu dự án giữa các nhóm"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for joining across time zones today.",
+          "text": "Thanks for joining. Our goal is to sync team objectives.",
           "translations": {
-            "ko": "오늘 시간대를 맞춰 참석해주셔서 감사합니다.",
-            "zh": "感谢你们今天跨时区参加会议。",
-            "ja": "今日は時間帯を超えて参加していただき、ありがとうございます。",
-            "vi": "Cảm ơn đã tham gia từ các múi giờ khác nhau hôm nay."
+            "ko": "참석해주셔서 감사합니다. 우리의 목표는 팀 목표를 동기화하는 것입니다.",
+            "zh": "感谢大家的参与。我们的目标是同步团队目标。",
+            "ja": "参加していただきありがとうございます。目標はチームの目標を同期することです。",
+            "vi": "Cảm ơn đã tham gia. Mục tiêu của chúng tôi là đồng bộ hóa mục tiêu của nhóm.",
+            "en": "Thanks for joining. Our goal is to sync team objectives."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. APAC has a few delays due to regulation changes.",
+          "text": "Where do we begin?",
           "translations": {
-            "ko": "감사합니다. APAC는 규제 변경으로 인해 약간의 지연이 있습니다.",
-            "zh": "谢谢。由于法规变更，亚太地区有一些延误。",
-            "ja": "ありがとう。APACは規制の変更により少し遅れが出ています。",
-            "vi": "Cảm ơn. APAC có một số trễ do thay đổi quy định."
+            "ko": "어디서 시작해야 하나요?",
+            "zh": "我们从哪里开始？",
+            "ja": "どこから始めればいいですか？",
+            "vi": "Chúng ta bắt đầu từ đâu?",
+            "en": "Where do we begin?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ll walk through Q1 planning and align on key targets.",
+          "text": "Let’s review each team’s current roadmap.",
           "translations": {
-            "ko": "우리는 1분기 계획을 살펴보고 주요 목표에 대해 합의할 것입니다.",
-            "zh": "我们将讨论第一季度的规划并对关键目标达成一致。",
-            "ja": "Q1の計画を詳しく見て、主要な目標に合わせましょう。",
-            "vi": "Chúng tôi sẽ xem xét kế hoạch Q1 và thống nhất các mục tiêu chính."
+            "ko": "각 팀의 현재 로드맵을 검토해봅시다.",
+            "zh": "让我们回顾一下每个团队当前的路线图。",
+            "ja": "各チームの現在のロードマップを見直しましょう。",
+            "vi": "Hãy xem xét lộ trình hiện tại của mỗi nhóm.",
+            "en": "Let’s review each team’s current roadmap."
           }
         },
         {
           "role": "user",
-          "text": "Europe is mostly on track, with one hiring delay.",
+          "text": "Engineering is focused on performance improvements.",
           "translations": {
-            "ko": "유럽은 대체로 계획대로 진행되고 있으나, 한 가지 채용 지연이 있습니다.",
-            "zh": "欧洲大部分进展顺利，只有一处招聘延误。",
-            "ja": "ヨーロッパはほとんど順調ですが、採用が一つ遅れています。",
-            "vi": "Châu Âu chủ yếu đang theo đúng lịch trình, chỉ có một trễ tuyển dụng."
+            "ko": "엔지니어링은 성능 개선에 초점을 맞추고 있습니다.",
+            "zh": "工程团队正在专注于性能改进。",
+            "ja": "エンジニアリングはパフォーマンスの改善に注力しています。",
+            "vi": "Kỹ thuật đang tập trung vào việc cải thiện hiệu suất.",
+            "en": "Engineering is focused on performance improvements."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s start with the APAC region’s forecast.",
+          "text": "Marketing is ramping up the Q2 campaign.",
           "translations": {
-            "ko": "APAC 지역의 예상치부터 시작하자.",
-            "zh": "我们先从亚太地区的预测开始。",
-            "ja": "APAC地域の予測から始めましょう。",
-            "vi": "Hãy bắt đầu với dự báo của khu vực APAC."
+            "ko": "마케팅은 2분기 캠페인을 확대하고 있습니다.",
+            "zh": "营销团队正在加强第二季度的活动。",
+            "ja": "マーケティングはQ2キャンペーンを強化しています。",
+            "vi": "Marketing đang tăng cường chiến dịch Q2.",
+            "en": "Marketing is ramping up the Q2 campaign."
           }
         },
         {
           "role": "user",
-          "text": "North America has revised targets after client feedback.",
+          "text": "Can we align release dates with campaign milestones?",
           "translations": {
-            "ko": "북미는 고객의 피드백 후 목표를 수정했습니다.",
-            "zh": "北美在收到客户反馈后修改了目标。",
-            "ja": "北アメリカはクライアントのフィードバック後に目標を修正しました。",
-            "vi": "Bắc Mỹ đã chỉnh sửa lại mục tiêu sau phản hồi của khách hàng."
+            "ko": "릴리스 날짜를 캠페인 마일스톤과 일치시킬 수 있을까요?",
+            "zh": "我们可以将发布日期与活动里程碑对齐吗？",
+            "ja": "リリース日をキャンペーンのマイルストーンと一致させることはできますか？",
+            "vi": "Chúng ta có thể đồng bộ hóa ngày phát hành với các mốc thời gian của chiến dịch không?",
+            "en": "Can we align release dates with campaign milestones?"
           }
         },
         {
           "role": "ai",
-          "text": "Next, we’ll cover Europe and then North America.",
+          "text": "Definitely. Shared deadlines reduce confusion.",
           "translations": {
-            "ko": "다음으로는 유럽을 다루고 그 다음에 북미를 다룰 것입니다.",
-            "zh": "接下来，我们将讨论欧洲，然后是北美。",
-            "ja": "次に、ヨーロッパをカバーし、その後に北アメリカをカバーします。",
-            "vi": "Tiếp theo, chúng tôi sẽ bàn về Châu Âu và sau đó là Bắc Mỹ."
+            "ko": "확실히. 공유된 마감일은 혼란을 줄입니다.",
+            "zh": "当然。共享的截止日期可以减少混淆。",
+            "ja": "確かに。共有の締め切りは混乱を減らします。",
+            "vi": "Chắc chắn. Các thời hạn chung giảm bớt sự nhầm lẫn.",
+            "en": "Definitely. Shared deadlines reduce confusion."
           }
         },
         {
           "role": "user",
-          "text": "No blockers, but we do need help with localization.",
+          "text": "Should we use a unified calendar tool?",
           "translations": {
-            "ko": "방해요소는 없지만, 지역화에 대한 도움이 필요합니다.",
-            "zh": "没有阻碍，但我们确实需要在本地化方面得到帮助。",
-            "ja": "ブロッカーはありませんが、ローカライゼーションには助けが必要です。",
-            "vi": "Không có vấn đề gì, nhưng chúng tôi cần sự giúp đỡ với việc địa phương hóa."
+            "ko": "통합된 캘린더 도구를 사용해야 하나요?",
+            "zh": "我们应该使用统一的日历工具吗？",
+            "ja": "統一されたカレンダーツールを使用すべきですか？",
+            "vi": "Chúng ta có nên sử dụng một công cụ lịch hợp nhất không?",
+            "en": "Should we use a unified calendar tool?"
           }
         },
         {
           "role": "ai",
-          "text": "Please share any blockers or major changes.",
+          "text": "Yes, I’ll propose we move to Notion shared view.",
           "translations": {
-            "ko": "방해요소나 주요 변경 사항이 있다면 공유해 주세요.",
-            "zh": "请分享任何阻碍或重大变化。",
-            "ja": "ブロッカーや大きな変更があれば共有してください。",
-            "vi": "Vui lòng chia sẻ bất kỳ vấn đề nào hoặc thay đổi lớn."
+            "ko": "네, Notion 공유 뷰로 이동하는 것을 제안하겠습니다.",
+            "zh": "是的，我建议我们转移到Notion共享视图。",
+            "ja": "はい、Notionの共有ビューに移行することを提案します。",
+            "vi": "Đúng, tôi sẽ đề xuất chúng ta chuyển sang chế độ xem chung Notion.",
+            "en": "Yes, I’ll propose we move to Notion shared view."
           }
         },
         {
           "role": "user",
-          "text": "We’ll coordinate closely with the global team.",
+          "text": "What about dependencies across teams?",
           "translations": {
-            "ko": "우리는 글로벌 팀과 밀접하게 협력할 것입니다.",
-            "zh": "我们将与全球团队紧密协调。",
-            "ja": "グローバルチームと密接に調整します。",
-            "vi": "Chúng tôi sẽ phối hợp chặt chẽ với đội ngũ toàn cầu."
+            "ko": "팀 간의 의존성은 어떻게 되나요?",
+            "zh": "关于团队之间的依赖性呢？",
+            "ja": "チーム間の依存関係はどうですか？",
+            "vi": "Còn về sự phụ thuộc giữa các nhóm?",
+            "en": "What about dependencies across teams?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ll need global coordination for the launch window.",
+          "text": "We’ll identify blockers in a shared backlog.",
           "translations": {
-            "ko": "출시 창구에 대한 글로벌 협력이 필요합니다.",
-            "zh": "我们需要全球协调来确定发布窗口。",
-            "ja": "ローンチウィンドウにはグローバルな調整が必要です。",
-            "vi": "Chúng tôi sẽ cần sự phối hợp toàn cầu cho cửa sổ ra mắt."
+            "ko": "우리는 공유 백로그에서 차단 요소를 식별하겠습니다.",
+            "zh": "我们将在共享的积压工作中识别阻碍。",
+            "ja": "共有のバックログでブロッカーを特定します。",
+            "vi": "Chúng tôi sẽ xác định các trở ngại trong một hàng đợi chung.",
+            "en": "We’ll identify blockers in a shared backlog."
           }
         },
         {
           "role": "user",
-          "text": "Understood. We’ll finalize numbers tomorrow.",
+          "text": "Do we need a bi-weekly sync?",
           "translations": {
-            "ko": "이해했습니다. 우리는 내일 숫자를 확정할 것입니다.",
-            "zh": "明白了。我们将在明天确定数字。",
-            "ja": "了解しました。明日、数字を確定します。",
-            "vi": "Đã hiểu. Chúng tôi sẽ hoàn thiện con số vào ngày mai."
+            "ko": "격주 동기화가 필요한가요?",
+            "zh": "我们需要每两周同步一次吗？",
+            "ja": "隔週の同期が必要ですか？",
+            "vi": "Chúng ta cần đồng bộ hai tuần một lần không?",
+            "en": "Do we need a bi-weekly sync?"
           }
         },
         {
           "role": "ai",
-          "text": "Any budget changes must be submitted by Friday.",
+          "text": "I’d recommend it for the first two months.",
           "translations": {
-            "ko": "예산 변경 사항은 금요일까지 제출해야 합니다.",
-            "zh": "任何预算变动必须在周五前提交。",
-            "ja": "予算の変更は金曜日までに提出しなければなりません。",
-            "vi": "Bất kỳ thay đổi ngân sách nào phải được gửi trước thứ Sáu."
+            "ko": "처음 두 달 동안은 그것을 추천하겠습니다.",
+            "zh": "我建议在前两个月进行。",
+            "ja": "最初の2ヶ月間はそれを推奨します。",
+            "vi": "Tôi khuyên nên trong hai tháng đầu.",
+            "en": "I’d recommend it for the first two months."
           }
         },
         {
           "role": "user",
-          "text": "Noted. Budget requests are already underway.",
+          "text": "Should we assign a cross-functional lead?",
           "translations": {
-            "ko": "확인했습니다. 예산 요청이 이미 진행 중입니다.",
-            "zh": "已记录。预算申请已在进行中。",
-            "ja": "承知しました。予算の要求はすでに進行中です。",
-            "vi": "Đã ghi nhận. Yêu cầu ngân sách đã được tiến hành."
+            "ko": "여러 기능을 가진 리드를 지정해야 하나요?",
+            "zh": "我们应该指定一个跨职能的负责人吗？",
+            "ja": "クロス機能リードを割り当てるべきですか？",
+            "vi": "Có nên chỉ định một người dẫn dắt chéo chức năng không?",
+            "en": "Should we assign a cross-functional lead?"
           }
         },
         {
           "role": "ai",
-          "text": "I’ll document region-specific dependencies.",
+          "text": "Great idea. Let’s vote on a candidate.",
           "translations": {
-            "ko": "지역별 의존성을 문서화하겠습니다.",
-            "zh": "我将记录区域特定的依赖项。",
-            "ja": "地域特有の依存関係を文書化します。",
-            "vi": "Tôi sẽ ghi chú các yếu tố phụ thuộc cụ thể cho từng khu vực."
+            "ko": "좋은 생각입니다. 후보에 대해 투표합시다.",
+            "zh": "好主意。让我们投票选出一个候选人。",
+            "ja": "良いアイデアです。候補者について投票しましょう。",
+            "vi": "Ý tưởng tốt. Hãy bỏ phiếu cho một ứng cử viên.",
+            "en": "Great idea. Let’s vote on a candidate."
           }
         },
         {
           "role": "user",
-          "text": "Dependencies will be shared in the sheet.",
+          "text": "Thanks. I feel clearer on our direction.",
           "translations": {
-            "ko": "의존성은 시트에서 공유될 것입니다.",
-            "zh": "依赖项将在表格中分享。",
-            "ja": "依存関係はシートで共有されます。",
-            "vi": "Các yếu tố phụ thuộc sẽ được chia sẻ trong bảng."
+            "ko": "감사합니다. 우리의 방향에 대해 더 명확해졌습니다.",
+            "zh": "谢谢。我对我们的方向更清晰了。",
+            "ja": "ありがとう。私たちの方向性についてより明確になりました。",
+            "vi": "Cảm ơn. Tôi cảm thấy rõ ràng hơn về hướng đi của chúng ta.",
+            "en": "Thanks. I feel clearer on our direction."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s clarify which teams own which deliverables.",
+          "text": "I’ll send a summary after this call.",
           "translations": {
-            "ko": "어떤 팀이 어떤 결과물을 담당하는지 명확히 하자.",
-            "zh": "我们来澄清哪些团队负责哪些交付物。",
-            "ja": "どのチームがどの成果物を所有しているかを明確にしましょう。",
-            "vi": "Hãy làm rõ đội nào sở hữu sản phẩm nào."
+            "ko": "이 통화 후에 요약을 보내겠습니다.",
+            "zh": "我会在这次通话后发送总结。",
+            "ja": "この通話後に要約を送ります。",
+            "vi": "Tôi sẽ gửi một bản tóm tắt sau cuộc gọi này.",
+            "en": "I’ll send a summary after this call."
           }
         },
         {
           "role": "user",
-          "text": "Marketing will handle rollout in our region.",
+          "text": "Perfect. Looking forward to better coordination.",
           "translations": {
-            "ko": "마케팅은 우리 지역에서의 롤아웃을 담당할 것입니다.",
-            "zh": "我们区域的推广活动将由市场部负责。",
-            "ja": "マーケティングは私たちの地域でのロールアウトを担当します。",
-            "vi": "Marketing sẽ xử lý việc triển khai trong khu vực của chúng tôi."
+            "ko": "완벽합니다. 더 나은 조정을 기대합니다.",
+            "zh": "完美。期待更好的协调。",
+            "ja": "完璧です。より良い調整を楽しみにしています。",
+            "vi": "Hoàn hảo. Mong chờ sự phối hợp tốt hơn.",
+            "en": "Perfect. Looking forward to better coordination."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll meet again next month for status updates.",
+          "text": "Let’s wrap this up with final confirmations.",
           "translations": {
-            "ko": "다음 달에 상태 업데이트를 위해 다시 만날 것입니다.",
-            "zh": "我们下个月再开会讨论进度更新。",
-            "ja": "来月も状況更新のために再度会いましょう。",
-            "vi": "Chúng tôi sẽ gặp lại vào tháng sau để cập nhật tình hình."
+            "ko": "최종 확인으로 이것을 마무리합시다.",
+            "zh": "让我们以最后的确认结束这次会议。",
+            "ja": "最終的な確認でこれを終わりにしましょう。",
+            "vi": "Hãy kết thúc với việc xác nhận cuối cùng.",
+            "en": "Let’s wrap this up with final confirmations."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to syncing again next month.",
+          "text": "I’ll follow up with a summary email shortly.",
           "translations": {
-            "ko": "다음 달에 다시 동기화하는 것을 기대합니다.",
-            "zh": "期待下个月再次同步。",
-            "ja": "来月再度同期するのを楽しみにしています。",
-            "vi": "Mong chờ đến lần đồng bộ hóa tiếp theo vào tháng sau."
+            "ko": "곧 요약 이메일을 보내겠습니다.",
+            "zh": "我会尽快发送一封总结邮件。",
+            "ja": "すぐに要約メールを送ります。",
+            "vi": "Tôi sẽ gửi email tóm tắt ngay sau đây.",
+            "en": "I’ll follow up with a summary email shortly."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "위험 관리 전략 검토하기",
-        "zh": "审查风险管理策略",
-        "ja": "リスク管理戦略のレビュー",
-        "vi": "Đánh giá các chiến lược quản lý rủi ro"
+        "en": "Handling a disruptive meeting participant",
+        "ko": "방해하는 회의 참석자 처리",
+        "zh": "处理会议中的破坏性参与者",
+        "ja": "会議の参加者を邪魔するのを対処する",
+        "vi": "Xử lý một người tham gia cuộc họp gây rối"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s review the major risks identified last quarter.",
+          "text": "Let’s maintain a respectful tone during this session.",
           "translations": {
-            "ko": "지난 분기에 확인된 주요 위험을 검토하자.",
-            "zh": "我们来回顾一下上个季度识别的主要风险。",
-            "ja": "前四半期に特定された主要なリスクを見直しましょう。",
-            "vi": "Hãy xem xét các rủi ro lớn được xác định trong quý trước."
+            "ko": "이 세션 동안 존중하는 태도를 유지합시다.",
+            "zh": "让我们在这次会议中保持尊重的语气。",
+            "ja": "このセッション中は尊重する態度を保つようにしましょう。",
+            "vi": "Hãy duy trì một tông màu tôn trọng trong phiên họp này.",
+            "en": "Let’s maintain a respectful tone during this session."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. Two-factor has improved access control.",
+          "text": "I didn’t mean to interrupt, I just feel unheard.",
           "translations": {
-            "ko": "감사합니다. 이중 인증이 접근 제어를 향상시켰습니다.",
-            "zh": "谢谢。双因素认证已经提高了访问控制。",
-            "ja": "ありがとう。二要素認証がアクセス制御を改善しました。",
-            "vi": "Cảm ơn. Xác thực hai yếu tố đã cải thiện kiểm soát truy cập."
+            "ko": "방해하려는 의도는 아니었습니다. 저는 들리지 않는다고 느꼈습니다.",
+            "zh": "我并不是故意打断，我只是觉得没有被听到。",
+            "ja": "割り込むつもりはありませんでした、ただ聞かれていないと感じただけです。",
+            "vi": "Tôi không có ý định ngắt lời, tôi chỉ cảm thấy không được lắng nghe.",
+            "en": "I didn’t mean to interrupt, I just feel unheard."
           }
         },
         {
           "role": "ai",
-          "text": "Cybersecurity remains at the top of our list.",
+          "text": "We’ll make space for everyone to contribute.",
           "translations": {
-            "ko": "사이버 보안은 여전히 우리 목록의 최우선 순위입니다.",
-            "zh": "网络安全仍然是我们的首要任务。",
-            "ja": "サイバーセキュリティは引き続き私たちのリストのトップにあります。",
-            "vi": "An ninh mạng vẫn đứng đầu danh sách của chúng tôi."
+            "ko": "모든 사람이 기여할 수 있는 공간을 만들겠습니다.",
+            "zh": "我们会为每个人提供发言的空间。",
+            "ja": "皆が貢献できるスペースを作ります。",
+            "vi": "Chúng tôi sẽ tạo không gian cho mọi người đóng góp.",
+            "en": "We’ll make space for everyone to contribute."
           }
         },
         {
           "role": "user",
-          "text": "Agreed, phishing volume has risen lately.",
+          "text": "Okay, I’ll wait for my turn next time.",
           "translations": {
-            "ko": "동의합니다, 최근에는 피싱 양이 증가했습니다.",
-            "zh": "同意，最近钓鱼邮件的数量确实增加了。",
-            "ja": "同意します、最近フィッシングのボリュームが増えています。",
-            "vi": "Đồng ý, số lượng tấn công phishing đã tăng gần đây."
+            "ko": "알겠습니다. 다음 번에는 제 차례를 기다리겠습니다.",
+            "zh": "好的，下次我会等待我的轮次。",
+            "ja": "了解しました、次回は順番を待ちます。",
+            "vi": "Được, tôi sẽ chờ đến lượt của mình lần sau.",
+            "en": "Okay, I’ll wait for my turn next time."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve seen increased phishing attempts recently.",
+          "text": "Thanks. Let's circle back to the last point.",
           "translations": {
-            "ko": "최근에 피싱 시도가 증가했습니다.",
-            "zh": "我们最近发现钓鱼尝试的次数增加了。",
-            "ja": "最近、フィッシングの試みが増えています。",
-            "vi": "Chúng tôi đã thấy số lượng tấn công phishing tăng gần đây."
+            "ko": "감사합니다. 마지막 포인트로 돌아가봅시다.",
+            "zh": "谢谢。让我们回到上一个点。",
+            "ja": "ありがとう。最後のポイントに戻りましょう。",
+            "vi": "Cảm ơn. Hãy quay lại với điểm cuối cùng.",
+            "en": "Thanks. Let's circle back to the last point."
           }
         },
         {
           "role": "user",
-          "text": "We should assess our third-party dependencies.",
+          "text": "I agree with the proposed timeline.",
           "translations": {
-            "ko": "우리는 제3자 의존성을 평가해야 합니다.",
-            "zh": "我们应该评估我们的第三方依赖性。",
-            "ja": "私たちは第三者依存性を評価すべきです。",
-            "vi": "Chúng ta nên đánh giá các phụ thuộc bên thứ ba của mình."
+            "ko": "제안된 타임라인에 동의합니다.",
+            "zh": "我同意提出的时间表。",
+            "ja": "提案されたタイムラインに同意します。",
+            "vi": "Tôi đồng ý với thời gian dự kiến được đề xuất.",
+            "en": "I agree with the proposed timeline."
           }
         },
         {
           "role": "ai",
-          "text": "The team implemented two-factor authentication.",
+          "text": "Does anyone have a concern with the priorities?",
           "translations": {
-            "ko": "팀은 이중 인증을 구현했습니다.",
-            "zh": "团队实施了两因素身份验证。",
-            "ja": "チームは二要素認証を実装しました。",
-            "vi": "Nhóm đã triển khai xác thực hai yếu tố."
+            "ko": "우선 순위에 대해 우려하는 사람이 있나요?",
+            "zh": "有人对优先事项有疑虑吗？",
+            "ja": "優先事項について懸念がある人はいますか？",
+            "vi": "Có ai có vấn đề gì với các ưu tiên không?",
+            "en": "Does anyone have a concern with the priorities?"
           }
         },
         {
           "role": "user",
-          "text": "Is the vendor audit scheduled for this month?",
+          "text": "I think task B should come before A.",
           "translations": {
-            "ko": "이번 달에 공급업체 감사가 예정되어 있습니까?",
-            "zh": "供应商审计计划在这个月吗？",
-            "ja": "ベンダー監査は今月予定されていますか？",
-            "vi": "Việc kiểm toán nhà cung cấp có được lên lịch trong tháng này không?"
+            "ko": "저는 작업 B가 A보다 먼저 와야 한다고 생각합니다.",
+            "zh": "我认为任务B应该在任务A之前进行。",
+            "ja": "タスクBはAよりも先に来るべきだと思います。",
+            "vi": "Tôi nghĩ nhiệm vụ B nên đến trước A.",
+            "en": "I think task B should come before A."
           }
         },
         {
           "role": "ai",
-          "text": "We’re also assessing cloud vendor compliance.",
+          "text": "Let’s discuss that—can you explain your reasoning?",
           "translations": {
-            "ko": "우리는 또한 클라우드 공급업체의 준수를 평가하고 있습니다.",
-            "zh": "我们也在评估云供应商的合规性。",
-            "ja": "私たちはまた、クラウドベンダーのコンプライアンスを評価しています。",
-            "vi": "Chúng tôi cũng đang đánh giá việc tuân thủ của nhà cung cấp đám mây."
+            "ko": "그것에 대해 논의해봅시다 - 이유를 설명해주실 수 있나요?",
+            "zh": "让我们讨论一下，你能解释一下你的理由吗？",
+            "ja": "それについて話し合いましょう—あなたの理由を説明してもらえますか？",
+            "vi": "Hãy thảo luận về điều đó - bạn có thể giải thích lý do của mình không?",
+            "en": "Let’s discuss that—can you explain your reasoning?"
           }
         },
         {
           "role": "user",
-          "text": "Business continuity hasn’t been stress-tested recently.",
+          "text": "It impacts onboarding, which is time-sensitive.",
           "translations": {
-            "ko": "비즈니스 연속성은 최근에 스트레스 테스트를 받지 않았습니다.",
-            "zh": "商业连续性最近没有经过压力测试。",
-            "ja": "ビジネス継続性は最近、ストレステストが行われていません。",
-            "vi": "Sự liên tục của doanh nghiệp chưa được kiểm tra áp lực gần đây."
+            "ko": "그것은 온보딩에 영향을 미치며, 시간에 민감합니다.",
+            "zh": "它影响了入职，这是时间敏感的。",
+            "ja": "それはオンボーディングに影響を与え、それは時間が重要です。",
+            "vi": "Nó ảnh hưởng đến quá trình đưa vào sử dụng, đó là vấn đề nhạy cảm về thời gian.",
+            "en": "It impacts onboarding, which is time-sensitive."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s revisit our business continuity plan.",
+          "text": "Valid point. Any objections to switching order?",
           "translations": {
-            "ko": "우리의 비즈니스 연속성 계획을 다시 살펴봅시다.",
-            "zh": "让我们重新审视我们的商业连续性计划。",
-            "ja": "ビジネス継続計画を再検討しましょう。",
-            "vi": "Hãy xem lại kế hoạch liên tục kinh doanh của chúng ta."
+            "ko": "유효한 포인트입니다. 순서를 바꾸는 데 이의가 있나요?",
+            "zh": "有道理。有人反对调整顺序吗？",
+            "ja": "有効なポイントです。順序を変更する反対意見はありますか？",
+            "vi": "Điểm hợp lệ. Có phản đối nào đối với việc đổi thứ tự không?",
+            "en": "Valid point. Any objections to switching order?"
           }
         },
         {
           "role": "user",
-          "text": "Escalation procedures could use refinement.",
+          "text": "None from my end.",
           "translations": {
-            "ko": "에스컬레이션 절차는 개선이 필요할 수 있습니다.",
-            "zh": "升级程序可能需要改进。",
-            "ja": "エスカレーション手順は改善の余地があります。",
-            "vi": "Các quy trình leo thang có thể cần được cải tiến."
+            "ko": "제 쪽에서는 없습니다.",
+            "zh": "我这边没有。",
+            "ja": "私の方からはありません。",
+            "vi": "Không có từ phía tôi.",
+            "en": "None from my end."
           }
         },
         {
           "role": "ai",
-          "text": "Are there gaps in our current escalation protocols?",
+          "text": "Great. Let’s proceed with that adjustment.",
           "translations": {
-            "ko": "현재의 에스컬레이션 프로토콜에 빈틈이 있습니까?",
-            "zh": "我们当前的升级协议中是否存在漏洞？",
-            "ja": "現在のエスカレーションプロトコルにギャップはありますか？",
-            "vi": "Có khoảng trống trong các giao thức leo thang hiện tại của chúng ta không?"
+            "ko": "좋습니다. 그 조정으로 진행합시다.",
+            "zh": "好的。让我们按照这个调整进行。",
+            "ja": "それでは、その調整で進めましょう。",
+            "vi": "Tốt. Hãy tiếp tục với việc điều chỉnh đó.",
+            "en": "Great. Let’s proceed with that adjustment."
           }
         },
         {
           "role": "user",
-          "text": "We’ve flagged a risk in data retention policy.",
+          "text": "Thanks for listening.",
           "translations": {
-            "ko": "우리는 데이터 보유 정책에서 위험을 지적했습니다.",
-            "zh": "我们已经标记了数据保留政策中的一个风险。",
-            "ja": "データ保持ポリシーにリスクを指摘しました。",
-            "vi": "Chúng tôi đã đánh dấu một rủi ro trong chính sách lưu trữ dữ liệu."
+            "ko": "들어주셔서 감사합니다.",
+            "zh": "谢谢你们的倾听。",
+            "ja": "聞いてくれてありがとう。",
+            "vi": "Cảm ơn đã lắng nghe.",
+            "en": "Thanks for listening."
           }
         },
         {
           "role": "ai",
-          "text": "Please flag risks that are emerging this quarter.",
+          "text": "Of course. Let’s foster open discussion.",
           "translations": {
-            "ko": "이번 분기에 나타나는 위험을 지적해 주세요.",
-            "zh": "请标记本季度出现的风险。",
-            "ja": "今四半期に浮上しているリスクを指摘してください。",
-            "vi": "Vui lòng đánh dấu các rủi ro đang xuất hiện trong quý này."
+            "ko": "물론입니다. 열린 토론을 촉진합시다.",
+            "zh": "当然。让我们促进开放的讨论。",
+            "ja": "もちろんです。オープンな議論を促しましょう。",
+            "vi": "Tất nhiên. Hãy thúc đẩy cuộc thảo luận mở.",
+            "en": "Of course. Let’s foster open discussion."
           }
         },
         {
           "role": "user",
-          "text": "Supply chain delays might also be a concern.",
+          "text": "Agreed. I’ll be more mindful moving forward.",
           "translations": {
-            "ko": "공급망 지연도 문제가 될 수 있습니다.",
-            "zh": "供应链延迟也可能是一个问题。",
-            "ja": "供給チェーンの遅延も懸念事項かもしれません。",
-            "vi": "Sự chậm trễ trong chuỗi cung ứng cũng có thể là một vấn đề."
+            "ko": "동의합니다. 앞으로 더 주의하겠습니다.",
+            "zh": "同意。我以后会更加注意。",
+            "ja": "同意します。今後はもっと注意深くなります。",
+            "vi": "Đồng ý. Tôi sẽ chú ý hơn trong tương lai.",
+            "en": "Agreed. I’ll be more mindful moving forward."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll prioritize mitigations by severity and impact.",
+          "text": "Shall we move on to next topic?",
           "translations": {
-            "ko": "우리는 심각성과 영향에 따라 완화 조치를 우선 순위로 할 것입니다.",
-            "zh": "我们将根据严重性和影响对缓解措施进行优先排序。",
-            "ja": "私たちは重大性と影響によって緩和策を優先します。",
-            "vi": "Chúng tôi sẽ ưu tiên các biện pháp giảm nhẹ theo mức độ nghiêm trọng và tác động."
+            "ko": "다음 주제로 넘어가야 하나요?",
+            "zh": "我们应该继续下一个话题吗？",
+            "ja": "次のトピックに進みましょうか？",
+            "vi": "Chúng ta có nên chuyển sang chủ đề tiếp theo không?",
+            "en": "Shall we move on to next topic?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s assign owners for each mitigation area.",
+          "text": "Yes, let's keep things moving.",
           "translations": {
-            "ko": "각 완화 영역에 대한 소유자를 지정합시다.",
-            "zh": "让我们为每个缓解区域分配负责人。",
-            "ja": "各緩和エリアのオーナーを割り当てましょう。",
-            "vi": "Hãy giao chủ sở hữu cho mỗi khu vực giảm nhẹ."
+            "ko": "네, 계속 진행합시다.",
+            "zh": "是的，让我们继续。",
+            "ja": "はい、進めましょう。",
+            "vi": "Đúng, hãy tiếp tục.",
+            "en": "Yes, let's keep things moving."
           }
         },
         {
           "role": "ai",
-          "text": "A full risk summary will follow after the meeting.",
+          "text": "Thanks, everyone. We handled that well.",
           "translations": {
-            "ko": "회의 후에 전체 위험 요약이 이어질 것입니다.",
-            "zh": "会议结束后将提供完整的风险总结。",
-            "ja": "ミーティング後に完全なリスクサマリーを提供します。",
-            "vi": "Một bản tóm tắt rủi ro đầy đủ sẽ theo sau cuộc họp."
+            "ko": "감사합니다. 우리는 잘 처리했습니다.",
+            "zh": "谢谢大家。我们处理得很好。",
+            "ja": "皆さん、ありがとうございます。上手く対処できました。",
+            "vi": "Cảm ơn mọi người. Chúng ta đã xử lý tốt.",
+            "en": "Thanks, everyone. We handled that well."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to reviewing the full summary.",
+          "text": "I’ll document today’s decisions and share the summary.",
           "translations": {
-            "ko": "전체 요약을 검토하는 것을 기대합니다.",
-            "zh": "期待审查完整的总结。",
-            "ja": "完全なサマリーのレビューを楽しみにしています。",
-            "vi": "Mong chờ xem xét bản tóm tắt đầy đủ."
+            "ko": "오늘의 결정 사항을 문서화하고 요약을 공유하겠습니다.",
+            "zh": "我会记录今天的决定并分享总结。",
+            "ja": "今日の決定事項を文書化し、要約を共有します。",
+            "vi": "Tôi sẽ ghi lại các quyết định hôm nay và chia sẻ bản tóm tắt.",
+            "en": "I’ll document today’s decisions and share the summary."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "사후 검증 결과 평가",
-        "zh": "评估事后分析结果",
-        "ja": "ポストモーテムの調査結果を評価する",
-        "vi": "Đánh giá các phát hiện sau khi xảy ra sự cố"
+        "en": "Conducting a crisis response meeting",
+        "ko": "위기 대응 회의 진행",
+        "zh": "主持危机应对会议",
+        "ja": "危機対応会議を行う",
+        "vi": "Tổ chức một cuộc họp phản ứng khủng hoảng"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Thanks for joining this post-mortem debrief.",
+          "text": "We’ve identified a data breach affecting 5% of users.",
           "translations": {
-            "ko": "이 사후 검증 브리핑에 참석해 주셔서 감사합니다.",
-            "zh": "感谢您参加这次事后分析会议。",
-            "ja": "このポストモーテムのデブリーフに参加していただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã tham gia cuộc họp sau sự cố này."
+            "ko": "우리는 사용자의 5%에 영향을 미치는 데이터 유출을 확인했습니다.",
+            "zh": "我们已经发现了影响5%用户的数据泄露。",
+            "ja": "ユーザーの5%に影響を与えるデータ侵害を特定しました。",
+            "vi": "Chúng tôi đã xác định một cuộc đột nhập dữ liệu ảnh hưởng đến 5% người dùng.",
+            "en": "We’ve identified a data breach affecting 5% of users."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. The timeline provides helpful context.",
+          "text": "Have we isolated the vulnerability?",
           "translations": {
-            "ko": "감사합니다. 타임라인은 유용한 맥락을 제공합니다.",
-            "zh": "谢谢。时间线提供了有用的背景信息。",
-            "ja": "ありがとうございます。タイムラインは有用なコンテキストを提供します。",
-            "vi": "Cảm ơn. Dòng thời gian cung cấp ngữ cảnh hữu ích."
+            "ko": "취약점을 격리시켰나요?",
+            "zh": "我们已经隔离了漏洞吗？",
+            "ja": "脆弱性は隔離されましたか？",
+            "vi": "Chúng ta đã cô lập lỗ hổng chưa?",
+            "en": "Have we isolated the vulnerability?"
           }
         },
         {
           "role": "ai",
-          "text": "Let’s start with a timeline of the incident.",
+          "text": "Yes, the dev team patched it within two hours.",
           "translations": {
-            "ko": "사건의 타임라인부터 시작합시다.",
-            "zh": "让我们从事件的时间线开始。",
-            "ja": "事件のタイムラインから始めましょう。",
-            "vi": "Hãy bắt đầu với dòng thời gian của sự cố."
+            "ko": "네, 개발팀이 두 시간 내에 패치했습니다.",
+            "zh": "是的，开发团队在两小时内修补了它。",
+            "ja": "はい、開発チームが2時間以内にパッチを当てました。",
+            "vi": "Đúng, đội ngũ phát triển đã vá nó trong vòng hai giờ.",
+            "en": "Yes, the dev team patched it within two hours."
           }
         },
         {
           "role": "user",
-          "text": "I support the changes to rollback procedures.",
+          "text": "Has Legal been notified?",
           "translations": {
-            "ko": "롤백 절차에 대한 변경을 지지합니다.",
-            "zh": "我支持对回滚程序的更改。",
-            "ja": "ロールバック手順の変更を支持します。",
-            "vi": "Tôi ủng hộ các thay đổi về quy trình quay lại."
+            "ko": "법률 팀에 알렸나요?",
+            "zh": "法务部门已经被通知了吗？",
+            "ja": "法務は通知されましたか？",
+            "vi": "Pháp lý đã được thông báo chưa?",
+            "en": "Has Legal been notified?"
           }
         },
         {
           "role": "ai",
-          "text": "Root cause analysis shows a misconfigured deployment.",
+          "text": "They’re preparing a disclosure statement.",
           "translations": {
-            "ko": "근본 원인 분석은 배포 설정 오류를 보여줍니다.",
-            "zh": "根源分析显示了一个配置错误的部署。",
-            "ja": "原因分析は、設定ミスがあったデプロイメントを示しています。",
-            "vi": "Phân tích nguyên nhân gốc rễ cho thấy một sự triển khai cấu hình sai."
+            "ko": "그들은 공개 문을 준비하고 있습니다.",
+            "zh": "他们正在准备披露声明。",
+            "ja": "彼らは開示声明を準備しています。",
+            "vi": "Họ đang chuẩn bị một tuyên bố tiết lộ.",
+            "en": "They’re preparing a disclosure statement."
           }
         },
         {
           "role": "user",
-          "text": "We should automate environment validation going forward.",
+          "text": "What’s our timeline for informing users?",
           "translations": {
-            "ko": "앞으로 환경 검증을 자동화해야 합니다.",
-            "zh": "我们应该在未来自动化环境验证。",
-            "ja": "今後は環境検証を自動化すべきです。",
-            "vi": "Chúng ta nên tự động hóa việc xác nhận môi trường từ nay về sau."
+            "ko": "사용자에게 알리는 우리의 타임라인은 무엇인가요?",
+            "zh": "我们通知用户的时间表是什么？",
+            "ja": "ユーザーに情報を提供するタイムラインは何ですか？",
+            "vi": "Thời gian dự kiến để thông báo cho người dùng là bao lâu?",
+            "en": "What’s our timeline for informing users?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ll walk through the contributing factors.",
+          "text": "Within 24 hours, per regulation.",
           "translations": {
-            "ko": "우리는 기여 요인을 살펴볼 것입니다.",
-            "zh": "我们将讨论贡献因素。",
-            "ja": "貢献要因を一緒に見ていきましょう。",
-            "vi": "Chúng tôi sẽ đi qua các yếu tố đóng góp."
+            "ko": "규정에 따라 24시간 이내입니다.",
+            "zh": "根据规定，应在24小时内。",
+            "ja": "規制に従って24時間以内です。",
+            "vi": "Trong vòng 24 giờ, theo quy định.",
+            "en": "Within 24 hours, per regulation."
           }
         },
         {
           "role": "user",
-          "text": "Monitoring improvements are definitely needed.",
+          "text": "Do we need to alert the press?",
           "translations": {
-            "ko": "모니터링 개선이 확실히 필요합니다.",
-            "zh": "监控改进绝对是必要的。",
-            "ja": "モニタリングの改善は確実に必要です。",
-            "vi": "Cải tiến giám sát chắc chắn là cần thiết."
+            "ko": "언론에 알려야 하나요?",
+            "zh": "我们需要通知媒体吗？",
+            "ja": "プレスに警告する必要はありますか？",
+            "vi": "Chúng ta cần thông báo cho báo chí không?",
+            "en": "Do we need to alert the press?"
           }
         },
         {
           "role": "ai",
-          "text": "Monitoring gaps delayed our initial response.",
+          "text": "Only if user sentiment spikes online.",
           "translations": {
-            "ko": "모니터링의 빈틈이 초기 응답을 지연시켰습니다.",
-            "zh": "监控漏洞延迟了我们的初步回应。",
-            "ja": "モニタリングのギャップが初期対応を遅らせました。",
-            "vi": "Khoảng trống giám sát đã làm chậm phản ứng ban đầu của chúng tôi."
+            "ko": "사용자의 감정이 온라인에서 급증하는 경우에만 그렇습니다.",
+            "zh": "只有当用户在线上情绪激增时才需要。",
+            "ja": "ユーザーの感情がオンラインで急上昇する場合のみです。",
+            "vi": "Chỉ khi tình cảm của người dùng tăng lên trực tuyến.",
+            "en": "Only if user sentiment spikes online."
           }
         },
         {
           "role": "user",
-          "text": "What triggered the misconfiguration originally?",
+          "text": "Is our support team briefed?",
           "translations": {
-            "ko": "원래 무엇이 설정 오류를 일으켰습니까?",
-            "zh": "最初是什么触发了配置错误？",
-            "ja": "元々何が設定ミスを引き起こしましたか？",
-            "vi": "Điều gì đã kích hoạt việc cấu hình sai ban đầu?"
+            "ko": "우리의 지원 팀은 브리핑을 받았나요?",
+            "zh": "我们的支持团队已经被简报了吗？",
+            "ja": "サポートチームはブリーフィングされましたか？",
+            "vi": "Đội ngũ hỗ trợ của chúng ta đã được thông báo chưa?",
+            "en": "Is our support team briefed?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ve implemented rollback protocols since then.",
+          "text": "They’re drafting response templates now.",
           "translations": {
-            "ko": "그 이후에 롤백 프로토콜을 구현했습니다.",
-            "zh": "自那时以来，我们已经实施了回滚协议。",
-            "ja": "それ以来、私たちはロールバックプロトコルを実装しました。",
-            "vi": "Chúng tôi đã triển khai các giao thức quay lại từ đó."
+            "ko": "그들은 현재 응답 템플릿을 작성하고 있습니다.",
+            "zh": "他们正在起草回应模板。",
+            "ja": "彼らは現在、レスポンステンプレートを作成しています。",
+            "vi": "Họ đang soạn thảo mẫu phản hồi ngay bây giờ.",
+            "en": "They’re drafting response templates now."
           }
         },
         {
           "role": "user",
-          "text": "Let’s ensure cross-team handoffs are more explicit.",
+          "text": "Can we delay next week’s feature release?",
           "translations": {
-            "ko": "팀 간 인계가 더 명확하게 이루어지도록 합시다.",
-            "zh": "让我们确保跨团队交接更明确。",
-            "ja": "チーム間の引き継ぎがより明確になるようにしましょう。",
-            "vi": "Hãy đảm bảo rằng việc chuyển giao giữa các nhóm là rõ ràng hơn."
+            "ko": "다음 주의 기능 릴리스를 연기할 수 있나요?",
+            "zh": "我们可以推迟下周的功能发布吗？",
+            "ja": "来週の機能リリースを延期できますか？",
+            "vi": "Chúng ta có thể hoãn việc phát hành tính năng tuần sau không?",
+            "en": "Can we delay next week’s feature release?"
           }
         },
         {
           "role": "ai",
-          "text": "Documentation updates are already in motion.",
+          "text": "Let’s prioritize trust. Delay if needed.",
           "translations": {
-            "ko": "문서 업데이트가 이미 진행 중입니다.",
-            "zh": "文档更新已经在进行中。",
-            "ja": "ドキュメンテーションの更新はすでに進行中です。",
-            "vi": "Cập nhật tài liệu đã được thực hiện."
+            "ko": "신뢰를 우선시합시다. 필요하다면 연기합시다.",
+            "zh": "让我们优先考虑信任。如果需要，可以延迟。",
+            "ja": "信頼を優先しましょう。必要であれば延期します。",
+            "vi": "Hãy ưu tiên sự tin tưởng. Hoãn nếu cần.",
+            "en": "Let’s prioritize trust. Delay if needed."
           }
         },
         {
           "role": "user",
-          "text": "Training should include real incident scenarios.",
+          "text": "Understood. Should we hold a company-wide Q&A?",
           "translations": {
-            "ko": "교육은 실제 사건 시나리오를 포함해야 합니다.",
-            "zh": "培训应包括真实的事件场景。",
-            "ja": "トレーニングには実際のインシデントシナリオを含めるべきです。",
-            "vi": "Đào tạo nên bao gồm các tình huống sự cố thực tế."
+            "ko": "이해했습니다. 회사 전체 Q&A를 개최해야 하나요?",
+            "zh": "明白了。我们是否需要举行全公司的问答会？",
+            "ja": "了解しました。会社全体のQ&Aを開催すべきですか？",
+            "vi": "Hiểu rồi. Chúng ta có nên tổ chức một Q&A toàn công ty không?",
+            "en": "Understood. Should we hold a company-wide Q&A?"
           }
         },
         {
           "role": "ai",
-          "text": "We’re also scheduling training for relevant teams.",
+          "text": "Good idea. Let’s schedule it for tomorrow.",
           "translations": {
-            "ko": "관련 팀들을 위한 교육을 계획 중입니다.",
-            "zh": "我们也正在为相关团队安排培训。",
-            "ja": "関連チームのための研修もスケジュールに組み込んでいます。",
-            "vi": "Chúng tôi cũng đang lên lịch đào tạo cho các nhóm liên quan."
+            "ko": "좋은 생각입니다. 내일로 일정을 잡읍시다.",
+            "zh": "好主意。让我们安排在明天。",
+            "ja": "良いアイデアです。明日それをスケジュールしましょう。",
+            "vi": "Ý tưởng tốt. Hãy lên lịch nó vào ngày mai.",
+            "en": "Good idea. Let’s schedule it for tomorrow."
           }
         },
         {
           "role": "user",
-          "text": "We’ll revise internal runbooks this week.",
+          "text": "I’ll prepare talking points for execs.",
           "translations": {
-            "ko": "이번 주에 내부 운영 매뉴얼을 수정할 예정입니다.",
-            "zh": "我们将在本周修订内部运行手册。",
-            "ja": "今週、社内の運用手順書を見直します。",
-            "vi": "Chúng tôi sẽ xem xét lại sổ tay nội bộ trong tuần này."
+            "ko": "나는 경영진을 위한 주요 포인트를 준비하겠습니다.",
+            "zh": "我会为高管准备讲话要点。",
+            "ja": "私がエグゼクティブ向けのトーキングポイントを準備します。",
+            "vi": "Tôi sẽ chuẩn bị các điểm nói chính cho các giám đốc.",
+            "en": "I’ll prepare talking points for execs."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s identify action items to prevent recurrence.",
+          "text": "Thanks team. Let’s stay transparent and proactive.",
           "translations": {
-            "ko": "재발을 방지하기 위한 행동 계획을 식별합시다.",
-            "zh": "让我们确定行动事项以防止再次发生。",
-            "ja": "再発防止のためのアクションアイテムを特定しましょう。",
-            "vi": "Hãy xác định các mục công việc để ngăn chặn sự tái phát."
+            "ko": "감사합니다. 팀 여러분, 투명하고 능동적으로 유지합시다.",
+            "zh": "谢谢团队。让我们保持透明和积极主动。",
+            "ja": "ありがとう、チーム。透明で積極的な姿勢を保ちましょう。",
+            "vi": "Cảm ơn đội ngũ. Hãy duy trì sự minh bạch và chủ động.",
+            "en": "Thanks team. Let’s stay transparent and proactive."
           }
         },
         {
           "role": "user",
-          "text": "Happy to own one of the action items.",
+          "text": "I’ll keep the status page updated hourly.",
           "translations": {
-            "ko": "행동 계획 중 하나를 맡게 되어 기쁩니다.",
-            "zh": "很高兴能负责其中一个行动事项。",
-            "ja": "アクションアイテムの一つを担当することを喜んで引き受けます。",
-            "vi": "Rất vui được chịu trách nhiệm cho một trong những mục công việc."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Appreciate everyone’s transparency in this review.",
-          "translations": {
-            "ko": "이 검토에서 모두의 투명성에 감사드립니다.",
-            "zh": "感谢大家在这次审查中的透明度。",
-            "ja": "このレビューでの皆さんの透明性に感謝します。",
-            "vi": "Đánh giá cao sự minh bạch của mọi người trong cuộc xem xét này."
-          }
-        },
-        {
-          "role": "user",
-          "text": "This was a productive debrief. Thanks all.",
-          "translations": {
-            "ko": "생산적인 회고였습니다. 모두 감사합니다.",
-            "zh": "这是一次富有成效的总结。谢谢大家。",
-            "ja": "有意義なデブリーフィングでした。皆さん、ありがとうございました。",
-            "vi": "Đây là một cuộc tổng kết hiệu quả. Cảm ơn tất cả mọi người."
+            "ko": "나는 상태 페이지를 매시간 업데이트하겠습니다.",
+            "zh": "我会每小时更新状态页面。",
+            "ja": "私がステータスページを毎時更新します。",
+            "vi": "Tôi sẽ cập nhật trang trạng thái hàng giờ.",
+            "en": "I’ll keep the status page updated hourly."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "제품 로드맵 조정에 대한 일치",
-        "zh": "对产品路线图进行调整的一致性",
-        "ja": "製品ロードマップの調整に合わせています。",
-        "vi": "Điều chỉnh đường lối sản phẩm"
+        "en": "Evaluating resource allocation",
+        "ko": "자원 배치 평가",
+        "zh": "评估资源分配",
+        "ja": "リソース配分の評価",
+        "vi": "Đánh giá phân bổ nguồn lực"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Today we’re reviewing adjustments to the Q3 roadmap.",
+          "text": "Today’s goal is to review team resource allocation.",
           "translations": {
-            "ko": "오늘은 Q3 로드맵의 조정 사항을 검토하고 있습니다.",
-            "zh": "今天我们正在审查对第三季度路线图的调整。",
-            "ja": "今日はQ3のロードマップの調整をレビューします。",
-            "vi": "Hôm nay chúng tôi đang xem xét các điều chỉnh cho lộ trình Q3."
+            "ko": "오늘의 목표는 팀 자원 배치를 검토하는 것입니다.",
+            "zh": "今天的目标是回顾团队资源分配。",
+            "ja": "今日の目標はチームのリソース配分を見直すことです。",
+            "vi": "Mục tiêu hôm nay là xem xét việc phân bổ nguồn lực của nhóm.",
+            "en": "Today’s goal is to review team resource allocation."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. The onboarding focus makes sense.",
+          "text": "Engineering is short one backend dev.",
           "translations": {
-            "ko": "감사합니다. 온보딩에 집중하는 것이 합리적입니다.",
-            "zh": "谢谢。新员工入职关注点很有道理。",
-            "ja": "ありがとうございます。オンボーディングに焦点を当てるのは理にかなっています。",
-            "vi": "Cảm ơn. Việc tập trung vào quá trình hướng dẫn mới có ý nghĩa."
+            "ko": "엔지니어링은 백엔드 개발자 한 명이 부족합니다.",
+            "zh": "工程团队缺少一个后端开发人员。",
+            "ja": "エンジニアリングはバックエンド開発者が1人足りません。",
+            "vi": "Kỹ thuật thiếu một dev backend.",
+            "en": "Engineering is short one backend dev."
           }
         },
         {
           "role": "ai",
-          "text": "Customer feedback highlighted some usability issues.",
+          "text": "Can we shift someone from the infrastructure team?",
           "translations": {
-            "ko": "고객 피드백에서 사용성 문제가 도출되었습니다.",
-            "zh": "客户反馈突出了一些可用性问题。",
-            "ja": "顧客のフィードバックで使い勝手の問題がいくつか浮上しました。",
-            "vi": "Phản hồi của khách hàng đã chỉ ra một số vấn đề về khả năng sử dụng."
+            "ko": "인프라 팀에서 누군가를 옮길 수 있나요?",
+            "zh": "我们可以从基础设施团队中调动一个人吗？",
+            "ja": "インフラチームから誰かを移動できますか？",
+            "vi": "Chúng ta có thể chuyển ai đó từ nhóm cơ sở hạ tầng không?",
+            "en": "Can we shift someone from the infrastructure team?"
           }
         },
         {
           "role": "user",
-          "text": "Pushing analytics gives us more breathing room.",
+          "text": "Possibly, but there’s a learning curve.",
           "translations": {
-            "ko": "분석을 밀어주면 우리에게 더 많은 여유를 줍니다.",
-            "zh": "推动分析给我们更多的喘息空间。",
-            "ja": "アナリティクスを押し進めることで、余裕が生まれます。",
-            "vi": "Đẩy mạnh phân tích giúp chúng tôi có thêm không gian."
+            "ko": "가능하긴 하지만, 학습 곡선이 있습니다.",
+            "zh": "可能可以，但是有一个学习曲线。",
+            "ja": "可能性はありますが、学習曲線があります。",
+            "vi": "Có thể, nhưng có một quá trình học hỏi.",
+            "en": "Possibly, but there’s a learning curve."
           }
         },
         {
           "role": "ai",
-          "text": "We’re proposing to reprioritize based on that data.",
+          "text": "What about hiring a contractor short-term?",
           "translations": {
-            "ko": "그 데이터를 기반으로 우선 순위를 재정의하는 것을 제안합니다.",
-            "zh": "我们建议根据这些数据重新确定优先级。",
-            "ja": "そのデータに基づいて優先順位を再設定することを提案しています。",
-            "vi": "Chúng tôi đề xuất sắp xếp lại ưu tiên dựa trên dữ liệu đó."
+            "ko": "단기간 계약자를 고용하는 것은 어떨까요?",
+            "zh": "那么短期雇佣一个承包商怎么样？",
+            "ja": "短期間の契約者を雇うことはできますか？",
+            "vi": "Còn về việc thuê một nhà thầu ngắn hạn?",
+            "en": "What about hiring a contractor short-term?"
           }
         },
         {
           "role": "user",
-          "text": "Engineering is okay with the updated timeline.",
+          "text": "Budget might allow for a 3-month role.",
           "translations": {
-            "ko": "엔지니어링 팀은 업데이트된 일정에 동의합니다.",
-            "zh": "工程部门对更新的时间表没有问题。",
-            "ja": "エンジニアリングは更新されたタイムラインに問題ありません。",
-            "vi": "Kỹ sư đồng ý với lịch trình cập nhật."
+            "ko": "예산이 3개월짜리 역할을 허용할 수 있을지도 모릅니다.",
+            "zh": "预算可能允许一个3个月的角色。",
+            "ja": "予算は3ヶ月間の役割を許可するかもしれません。",
+            "vi": "Ngân sách có thể cho phép một vai trò 3 tháng.",
+            "en": "Budget might allow for a 3-month role."
           }
         },
         {
           "role": "ai",
-          "text": "The onboarding redesign will now take precedence.",
+          "text": "Let’s confirm with Finance this afternoon.",
           "translations": {
-            "ko": "이제 온보딩 재설계가 우선 순위가 될 것입니다.",
-            "zh": "新员工入职的重新设计现在将优先考虑。",
-            "ja": "オンボーディングの再設計が優先されることになります。",
-            "vi": "Việc thiết kế lại quá trình hướng dẫn sẽ được ưu tiên."
+            "ko": "오후에 재무팀과 확인하겠습니다.",
+            "zh": "让我们今天下午和财务部门确认一下。",
+            "ja": "今日の午後にファイナンスと確認しましょう。",
+            "vi": "Hãy xác nhận với Tài chính vào buổi chiều nay.",
+            "en": "Let’s confirm with Finance this afternoon."
           }
         },
         {
           "role": "user",
-          "text": "Design will need to adjust sprint scope slightly.",
+          "text": "Design team also requested an additional UX lead.",
           "translations": {
-            "ko": "디자인 팀은 스프린트 범위를 약간 조정해야 합니다.",
-            "zh": "设计部门需要稍微调整冲刺范围。",
-            "ja": "デザインはスプリントの範囲を少し調整する必要があります。",
-            "vi": "Nhóm thiết kế sẽ cần điều chỉnh phạm vi sprint một chút."
+            "ko": "디자인 팀도 추가 UX 리드를 요청했습니다.",
+            "zh": "设计团队也请求增加一个用户体验领导。",
+            "ja": "デザインチームも追加のUXリードを要求しました。",
+            "vi": "Nhóm thiết kế cũng yêu cầu thêm một người dẫn dắt UX.",
+            "en": "Design team also requested an additional UX lead."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll push back the analytics module to Q4.",
+          "text": "That’s noted. Prioritization needed based on OKRs.",
           "translations": {
-            "ko": "분석 모듈을 Q4로 미룰 예정입니다.",
-            "zh": "我们将把分析模块推迟到第四季度。",
-            "ja": "アナリティクスモジュールはQ4に延期します。",
-            "vi": "Chúng tôi sẽ đẩy mạnh mô-đun phân tích đến Q4."
+            "ko": "그것은 기록되었습니다. OKR에 기반한 우선 순위 결정이 필요합니다.",
+            "zh": "已经记录下来。根据OKR进行优先级排序。",
+            "ja": "それは記録されています。OKRに基づいた優先順位付けが必要です。",
+            "vi": "Điều đó đã được ghi chú. Cần ưu tiên dựa trên OKR.",
+            "en": "That’s noted. Prioritization needed based on OKRs."
           }
         },
         {
           "role": "user",
-          "text": "Can we notify sales about the delay today?",
+          "text": "How about deferring the admin project?",
           "translations": {
-            "ko": "오늘 판매팀에게 지연 사항을 알릴 수 있을까요?",
-            "zh": "我们今天可以通知销售部门延误的情况吗？",
-            "ja": "今日中に営業に遅延を通知することは可能ですか？",
-            "vi": "Chúng ta có thể thông báo cho bộ phận bán hàng về sự chậm trễ hôm nay không?"
+            "ko": "관리 프로젝트를 연기하는 것은 어떨까요?",
+            "zh": "我们可以推迟行政项目吗？",
+            "ja": "管理プロジェクトを延期するのはどうですか？",
+            "vi": "Còn về việc hoãn dự án quản trị?",
+            "en": "How about deferring the admin project?"
           }
         },
         {
           "role": "ai",
-          "text": "This impacts both design and engineering timelines.",
+          "text": "It’s lower urgency. That could free bandwidth.",
           "translations": {
-            "ko": "이것은 디자인과 엔지니어링의 일정에 모두 영향을 미칩니다.",
-            "zh": "这影响了设计和工程的时间表。",
-            "ja": "これはデザインとエンジニアリングのタイムラインに影響を与えます。",
-            "vi": "Điều này ảnh hưởng đến cả lịch trình của thiết kế và kỹ thuật."
+            "ko": "그것은 낮은 긴급성입니다. 그것이 대역폭을 확보할 수 있을지도 모릅니다.",
+            "zh": "它的紧迫性较低。这可能会释放出带宽。",
+            "ja": "それは緊急性が低いです。それが帯域を解放する可能性があります。",
+            "vi": "Đó là ưu tiên thấp hơn. Điều đó có thể giải phóng băng thông.",
+            "en": "It’s lower urgency. That could free bandwidth."
           }
         },
         {
           "role": "user",
-          "text": "I’ll review the roadmap doc after this call.",
+          "text": "I’ll update the planning sheet.",
           "translations": {
-            "ko": "이 통화 후에 로드맵 문서를 검토하겠습니다.",
-            "zh": "这次通话后，我会审查路线图文档。",
-            "ja": "この通話の後でロードマップドキュメントをレビューします。",
-            "vi": "Tôi sẽ xem xét tài liệu lộ trình sau cuộc gọi này."
+            "ko": "나는 계획 시트를 업데이트하겠습니다.",
+            "zh": "我会更新计划表。",
+            "ja": "私が計画シートを更新します。",
+            "vi": "Tôi sẽ cập nhật bảng kế hoạch.",
+            "en": "I’ll update the planning sheet."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s confirm alignment before updating stakeholders.",
+          "text": "Let’s reconvene Friday to finalize moves.",
           "translations": {
-            "ko": "이해당사자들에게 업데이트하기 전에 일치를 확인합시다.",
-            "zh": "在更新利益相关者之前，让我们确认一致性。",
-            "ja": "ステークホルダーに更新を通知する前に、合意を確認しましょう。",
-            "vi": "Hãy xác nhận sự đồng lòng trước khi cập nhật cho các bên liên quan."
+            "ko": "이동을 확정하기 위해 금요일에 다시 모이겠습니다.",
+            "zh": "让我们在周五再次会面以确定移动。",
+            "ja": "金曜日に再会して移動を最終化しましょう。",
+            "vi": "Hãy họp lại vào thứ Sáu để hoàn thiện các bước di chuyển.",
+            "en": "Let’s reconvene Friday to finalize moves."
           }
         },
         {
           "role": "user",
-          "text": "The prioritization looks solid to me.",
+          "text": "Sounds good. I’ll notify team leads.",
           "translations": {
-            "ko": "우선 순위가 탄탄해 보입니다.",
-            "zh": "这个优先级看起来很稳固。",
-            "ja": "優先順位付けは私にとって確固としています。",
-            "vi": "Việc ưu tiên trông rất vững chắc với tôi."
+            "ko": "좋습니다. 팀 리드에게 알리겠습니다.",
+            "zh": "听起来不错。我会通知团队领导。",
+            "ja": "良いですね。私がチームリーダーに通知します。",
+            "vi": "Nghe có vẻ tốt. Tôi sẽ thông báo cho các nhóm trưởng.",
+            "en": "Sounds good. I’ll notify team leads."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve updated the roadmap doc with these changes.",
+          "text": "Thanks. Let’s aim for minimum disruption.",
           "translations": {
-            "ko": "이러한 변경 사항으로 로드맵 문서를 업데이트했습니다.",
-            "zh": "我们已经根据这些变化更新了路线图文档。",
-            "ja": "これらの変更をロードマップドキュメントに更新しました。",
-            "vi": "Chúng tôi đã cập nhật tài liệu lộ trình với những thay đổi này."
+            "ko": "감사합니다. 최소한의 방해를 목표로 합시다.",
+            "zh": "谢谢。让我们尽量减少干扰。",
+            "ja": "ありがとう。最小限の混乱を目指しましょう。",
+            "vi": "Cảm ơn. Hãy nhắm đến sự gián đoạn tối thiểu.",
+            "en": "Thanks. Let’s aim for minimum disruption."
           }
         },
         {
           "role": "user",
-          "text": "We’ll review risks related to the shift.",
+          "text": "I’ll send out updates to affected stakeholders.",
           "translations": {
-            "ko": "이동과 관련된 위험을 검토할 예정입니다.",
-            "zh": "我们将审查与转变相关的风险。",
-            "ja": "シフトに関連するリスクをレビューします。",
-            "vi": "Chúng tôi sẽ xem xét các rủi ro liên quan đến sự thay đổi."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "I’ll walk through the rationale for each adjustment.",
-          "translations": {
-            "ko": "각 조정에 대한 근거를 설명하겠습니다.",
-            "zh": "我将详细解释每项调整的理由。",
-            "ja": "各調整の理由を説明します。",
-            "vi": "Tôi sẽ giải thích lý do cho mỗi sự điều chỉnh."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks for outlining the rationale clearly.",
-          "translations": {
-            "ko": "근거를 명확하게 설명해 주셔서 감사합니다.",
-            "zh": "感谢你清楚地阐述了理由。",
-            "ja": "理由を明確に説明していただき、ありがとうございます。",
-            "vi": "Cảm ơn bạn đã trình bày rõ ràng lý do."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Let’s finalize feedback before end of day.",
-          "translations": {
-            "ko": "하루 종료 전에 피드백을 확정합시다.",
-            "zh": "让我们在今天结束之前确定反馈。",
-            "ja": "一日の終わりまでにフィードバックを確定しましょう。",
-            "vi": "Hãy hoàn thiện phản hồi trước cuối ngày."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Let’s lock in updates by EOD as planned.",
-          "translations": {
-            "ko": "계획대로 하루 종료 전에 업데이트를 확정합시다.",
-            "zh": "让我们按计划在今天结束之前锁定更新。",
-            "ja": "計画通り、EODまでに更新を確定しましょう。",
-            "vi": "Hãy khóa các cập nhật vào cuối ngày như đã lên kế hoạch."
+            "ko": "나는 관련 이해관계자에게 업데이트를 보내겠습니다.",
+            "zh": "我会向受影响的利益相关者发送更新。",
+            "ja": "影響を受ける関係者に更新情報を送ります。",
+            "vi": "Tôi sẽ gửi cập nhật cho các bên liên quan.",
+            "en": "I’ll send out updates to affected stakeholders."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "전략 회의에서의 일치를 이끌어내기",
-        "zh": "在战略退修期间推动一致性",
-        "ja": "戦略リトリート中の一致を促進する",
-        "vi": "Đạt được sự đồng lòng trong một buổi họp chiến lược"
+        "en": "Clarifying unclear action items post-meeting",
+        "ko": "회의 후 불분명한 행동 항목 명확화",
+        "zh": "在会议后澄清不清楚的行动项目",
+        "ja": "会議後の不明確なアクションアイテムを明確にする",
+        "vi": "Làm rõ các mục tiêu hành động không rõ ràng sau cuộc họp"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Welcome to our annual strategy offsite.",
+          "text": "Let’s clarify some confusing takeaways from Tuesday.",
           "translations": {
-            "ko": "우리의 연례 전략 외부 회의에 오신 것을 환영합니다.",
-            "zh": "欢迎来到我们的年度战略外部会议。",
-            "ja": "年次戦略オフサイトへようこそ。",
-            "vi": "Chào mừng đến với buổi họp chiến lược hàng năm của chúng tôi."
+            "ko": "화요일의 혼란스러운 결론을 명확히 해봅시다.",
+            "zh": "让我们澄清一下周二的一些混淆的收获。",
+            "ja": "火曜日の混乱する持ち帰りを明確にしましょう。",
+            "vi": "Hãy làm rõ một số điểm rối rắm từ cuộc họp thứ Ba.",
+            "en": "Let’s clarify some confusing takeaways from Tuesday."
           }
         },
         {
           "role": "user",
-          "text": "Excited to be part of the offsite again.",
+          "text": "Was I assigned the client onboarding doc?",
           "translations": {
-            "ko": "다시 외부 회의에 참여하게 되어 기쁩니다.",
-            "zh": "很高兴再次参加这次外部会议。",
-            "ja": "再びオフサイトの一部となることを楽しみにしています。",
-            "vi": "Rất hào hứng được tham gia buổi họp ngoại vi lại."
+            "ko": "저는 고객 온보딩 문서를 맡은 건가요?",
+            "zh": "我被分配了客户入职文档吗？",
+            "ja": "私がクライアントのオンボーディングドキュメントを担当していましたか？",
+            "vi": "Tôi có được giao tài liệu đưa người dùng vào sử dụng không?",
+            "en": "Was I assigned the client onboarding doc?"
           }
         },
         {
           "role": "ai",
-          "text": "Let’s revisit our mission and vision briefly.",
+          "text": "Yes, due Friday. Can you confirm?",
           "translations": {
-            "ko": "간단하게 우리의 임무와 비전을 다시 살펴봅시다.",
-            "zh": "让我们简要回顾一下我们的使命和愿景。",
-            "ja": "私たちのミッションとビジョンを簡単に再確認しましょう。",
-            "vi": "Hãy cùng xem lại sứ mệnh và tầm nhìn của chúng ta một cách ngắn gọn."
+            "ko": "네, 금요일까지입니다. 확인할 수 있나요?",
+            "zh": "是的，周五之前。你能确认吗？",
+            "ja": "はい、金曜日までに。確認できますか？",
+            "vi": "Đúng, hạn vào thứ Sáu. Bạn có thể xác nhận không?",
+            "en": "Yes, due Friday. Can you confirm?"
           }
         },
         {
           "role": "user",
-          "text": "Revisiting our vision is always grounding.",
+          "text": "Got it. And who owns the API integration plan?",
           "translations": {
-            "ko": "우리의 비전을 다시 살펴보는 것은 항상 안정감을 줍니다.",
-            "zh": "重新审视我们的愿景总是很有助于保持稳定。",
-            "ja": "ビジョンを再確認することは常に地に足をつけることです。",
-            "vi": "Việc xem lại tầm nhìn luôn giúp chúng ta giữ vững tinh thần."
+            "ko": "알겠습니다. 그리고 API 통합 계획을 누가 맡나요?",
+            "zh": "明白了。那API集成计划是谁负责的？",
+            "ja": "了解しました。そしてAPI統合計画のオーナーは誰ですか？",
+            "vi": "Hiểu rồi. Và ai sở hữu kế hoạch tích hợp API?",
+            "en": "Got it. And who owns the API integration plan?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ll map out long-term goals over the next 3 years.",
+          "text": "That’s with Arjun, due next Wednesday.",
           "translations": {
-            "ko": "다음 3년 동안의 장기 목표를 설정할 것입니다.",
-            "zh": "我们将在接下来的3年里规划长期目标。",
-            "ja": "次の3年間で長期目標を立てます。",
-            "vi": "Chúng ta sẽ lên kế hoạch cho các mục tiêu dài hạn trong 3 năm tới."
+            "ko": "그것은 Arjun이 맡고, 다음 수요일까지입니다.",
+            "zh": "那是Arjun的，下周三之前。",
+            "ja": "それはアルジュンが担当し、来週の水曜日までです。",
+            "vi": "Đó là với Arjun, hạn vào thứ Tư tuần sau.",
+            "en": "That’s with Arjun, due next Wednesday."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to setting ambitious goals.",
+          "text": "Do I also need to review the budget proposal?",
           "translations": {
-            "ko": "야심찬 목표 설정을 기대하고 있습니다.",
-            "zh": "期待设定雄心勃勃的目标。",
-            "ja": "野心的な目標を設定するのを楽しみにしています。",
-            "vi": "Mong chờ đặt ra những mục tiêu tham vọng."
+            "ko": "저도 예산 제안을 검토해야 하나요?",
+            "zh": "我还需要审查预算提案吗？",
+            "ja": "予算提案のレビューも必要ですか？",
+            "vi": "Tôi cũng cần xem xét đề xuất ngân sách không?",
+            "en": "Do I also need to review the budget proposal?"
           }
         },
         {
           "role": "ai",
-          "text": "Let’s be bold but realistic with targets.",
+          "text": "Only provide comments—not full approval.",
           "translations": {
-            "ko": "목표 설정에 있어서는 대담하면서도 현실적이어야 합니다.",
-            "zh": "我们的目标要大胆但实际。",
-            "ja": "目標は大胆だが現実的にしましょう。",
-            "vi": "Hãy mạnh dạn nhưng thực tế với các mục tiêu."
+            "ko": "단지 의견을 제공하기만 하면 됩니다 - 전체 승인은 필요하지 않습니다.",
+            "zh": "只需要提供评论，不需要完全批准。",
+            "ja": "コメントの提供のみで、完全な承認は必要ありません。",
+            "vi": "Chỉ cung cấp ý kiến - không phải phê duyệt đầy đủ.",
+            "en": "Only provide comments—not full approval."
           }
         },
         {
           "role": "user",
-          "text": "Let’s push the envelope while staying grounded.",
+          "text": "Thanks. Can we get all tasks into Asana?",
           "translations": {
-            "ko": "안정을 유지하면서도 한계를 뛰어넘어봅시다.",
-            "zh": "我们要在保持稳定的同时不断突破。",
-            "ja": "地に足をつけつつ、限界を押し広げましょう。",
-            "vi": "Hãy đẩy mạnh tiến trình trong khi vẫn giữ vững tinh thần."
+            "ko": "감사합니다. 모든 작업을 Asana에 넣을 수 있을까요?",
+            "zh": "谢谢。我们可以把所有任务都放到Asana上吗？",
+            "ja": "ありがとう。全てのタスクをAsanaに入れることはできますか？",
+            "vi": "Cảm ơn. Chúng ta có thể đưa tất cả các nhiệm vụ vào Asana không?",
+            "en": "Thanks. Can we get all tasks into Asana?"
           }
         },
         {
           "role": "ai",
-          "text": "We’ll split into groups to brainstorm initiatives.",
+          "text": "I’ve added them, but need deadlines confirmed.",
           "translations": {
-            "ko": "우리는 이니셔티브를 브레인스토밍하기 위해 그룹으로 나눌 것입니다.",
-            "zh": "我们将分组进行头脑风暴活动。",
-            "ja": "グループに分かれてイニシアチブをブレインストーミングします。",
-            "vi": "Chúng ta sẽ chia thành các nhóm để đưa ra các sáng kiến."
+            "ko": "추가했습니다만, 마감일을 확인해야 합니다.",
+            "zh": "我已经添加了他们，但需要确认截止日期。",
+            "ja": "それらを追加しましたが、締め切りの確認が必要です。",
+            "vi": "Tôi đã thêm chúng, nhưng cần xác nhận thời hạn.",
+            "en": "I’ve added them, but need deadlines confirmed."
           }
         },
         {
           "role": "user",
-          "text": "Brainstorming in smaller groups works well.",
+          "text": "I’ll handle mine by EOD.",
           "translations": {
-            "ko": "작은 그룹에서의 브레인스토밍이 잘 작동합니다.",
-            "zh": "小组头脑风暴效果很好。",
-            "ja": "小グループでのブレインストーミングは効果的です。",
-            "vi": "Việc đưa ra ý tưởng trong các nhóm nhỏ thường hiệu quả."
+            "ko": "나는 EOD까지 내 것을 처리하겠습니다.",
+            "zh": "我会在今天结束工作前处理我的。",
+            "ja": "私の方は今日中に対応します。",
+            "vi": "Tôi sẽ xử lý phần của mình vào cuối ngày.",
+            "en": "I’ll handle mine by EOD."
           }
         },
         {
           "role": "ai",
-          "text": "Group leads will present their ideas this afternoon.",
+          "text": "Perfect. Let’s update the team in Slack.",
           "translations": {
-            "ko": "그룹 리더들이 오후에 그들의 아이디어를 발표할 것입니다.",
-            "zh": "小组负责人将在今天下午提出他们的想法。",
-            "ja": "グループリーダーは今日の午後、彼らのアイデアを発表します。",
-            "vi": "Các nhóm trưởng sẽ trình bày ý tưởng của họ vào chiều nay."
+            "ko": "완벽합니다. 팀에게 Slack에서 업데이트합시다.",
+            "zh": "完美。让我们在Slack中更新团队。",
+            "ja": "完璧です。チームをSlackで更新しましょう。",
+            "vi": "Hoàn hảo. Hãy cập nhật nhóm trong Slack.",
+            "en": "Perfect. Let’s update the team in Slack."
           }
         },
         {
           "role": "user",
-          "text": "I can help facilitate one of the breakout groups.",
+          "text": "Will do after this call.",
           "translations": {
-            "ko": "저는 분과 그룹 중 하나를 조정하는 데 도움을 줄 수 있습니다.",
-            "zh": "我可以帮助协调其中一个小组。",
-            "ja": "ブレイクアウトグループの一つを進行するのを手伝うことができます。",
-            "vi": "Tôi có thể giúp điều hành một trong những nhóm phụ."
+            "ko": "이 통화 후에 그렇게 하겠습니다.",
+            "zh": "会议结束后我会处理。",
+            "ja": "この通話の後に行います。",
+            "vi": "Sẽ làm sau cuộc gọi này.",
+            "en": "Will do after this call."
           }
         },
         {
           "role": "ai",
-          "text": "We’re aiming for cross-functional alignment.",
+          "text": "Anything else unclear?",
           "translations": {
-            "ko": "우리는 기능 간의 조정을 목표로 하고 있습니다.",
-            "zh": "我们的目标是跨职能对齐。",
-            "ja": "私たちは機能間の調整を目指しています。",
-            "vi": "Chúng ta đang nhắm đến sự phối hợp chéo chức năng."
+            "ko": "다른 불분명한 사항이 있나요?",
+            "zh": "还有其他不清楚的事情吗？",
+            "ja": "他に不明確なことはありますか？",
+            "vi": "Còn điều gì không rõ ràng nữa không?",
+            "en": "Anything else unclear?"
           }
         },
         {
           "role": "user",
-          "text": "Cross-functional buy-in is key to execution.",
+          "text": "Nope, we’re aligned now.",
           "translations": {
-            "ko": "기능 간의 동의는 실행에 있어서 핵심입니다.",
-            "zh": "跨职能的参与是执行的关键。",
-            "ja": "機能間の買い入れは実行の鍵です。",
-            "vi": "Sự đồng lòng chéo chức năng là chìa khóa để thực thi."
+            "ko": "아니요, 이제 우리는 일치합니다.",
+            "zh": "没有，我们现在已经对齐了。",
+            "ja": "いいえ、今は一致しています。",
+            "vi": "Không, chúng tôi đã đồng lòng bây giờ.",
+            "en": "Nope, we’re aligned now."
           }
         },
         {
           "role": "ai",
-          "text": "Breaks are scheduled between sessions to reset.",
+          "text": "Thanks for helping untangle things.",
           "translations": {
-            "ko": "세션 사이에는 재설정을 위해 휴식 시간이 예정되어 있습니다.",
-            "zh": "我们在会议之间安排了休息时间以重置。",
-            "ja": "セッションの間に休憩が予定されています。",
-            "vi": "Các khoảng nghỉ được lên lịch giữa các phiên để đặt lại."
+            "ko": "혼란스러운 것들을 풀어주셔서 감사합니다.",
+            "zh": "谢谢你帮助解决问题。",
+            "ja": "物事を解きほぐすのを手伝ってくれてありがとう。",
+            "vi": "Cảm ơn đã giúp làm rõ mọi thứ.",
+            "en": "Thanks for helping untangle things."
           }
         },
         {
           "role": "user",
-          "text": "Appreciate the built-in breaks.",
+          "text": "It’s much clearer now. I’ll relay it to the team.",
           "translations": {
-            "ko": "휴식 시간이 내장되어 있는 것에 감사드립니다.",
-            "zh": "感谢预设的休息时间。",
-            "ja": "組み込まれた休憩に感謝します。",
-            "vi": "Đánh giá cao các khoảng nghỉ được tích hợp."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "At the end, we’ll vote on top priorities.",
-          "translations": {
-            "ko": "마지막에 우리는 최우선 순위에 대해 투표할 것입니다.",
-            "zh": "最后，我们将对最优先事项进行投票。",
-            "ja": "最後に、最優先事項に投票します。",
-            "vi": "Cuối cùng, chúng ta sẽ bỏ phiếu cho các ưu tiên hàng đầu."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Let’s be decisive with our votes later.",
-          "translations": {
-            "ko": "나중에 투표할 때는 결정적이어야 합니다.",
-            "zh": "让我们在稍后的投票中果断一些。",
-            "ja": "後での投票は決断力を持って行いましょう。",
-            "vi": "Hãy quyết đoán với phiếu bầu của chúng ta sau này."
-          }
-        },
-        {
-          "role": "ai",
-          "text": "Thanks in advance for the energy and ideas today.",
-          "translations": {
-            "ko": "오늘의 에너지와 아이디어에 미리 감사드립니다.",
-            "zh": "提前感谢今天的活力和想法。",
-            "ja": "今日のエネルギーとアイデアに事前に感謝します。",
-            "vi": "Cảm ơn trước về năng lượng và ý tưởng hôm nay."
-          }
-        },
-        {
-          "role": "user",
-          "text": "Thanks. This should be a great session.",
-          "translations": {
-            "ko": "감사합니다. 이것은 훌륭한 세션이 될 것입니다.",
-            "zh": "谢谢。这应该会是一个很好的会议。",
-            "ja": "ありがとう。これは素晴らしいセッションになるはずです。",
-            "vi": "Cảm ơn. Đây sẽ là một phiên họp tuyệt vời."
+            "ko": "이제 훨씬 명확합니다. 팀에 전달하겠습니다.",
+            "zh": "现在清楚多了。我会把它传达给团队。",
+            "ja": "今はずっと明確です。私がチームに伝えます。",
+            "vi": "Rõ ràng hơn nhiều. Tôi sẽ truyền đạt nó cho nhóm.",
+            "en": "It’s much clearer now. I’ll relay it to the team."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "이해당사자들에게 상태 회의에서 업데이트",
-        "zh": "在状态会议中更新利益相关者",
-        "ja": "ステータスミーティングでステークホルダーを更新する",
-        "vi": "Cập nhật cho các bên liên quan trong cuộc họp cập nhật tình hình"
+        "en": "Recapping executive decisions",
+        "ko": "경영진의 결정 요약",
+        "zh": "总结执行决策",
+        "ja": "エグゼクティブの決定をまとめる",
+        "vi": "Tóm tắt các quyết định của ban điều hành"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s get started with the project status update.",
+          "text": "Let’s review decisions made during the exec sync.",
           "translations": {
-            "ko": "프로젝트 상태 업데이트로 시작해봅시다.",
-            "zh": "让我们开始项目状态更新。",
-            "ja": "プロジェクトのステータス更新から始めましょう。",
-            "vi": "Hãy bắt đầu với việc cập nhật tình hình dự án."
+            "ko": "경영진 동기화 중에 내린 결정을 검토해봅시다.",
+            "zh": "让我们回顾一下在执行同步中做出的决策。",
+            "ja": "エグゼクティブの同期中に行われた決定を見直しましょう。",
+            "vi": "Hãy xem xét các quyết định được đưa ra trong cuộc đồng bộ hóa ban điều hành.",
+            "en": "Let’s review decisions made during the exec sync."
           }
         },
         {
           "role": "user",
-          "text": "Thanks for the detailed status update.",
+          "text": "They approved moving forward with the vendor switch.",
           "translations": {
-            "ko": "자세한 상태 업데이트에 감사드립니다.",
-            "zh": "感谢详细的状态更新。",
-            "ja": "詳細なステータス更新に感謝します。",
-            "vi": "Cảm ơn vì đã cập nhật tình hình chi tiết."
+            "ko": "그들은 공급업체 변경을 진행하는 것을 승인했습니다.",
+            "zh": "他们批准了与供应商切换的计划。",
+            "ja": "彼らはベンダーの切り替えを進めることを承認しました。",
+            "vi": "Họ đã phê duyệt việc tiếp tục chuyển đổi nhà cung cấp.",
+            "en": "They approved moving forward with the vendor switch."
           }
         },
         {
           "role": "ai",
-          "text": "We’re currently on track with two out of three milestones.",
+          "text": "What was the timeline?",
           "translations": {
-            "ko": "우리는 현재 세 가지 중 두 가지 마일스톤을 따라가고 있습니다.",
-            "zh": "我们目前在三个里程碑中的两个上都按计划进行。",
-            "ja": "現在、3つのマイルストーンのうち2つが予定通りです。",
-            "vi": "Hiện tại, chúng ta đang theo đúng tiến độ với hai trong ba mục tiêu."
+            "ko": "타임라인은 어떻게 되나요?",
+            "zh": "时间表是什么？",
+            "ja": "タイムラインは何でしたか？",
+            "vi": "Thời gian là bao lâu?",
+            "en": "What was the timeline?"
           }
         },
         {
           "role": "user",
-          "text": "Glad to hear most milestones are on track.",
+          "text": "Contract signed by end of month, kickoff next quarter.",
           "translations": {
-            "ko": "대부분의 마일스톤이 계획대로 진행되고 있다는 것을 들어 기쁩니다.",
-            "zh": "很高兴听到大部分里程碑都按计划进行。",
-            "ja": "ほとんどのマイルストーンが予定通りであることを聞いてうれしいです。",
-            "vi": "Rất vui khi nghe hầu hết các mục tiêu đều đang theo đúng tiến độ."
+            "ko": "계약은 이달 말까지 체결되고, 다음 분기에 시작됩니다.",
+            "zh": "本月底签订合同，下个季度开始。",
+            "ja": "月末までに契約を締結し、次の四半期に開始します。",
+            "vi": "Hợp đồng ký kết vào cuối tháng, bắt đầu vào quý sau.",
+            "en": "Contract signed by end of month, kickoff next quarter."
           }
         },
         {
           "role": "ai",
-          "text": "The integration task slipped by three days due to vendor delays.",
+          "text": "Budget implications?",
           "translations": {
-            "ko": "공급업체의 지연으로 인해 통합 작업이 3일 지연되었습니다.",
-            "zh": "由于供应商延误，集成任务推迟了三天。",
-            "ja": "ベンダーの遅延により、統合タスクが3日遅れました。",
-            "vi": "Công việc tích hợp đã trễ ba ngày do sự chậm trễ của nhà cung cấp."
+            "ko": "예산에 대한 영향은?",
+            "zh": "预算影响？",
+            "ja": "予算の影響は？",
+            "vi": "Hậu quả về ngân sách?",
+            "en": "Budget implications?"
           }
         },
         {
           "role": "user",
-          "text": "Three-day slip is manageable under the circumstances.",
+          "text": "Slight increase, but better support.",
           "translations": {
-            "ko": "상황을 고려하면 3일의 지연은 관리 가능합니다.",
-            "zh": "在当前情况下，三天的滑动是可以管理的。",
-            "ja": "3日の遅れは、現状下では管理可能です。",
-            "vi": "Việc trễ ba ngày có thể quản lý được trong hoàn cảnh này."
+            "ko": "약간 증가하지만, 더 나은 지원입니다.",
+            "zh": "略有增加，但支持更好。",
+            "ja": "わずかな増加ですが、サポートが改善します。",
+            "vi": "Tăng nhẹ, nhưng hỗ trợ tốt hơn.",
+            "en": "Slight increase, but better support."
           }
         },
         {
           "role": "ai",
-          "text": "We’ve escalated and received confirmation of resolution.",
+          "text": "Was the reorg plan finalized?",
           "translations": {
-            "ko": "우리는 상황을 긴급하게 상향 조정하고 해결 확인을 받았습니다.",
-            "zh": "我们已经升级并得到了解决的确认。",
-            "ja": "エスカレーションを行い、解決の確認を受けました。",
-            "vi": "Chúng tôi đã tăng cường và nhận được xác nhận về việc giải quyết."
+            "ko": "재편 계획이 확정되었나요?",
+            "zh": "重组计划是否已经最后确定？",
+            "ja": "再編計画は最終化されましたか？",
+            "vi": "Kế hoạch tái tổ chức đã được hoàn thiện chưa?",
+            "en": "Was the reorg plan finalized?"
           }
         },
         {
           "role": "user",
-          "text": "Appreciate the quick escalation on vendor issues.",
+          "text": "Yes, roles shift starting next Monday.",
           "translations": {
-            "ko": "공급업체 문제에 대한 빠른 상향 조정에 감사드립니다.",
-            "zh": "感谢对供应商问题的快速升级。",
-            "ja": "ベンダー問題に対する迅速なエスカレーションに感謝します。",
-            "vi": "Đánh giá cao việc tăng cường nhanh chóng về vấn đề nhà cung cấp."
+            "ko": "네, 역할은 다음 주 월요일부터 변경됩니다.",
+            "zh": "是的，角色从下周一开始转变。",
+            "ja": "はい、役割は来週の月曜日からシフトします。",
+            "vi": "Đúng, vai trò thay đổi bắt đầu từ thứ Hai tuần sau.",
+            "en": "Yes, roles shift starting next Monday."
           }
         },
         {
           "role": "ai",
-          "text": "Next week’s focus is testing and bug triage.",
+          "text": "How about remote work policy?",
           "translations": {
-            "ko": "다음 주의 초점은 테스트와 버그 정리입니다.",
-            "zh": "下周的重点是测试和错误分类。",
-            "ja": "来週の焦点はテストとバグのトリアージです。",
-            "vi": "Trọng tâm tuần tới là kiểm thử và xử lý lỗi."
+            "ko": "원격 작업 정책은 어떻게 되나요?",
+            "zh": "关于远程工作政策呢？",
+            "ja": "リモートワークの方針はどうでしたか？",
+            "vi": "Còn chính sách làm việc từ xa?",
+            "en": "How about remote work policy?"
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to QA results next week.",
+          "text": "Staying hybrid, with flexible Fridays.",
           "translations": {
-            "ko": "다음 주에 QA 결과를 기대하고 있습니다.",
-            "zh": "期待下周的QA结果。",
-            "ja": "来週のQA結果を楽しみにしています。",
-            "vi": "Mong chờ kết quả QA vào tuần tới."
+            "ko": "유연한 금요일과 함께 하이브리드를 유지합니다.",
+            "zh": "保持混合模式，周五灵活。",
+            "ja": "ハイブリッドを維持し、金曜日はフレキシブルです。",
+            "vi": "Vẫn là lai, với thứ Sáu linh hoạt.",
+            "en": "Staying hybrid, with flexible Fridays."
           }
         },
         {
           "role": "ai",
-          "text": "We’re at 60 percent completion overall.",
+          "text": "Product launch date?",
           "translations": {
-            "ko": "우리는 전체적으로 60 퍼센트 완료 상태에 있습니다.",
-            "zh": "我们总体完成了60%。",
-            "ja": "全体の完成度は60％です。",
-            "vi": "Chúng ta đã hoàn thành 60 phần trăm tổng thể."
+            "ko": "제품 출시 날짜는?",
+            "zh": "产品发布日期？",
+            "ja": "製品のローンチ日は？",
+            "vi": "Ngày phát hành sản phẩm?",
+            "en": "Product launch date?"
           }
         },
         {
           "role": "user",
-          "text": "Good to know morale is high mid-project.",
+          "text": "Still July 10, pending final QA.",
           "translations": {
-            "ko": "프로젝트 중간에 사기가 높다는 것을 알게 되어 좋습니다.",
-            "zh": "很高兴知道项目进行中时士气高昂。",
-            "ja": "プロジェクト途中で士気が高いことは良い知らせです。",
-            "vi": "Rất tốt khi biết tinh thần đội nhóm đang cao giữa dự án."
+            "ko": "여전히 7월 10일이며, 최종 QA를 대기하고 있습니다.",
+            "zh": "仍然是7月10日，等待最后的质量保证。",
+            "ja": "最終的なQAを待って、依然として7月10日です。",
+            "vi": "Vẫn là ngày 10 tháng 7, chờ kiểm tra cuối cùng.",
+            "en": "Still July 10, pending final QA."
           }
         },
         {
           "role": "ai",
-          "text": "Team morale is strong, and velocity remains steady.",
+          "text": "Any team concerns raised?",
           "translations": {
-            "ko": "팀의 사기는 강하고, 작업 속도는 안정적입니다.",
-            "zh": "团队士气强劲，进度保持稳定。",
-            "ja": "チームの士気は強く、進行速度も安定しています。",
-            "vi": "Tinh thần đội nhóm mạnh mẽ, và tốc độ tiến độ vẫn ổn định."
+            "ko": "팀의 우려사항이 제기되었나요?",
+            "zh": "有团队关注的问题吗？",
+            "ja": "チームの懸念は上がりましたか？",
+            "vi": "Có mối quan tâm nào của nhóm được đưa ra không?",
+            "en": "Any team concerns raised?"
           }
         },
         {
           "role": "user",
-          "text": "Let’s continue monitoring risk areas weekly.",
+          "text": "Mostly about training during the transition.",
           "translations": {
-            "ko": "위험 영역을 주간으로 계속 모니터링합시다.",
-            "zh": "让我们继续每周监控风险区域。",
-            "ja": "リスクエリアのモニタリングを週次で続けましょう。",
-            "vi": "Hãy tiếp tục theo dõi các khu vực rủi ro hàng tuần."
+            "ko": "대부분은 전환 기간 동안의 교육에 대한 것입니다.",
+            "zh": "主要是关于过渡期间的培训。",
+            "ja": "主に移行期間中のトレーニングについてです。",
+            "vi": "Chủ yếu là về việc đào tạo trong quá trình chuyển đổi.",
+            "en": "Mostly about training during the transition."
           }
         },
         {
           "role": "ai",
-          "text": "No additional risks identified this week.",
+          "text": "We’ll schedule onboarding sessions.",
           "translations": {
-            "ko": "이번 주에는 추가적인 위험이 발견되지 않았습니다.",
-            "zh": "本周未发现额外风险。",
-            "ja": "今週は追加のリスクは特定されていません。",
-            "vi": "Không có rủi ro thêm được xác định trong tuần này."
+            "ko": "온보딩 세션을 예정하겠습니다.",
+            "zh": "我们将安排入职培训。",
+            "ja": "オンボーディングセッションをスケジュールします。",
+            "vi": "Chúng tôi sẽ lên lịch các phiên đào tạo.",
+            "en": "We’ll schedule onboarding sessions."
           }
         },
         {
           "role": "user",
-          "text": "Can we get a copy of the full timeline afterward?",
+          "text": "Good. I’ll help coordinate.",
           "translations": {
-            "ko": "나중에 전체 타임라인의 복사본을 받을 수 있을까요?",
-            "zh": "事后我们能否获得完整时间线的副本？",
-            "ja": "後で全体のタイムラインのコピーを入手できますか？",
-            "vi": "Sau này, chúng ta có thể nhận được bản sao của toàn bộ lịch trình không?"
+            "ko": "좋습니다. 도와드리겠습니다.",
+            "zh": "好的。我会帮助协调。",
+            "ja": "良いです。私が協力します。",
+            "vi": "Tốt. Tôi sẽ giúp phối hợp.",
+            "en": "Good. I’ll help coordinate."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll open the floor for questions shortly.",
+          "text": "Let’s post a recap in the #exec-highlights channel.",
           "translations": {
-            "ko": "곧 질문을 받겠습니다.",
-            "zh": "我们将很快开放提问环节。",
-            "ja": "まもなく質問の時間を設けます。",
-            "vi": "Chúng tôi sẽ mở cửa cho câu hỏi trong chốc lát."
+            "ko": "#exec-highlights 채널에 요약을 게시합시다.",
+            "zh": "让我们在#exec-highlights频道中发布回顾。",
+            "ja": "#exec-highlightsチャンネルにリキャップを投稿しましょう。",
+            "vi": "Hãy đăng một bản tóm tắt trong kênh #exec-highlights.",
+            "en": "Let’s post a recap in the #exec-highlights channel."
           }
         },
         {
           "role": "user",
-          "text": "No further questions from my side.",
+          "text": "I’ll draft the post this afternoon.",
           "translations": {
-            "ko": "제 쪽에서는 더 이상 질문이 없습니다.",
-            "zh": "我这边没有其他问题。",
-            "ja": "私からはこれ以上の質問はありません。",
-            "vi": "Không có thêm câu hỏi từ phía tôi."
+            "ko": "나는 이 오후에 게시물을 작성하겠습니다.",
+            "zh": "我会在今天下午起草帖子。",
+            "ja": "今日の午後に投稿のドラフトを作成します。",
+            "vi": "Tôi sẽ soạn thảo bài đăng vào buổi chiều nay.",
+            "en": "I’ll draft the post this afternoon."
           }
         },
         {
           "role": "ai",
-          "text": "Thanks for your continued support.",
+          "text": "Let’s wrap this up with final confirmations.",
           "translations": {
-            "ko": "지속적인 지원에 감사드립니다.",
-            "zh": "感谢你们的持续支持。",
-            "ja": "今後ともご支援いただきありがとうございます。",
-            "vi": "Cảm ơn sự hỗ trợ không ngừng của bạn."
+            "ko": "최종 확인으로 이것을 마무리합시다.",
+            "zh": "让我们以最后的确认结束这次会议。",
+            "ja": "最終的な確認でこれを終わりにしましょう。",
+            "vi": "Hãy kết thúc với việc xác nhận cuối cùng.",
+            "en": "Let’s wrap this up with final confirmations."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. Appreciate the transparency.",
+          "text": "I’ll follow up with a summary email shortly.",
           "translations": {
-            "ko": "감사합니다. 투명성을 고려해 주셔서 감사합니다.",
-            "zh": "谢谢。我很欣赏你的透明度。",
-            "ja": "ありがとう。透明性を保ってくれて感謝します。",
-            "vi": "Cảm ơn. Tôi đánh giá cao sự minh bạch."
+            "ko": "곧 요약 이메일을 보내겠습니다.",
+            "zh": "我会尽快发送一封总结邮件。",
+            "ja": "すぐに要約メールを送ります。",
+            "vi": "Tôi sẽ gửi email tóm tắt ngay sau đây.",
+            "en": "I’ll follow up with a summary email shortly."
           }
         }
       ]
     },
     {
       "description": {
-        "ko": "연간 예산 및 자원 배정 계획",
-        "zh": "计划年度预算和资源分配",
-        "ja": "年間予算とリソース割り当ての計画を立てる",
-        "vi": "Lập kế hoạch ngân sách hàng năm và phân bổ nguồn lực"
+        "en": "Finalizing a merger integration timeline",
+        "ko": "합병 통합 타임라인 확정",
+        "zh": "确定合并整合时间表",
+        "ja": "合併統合の最終タイムラインを確定する",
+        "vi": "Hoàn thiện một dòng thời gian tích hợp hợp nhất"
       },
       "dialogues": [
         {
           "role": "ai",
-          "text": "Let’s begin annual budgeting discussions.",
+          "text": "Let’s align on the final timeline for integration.",
           "translations": {
-            "ko": "연간 예산 논의를 시작합시다.",
-            "zh": "让我们开始年度预算讨论。",
-            "ja": "年間予算の議論を始めましょう。",
-            "vi": "Hãy bắt đầu thảo luận về ngân sách hàng năm."
+            "ko": "통합에 대한 최종 타임라인에 대해 일치시킵시다.",
+            "zh": "让我们就整合的最后时间表达成一致。",
+            "ja": "統合の最終タイムラインについて合意しましょう。",
+            "vi": "Hãy thống nhất về dòng thời gian cuối cùng cho việc tích hợp.",
+            "en": "Let’s align on the final timeline for integration."
           }
         },
         {
           "role": "user",
-          "text": "Thanks. Our team is requesting two additional hires.",
+          "text": "HR suggests a three-phase rollout.",
           "translations": {
-            "ko": "감사합니다. 우리 팀은 추가로 두 명을 고용하려고 합니다.",
-            "zh": "谢谢。我们的团队需要增加两个职位。",
-            "ja": "ありがとう。私たちのチームは追加で2人の採用を要求しています。",
-            "vi": "Cảm ơn. Đội nhóm của chúng tôi đang yêu cầu thêm hai người."
+            "ko": "인사팀은 세 단계 롤아웃을 제안합니다.",
+            "zh": "人力资源部建议分三阶段推出。",
+            "ja": "HRは3フェーズのロールアウトを提案しています。",
+            "vi": "HR đề xuất triển khai ba giai đoạn.",
+            "en": "HR suggests a three-phase rollout."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll review each department’s resource requests.",
+          "text": "What’s phase one?",
           "translations": {
-            "ko": "각 부서의 자원 요청을 검토하겠습니다.",
-            "zh": "我们将审查每个部门的资源需求。",
-            "ja": "各部門のリソース要求を見直します。",
-            "vi": "Chúng tôi sẽ xem xét yêu cầu nguồn lực của từng bộ phận."
+            "ko": "첫 번째 단계는 무엇인가요?",
+            "zh": "第一阶段是什么？",
+            "ja": "フェーズ1は何ですか？",
+            "vi": "Giai đoạn một là gì?",
+            "en": "What’s phase one?"
           }
         },
         {
           "role": "user",
-          "text": "We also need a data visualization tool upgrade.",
+          "text": "Legal alignment and payroll syncing.",
           "translations": {
-            "ko": "우리는 또한 데이터 시각화 도구의 업그레이드가 필요합니다.",
-            "zh": "我们还需要升级数据可视化工具。",
-            "ja": "データ可視化ツールのアップグレードも必要です。",
-            "vi": "Chúng tôi cũng cần nâng cấp công cụ trực quan hóa dữ liệu."
+            "ko": "법적 조정 및 급여 동기화입니다.",
+            "zh": "法律对齐和工资同步。",
+            "ja": "法的な調整と給与の同期です。",
+            "vi": "Đồng lòng pháp lý và đồng bộ hóa tiền lương.",
+            "en": "Legal alignment and payroll syncing."
           }
         },
         {
           "role": "ai",
-          "text": "Please highlight headcount and tooling needs first.",
+          "text": "And two?",
           "translations": {
-            "ko": "먼저 인원 수와 도구 필요성을 강조해 주세요.",
-            "zh": "请首先突出人员和工具需求。",
-            "ja": "まずは人員とツールのニーズを強調してください。",
-            "vi": "Vui lòng đánh dấu nhu cầu về nhân sự và công cụ trước tiên."
+            "ko": "두 번째는요?",
+            "zh": "第二阶段呢？",
+            "ja": "そしてフェーズ2は？",
+            "vi": "Và hai?",
+            "en": "And two?"
           }
         },
         {
           "role": "user",
-          "text": "Understood on the economic context.",
+          "text": "IT systems and branding updates.",
           "translations": {
-            "ko": "경제적 맥락에 대해 이해했습니다.",
-            "zh": "了解经济背景。",
-            "ja": "経済状況について理解しました。",
-            "vi": "Hiểu về bối cảnh kinh tế."
+            "ko": "IT 시스템 및 브랜딩 업데이트입니다.",
+            "zh": "IT系统和品牌更新。",
+            "ja": "ITシステムとブランディングの更新です。",
+            "vi": "Hệ thống IT và cập nhật thương hiệu.",
+            "en": "IT systems and branding updates."
           }
         },
         {
           "role": "ai",
-          "text": "Let’s be mindful of macroeconomic factors this year.",
+          "text": "Final phase?",
           "translations": {
-            "ko": "올해는 거시경제적 요인을 유념합시다.",
-            "zh": "让我们今年注意宏观经济因素。",
-            "ja": "今年はマクロ経済要因を考慮しましょう。",
-            "vi": "Hãy chú ý đến các yếu tố kinh tế vĩ mô trong năm nay."
+            "ko": "마지막 단계는요?",
+            "zh": "最后阶段？",
+            "ja": "最終フェーズは？",
+            "vi": "Giai đoạn cuối cùng?",
+            "en": "Final phase?"
           }
         },
         {
           "role": "user",
-          "text": "We’ve tied our asks to growth initiatives.",
+          "text": "Team restructuring and shared tooling.",
           "translations": {
-            "ko": "우리는 성장 계획에 우리의 요구사항을 연결했습니다.",
-            "zh": "我们已将请求与增长计划挂钩。",
-            "ja": "私たちは成長イニシアチブに要求を結びつけました。",
-            "vi": "Chúng tôi đã gắn kết yêu cầu của mình với các sáng kiến tăng trưởng."
+            "ko": "팀 재구성 및 공유 도구입니다.",
+            "zh": "团队重组和共享工具。",
+            "ja": "チームの再構成と共有ツールです。",
+            "vi": "Tái cấu trúc nhóm và công cụ chung.",
+            "en": "Team restructuring and shared tooling."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll use historical data to guide allocation.",
+          "text": "What’s our target close date?",
           "translations": {
-            "ko": "우리는 과거 데이터를 사용하여 배정을 안내할 것입니다.",
-            "zh": "我们将使用历史数据指导分配。",
-            "ja": "過去のデータを用いて割り当てをガイドします。",
-            "vi": "Chúng tôi sẽ sử dụng dữ liệu lịch sử để hướng dẫn phân bổ."
+            "ko": "우리의 목표 마감일은 언제인가요?",
+            "zh": "我们的目标关闭日期是什么？",
+            "ja": "目標とするクローズ日は何ですか？",
+            "vi": "Ngày kết thúc mục tiêu của chúng ta là gì?",
+            "en": "What’s our target close date?"
           }
         },
         {
           "role": "user",
-          "text": "We’ll prepare contingency scenarios as well.",
+          "text": "September 30, assuming approvals.",
           "translations": {
-            "ko": "우리는 비상 시나리오도 준비할 것입니다.",
-            "zh": "我们也将准备应急方案。",
-            "ja": "また、緊急事態のシナリオも準備します。",
-            "vi": "Chúng tôi cũng sẽ chuẩn bị các kịch bản dự phòng."
+            "ko": "승인이 있을 경우 9월 30일입니다.",
+            "zh": "9月30日，假设获得批准。",
+            "ja": "承認があれば、9月30日です。",
+            "vi": "Ngày 30 tháng 9, giả sử có sự chấp thuận.",
+            "en": "September 30, assuming approvals."
           }
         },
         {
           "role": "ai",
-          "text": "Requests should be tied to strategic priorities.",
+          "text": "Do we need external consultants?",
           "translations": {
-            "ko": "요청은 전략적 우선순위와 연결되어야 합니다.",
-            "zh": "请求应与战略优先事项挂钩。",
-            "ja": "要求は戦略的な優先事項に結びつけるべきです。",
-            "vi": "Yêu cầu nên được gắn kết với các ưu tiên chiến lược."
+            "ko": "외부 컨설턴트가 필요한가요?",
+            "zh": "我们需要外部顾问吗？",
+            "ja": "外部のコンサルタントは必要ですか？",
+            "vi": "Chúng ta cần tư vấn viên bên ngoài không?",
+            "en": "Do we need external consultants?"
           }
         },
         {
           "role": "user",
-          "text": "Justification slides will be ready tomorrow.",
+          "text": "Only for IT migration.",
           "translations": {
-            "ko": "근거 슬라이드는 내일 준비될 것입니다.",
-            "zh": "理由幻灯片将在明天准备好。",
-            "ja": "根拠のスライドは明日準備します。",
-            "vi": "Slide biện minh sẽ sẵn sàng vào ngày mai."
+            "ko": "IT 마이그레이션에 대해서만 필요합니다.",
+            "zh": "只需要IT迁移。",
+            "ja": "IT移行のみです。",
+            "vi": "Chỉ dành cho di chuyển IT.",
+            "en": "Only for IT migration."
           }
         },
         {
           "role": "ai",
-          "text": "We’ll also need contingency plans for variance.",
+          "text": "What’s our internal kickoff date?",
           "translations": {
-            "ko": "우리는 또한 변동에 대한 비상 계획이 필요합니다.",
-            "zh": "我们也需要为差异制定应急计划。",
-            "ja": "分散に対する緊急対策も必要です。",
-            "vi": "Chúng tôi cũng sẽ cần các kế hoạch dự phòng cho sự biến động."
+            "ko": "우리의 내부 킥오프 날짜는 언제인가요?",
+            "zh": "我们的内部启动日期是什么？",
+            "ja": "内部のキックオフ日は何ですか？",
+            "vi": "Ngày khởi động nội bộ của chúng ta là khi nào?",
+            "en": "What’s our internal kickoff date?"
           }
         },
         {
           "role": "user",
-          "text": "Thanks for keeping us aligned on process.",
+          "text": "June 5.",
           "translations": {
-            "ko": "프로세스에 대해 우리를 일치시켜 주셔서 감사합니다.",
-            "zh": "感谢你们让我们对流程保持一致。",
-            "ja": "プロセスについて一致していただきありがとうございます。",
-            "vi": "Cảm ơn bạn đã giữ chúng tôi đồng lòng về quy trình."
+            "ko": "6월 5일입니다.",
+            "zh": "6月5日。",
+            "ja": "6月5日です。",
+            "vi": "Ngày 5 tháng 6.",
+            "en": "June 5."
           }
         },
         {
           "role": "ai",
-          "text": "Finance will consolidate feedback by end of week.",
+          "text": "Let’s confirm with both CFOs by Friday.",
           "translations": {
-            "ko": "재무팀은 주말까지 피드백을 통합할 것입니다.",
-            "zh": "财务部将在本周末前整合反馈。",
-            "ja": "財務部は週末までにフィードバックをまとめます。",
-            "vi": "Phòng Tài chính sẽ tổng hợp phản hồi vào cuối tuần."
+            "ko": "금요일까지 두 CFO에게 확인합시다.",
+            "zh": "让我们在周五之前与两位CFO确认。",
+            "ja": "両方のCFOに金曜日までに確認しましょう。",
+            "vi": "Hãy xác nhận với cả hai CFO vào thứ Sáu.",
+            "en": "Let’s confirm with both CFOs by Friday."
           }
         },
         {
           "role": "user",
-          "text": "We’ll finalize inputs by Thursday.",
+          "text": "I’ll send calendar holds today.",
           "translations": {
-            "ko": "목요일까지 입력을 확정하겠습니다.",
-            "zh": "我们将在周四前确定输入。",
-            "ja": "木曜日までに入力を最終化します。",
-            "vi": "Chúng tôi sẽ hoàn thiện đầu vào vào thứ Năm."
+            "ko": "나는 오늘 캘린더 홀드를 보내겠습니다.",
+            "zh": "我会今天发送日历保留。",
+            "ja": "今日カレンダーホールドを送ります。",
+            "vi": "Tôi sẽ gửi lịch hẹn hôm nay.",
+            "en": "I’ll send calendar holds today."
           }
         },
         {
           "role": "ai",
-          "text": "Please submit justifications in writing.",
+          "text": "We’ll also need internal comms ready.",
           "translations": {
-            "ko": "근거를 서면으로 제출해 주세요.",
-            "zh": "请以书面形式提交理由。",
-            "ja": "根拠を書面で提出してください。",
-            "vi": "Vui lòng gửi biện minh bằng văn bản."
+            "ko": "또한 내부 커뮤니케이션을 준비해야 합니다.",
+            "zh": "我们还需要准备内部通信。",
+            "ja": "内部コミュニケーションも準備が必要です。",
+            "vi": "Chúng ta cũng cần sẵn sàng thông tin nội bộ.",
+            "en": "We’ll also need internal comms ready."
           }
         },
         {
           "role": "user",
-          "text": "Looking forward to the consolidated plan.",
+          "text": "Agreed. I’ll write a first draft by EOD.",
           "translations": {
-            "ko": "통합 계획을 기대하고 있습니다.",
-            "zh": "期待看到整合后的计划。",
-            "ja": "まとめた計画を楽しみにしています。",
-            "vi": "Mong chờ kế hoạch tổng hợp."
+            "ko": "동의합니다. 나는 EOD까지 초안을 작성하겠습니다.",
+            "zh": "同意。我会在今天结束工作前写出初稿。",
+            "ja": "同意します。私がEODまでに初稿を書きます。",
+            "vi": "Đồng ý. Tôi sẽ viết bản nháp đầu tiên vào cuối ngày.",
+            "en": "Agreed. I’ll write a first draft by EOD."
           }
         },
         {
           "role": "ai",
-          "text": "Next week, we’ll present a consolidated draft.",
+          "text": "Let’s wrap this up with final confirmations.",
           "translations": {
-            "ko": "다음 주에는 통합 초안을 발표할 것입니다.",
-            "zh": "下周，我们将提出一个整合的草案。",
-            "ja": "来週、まとめた草案を発表します。",
-            "vi": "Tuần tới, chúng tôi sẽ trình bày bản thảo tổng hợp."
+            "ko": "최종 확인으로 이것을 마무리합시다.",
+            "zh": "让我们以最后的确认结束这次会议。",
+            "ja": "最終的な確認でこれを終わりにしましょう。",
+            "vi": "Hãy kết thúc với việc xác nhận cuối cùng.",
+            "en": "Let’s wrap this up with final confirmations."
           }
         },
         {
           "role": "user",
-          "text": "Appreciate the structured approach.",
+          "text": "I’ll follow up with a summary email shortly.",
           "translations": {
-            "ko": "체계적인 접근 방식에 감사드립니다.",
-            "zh": "感谢有条理的方法。",
-            "ja": "構造化されたアプローチに感謝します。",
-            "vi": "Đánh giá cao cách tiếp cận có cấu trúc."
+            "ko": "곧 요약 이메일을 보내겠습니다.",
+            "zh": "我会尽快发送一封总结邮件。",
+            "ja": "すぐに要約メールを送ります。",
+            "vi": "Tôi sẽ gửi email tóm tắt ngay sau đây.",
+            "en": "I’ll follow up with a summary email shortly."
           }
         }
       ]

@@ -8,7 +8,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useCallback } from 'react';
 import { PersistentChatHistoryProvider } from '../context/PersistentChatHistoryContext';
 import * as Linking from 'expo-linking';
-import { activateKeepAwakeAsync , deactivateKeepAwakeAsync } from 'expo-keep-awake';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 
 export const unstable_settings = {
   initialRouteName: 'index',
@@ -71,7 +71,7 @@ export default function RootLayout() {
   useEffect(() => {
     activateKeepAwakeAsync('samspeak');
     return () => {
-      deactivateKeepAwakeAsync('samspeak');
+      deactivateKeepAwake('samspeak');
     };
   }, []);
 

@@ -3,8 +3,12 @@ import { Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { API_BASE_URL } from './env';
 
-// ✅ 언어별 메시지 정의
-const errorMessages = {
+// ✅ 언어 및 에러 타입 정의
+type Lang = 'ko' | 'en' | 'ja' | 'zh' | 'vi';
+type ErrorType = 'network' | 'server' | 'unauthorized';
+
+// ✅ 에러 메시지 정의
+const errorMessages: Record<ErrorType, Record<Lang, string>> = {
   network: {
     ko: '서버에 연결할 수 없습니다.\n인터넷 상태를 확인해주세요.',
     en: 'Unable to connect to the server.\nPlease check your internet connection.',
@@ -28,26 +32,34 @@ const errorMessages = {
   },
 };
 
-// ✅ 현재 언어 가져오기
-async function getLanguage() {
-  const lang = await AsyncStorage.getItem('language');
-  return lang || 'en';
+// ✅ 언어 키 유효성 검사
+function isLangKey(key: string): key is Lang {
+  return ['ko', 'en', 'ja', 'zh', 'vi'].includes(key);
 }
 
+// ✅ 현재 언어 가져오기
+async function getLanguage(): Promise<Lang> {
+  const lang = await AsyncStorage.getItem('language');
+  return isLangKey(lang || '') ? lang as Lang : 'en';
+}
+
+// ✅ Axios 인스턴스 생성
 const api = axios.create({
   baseURL: `${API_BASE_URL}/api`,
   withCredentials: true,
   timeout: 10000,
 });
 
+// ✅ 인터셉터: 에러 메시지 처리
 api.interceptors.response.use(
   res => res,
   async err => {
     const status = err?.response?.status;
     const isNetworkError = !err.response;
     const lang = await getLanguage();
-    const getMsg = (type: keyof typeof errorMessages) =>
-      errorMessages[type][lang as keyof typeof errorMessages[type]] || errorMessages[type].en;
+
+    const getMsg = (type: ErrorType): string =>
+      errorMessages[type][lang] || errorMessages[type].en;
 
     if (isNetworkError) {
       Alert.alert('Network Error', getMsg('network'));

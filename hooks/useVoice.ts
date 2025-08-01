@@ -3,6 +3,7 @@ import * as FileSystem from 'expo-file-system';
 import { Audio } from 'expo-av';
 import axios from 'axios';
 import { WHISPER_URL } from '../lib/env';
+import type { Message } from '../types';
 
 console.log(' 위스퍼 주소0:', process.env.EXPO_PUBLIC_WHISPER_URL);
 
