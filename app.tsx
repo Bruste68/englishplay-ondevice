@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Slot } from 'expo-router';
-import { activateKeepAwake, deactivateKeepAwake } from 'expo-keep-awake'; 
 
 // 다국어 안내 메시지
 const whisperMessage = {
@@ -29,13 +28,6 @@ const whisperMessage = {
 };
 
 export default function App() {
-
-  useEffect(() => {
-    activateKeepAwake('samspeak');
-    return () => {
-      deactivateKeepAwake('samspeak');
-    };
-  }, []);
 
   useEffect(() => {
     (async () => {

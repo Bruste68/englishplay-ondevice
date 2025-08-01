@@ -2319,7 +2319,8 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "ko": "사업 파트너에게 자신을 소개하기",
         "zh": "向商业伙伴自我介绍",
         "ja": "ビジネスパートナーへの自己紹介",
-        "vi": "Giới thiệu bản thân với đối tác kinh doanh"
+        "vi": "Giới thiệu bản thân với đối tác kinh doanh",
+        "en": "Introduce yourself to a business partner"
       },
       "dialogues": [
         {
@@ -2529,7 +2530,9 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "ko": "계약 협상하기",
         "zh": "商谈合同",
         "ja": "契約の交渉",
-        "vi": "Đàm phán hợp đồng"
+        "vi": "Đàm phán hợp đồng",
+        "en": "Negotiating a contract"
+
       },
       "dialogues": [
         {
@@ -2950,6 +2953,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "讨论营销策略",
         "ja": "マーケティング戦略を議論する",
         "vi": "Thảo luận về chiến lược tiếp thị"
+        "en": "Discuss marketing strategies"
       },
       "dialogues": [
         {
@@ -3160,6 +3164,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "处理客户投诉",
         "ja": "クライアントの苦情対応",
         "vi": "Xử lý khiếu nại của khách hàng"
+        "en": "Handling customer complaints"
       },
       "dialogues": [
         {
@@ -3370,6 +3375,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "面试一位求职者",
         "ja": "就職候補者を面接する",
         "vi": "Phỏng vấn ứng viên cho công việc"
+        "en": "An interview with a job candidate"
       },
       "dialogues": [
         {
@@ -3580,6 +3586,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "与团队设定一个截止日期",
         "ja": "チームと期限を設定する",
         "vi": "Đặt hạn chót với một nhóm"
+        "en": "Set deadlines with your team"
       },
       "dialogues": [
         {
@@ -3790,6 +3797,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "解释新的公司政策",
         "ja": "新しい会社の方針を説明する",
         "vi": "Giải thích một chính sách công ty mới"
+        "en": "Explain the new company policy"
       },
       "dialogues": [
         {
@@ -4000,6 +4008,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "准备商务旅行",
         "ja": "出張の準備をしています",
         "vi": "Chuẩn bị cho một chuyến công tác"
+        "en": "Preparing for a business trip"
       },
       "dialogues": [
         {
@@ -4210,6 +4219,7 @@ export const templateDialogs: Record<LevelType, readonly PracticeScene[]> = {
         "zh": "评估季度业绩",
         "ja": "四半期の業績を評価する",
         "vi": "Đánh giá hiệu suất quý"
+        "en": "Quarterly Performance Evaluation"
       },
       "dialogues": [
         {

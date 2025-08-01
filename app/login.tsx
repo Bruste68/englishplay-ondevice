@@ -190,7 +190,11 @@ export default function LoginScreen() {
       const isHalfYear = isPremium && daysLeftPremium > 92 && daysLeftPremium <= 186;
       const isYearly = isPremium && daysLeftPremium > 186;
 
-      if (isPremium || !trialExpired) {
+      console.log('🔍 관리자 여부:', user.isAdmin);
+      console.log('🔍 프리미엄 여부:', isPremium);
+      console.log('🔍 체험 만료 여부:', trialExpired);
+
+      if (user.isAdmin || isPremium || !trialExpired) {
         console.log(`✅ 유효한 이용권: ${
           isMonthly ? '3개월' : isHalfYear ? '6개월' : isYearly ? '1년' : '기타'
         } 남음`);

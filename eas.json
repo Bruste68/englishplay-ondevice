@@ -7,8 +7,8 @@
     "production": {
       "developmentClient": false,
       "android": {
-        "buildType": "apk",
-        "credentialsSource": "remote"
+        "ndk": "25.1.8937393",
+        "buildType": "apk"  // ← Google Play 권장
       },
       "env": {
         "EXPO_FLAVOR": "play",
@@ -18,6 +18,7 @@
         "EX_DEV_MENU_ENABLED": "false",
         "EXPO_PUBLIC_BACKEND_URL": "https://samspeakgo.com/api",
         "EXPO_PUBLIC_WHISPER_URL": "https://samspeakgo.com/api",
+        "EXPO_ANDROID_MIN_SDK_VERSION": "24",
         "ENV": "production",
         "BUILD_ENV": "release"
       }
