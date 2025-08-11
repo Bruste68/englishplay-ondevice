@@ -22,6 +22,11 @@ buildscript {
     }
 }
 
+ext {
+  ffmpegKitPackage = (System.getenv("FFMPEG_KIT_PACKAGE") ?: project.findProperty("FFMPEG_KIT_PACKAGE")) ?: "https"
+  ffmpegKitVersion = (System.getenv("FFMPEG_KIT_VERSION") ?: project.findProperty("FFMPEG_KIT_VERSION")) ?: "6.0-2.LTS"
+}
+
 apply plugin: "com.facebook.react.rootproject"
 
 allprojects {
@@ -54,4 +59,15 @@ allprojects {
         maven { url "https://dl.bintray.com/arthenica/maven" } // 예전 버전
         maven { url "https://www.arthenica.com/maven" } // 신규 저장소
     }
+}
+subprojects {
+  configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+      if (details.requested.group == "com.arthenica"
+          && details.requested.name.startsWith("ffmpeg-kit-")
+          && details.requested.version != "6.0-2.LTS") {
+        details.useVersion("6.0-2.LTS")
+      }
+    }
+  }
 }
