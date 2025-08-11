@@ -8,7 +8,7 @@
       "developmentClient": false,
       "android": {
         "ndk": "25.1.8937393",
-        "buildType": "app bundle"  // ← Google Play 권장
+        "buildType": "app-bundle"  // ← Google Play 권장
       },
       "env": {
         "EXPO_FLAVOR": "play",
