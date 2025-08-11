@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     mavenCentral()
     maven { url 'https://www.jitpack.io' }
     // ffmpeg-kit 공식 저장소
-    maven { url 'https://www.arthenica.com/maven' }
+   // maven { url 'https://www.arthenica.com/maven' }
   }
 
   versionCatalogs {

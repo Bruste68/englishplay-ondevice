@@ -51,7 +51,6 @@
     "expo-symbols": "^0.4.4",
     "expo-updates": "~0.24.13",
     "expo-web-browser": "~12.8.2",
-    "ffmpeg-kit-react-native": "^6.0.2",
     "google-auth-library": "^9.15.1",
     "jsonwebtoken": "^9.0.2",
     "passport-facebook": "^3.0.0",

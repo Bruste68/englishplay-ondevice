@@ -22,52 +22,5 @@ buildscript {
     }
 }
 
-ext {
-  ffmpegKitPackage = (System.getenv("FFMPEG_KIT_PACKAGE") ?: project.findProperty("FFMPEG_KIT_PACKAGE")) ?: "https"
-  ffmpegKitVersion = (System.getenv("FFMPEG_KIT_VERSION") ?: project.findProperty("FFMPEG_KIT_VERSION")) ?: "6.0-2.LTS"
-}
-
 apply plugin: "com.facebook.react.rootproject"
 
-allprojects {
-    repositories {
-        // ✅ 1. react-native AAR 로컬 경로 (가장 먼저)
-        maven {
-            url(new File(
-              ['node', '--print', "require.resolve('react-native/package.json')"]
-              .execute(null, rootDir).text.trim(), '../android')
-            )
-        }
-
-        // ✅ 2. jsc-android (필요 시)
-        maven {
-            url(new File(
-              ['node', '--print', "require.resolve('jsc-android/package.json', { paths: [require.resolve('react-native/package.json')] })"]
-              .execute(null, rootDir).text.trim(), '../dist')
-            )
-        }
-
-        // ✅ 3. Aliyun 미러
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://maven.aliyun.com/repository/public' }
-
-        // ✅ 4. 공식 저장소
-        google()
-        mavenCentral()
-        maven { url 'https://www.jitpack.io' }
-        maven { url "https://dl.bintray.com/arthenica/maven" } // 예전 버전
-        maven { url "https://www.arthenica.com/maven" } // 신규 저장소
-    }
-}
-subprojects {
-  configurations.configureEach {
-    resolutionStrategy.eachDependency { details ->
-      if (details.requested.group == "com.arthenica"
-          && details.requested.name.startsWith("ffmpeg-kit-")
-          && details.requested.version != "6.0-2.LTS") {
-        details.useVersion("6.0-2.LTS")
-      }
-    }
-  }
-}

@@ -1,9 +1,18 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
-apply plugin: 'com.google.gms.google-services'
 
 def projectRoot = rootDir.getAbsoluteFile().getParentFile().getAbsolutePath()
+def hermesEnabled = (project.ext.react.hasProperty("enableHermes") ? project.ext.react.enableHermes : true)
+def jscFlavor = 'org.webkit:android-jsc:+'
+def propOrEnv = { key ->
+  return (project.findProperty(key) ?: System.getenv(key))
+}
+def keystorePath  = propOrEnv("MYAPP_UPLOAD_STORE_FILE")
+def keystoreFile  = keystorePath ? rootProject.file(keystorePath) : null
+def uploadStorePassword = propOrEnv("MYAPP_UPLOAD_STORE_PASSWORD")
+def uploadKeyAlias      = propOrEnv("MYAPP_UPLOAD_KEY_ALIAS")
+def uploadKeyPassword   = propOrEnv("MYAPP_UPLOAD_KEY_PASSWORD")
 
 react {
     entryFile = file(["node", "-e", "require('expo/scripts/resolveAppEntry')", projectRoot, "android", "absolute"].execute(null, rootDir).text.trim())
@@ -34,11 +43,10 @@ android {
 //        minSdkVersion 24
 //        targetSdkVersion 34
         versionCode 7
-        versionName "1.3.1"
+        versionName "2.0.0"
         buildConfigField("boolean", "REACT_NATIVE_UNSTABLE_USE_RUNTIME_SCHEDULER_ALWAYS", (findProperty("reactNative.unstable_useRuntimeSchedulerAlways") ?: true).toString())
         buildConfigField("boolean", "IS_HERMES_ENABLED", "true")
         buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", "false")
-        buildConfigField("boolean", "DEBUG", "true")
     }
 
     buildFeatures {
@@ -62,10 +70,19 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file(System.getenv("MYAPP_UPLOAD_STORE_FILE"))
-            storePassword System.getenv("MYAPP_UPLOAD_STORE_PASSWORD")
-            keyAlias System.getenv("MYAPP_UPLOAD_KEY_ALIAS")
-            keyPassword System.getenv("MYAPP_UPLOAD_KEY_PASSWORD")
+     //       storeFile file(System.getenv("MYAPP_UPLOAD_STORE_FILE"))
+     //       storePassword System.getenv("MYAPP_UPLOAD_STORE_PASSWORD")
+     //       keyAlias System.getenv("MYAPP_UPLOAD_KEY_ALIAS")
+     //       keyPassword System.getenv("MYAPP_UPLOAD_KEY_PASSWORD")
+          if (keystoreFile?.exists() && storePass && keyAlias && keyPass) {
+            storeFile keystoreFile
+            storePassword uploadStorePassword
+            keyAlias uploadKeyAlias
+            keyPassword uploadKeyPassword
+          } else {
+            println "⚠️  Release keystore가 설정되지 않았습니다. (경로: ${keystorePath}) 로컬에선 debug로 대체합니다."
+            initWith signingConfigs.debug
+          }
         }
     }
 
@@ -73,12 +90,14 @@ android {
         debug {
             signingConfig signingConfigs.debug
             matchingFallbacks = ["debug", "release"]
+            buildConfigField("boolean", "DEBUG", "true")
         }
         release {
             signingConfig signingConfigs.release
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            buildConfigField("boolean", "DEBUG", "false")
         }
     }
 
@@ -86,6 +105,12 @@ android {
         toolchain {
             languageVersion = JavaLanguageVersion.of(17)
         }
+    }
+
+    compileOptions {
+      sourceCompatibility JavaVersion.VERSION_17
+      targetCompatibility JavaVersion.VERSION_17
+      coreLibraryDesugaringEnabled true
     }
 
     applicationVariants.all { variant ->
@@ -100,14 +125,14 @@ dependencies {
     implementation("com.facebook.react:react-android")
     implementation project(':react-native-iap')
     implementation 'com.android.billingclient:billing:6.0.1'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
+    // implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     // ✅ Whisper 관련 의존성 제거
     // implementation project(':react-native-whisper')
     // implementation 'com.arthenica:ffmpeg-kit-min:6.0'
 
     implementation 'androidx.startup:startup-runtime:1.1.1'
  //   implementation 'com.arthenica:ffmpeg-kit-full:6.0.3'
-    implementation("com.arthenica:ffmpeg-kit-https:6.0-2.LTS")
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
@@ -140,4 +165,5 @@ applyNativeModulesAppBuildGradle(project)
 afterEvaluate {
     println "🧪 DEBUG: defaultConfig.minSdkVersion = ${android.defaultConfig.minSdkVersion.apiLevel}"
 }
+apply plugin: 'com.google.gms.google-services'
 
