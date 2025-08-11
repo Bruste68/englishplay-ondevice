@@ -5,8 +5,18 @@ include ':app', ':react-native-iap'
 // ✅ 수동 링크된 라이브러리 경로 명시
 project(':react-native-iap').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-iap/android')
 
-// ✅ 의존성 관리 (React Native 버전에 맞는 라이브러리 사용)
+// ✅ 의존성 관리 + 저장소 선언
 dependencyResolutionManagement {
+  // 프로젝트 레벨 저장소를 우선 사용
+  repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://www.jitpack.io' }
+    // ffmpeg-kit 공식 저장소
+    maven { url 'https://www.arthenica.com/maven' }
+  }
+
   versionCatalogs {
     reactAndroidLibs {
       from(files(

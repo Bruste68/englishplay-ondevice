@@ -33,8 +33,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion ?: 34
 //        minSdkVersion 24
 //        targetSdkVersion 34
-        versionCode 10
-        versionName "1.3.4"
+        versionCode 7
+        versionName "1.3.1"
         buildConfigField("boolean", "REACT_NATIVE_UNSTABLE_USE_RUNTIME_SCHEDULER_ALWAYS", (findProperty("reactNative.unstable_useRuntimeSchedulerAlways") ?: true).toString())
         buildConfigField("boolean", "IS_HERMES_ENABLED", "true")
         buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", "false")
@@ -94,6 +94,8 @@ android {
     }
 }
 
+
+
 dependencies {
     implementation("com.facebook.react:react-android")
     implementation project(':react-native-iap')
@@ -105,6 +107,7 @@ dependencies {
 
     implementation 'androidx.startup:startup-runtime:1.1.1'
  //   implementation 'com.arthenica:ffmpeg-kit-full:6.0.3'
+    implementation("com.arthenica:ffmpeg-kit-https:6.0-2.LTS")
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
