@@ -70,15 +70,12 @@ android {
             keyPassword 'android'
         }
         release {
-     //       storeFile file(System.getenv("MYAPP_UPLOAD_STORE_FILE"))
-     //       storePassword System.getenv("MYAPP_UPLOAD_STORE_PASSWORD")
-     //       keyAlias System.getenv("MYAPP_UPLOAD_KEY_ALIAS")
-     //       keyPassword System.getenv("MYAPP_UPLOAD_KEY_PASSWORD")
-          if (keystoreFile?.exists() && storePass && keyAlias && keyPass) {
+          if (keystoreFile?.exists() && uploadStorePassword && uploadKeyAlias && uploadKeyPassword) {
             storeFile keystoreFile
             storePassword uploadStorePassword
             keyAlias uploadKeyAlias
             keyPassword uploadKeyPassword
+              println "🔐 Using keystore: ${keystoreFile}"
           } else {
             println "⚠️  Release keystore가 설정되지 않았습니다. (경로: ${keystorePath}) 로컬에선 debug로 대체합니다."
             initWith signingConfigs.debug
