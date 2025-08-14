@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+// purchase.tsx
+import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, Button, Alert, ScrollView, StyleSheet } from 'react-native';
 import * as RNIap from 'react-native-iap';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -6,36 +7,114 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { API_BASE_URL } from '../lib/api';
 import { useLanguage } from '../hooks/useLanguage';
 
-const productIds = ['monthly_kr', 'semiannual_kr', 'annual_kr']; // 실제 등록한 상품 ID
+const productIds = ['monthly_kr', 'semiannual_kr', 'annual_kr'];
 
 export default function PurchaseScreen() {
   const [products, setProducts] = useState<RNIap.Product[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [iapAvailable, setIapAvailable] = useState<boolean | null>(null);
   const router = useRouter();
   const { t } = useLanguage();
-
-  // 디바이스 중복으로 인한 리다이렉트인지 확인
   const params = useLocalSearchParams();
   const isDeviceConflict = params?.reason === 'device_conflict';
 
+  const purchaseUpdateSub = useRef<RNIap.PurchaseUpdatedListener>();
+  const purchaseErrorSub = useRef<RNIap.PurchaseErrorListener>();
+
   useEffect(() => {
-    const init = async () => {
+    (async () => {
       try {
         setIsLoading(true);
+
+        // 1) IAP 연결
         const connected = await RNIap.initConnection();
+        setIapAvailable(connected);
         console.log('✅ IAP 연결 성공:', connected);
-        const items = await RNIap.getProducts({ skus: productIds });
+        if (!connected) throw new Error('E_IAP_NOT_AVAILABLE');
+
+        // 2) 보류 결제 캐시 정리 (Android 권장)
+        try {
+          await RNIap.flushFailedPurchasesCachedAsPendingAndroid();
+        } catch {}
+
+        // 3) 상품 조회 (버전 호환)
+        let items: RNIap.Product[] = [];
+        try {
+          // v13+ (object 인자)
+          // @ts-ignore
+          items = await RNIap.getProducts({ skus: productIds });
+        } catch {
+          // 구버전 (array 인자)
+          // @ts-ignore
+          items = await RNIap.getProducts(productIds);
+        }
         console.log('📦 상품 목록:', items);
         setProducts(items);
-      } catch (e) {
+
+        // 4) 구매 리스너
+        purchaseUpdateSub.current = RNIap.purchaseUpdatedListener(async (purchase) => {
+          try {
+            if (!purchase || !purchase.transactionId) return;
+
+            // ⚠️ 기간권(일회성): 반드시 소비 처리 → 재구매 가능
+            await RNIap.finishTransaction({ purchase, isConsumable: true });
+
+            // 서버 영수증 검증 & 만료일 연장
+            const token = await AsyncStorage.getItem('authToken');
+            const res = await fetch(`${API_BASE_URL}/api/verify-receipt`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`,
+              },
+              body: JSON.stringify({
+                productId: purchase.productId,
+                transactionId: purchase.transactionId,
+                receipt: purchase.purchaseToken, // Android purchase token
+              }),
+            });
+
+            const json = await res.json();
+            if (res.ok && json?.success) {
+              Alert.alert(
+                t.success || 'Success',
+                t.purchaseSuccess || 'Premium access activated successfully!',
+              );
+              await AsyncStorage.setItem('currentUser', JSON.stringify(json.user));
+              router.replace('/topics');
+            } else {
+              Alert.alert(
+                t.error || 'Error',
+                t.verificationFailed || 'Receipt verification failed.',
+              );
+            }
+          } catch (e) {
+            console.warn('검증/정산 처리 중 오류:', e);
+            Alert.alert(t.error || 'Error', t.purchaseFailed || 'Payment processing failed.');
+          }
+        });
+
+        purchaseErrorSub.current = RNIap.purchaseErrorListener((e) => {
+          console.warn('구매 에러:', e);
+          Alert.alert(t.error || 'Error', e.message || (t.purchaseFailed || 'Payment processing failed.'));
+        });
+      } catch (e: any) {
         console.error('❌ IAP 초기화 실패:', e);
-        Alert.alert(t.error || 'Error', t.iapInitFailed || 'Failed to initialize in-app purchases.');
+        setIapAvailable(false);
+        const msg =
+          e?.message?.includes('E_IAP_NOT_AVAILABLE') || e?.toString?.().includes('E_IAP_NOT_AVAILABLE')
+            ? (t.iapNotAvailable ??
+              '결제를 테스트하려면 Play 스토어에서 내부 테스트 링크로 설치하고, 테스터 계정으로 로그인해야 합니다.')
+            : (t.iapInitFailed || 'Failed to initialize in-app purchases.');
+        Alert.alert(t.error || 'Error', msg);
       } finally {
         setIsLoading(false);
       }
-    };
-    init();
+    })();
+
     return () => {
+      try { purchaseUpdateSub.current && purchaseUpdateSub.current.remove(); } catch {}
+      try { purchaseErrorSub.current && purchaseErrorSub.current.remove(); } catch {}
       RNIap.endConnection();
     };
   }, []);
@@ -43,48 +122,23 @@ export default function PurchaseScreen() {
   const handlePurchase = async (productId: string) => {
     try {
       setIsLoading(true);
-      const result = await RNIap.requestPurchase({ sku: productId });
-
-      const purchase = Array.isArray(result) ? result[0] : result;
-      if (!purchase) throw new Error('No purchase returned');
-
-      const token = await AsyncStorage.getItem('authToken');
-
-      const res = await fetch(`${API_BASE_URL}/api/verify-receipt`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          productId: purchase.productId,
-          transactionId: purchase.transactionId,
-          receipt: purchase.purchaseToken,
-        }),
+      // 최신 RN-IAP는 객체 인자 사용
+      // @ts-ignore
+      await RNIap.requestPurchase({
+        sku: productId,
+        andDangerouslyFinishTransactionAutomatically: false, // 리스너에서 finishTransaction
       });
-
-      const responseJson = await res.json() as { success: boolean; user?: any };
-
-      if (res.ok && responseJson.success) {
-        Alert.alert(
-          t.success || 'Success',
-          t.purchaseSuccess || 'Premium access activated successfully!'
-        );
-        await AsyncStorage.setItem('currentUser', JSON.stringify(responseJson.user));
-        router.replace('/topics');
-      } else {
-        Alert.alert(
-          t.error || 'Error',
-          t.verificationFailed || 'Receipt verification failed.'
-        );
-      }
-    } catch (err) {
+      // 결과 처리는 purchaseUpdatedListener에서 수행
+    } catch (err: any) {
       console.warn('구매 실패:', err);
-      Alert.alert(t.error || 'Error', t.purchaseFailed || 'Payment processing failed.');
+      Alert.alert(t.error || 'Error', err?.message || t.purchaseFailed || 'Payment processing failed.');
     } finally {
       setIsLoading(false);
     }
   };
+
+  const showIapUnavailableHint =
+    iapAvailable === false || (__DEV__ && (products?.length ?? 0) === 0);
 
   return (
     <ScrollView style={styles.container}>
@@ -92,8 +146,21 @@ export default function PurchaseScreen() {
 
       {isDeviceConflict && (
         <View style={styles.warningBox}>
-          <Text style={styles.warningText}>{t.deviceAlreadyRegistered || 'This device is already registered with another account.'}</Text>
-          <Text style={styles.warningSubtext}>{t.premiumMultipleDevices || 'Upgrade to premium to use on multiple devices.'}</Text>
+          <Text style={styles.warningText}>
+            {t.deviceAlreadyRegistered || 'This device is already registered with another account.'}
+          </Text>
+          <Text style={styles.warningSubtext}>
+            {t.premiumMultipleDevices || 'Upgrade to premium to use on multiple devices.'}
+          </Text>
+        </View>
+      )}
+
+      {showIapUnavailableHint && (
+        <View style={styles.warningBox}>
+          <Text style={styles.warningText}>
+            {t.iapNotAvailable ||
+              'Play 스토어 설치본에서만 결제가 가능합니다. 내부 테스트 링크로 설치하고 테스터 계정으로 로그인하세요.'}
+          </Text>
         </View>
       )}
 
